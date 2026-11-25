@@ -1,0 +1,168 @@
+{
+  "backgrounds": {
+    "cove": "assets/cover-generated.png",
+    "sea": "assets/bg-sea.png",
+    "hotel": "assets/bg-hotel.png",
+    "hangar": "assets/bg-hangar.png",
+    "market": "assets/bg-market.png",
+    "post": "assets/bg-post.png",
+    "lighthouse": "assets/bg-lighthouse.png",
+    "garden": "assets/bg-garden.png",
+    "ferry": "assets/bg-ferry.png",
+    "kitchen": "assets/bg-kitchen.png",
+    "dock": "assets/bg-hotel.png",
+    "cove-day": "assets/cover-generated.png",
+    "cove-night": "assets/bg-cove-night.svg",
+    "cove-rain": "assets/bg-cove-rain.svg",
+    "hangar-day": "assets/bg-hangar.png",
+    "hangar-night": "assets/bg-hangar-night.svg",
+    "hangar-rain": "assets/bg-hangar-rain.svg",
+    "hotel-day": "assets/bg-hotel.png",
+    "hotel-night": "assets/bg-hotel-night.svg",
+    "hotel-rain": "assets/bg-hotel-rain.svg",
+    "market-day": "assets/bg-market.png",
+    "market-night": "assets/bg-market-night.svg",
+    "market-rain": "assets/bg-market-rain.svg",
+    "post-day": "assets/bg-post.png",
+    "post-night": "assets/bg-post-night.svg",
+    "post-rain": "assets/bg-post-rain.svg",
+    "lighthouse-day": "assets/bg-lighthouse.png",
+    "lighthouse-night": "assets/bg-lighthouse-night.svg",
+    "lighthouse-rain": "assets/bg-lighthouse-rain.svg",
+    "sea-day": "assets/bg-sea.png",
+    "sea-night": "assets/bg-sea-night.svg",
+    "sea-rain": "assets/bg-sea-rain.svg",
+    "kitchen-day": "assets/bg-kitchen.png",
+    "kitchen-night": "assets/bg-kitchen-night.svg",
+    "kitchen-rain": "assets/bg-kitchen-rain.svg",
+    "garden-day": "assets/bg-garden.png",
+    "garden-night": "assets/bg-garden-night.svg",
+    "garden-rain": "assets/bg-garden-rain.svg",
+    "ferry-day": "assets/bg-ferry.png",
+    "ferry-night": "assets/bg-ferry-night.svg",
+    "ferry-rain": "assets/bg-ferry-rain.svg",
+    "dock-day": "assets/bg-hotel.png",
+    "dock-night": "assets/bg-dock-night.svg",
+    "dock-rain": "assets/bg-dock-rain.svg"
+  },
+  "portraits": {
+    "fio-work-neutral": "assets/portrait-fio-work-neutral.svg",
+    "fio-work-smile": "assets/portrait-fio-work-smile.svg",
+    "fio-work-serious": "assets/portrait-fio-work-serious.svg",
+    "fio-work-sad": "assets/portrait-fio-work-sad.svg",
+    "fio-work-surprise": "assets/portrait-fio-work-surprise.svg",
+    "fio-work-tired": "assets/portrait-fio-work-tired.svg",
+    "fio-date-neutral": "assets/portrait-fio-date-neutral.svg",
+    "fio-date-smile": "assets/portrait-fio-date-smile.svg",
+    "fio-date-serious": "assets/portrait-fio-date-serious.svg",
+    "fio-date-sad": "assets/portrait-fio-date-sad.svg",
+    "fio-date-surprise": "assets/portrait-fio-date-surprise.svg",
+    "fio-date-tired": "assets/portrait-fio-date-tired.svg",
+    "gina-work-neutral": "assets/portrait-gina-work-neutral.svg",
+    "gina-work-smile": "assets/portrait-gina-work-smile.svg",
+    "gina-work-serious": "assets/portrait-gina-work-serious.svg",
+    "gina-work-sad": "assets/portrait-gina-work-sad.svg",
+    "gina-work-surprise": "assets/portrait-gina-work-surprise.svg",
+    "gina-work-tired": "assets/portrait-gina-work-tired.svg",
+    "gina-date-neutral": "assets/portrait-gina-date-neutral.svg",
+    "gina-date-smile": "assets/portrait-gina-date-smile.svg",
+    "gina-date-serious": "assets/portrait-gina-date-serious.svg",
+    "gina-date-sad": "assets/portrait-gina-date-sad.svg",
+    "gina-date-surprise": "assets/portrait-gina-date-surprise.svg",
+    "gina-date-tired": "assets/portrait-gina-date-tired.svg",
+    "gina-stage-neutral": "assets/portrait-gina-stage-neutral.svg",
+    "gina-stage-smile": "assets/portrait-gina-stage-smile.svg",
+    "gina-stage-serious": "assets/portrait-gina-stage-serious.svg",
+    "gina-stage-sad": "assets/portrait-gina-stage-sad.svg",
+    "gina-stage-surprise": "assets/portrait-gina-stage-surprise.svg",
+    "gina-stage-tired": "assets/portrait-gina-stage-tired.svg",
+    "gina-morning-neutral": "assets/portrait-gina-morning-neutral.svg",
+    "gina-morning-smile": "assets/portrait-gina-morning-smile.svg",
+    "gina-morning-serious": "assets/portrait-gina-morning-serious.svg",
+    "gina-morning-sad": "assets/portrait-gina-morning-sad.svg",
+    "gina-morning-surprise": "assets/portrait-gina-morning-surprise.svg",
+    "gina-morning-tired": "assets/portrait-gina-morning-tired.svg",
+    "porco-work-neutral": "assets/portrait-porco-work-neutral.svg",
+    "porco-work-smile": "assets/portrait-porco-work-smile.svg",
+    "porco-work-serious": "assets/portrait-porco-work-serious.svg",
+    "porco-work-sad": "assets/portrait-porco-work-sad.svg",
+    "porco-work-surprise": "assets/portrait-porco-work-surprise.svg",
+    "porco-work-tired": "assets/portrait-porco-work-tired.svg"
+  },
+  "cgs": {
+    "letter": {
+      "src": "assets/cg-letter.png",
+      "title": "不用去了",
+      "composition": "清晨右侧海湾红机；波鲁克齐膝站在水中，菲尔在背后递出一支铅笔；信封在机翼暖光里。",
+      "placeholder": false
+    },
+    "yellow-quilt": {
+      "src": "assets/cg-yellow-quilt.png",
+      "title": "星期天的渡轮",
+      "composition": "两人靠左侧船栏，菲尔把望远镜递给波鲁克，视线引向岸上巨大黄被子，晴天顶光。",
+      "placeholder": false
+    },
+    "dinner-fio": {
+      "src": "assets/cg-dinner-fio.png",
+      "title": "试飞后的晚餐",
+      "composition": "餐馆暖灯，菲尔新裙子与指甲机油同时可见，波鲁克把旧客户的注视引回她，桌边留出她的发言位置。",
+      "placeholder": false
+    },
+    "kitchen": {
+      "src": "assets/cg-kitchen.png",
+      "title": "最后一盘凉菜",
+      "composition": "暖灯从桌上照下，窄桌与两人，吉娜脱鞋，桌下并排飞行靴和高跟鞋，冷菜蓝盘，背后月光。",
+      "placeholder": false
+    },
+    "silence": {
+      "src": "assets/cg-silence.png",
+      "title": "无人点歌的傍晚",
+      "composition": "橙色落日，平静小船，吉娜不唱歌，双手自然搭着船沿；波鲁克放下划桨，两人共享海面的静默。",
+      "placeholder": false
+    },
+    "dock": {
+      "src": "assets/cg-dock.png",
+      "title": "一条能推轮椅的坡道",
+      "composition": "白昼码头斜坡，菲尔蹲看水位与卷尺，吉娜拿账本核工费；波鲁克在边缘扶木料，生活与工程的交点。",
+      "placeholder": false
+    },
+    "mailbag": {
+      "src": "assets/cg-mailbag.png",
+      "title": "被风吹走的邮袋",
+      "composition": "低角度礁石上的旧邮袋开了缝，露出一封浅黄信，远处另一座岛与红机；风、距离和待履行约定同时在场。",
+      "placeholder": false
+    },
+    "storm": {
+      "src": "assets/cg-storm.png",
+      "title": "没有起飞的那一天",
+      "composition": "暴雨帘外没有飞机起飞，机库里三个人围着桌上天气图与保温壶；彼此的位置留有呼吸空间。",
+      "placeholder": false
+    },
+    "first-flight": {
+      "src": "assets/cg-first-flight.png",
+      "title": "在机首签字的人",
+      "composition": "首航后照片，菲尔独立站在机首拿正式飞行记录，正面日光；波鲁克仅在右边缘露半只扶梯的手。",
+      "placeholder": false
+    },
+    "key": {
+      "src": "assets/cg-key.png",
+      "title": "侧门的钥匙",
+      "composition": "旅馆侧门暖灯，吉娜晨装手心朝上递出黄铜钥匙；波鲁克手掌有修桌留下的木屑，不需漂亮话。",
+      "placeholder": false
+    },
+    "garden": {
+      "src": "assets/cg-garden.png",
+      "title": "花园里留下的座位",
+      "composition": "午后花园空椅，旧飞行外套与女式草帽挨放，树影遮住来人面容；不用给多年前的赌约一个日历日期。",
+      "placeholder": false
+    },
+    "last-boat": {
+      "src": "assets/cg-last-boat.png",
+      "title": "夏末最后一班船",
+      "composition": "夕阳里末班船离港，三人背影站码头；信袋、工具箱和账本各自留在手里，仍有秋天要过。",
+      "placeholder": false
+    }
+  },
+  "title": "assets/cover-generated.png",
+  "setting": "assets/character-setting-generated.png"
+}

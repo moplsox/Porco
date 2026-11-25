@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-25T02:55:59.974Z",
+  "sourceFiles": [
+    "data/common.json",
+    "data/fio.json",
+    "data/gina.json",
+    "data/quests.json",
+    "data/endings.json",
+    "data/port.json"
+  ],
+  "countingMethod": "仅统计应用载入、入口可达且条件可满足的 lines.text 与 choices.reply；按整段去重并去空白，排除选项标签、界面、代码和未引用场景。条件互斥的原创段落分别计入。",
+  "uniqueCharacters": 110813,
+  "uniqueHanziCharacters": 99636,
+  "visibleEntries": 2351,
+  "distinctVisibleEntries": 2351,
+  "excludedConditionalLines": 0,
+  "sceneCount": 134,
+  "reachableSceneCount": 134,
+  "unreachable": [],
+  "manualLaunches": [
+    "opening",
+    "fio_log_delivery"
+  ],
+  "perChapter": [
+    {
+      "chapter": 1,
+      "title": "迟到的信",
+      "uniqueCharacters": 22813,
+      "uniqueHanziCharacters": 20463,
+      "scenes": 32
+    },
+    {
+      "chapter": 2,
+      "title": "每周四的航班",
+      "uniqueCharacters": 15374,
+      "uniqueHanziCharacters": 13847,
+      "scenes": 20
+    },
+    {
+      "chapter": 3,
+      "title": "停业三天的旅馆",
+      "uniqueCharacters": 15375,
+      "uniqueHanziCharacters": 13816,
+      "scenes": 19
+    },
+    {
+      "chapter": 4,
+      "title": "没有寄件人的邮袋",
+      "uniqueCharacters": 14228,
+      "uniqueHanziCharacters": 12770,
+      "scenes": 17
+    },
+    {
+      "chapter": 5,
+      "title": "连续的坏天气",
+      "uniqueCharacters": 16393,
+      "uniqueHanziCharacters": 14759,
+      "scenes": 19
+    },
+    {
+      "chapter": 6,
+      "title": "夏末最后一班船",
+      "uniqueCharacters": 26630,
+      "uniqueHanziCharacters": 23981,
+      "scenes": 27
+    }
+  ],
+  "heroineCounts": {
+    "fio": {
+      "events": 18,
+      "dates": 6
+    },
+    "gina": {
+      "events": 12,
+      "dates": 6
+    }
+  },
+  "jobs": {
+    "total": 24,
+    "base": 18,
+    "multiBase": 6,
+    "followups": 6
+  },
+  "endings": [
+    {
+      "id": "fio_good",
+      "title": "菲尔 · 留给星期四的座位"
+    },
+    {
+      "id": "fio_open",
+      "title": "菲尔 · 两地之间仍有航线"
+    },
+    {
+      "id": "fio_missed",
+      "title": "菲尔 · 可以把飞机交付"
+    },
+    {
+      "id": "gina_good",
+      "title": "吉娜 · 侧门不用等"
+    },
+    {
+      "id": "gina_open",
+      "title": "吉娜 · 换一张时刻表"
+    },
+    {
+      "id": "gina_missed",
+      "title": "吉娜 · 她不再留最后一桌"
+    },
+    {
+      "id": "friend",
+      "title": "友情 · 三个名字，一条航线"
+    },
+    {
+      "id": "solo",
+      "title": "独行 · 海上有自己的时刻"
+    }
+  ],
+  "assets": {
+    "backgroundFiles": 32,
+    "portraitVariants": 42,
+    "cgs": 12,
+    "referencedFiles": 86
+  },
+  "requirements": [
+    {
+      "id": "story-volume",
+      "label": "可见正文去重字符",
+      "actual": 110813,
+      "min": 80000,
+      "max": 120000,
+      "pass": true
+    },
+    {
+      "id": "fio-events",
+      "label": "菲尔专属事件",
+      "actual": 18,
+      "min": 12,
+      "pass": true
+    },
+    {
+      "id": "fio-dates",
+      "label": "菲尔不同约会",
+      "actual": 6,
+      "min": 6,
+      "pass": true
+    },
+    {
+      "id": "gina-events",
+      "label": "吉娜专属事件",
+      "actual": 12,
+      "min": 12,
+      "pass": true
+    },
+    {
+      "id": "gina-dates",
+      "label": "吉娜不同约会",
+      "actual": 6,
+      "min": 6,
+      "pass": true
+    },
+    {
+      "id": "base-jobs",
+      "label": "手工初始委托",
+      "actual": 18,
+      "min": 18,
+      "pass": true
+    },
+    {
+      "id": "multi-jobs",
+      "label": "多阶段初始委托",
+      "actual": 6,
+      "min": 6,
+      "pass": true
+    },
+    {
+      "id": "endings",
+      "label": "专属及共同结局",
+      "actual": 8,
+      "min": 8,
+      "max": 8,
+      "pass": true
+    },
+    {
+      "id": "backgrounds",
+      "label": "不同背景资源",
+      "actual": 32,
+      "min": 10,
+      "pass": true
+    },
+    {
+      "id": "cgs",
+      "label": "实际可解锁CG",
+      "actual": 12,
+      "min": 12,
+      "pass": true
+    },
+    {
+      "id": "fio-outfits",
+      "label": "fio 至少六表情的服装套数",
+      "actual": 2,
+      "min": 2,
+      "pass": true
+    },
+    {
+      "id": "gina-outfits",
+      "label": "gina 至少六表情的服装套数",
+      "actual": 4,
+      "min": 2,
+      "pass": true
+    }
+  ],
+  "warnings": [],
+  "errors": [],
+  "status": "passed",
+  "testStatus": "passed",
+  "tests": {
+    "generatedAt": "2026-11-25T02:56:00.107Z",
+    "status": "passed",
+    "passed": 19,
+    "total": 19,
+    "routes": [
+      {
+        "route": "fio",
+        "mailChoice": "message",
+        "ending": "fio_good",
+        "days": 90,
+        "mainScenes": 43,
+        "playedScenes": 106,
+        "heroineEvents": 18,
+        "dates": 6,
+        "jobs": 24,
+        "finalMoney": 2163,
+        "finalFuel": 6,
+        "fioTrust": 50,
+        "ginaTrust": 9,
+        "recoveries": 0,
+        "refuels": 13
+      },
+      {
+        "route": "gina",
+        "mailChoice": "return",
+        "ending": "gina_good",
+        "days": 90,
+        "mainScenes": 43,
+        "playedScenes": 99,
+        "heroineEvents": 12,
+        "dates": 6,
+        "jobs": 24,
+        "finalMoney": 2174,
+        "finalFuel": 1,
+        "fioTrust": 24,
+        "ginaTrust": 50,
+        "recoveries": 0,
+        "refuels": 12
+      },
+      {
+        "route": "friend",
+        "mailChoice": "search",
+        "ending": "friend",
+        "days": 90,
+        "mainScenes": 43,
+        "playedScenes": 124,
+        "heroineEvents": 30,
+        "dates": 12,
+        "jobs": 24,
+        "finalMoney": 2127,
+        "finalFuel": 4,
+        "fioTrust": 50,
+        "ginaTrust": 50,
+        "recoveries": 0,
+        "refuels": 13
+      }
+    ],
+    "checks": [
+      {
+        "name": "经济、机况和信任边界与账本",
+        "status": "passed"
+      },
+      {
+        "name": "约定不重复、准时兑现、逾时失信",
+        "status": "passed"
+      },
+      {
+        "name": "90天日历边界不会倒退",
+        "status": "passed"
+      },
+      {
+        "name": "零现金零燃油仍可恢复起飞",
+        "status": "passed"
+      },
+      {
+        "name": "长委托和约会不能越过未读的周三邮袋，恰好结束时可继续主线",
+        "status": "passed"
+      },
+      {
+        "name": "现金不足不能透支，零现金在正式付费选择现场仍有免费行动",
+        "status": "passed"
+      },
+      {
+        "name": "存档往返保留对白、分支、经济、约定与所有标记",
+        "status": "passed"
+      },
+      {
+        "name": "亲密与守信是独立关系",
+        "status": "passed"
+      },
+      {
+        "name": "八个结局的条件与玩家最后表态均生效",
+        "status": "passed"
+      },
+      {
+        "name": "菲尔好结局必须有职业尊重与明确远距安排，数值不能代替行动",
+        "status": "passed"
+      },
+      {
+        "name": "强制场景排序、条件和已完成状态",
+        "status": "passed"
+      },
+      {
+        "name": "地图事件遵守章节、时段、路线与一次性限制",
+        "status": "passed"
+      },
+      {
+        "name": "六个地图入口能访问全部可调度事件及约会",
+        "status": "passed"
+      },
+      {
+        "name": "四场重点约会的天气与信任分支由当日状态生成且互不混读",
+        "status": "passed"
+      },
+      {
+        "name": "日历交试飞记录具有真实场景与履约效果，晚接任务不会立即逾期",
+        "status": "passed"
+      },
+      {
+        "name": "周三掉信的三个行动具有不同而可恢复的经济后果",
+        "status": "passed",
+        "detail": [
+          {
+            "choice": "return",
+            "money": 208,
+            "fuel": 32,
+            "fioTrust": 2,
+            "promiseStatus": "kept",
+            "flags": {
+              "currentRain": false,
+              "currentTrusted": false,
+              "letterChoice": "return",
+              "weighedOnTime": true
+            }
+          },
+          {
+            "choice": "search",
+            "money": 220,
+            "fuel": 25,
+            "fioTrust": -2,
+            "promiseStatus": "missed",
+            "flags": {
+              "currentRain": false,
+              "currentTrusted": false,
+              "letterChoice": "search",
+              "missedWeigh": true
+            }
+          },
+          {
+            "choice": "message",
+            "money": 214,
+            "fuel": 28,
+            "fioTrust": 1,
+            "promiseStatus": "rescheduled",
+            "flags": {
+              "currentRain": false,
+              "currentTrusted": false,
+              "letterChoice": "message",
+              "weighRescheduled": true,
+              "phoneReceipt": true
+            }
+          }
+        ]
+      },
+      {
+        "name": "完整时间顺序实跑：fio / 掉信 message",
+        "status": "passed",
+        "detail": {
+          "route": "fio",
+          "mailChoice": "message",
+          "ending": "fio_good",
+          "days": 90,
+          "mainScenes": 43,
+          "playedScenes": 106,
+          "heroineEvents": 18,
+          "dates": 6,
+          "jobs": 24,
+          "finalMoney": 2163,
+          "finalFuel": 6,
+          "fioTrust": 50,
+          "ginaTrust": 9,
+          "recoveries": 0,
+          "refuels": 13
+        }
+      },
+      {
+        "name": "完整时间顺序实跑：gina / 掉信 return",
+        "status": "passed",
+        "detail": {
+          "route": "gina",
+          "mailChoice": "return",
+          "ending": "gina_good",
+          "days": 90,
+          "mainScenes": 43,
+          "playedScenes": 99,
+          "heroineEvents": 12,
+          "dates": 6,
+          "jobs": 24,
+          "finalMoney": 2174,
+          "finalFuel": 1,
+          "fioTrust": 24,
+          "ginaTrust": 50,
+          "recoveries": 0,
+          "refuels": 12
+        }
+      },
+      {
+        "name": "完整时间顺序实跑：friend / 掉信 search",
+        "status": "passed",
+        "detail": {
+          "route": "friend",
+          "mailChoice": "search",
+          "ending": "friend",
+          "days": 90,
+          "mainScenes": 43,
+          "playedScenes": 124,
+          "heroineEvents": 30,
+          "dates": 12,
+          "jobs": 24,
+          "finalMoney": 2127,
+          "finalFuel": 4,
+          "fioTrust": 50,
+          "ginaTrust": 50,
+          "recoveries": 0,
+          "refuels": 13
+        }
+      }
+    ]
+  }
+}
