@@ -2,17 +2,28 @@
 
 非官方原创中文同人视觉小说。玩家扮演波鲁克，经历初夏到初秋的90天。菲尔在成年重逢后独立接单、签图；吉娜经营旅馆、决定自己的歌与生活。六章、两条个人线、八结局，邮航可以在感情错过之后继续。
 
-## 启动
+## 直接打开游玩
 
-这是没有安装依赖、没有后端的静态网页游戏。需要现代浏览器与 Node.js（构建/测试）或 Python 3（本地服务）。
+仓库根目录的 **index.html 是完整单文件离线版**（约74 MiB）。下载保存后，直接用桌面 Safari、Chrome、Edge 或 Firefox 打开即可；不需要Node.js、Python、本地服务器、网络或旁边的资源文件。GitHub文件页面请使用 **Download raw file** 保存文件，再双击，不要在GitHub代码预览页里运行。
+
+剧本、界面、立绘、背景、CG及原创合成音频均已内嵌。内嵌图片采用无损WebP编码，原始PNG仍在assets目录保留。
+
+手机请使用支持本地HTML执行的浏览器/打开方式；系统的文件预览器不一定执行JavaScript。移动端也可使用已部署的网页版。浏览器允许本地存储时可正常存档；若禁止持久保存，游戏会保留本次会话内的临时槽位并提示导出。
+
+## 修改源码与构建
+
+日常修改仍使用src/、data/与assets/中的独立文件。**不要手工改生成的根目录index.html。**
+
+重新生成离线文件需要Node.js、Python3及Pillow（包含WebP编码支持）：
 
 ```bash
-cd /workspace/sites/adriatic-letters
+python3 -m pip install Pillow
 npm run build
-python3 -m http.server 8080 --directory dist
 ```
 
-在本机打开 `http://localhost:8080`。不要直接用 file:// 打开 index.html，浏览器会阻止 JSON 载入。在已有静态托管中上传 dist/ 全部内容即可。项目也已配置 Sites 私有托管。
+`npm run build` 会更新根目录单文件index.html，并生成供静态网站托管的dist/。首次构建会创建被Git忽略的.cache/standalone-art无损图像缓存，之后按哈希复用。只重新生成单文件可用`npm run build:standalone`。
+
+已有网页版存档可通过“导出当前存档”保存为JSON，再在离线版导入。浏览器会按文件地址管理本地存储，移动或改名之前建议先导出。
 
 ## 操作
 
@@ -40,8 +51,9 @@ python3 -m http.server 8080 --directory dist
 ```bash
 npm test
 npm run build
+npm run test:standalone
 ```
 
-统计只扫描应用真实载入且可达的 `lines.text` 与选后 `reply`，全文去空白、按完整文本去重，排除界面、代码、选项标题和未引用稿件。审计另报告纯汉字数。`docs/ACCEPTANCE.md`明确区分自动路线模拟与真实浏览器操作；美术暂绘项见`docs/ART.md`。
+统计只扫描应用真实载入且可达的 `lines.text` 与选后 `reply`，全文去空白、按完整文本去重，排除界面、代码、选项标题和未引用稿件。审计另报告纯汉字数。单文件静态/VM检查与真实浏览器复测状态见`docs/STANDALONE-QA.md`。`docs/ACCEPTANCE.md`明确区分自动路线模拟与真实浏览器操作；美术暂绘项见`docs/ART.md`。
 
 角色及原作相关权利归原权利人，本项目未使用电影截图、原声或整段对白。所有故事与新增生活细节为原创。
