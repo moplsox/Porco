@@ -10,6 +10,6 @@ assert.equal(Object.keys(art.cgs).length,12);
 for(const p of paths)assert.ok(fs.statSync('dist/'+p).size>0,'Missing hosted image: '+p);
 for(const p of Object.values(art.portraits))assert.match(p,/\.webp$/);
 for(const c of Object.values(art.cgs))assert.match(c.src,/\.webp$/);
-for(const f of ['index.html','src/app.js','src/engine.js','src/assets.js','src/storage.js','src/audio.js','src/voice.js','src/style.css','data/common.json','data/fio.json','data/gina.json','data/jobs.json'])assert.ok(fs.statSync('dist/'+f).size>0,'Missing hosted file: '+f);
+for(const f of ['index.html','src/app.js','src/engine.js','src/assets.js','src/storage.js','src/audio.js','src/style.css','data/common.json','data/fio.json','data/gina.json','data/jobs.json'])assert.ok(fs.statSync('dist/'+f).size>0,'Missing hosted file: '+f);
 const total=[...paths].reduce((n,p)=>n+fs.statSync('dist/'+p).size,0);
 console.log(`PASS Hosted package: ${paths.size} complete image resources, 48 portrait slots, 12 CGs, ${(total/1048576).toFixed(2)} MiB of image data; no duplicate PNG masters.`);

@@ -1,5 +1,5 @@
 import {storage} from './storage.js';
-const defaults={master:.5,ambience:.45,music:.3,engine:.08,ui:.18,muted:false,typing:false,speed:28,reduceMotion:false,numbers:false,voiceEnabled:false,voiceVolume:.9,voiceRate:1,voiceNarration:false,voicePorco:'',voiceFio:'',voiceGina:'',voiceOther:''};
+const defaults={master:.5,ambience:.45,music:.3,engine:.08,ui:.18,muted:false,typing:false,speed:28,reduceMotion:false,numbers:false};
 let storedSettings={};try{const value=JSON.parse(storage.getItem('adriatic-settings')||'{}');if(value&&typeof value==='object'&&!Array.isArray(value))storedSettings=value}catch{}
 export let settings={...defaults,...storedSettings};
 let ctx,master,buses={},timer,notes=[146.83,174.61,220,293.66,261.63,220,174.61,164.81],step=0;
