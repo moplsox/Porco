@@ -9,6 +9,7 @@
     "build:standalone": "node scripts/build-standalone.mjs",
     "test:standalone": "node scripts/test-standalone.mjs",
     "test:art": "python3 scripts/test-reference-art.py",
-    "test:hosted": "node scripts/test-hosted.mjs"
+    "test:hosted": "node scripts/test-hosted.mjs",
+    "test:voice": "node scripts/test-voice.mjs"
   }
 }
