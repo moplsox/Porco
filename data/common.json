@@ -58,7 +58,11 @@
       },
       {
         "speaker": "旁白",
-        "text": "她站在背后的沙滩上，棕色的头发挽在颈后，袖口卷得不很齐。脚边是一只被海水浸深了边角的皮箱，箱盖上拴着设计筒。她先看了他的脸，再看浮筒，最后看向他牙间的扳手。"
+        "text": "她站在背后的沙滩上，赤褐色的马尾束在脑后，绿色发绳被海风吹得露出一角，袖口卷得不很齐。脚边是一只被海水浸深了边角的皮箱，箱盖上拴着设计筒。她先看了他的脸，再看浮筒，最后看向他牙间的扳手。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她把护目镜推回黄色飞行帽上，镜片里晃过一小块海。你从工具袋摸出铅笔，她没有急着接，先伸手替你稳住往下滑的翼撑。等浮筒不再晃，那支铅笔才从你手里换到她手里。"
       },
       {
         "speaker": "波鲁克",
@@ -100,7 +104,10 @@
         },
         "reply": "她接过工具盒，用干净布垫住信纸，再给漏点画圈。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "flight"
+    }
   },
   {
     "id": "common_d1_hotel",
@@ -196,7 +203,11 @@
         },
         "reply": "吉娜把他的杯子从托盘上拿下，说那得看他以后还来不来。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d1_night",
@@ -348,7 +359,11 @@
         },
         "reply": "菲尔把尺寸写得很清楚，还画了一只手，标明抬板时不要抓的地方。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d2_log",
@@ -434,7 +449,10 @@
         },
         "reply": "她笑着拿了饭盒，却把明早试飞的钥匙交给另一位驾驶员。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "common_d3_routes",
@@ -518,6 +536,10 @@
         "period": 2,
         "title": "黄昏前回机库称量新浮筒"
       }
+    },
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
     }
   },
   {
@@ -663,6 +685,9 @@
     ],
     "effects": {
       "resolvePromise": "weigh"
+    },
+    "portraitOutfits": {
+      "fio": "work"
     }
   },
   {
@@ -717,6 +742,9 @@
     ],
     "effects": {
       "resolvePromise": "weigh"
+    },
+    "portraitOutfits": {
+      "fio": "work"
     }
   },
   {
@@ -890,7 +918,11 @@
         },
         "reply": "菲尔报出数字。他一字不漏地复述，直到她点头才让浮筒重新入水。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d8_table",
@@ -967,7 +999,10 @@
         },
         "reply": "吉娜换了一个不漏的罐子，提醒他不要把汤和机油一起放。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d11_thursday",
@@ -1039,7 +1074,11 @@
         },
         "reply": "多用的油没人报销。接生员回信时，用戴稳了的眼镜写清了下周的落点。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d15_sign",
@@ -1117,7 +1156,10 @@
         },
         "reply": "她在应付款里写下日期，提醒他到时候记得来讨。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "common_d16_clock",
@@ -1202,7 +1244,11 @@
         },
         "reply": "吉娜把两张备用时刻表放进防潮夹，注明哪一张由谁负责。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d18_crates",
@@ -1288,7 +1334,11 @@
         },
         "reply": "菲尔在装箱图上加了一条：柜台地面有坡，不得省掉刹车。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d22_weight",
@@ -1379,7 +1429,10 @@
         },
         "reply": "她把工作夹放在另一张桌子上，晚饭时真的没再问曲线。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "common_d25_island",
@@ -1457,7 +1510,11 @@
         },
         "reply": "局长代表叹了口气，在申请旁补了一次观测的时间。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d29_balance",
@@ -1535,7 +1592,11 @@
         },
         "reply": "取木料要多用一个下午，他先把时间写到日历上，免得又拿天气当理由。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d31_closed",
@@ -1612,7 +1673,11 @@
         },
         "reply": "菲尔帮他把时间写成大字，让守塔人也能隔着柜台读。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d32_oldpier",
@@ -1673,6 +1738,9 @@
       "flags": {
         "antonBirthday": true
       }
+    },
+    "portraitOutfits": {
+      "gina": "morning"
     }
   },
   {
@@ -1746,7 +1814,10 @@
         },
         "reply": "她在纸封上写了日期，让明早醒来的人可以少慌一件事。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d34_opening",
@@ -1829,7 +1900,11 @@
         "jointReopen": true
       }
     },
-    "cg": "dock"
+    "cg": "dock",
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d39_otherwork",
@@ -1992,7 +2067,10 @@
         },
         "reply": "她把备用零件的清单交给他，又留了一份给艾达。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "common_d46_unsigned",
@@ -2067,7 +2145,11 @@
         },
         "reply": "菲尔画了不包含收信人的示意图，贴到修船与裁缝摊旁。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d49_seam",
@@ -2296,7 +2378,11 @@
         },
         "reply": "她第一次能把整个降落过程写完，纸上没有因为要喊人而中断的线。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d59_notice",
@@ -2382,7 +2468,11 @@
           }
         }
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d61_weather",
@@ -2528,7 +2618,10 @@
         },
         "reply": "近岸小艇走完一圈，账上多了十二里拉，油箱没有因此变空。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "common_d64_joint",
@@ -2611,7 +2704,11 @@
         },
         "reply": "菲尔核过一遍，确认没有一句把“可能”抄成“一定”。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d66_gap",
@@ -2706,7 +2803,11 @@
         "reply": "货主找到了别的办法，机库也有了当日现金，谁都没把让步叫成失败。"
       }
     ],
-    "cg": "storm"
+    "cg": "storm",
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d68_smallboat",
@@ -2867,7 +2968,11 @@
         },
         "reply": "没有人答“都可以”。他们各自翻日历，最后留下了真正空着的时间。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d74_clearance",
@@ -2949,7 +3054,11 @@
         },
         "reply": "菲尔把训练费列进正式预算，不再让它挤在私人帮忙里。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d76_lastship",
@@ -3026,7 +3135,11 @@
         },
         "reply": "菲尔核过训练记录，确认这仍是一班完整、有人负责的航行。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d76_matteo",
@@ -3135,7 +3248,10 @@
         },
         "reply": "吉娜把上船的台阶和开始时间写给他，特意说明不用穿最好的鞋。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d79_signals",
@@ -3212,7 +3328,10 @@
         },
         "reply": "没有人爱看飞机转身离开，但这次大家知道那意味着还会有下一回。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "common_d81_firstflight",
@@ -3298,7 +3417,10 @@
         },
         "reply": "菲尔说这几张要洗两份，一份给邮局，一份给设计档案。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "flight"
+    }
   },
   {
     "id": "common_d81_after",
@@ -3380,7 +3502,11 @@
         },
         "reply": "照片不是免费，波鲁克付了冲洗钱，邮局照收邮费。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d84_sidework",
@@ -3459,7 +3585,10 @@
         },
         "reply": "波鲁克把样件包好，在单据上写明不可挤压，没用自己的围巾冒充合格包装。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "common_d86_accounts",
@@ -3525,7 +3654,10 @@
         },
         "reply": "她接受了那个实际日期，把它写进秋天的账，不夹进旧信里等人猜。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "gina": "morning"
+    }
   },
   {
     "id": "common_d88_names",
@@ -3687,6 +3819,10 @@
         },
         "reply": "他在灯下把纸铺平，信不长，也没有让邮戳替自己拖延的借口。"
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work",
+      "gina": "date"
+    }
   }
 ]

@@ -7,6 +7,8 @@
     "build": "node scripts/build.mjs",
     "test": "node scripts/audit.mjs && node scripts/test.mjs",
     "build:standalone": "node scripts/build-standalone.mjs",
-    "test:standalone": "node scripts/test-standalone.mjs"
+    "test:standalone": "node scripts/test-standalone.mjs",
+    "test:art": "python3 scripts/test-reference-art.py",
+    "test:hosted": "node scripts/test-hosted.mjs"
   }
 }

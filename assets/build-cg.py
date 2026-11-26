@@ -1,3 +1,10 @@
+# Archived v1 generator: never overwrite reviewed film-reference artwork.
+from pathlib import Path as _LegacyPath
+import json as _legacy_json
+_legacy_manifest = _LegacyPath(__file__).parent / 'manifest.json'
+if _legacy_manifest.exists() and _legacy_json.loads(_legacy_manifest.read_text()).get('styleVersion') == 'film-reference-v2':
+    raise SystemExit('v1 art generator is archived. Keep the reviewed PNGs and run scripts/integrate-reference-art.mjs instead.')
+
 exec((__import__('pathlib').Path(__file__).parent/'build-art.py').read_text().split('# Detailed original vector')[0])
 import importlib.util,json
 spec=importlib.util.spec_from_file_location('art',P/'build-art.py'); art=importlib.util.module_from_spec(spec);spec.loader.exec_module(art)

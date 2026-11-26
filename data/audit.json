@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-25T14:51:50.156Z",
+  "generatedAt": "2026-11-26T02:34:18.133Z",
   "sourceFiles": [
     "data/common.json",
     "data/fio.json",
@@ -10,10 +10,10 @@
     "data/port.json"
   ],
   "countingMethod": "仅统计应用载入、入口可达且条件可满足的 lines.text 与 choices.reply；按整段去重并去空白，排除选项标签、界面、代码和未引用场景。条件互斥的原创段落分别计入。",
-  "uniqueCharacters": 110813,
-  "uniqueHanziCharacters": 99636,
-  "visibleEntries": 2351,
-  "distinctVisibleEntries": 2351,
+  "uniqueCharacters": 111087,
+  "uniqueHanziCharacters": 99888,
+  "visibleEntries": 2354,
+  "distinctVisibleEntries": 2354,
   "excludedConditionalLines": 0,
   "sceneCount": 134,
   "reachableSceneCount": 134,
@@ -26,8 +26,8 @@
     {
       "chapter": 1,
       "title": "迟到的信",
-      "uniqueCharacters": 22813,
-      "uniqueHanziCharacters": 20463,
+      "uniqueCharacters": 23064,
+      "uniqueHanziCharacters": 20693,
       "scenes": 32
     },
     {
@@ -40,22 +40,22 @@
     {
       "chapter": 3,
       "title": "停业三天的旅馆",
-      "uniqueCharacters": 15375,
-      "uniqueHanziCharacters": 13816,
+      "uniqueCharacters": 15377,
+      "uniqueHanziCharacters": 13817,
       "scenes": 19
     },
     {
       "chapter": 4,
       "title": "没有寄件人的邮袋",
-      "uniqueCharacters": 14228,
-      "uniqueHanziCharacters": 12770,
+      "uniqueCharacters": 14231,
+      "uniqueHanziCharacters": 12773,
       "scenes": 17
     },
     {
       "chapter": 5,
       "title": "连续的坏天气",
-      "uniqueCharacters": 16393,
-      "uniqueHanziCharacters": 14759,
+      "uniqueCharacters": 16411,
+      "uniqueHanziCharacters": 14777,
       "scenes": 19
     },
     {
@@ -118,7 +118,7 @@
   ],
   "assets": {
     "backgroundFiles": 32,
-    "portraitVariants": 42,
+    "portraitVariants": 48,
     "cgs": 12,
     "referencedFiles": 86
   },
@@ -126,7 +126,7 @@
     {
       "id": "story-volume",
       "label": "可见正文去重字符",
-      "actual": 110813,
+      "actual": 111087,
       "min": 80000,
       "max": 120000,
       "pass": true
@@ -198,7 +198,7 @@
     {
       "id": "fio-outfits",
       "label": "fio 至少六表情的服装套数",
-      "actual": 2,
+      "actual": 3,
       "min": 2,
       "pass": true
     },
@@ -215,7 +215,7 @@
   "status": "passed",
   "testStatus": "passed",
   "tests": {
-    "generatedAt": "2026-11-25T14:51:50.260Z",
+    "generatedAt": "2026-11-26T02:34:18.450Z",
     "status": "passed",
     "passed": 19,
     "total": 19,

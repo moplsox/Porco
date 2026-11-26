@@ -4,7 +4,7 @@
 
 ## 直接打开游玩
 
-仓库根目录的 **index.html 是完整单文件离线版**（约74 MiB）。下载保存后，直接用桌面 Safari、Chrome、Edge 或 Firefox 打开即可；不需要Node.js、Python、本地服务器、网络或旁边的资源文件。GitHub文件页面请使用 **Download raw file** 保存文件，再双击，不要在GitHub代码预览页里运行。
+仓库根目录的 **index.html 是完整单文件离线版**（约97 MiB）。下载保存后，直接用桌面 Safari、Chrome、Edge 或 Firefox 打开即可；不需要Node.js、Python、本地服务器、网络或旁边的资源文件。GitHub文件页面请使用 **Download raw file** 保存文件，再双击，不要在GitHub代码预览页里运行。
 
 剧本、界面、立绘、背景、CG及原创合成音频均已内嵌。内嵌图片采用无损WebP编码，原始PNG仍在assets目录保留。
 
@@ -24,6 +24,12 @@ npm run build
 `npm run build` 会更新根目录单文件index.html，并生成供静态网站托管的dist/。首次构建会创建被Git忽略的.cache/standalone-art无损图像缓存，之后按哈希复用。只重新生成单文件可用`npm run build:standalone`。
 
 已有网页版存档可通过“导出当前存档”保存为JSON，再在离线版导入。浏览器会按文件地址管理本地存储，移动或改名之前建议先导出。
+
+## 本轮人物美术更新
+
+三份用户电影参考集作为外观锚点，重做42张独立透明立绘（48个运行槽位）和12张剧情CG。菲尔恢复马尾、格纹衬衫及黄帽飞行服；吉娜有日装、白帽外出装和紫色舞台装；波鲁克使用黑胡须与原形猪鼻。每套六表情从同一底稿延续，关键场景按实际服装切换。参考PDF仅在开发环境审阅，不随游戏公开。原有10张主背景与22张夜雨暂绘未在本轮重画。
+
+源PNG保留在assets；离线版与托管版都使用无损WebP。alpha和所有可见像素保持原值，仅允许压缩器舍去完全透明像素里的隐藏RGB。美术与剧情绑定验收见`docs/REFERENCE-ART-QA.md`。
 
 ## 操作
 
@@ -52,6 +58,8 @@ npm run build
 npm test
 npm run build
 npm run test:standalone
+npm run test:art
+npm run test:hosted
 ```
 
 统计只扫描应用真实载入且可达的 `lines.text` 与选后 `reply`，全文去空白、按完整文本去重，排除界面、代码、选项标题和未引用稿件。审计另报告纯汉字数。单文件静态/VM检查与真实浏览器复测状态见`docs/STANDALONE-QA.md`。`docs/ACCEPTANCE.md`明确区分自动路线模拟与真实浏览器操作；美术暂绘项见`docs/ART.md`。

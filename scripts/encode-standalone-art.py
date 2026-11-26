@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Cache pixel-exact, lossless WebP encodings for PNGs in the art manifest.
+"""Cache visually pixel-exact, lossless WebP encodings for PNGs in the art manifest.
 
 This packaging helper never changes source artwork or assets/manifest.json.
 Only files under .cache/standalone-art are written. Run it from any directory.
@@ -92,13 +92,13 @@ def encode_one(
         original.load()
         original_rgba = original.convert("RGBA")
         # WebP supports RGB/RGBA directly. Other PNG modes are expanded without
-        # resizing, quantizing, changing colors, or losing transparent RGB.
+        # resizing, quantizing, or changing any visible colors.
         encoding_image = original if original.mode in ("RGB", "RGBA") else original_rgba
         options: dict[str, Any] = {
             "format": "WEBP",
             "lossless": True,
             "method": 4,
-            "exact": True,
+            "exact": False,
         }
         for field in ("icc_profile", "exif", "xmp"):
             if isinstance(original.info.get(field), bytes):
@@ -112,8 +112,17 @@ def encode_one(
             restored = decoded.convert("RGBA")
             if restored.size != original_rgba.size:
                 raise ValueError(f"WebP dimensions changed: {relative_source}")
-            if restored.tobytes() != original_rgba.tobytes():
-                raise ValueError(f"WebP decoded RGBA pixels differ: {relative_source}")
+            if restored.getchannel("A").tobytes() != original_rgba.getchannel("A").tobytes():
+                raise ValueError(f"WebP alpha differs: {relative_source}")
+            # Fully transparent RGB is not visible. libwebp may discard it for
+            # efficient encoding; every pixel with alpha > 0 must stay exact.
+            invisible = original_rgba.getchannel("A").point(lambda a: 255 if a == 0 else 0)
+            expected = original_rgba.copy()
+            actual = restored.copy()
+            expected.paste((0, 0, 0, 0), mask=invisible)
+            actual.paste((0, 0, 0, 0), mask=invisible)
+            if actual.tobytes() != expected.tobytes():
+                raise ValueError(f"WebP visible RGBA pixels differ: {relative_source}")
 
     if len(encoded) >= len(raw):
         entry = {
@@ -195,7 +204,7 @@ def main() -> int:
     print(
         f"Standalone art: {len(references)} PNGs, {webp_count} lossless WebPs, "
         f"{hits} cache hits; {source_total / mib:.2f} → {selected_total / mib:.2f} MiB "
-        f"({(1 - ratio) * 100:.2f}% smaller), RGBA pixel-exact; "
+        f"({(1 - ratio) * 100:.2f}% smaller), visible RGBA pixel-exact; "
         f"{monotonic() - started:.2f}s / {WORKERS} workers."
     )
     print(f"Cache map: {CACHE_MANIFEST.relative_to(ROOT).as_posix()}")
