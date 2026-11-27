@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import vm from 'node:vm';
+import crypto from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 
 // This is a classic-script/DOM-adapter smoke test, not a browser or layout test.
@@ -53,8 +54,8 @@ await test('单个HTML没有外链脚本、样式或执行模块依赖',()=>{
 });
 await test('全部实际故事、24委托、8结局与图像字节已内嵌',()=>{
  for(const name of ['common','fio','gina','quests','endings','port'])assert.ok(Array.isArray(payload.files?.[name])&&payload.files[name].length>0,'missing story '+name);
- assert.equal(payload.jobs.length,24);assert.equal(payload.files.endings.filter(s=>s.kind==='ending').length,8);assert.equal(Object.keys(payload.art.cgs).length,13);assert.equal(payload.art.styleVersion,'film-review-v10');
- for(const [assetPath,value] of Object.entries(payload.assets||{})){assert.ok(value&&typeof value.mime==='string'&&typeof value.data==='string',assetPath+' missing MIME/base64');assert.match(value.data,/^[A-Za-z0-9+/]*={0,2}$/,'invalid base64 '+assetPath);const bytes=Buffer.from(value.data,'base64');assert.ok(bytes.length>0,assetPath+' empty');assert.equal(bytes.toString('base64'),value.data,'noncanonical/truncated base64 '+assetPath);const size=dimensions(bytes,value.mime);embeddedBytes+=bytes.length;assets.set(assetPath,{mime:value.mime,bytes:bytes.length,dimensions:size})}
+ assert.equal(payload.jobs.length,24);assert.equal(payload.files.endings.filter(s=>s.kind==='ending').length,8);assert.equal(Object.keys(payload.art.cgs).length,13);assert.equal(payload.art.styleVersion,'film-review-v10');assert.equal(payload.art.portraitStyleVersion,'approved-pixels-v11');
+ for(const [assetPath,value] of Object.entries(payload.assets||{})){assert.ok(value&&typeof value.mime==='string'&&typeof value.data==='string',assetPath+' missing MIME/base64');assert.match(value.data,/^[A-Za-z0-9+/]*={0,2}$/,'invalid base64 '+assetPath);const bytes=Buffer.from(value.data,'base64');assert.ok(bytes.length>0,assetPath+' empty');assert.equal(bytes.toString('base64'),value.data,'noncanonical/truncated base64 '+assetPath);const size=dimensions(bytes,value.mime);embeddedBytes+=bytes.length;assets.set(assetPath,{mime:value.mime,bytes:bytes.length,dimensions:size,sha256:crypto.createHash('sha256').update(bytes).digest('hex')})}
  const references=[payload.art.title,...Object.values(payload.art.backgrounds||{}),...Object.values(payload.art.portraits||{}),...Object.values(payload.art.cgs||{})].map(assetSource);for(const ref of references)assert.ok(assets.has(ref),'manifest resource not embedded: '+ref);
  for(const [id,cg] of Object.entries(payload.art.cgs)){const a=assets.get(typeof cg==='string'?cg:cg.src);assert.ok(a.bytes>1024,id+' CG has no substantial image bytes');if(a.dimensions)assert.ok(a.dimensions[0]>=400&&a.dimensions[1]>=400,id+' CG dimensions too small')}
  assert.ok(assets.has(assetSource(payload.art.title)),'active title cover missing');
@@ -64,10 +65,27 @@ await test('78人物槽与33背景视区的源图、几何和标题均完整内�
  const portraits=Object.entries(payload.art.portraits),backgrounds=Object.entries(payload.art.backgrounds);
  assert.equal(portraits.length,78);assert.equal(new Set(portraits.map(([,v])=>v.src)).size,12);assert.equal(new Set(portraits.map(([,v])=>JSON.stringify(v))).size,72);
  assert.equal(backgrounds.length,44);assert.equal(new Set(backgrounds.map(([,v])=>v.src)).size,11);assert.equal(new Set(backgrounds.map(([,v])=>JSON.stringify(v))).size,33);
- for(const [slot,entry] of portraits)validateAtlasRegion(entry,slot);
+ for(const [slot,entry] of portraits){validateAtlasRegion(entry,slot);assert.equal(typeof entry.clipPath,'string',slot+' missing SVG cutout');assert.match(entry.clipPath,/^M[\s\S]+Z$/);}
  for(const [slot,entry] of backgrounds){validateAtlasRegion(entry,slot);assert.equal(entry.region[2]*9,entry.region[3]*16,slot+' background must be 16:9')}
  assert.deepEqual(payload.art.title,payload.art.backgrounds['cove-day']);
- return {portraitSlots:portraits.length,portraitAtlases:12,backgroundViews:33,backgroundBoards:11};
+ return {portraitSlots:portraits.length,approvedOriginalSheets:12,originalSheetCutoutViews:72,backgroundViews:33,backgroundBoards:11};
+});
+
+await test('原认可sheet的SHA凭据、内嵌编码与clipPath字符串完整保留',()=>{
+ const sourceArt=JSON.parse(fs.readFileSync(path.join(root,'assets/manifest.json'),'utf8'));
+ assert.deepEqual(payload.art,sourceArt,'Standalone altered source geometry, clip paths or non-portrait artwork');
+ const proof=JSON.parse(fs.readFileSync(path.join(root,'docs/APPROVED-PORTRAITS.json'),'utf8'));
+ const cache=JSON.parse(fs.readFileSync(path.join(root,'.cache/standalone-art/manifest.json'),'utf8'));
+ assert.equal(proof.portraitStyleVersion,'approved-pixels-v11');assert.equal(proof.sources.length,12);
+ assert.deepEqual(new Set(proof.sources.map(v=>v.src)),new Set(Object.values(payload.art.portraits).map(v=>v.src)),'Proof and embedded original sheets differ');
+ for(const row of proof.sources){
+  assert.match(row.src,/^assets\/portrait-approved\/[^/]+\.png$/);
+  const sha=crypto.createHash('sha256').update(fs.readFileSync(path.join(root,row.src))).digest('hex');
+  assert.equal(sha,row.sha256,'Approved PNG source changed: '+row.src);assert.equal(sha,row.reviewSourceSha256,'Approved review SHA mismatch: '+row.src);
+  const optimized=cache[row.src],embedded=assets.get(row.src);assert.ok(embedded,'Approved sheet missing from embedded assets');assert.equal(optimized.sourceSha256,sha,'Cache came from a different face sheet');assert.equal(embedded.sha256,optimized.sha256,'Embedded bytes differ from verified lossless sheet cache');
+ }
+ for(const [slot,entry] of Object.entries(payload.art.portraits)){assert.equal(entry.clipPath,sourceArt.portraits[slot].clipPath,'Runtime clip was rewritten as an asset path');assert.ok(!assets.has(entry.clipPath),'An SVG outline was embedded as an external asset');}
+ return {originalPngHashesVerified:12,losslessEmbeddedSourcesVerified:12,clipStringsPreserved:78};
 });
 
 class Element{
@@ -107,10 +125,28 @@ function createHarness({persisted=new Map(),denied=false,corrupt=false}={}){
  h.change=async target=>h.dispatch('change',{target});
  h.export=async()=>{await h.click('panel:saves');const n=h.downloads.length;await h.click('export');assert.equal(h.downloads.length,n+1,'UI did not create export download');const text=await h.downloads.at(-1).blob.text();return {text,data:JSON.parse(text)}};
  h.boot=async()=>{for(const [i,s] of executable.entries())vm.runInContext(s.text,h.context,{filename:'standalone-classic-'+i+'.js',timeout:30000});for(let i=0;i<5;i++){await Promise.resolve();await new Promise(r=>setImmediate(r))}assert.ok(h.app.innerHTML.includes('开始这个夏天'),'Title did not boot: '+h.app.innerHTML.slice(0,200));assert.equal(h.fetches.length,0,'Standalone boot performed fetch');return h};
- h.checkRenderedAssets=()=>{const urls=[...[...h.app.innerHTML.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["']/gi)].map(m=>m[1]),...[...h.app.innerHTML.matchAll(/<image\b[^>]*\b(?:href|xlink:href)=["']([^"']+)["']/gi)].map(m=>m[1]),...[...h.app.innerHTML.matchAll(/url\(["']?([^"')]+)["']?\)/gi)].map(m=>m[1])];assert.ok(urls.length,'No rendered image URLs');for(const url of urls){assert.match(url,/^(?:blob:|data:)/,'Rendered resource still depends on path: '+url);if(url.startsWith('blob:'))assert.ok(h.blobs.has(url),'Rendered Blob URL was not decoded')}return urls.length};
+ h.checkRenderedAssets=()=>{const urls=[...[...h.app.innerHTML.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["']/gi)].map(m=>m[1]),...[...h.app.innerHTML.matchAll(/<image\b[^>]*\b(?:href|xlink:href)=["']([^"']+)["']/gi)].map(m=>m[1]),...[...h.app.innerHTML.matchAll(/url\(["']?([^"')]+)["']?\)/gi)].map(m=>m[1])];assert.ok(urls.length,'No rendered image URLs');const ids=new Set([...h.app.innerHTML.matchAll(/\bid=["']([^"']+)["']/g)].map(m=>m[1]));for(const url of urls){if(url.startsWith('#')){assert.ok(ids.has(url.slice(1)),'SVG cutout fragment has no definition: '+url);continue}assert.match(url,/^(?:blob:|data:)/,'Rendered resource still depends on path: '+url);if(url.startsWith('blob:'))assert.ok(h.blobs.has(url),'Rendered Blob URL was not decoded')}return urls.length};
  h.firstChoice=async()=>{for(let i=0;i<250;i++){const choice=h.actions().find(x=>x.dataset.action?.startsWith('choice:')&&!x.disabled);if(choice)return choice.dataset.action;assert.ok(h.actions().some(x=>x.dataset.action==='advance'),'Expected dialogue advance before first choice');await h.click('advance')}throw Error('No first choice within 250 rendered advances')};
  return h;
 }
+
+await test('实际runtime为78人物槽输出独立clip定义、绝对坐标和正确image引用',async()=>{
+ const h=await createHarness().boot(),ids=new Set();
+ for(const [slot,entry] of Object.entries(payload.art.portraits)){
+  const markup=vm.runInContext(`__assets.artMarkup(${JSON.stringify(entry)},'portrait','${slot}','meet')`,h.context);
+  assert.match(markup,/<svg\b[^>]*class="portrait art-viewport(?:\s[^"]*)?"/,'Original portrait layout class lost: '+slot);
+  assert.ok(markup.includes(`viewBox="${entry.region.join(' ')}"`),'Original sheet region not rendered: '+slot);
+  const definition=markup.match(/<clipPath\b([^>]*)>([\s\S]*?)<\/clipPath>/i);assert.ok(definition,'No cutout definition: '+slot);
+  assert.equal(extractAttr(definition[1],'clipPathUnits'),'userSpaceOnUse','Outline does not use absolute original-sheet coordinates');
+  const id=extractAttr(definition[1],'id');assert.ok(id&&!ids.has(id),'Duplicate/missing runtime clip id: '+slot);ids.add(id);
+  assert.equal(extractAttr(definition[2].match(/<path\b([^>]*)/i)?.[1]||'','d'),entry.clipPath,'Renderer changed reviewed cutout path');
+  const image=markup.match(/<image\b([^>]*)/i);assert.ok(image,'No source-sheet image: '+slot);
+  assert.equal(extractAttr(image[1],'clip-path'),`url(#${id})`,'Image uses wrong SVG cutout id: '+slot);
+  assert.match(extractAttr(image[1],'href')||'',/^blob:/,'Source sheet is not decoded from embedded bytes');
+  assert.ok(!/<filter\b|feColorMatrix|feComponentTransfer|mix-blend-mode/i.test(markup),'Runtime modifies approved face colors');
+ }
+ return {renderedSlots:78,uniqueClipIds:ids.size,absolutePaths:true,originalPortraitClassRetained:true,browserVerification:false};
+});
 let normalStore;
 await test('实际classic脚本在禁止所有fetch时启动并展示波鲁克首句',async()=>{
  const h=await createHarness().boot();h.checkRenderedAssets();assert.ok(h.app.innerHTML.includes(`viewBox="${payload.art.title.region.join(' ')}"`),'Title did not render the declared single atlas region');assert.match(h.app.innerHTML,/<image\b[^>]*\bhref=["']blob:/i,'Atlas title did not use an embedded Blob URL');await h.click('new');h.checkRenderedAssets();const first=payload.files.common.find(s=>s.id==='opening').lines[0];assert.ok(h.app.innerHTML.includes(esc(first.text)),'Actual first story line not rendered');assert.equal(h.fetches.length,0);normalStore=h.persisted;return {firstSpeaker:first.speaker,firstLine:first.text};

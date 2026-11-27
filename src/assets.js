@@ -1,6 +1,7 @@
 // Decode each embedded image only when it is first displayed. DOM nodes use short
 // Blob URLs instead of duplicating megabytes of base64 on every dialogue advance.
 const assetCache=new Map();
+let viewportSerial=0;
 export function assetUrl(path){
  const entry=window.__ADRIATIC_EMBEDDED__?.assets?.[path];
  if(!entry)return path;
@@ -20,5 +21,7 @@ export function artMarkup(entry,className='',alt='',fit='slice'){
  const url=escape(assetUrl(value.src));
  if(!value.region)return `<img class="${escape(className)} art-image" src="${url}" alt="${escape(alt)}" style="object-fit:${fit==='meet'?'contain':'cover'}" draggable="false">`;
  const [x,y,w,h]=value.region,[cw,ch]=value.canvas;
- return `<svg class="${escape(className)} art-viewport" viewBox="${x} ${y} ${w} ${h}" preserveAspectRatio="xMidYMid ${fit}" role="img" aria-label="${escape(alt)}" style="aspect-ratio:${w}/${h}" xmlns="http://www.w3.org/2000/svg"><image href="${url}" width="${cw}" height="${ch}"/></svg>`;
+ const clipId=value.clipPath?`approved-portrait-${++viewportSerial}`:null;
+ const clipping=clipId?`<defs><clipPath id="${clipId}" clipPathUnits="userSpaceOnUse"><path d="${escape(value.clipPath)}"/></clipPath></defs>`:'';
+ return `<svg class="${escape(className)} art-viewport${clipId?' portrait-original':''}" viewBox="${x} ${y} ${w} ${h}" preserveAspectRatio="xMidYMid ${fit}" role="img" aria-label="${escape(alt)}" style="aspect-ratio:${w}/${h}" xmlns="http://www.w3.org/2000/svg">${clipping}<image href="${url}" width="${cw}" height="${ch}"${clipId?` clip-path="url(#${clipId})"`:''}/></svg>`;
 }

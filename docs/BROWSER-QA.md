@@ -5,3 +5,7 @@
 实际预览尝试：`sites-preview start /workspace/sites/adriatic-letters` 返回 `relay could not open browser port 4173: timed out waiting for relay readiness`；随后status为stopped。按Sites技能没有替换基础设施、改网络权限或另起绕过服务器，因此真实浏览器预览未验证。
 
 竖屏CG已采用完整画面显示并提供“查看完整画面”，全身立绘按标题栏/对白盒之间的可用高度限制，避免短竖屏头顶被挡。这些是代码检查结果，仍需实际设备确认。游泳中途存档、日历赴约、迟到旧存档日期、晴雨分支和三条原路线均通过自动检查。
+
+## 本次原稿与放大修正
+
+桌面会话初始化后重新尝试官方预览，仍收到同一4173 relay超时；status为stopped。没有另起服务器绕过预览。原稿SHA校验、SVG裁边引用、背景/CG不变、离线及托管检查均通过。实际浏览器中的边缘及大小尚待验证。

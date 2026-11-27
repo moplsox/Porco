@@ -27,13 +27,22 @@ function validateRegion(entry,label){
 }
 
 assert.equal(art.styleVersion,'film-review-v10');
+assert.equal(art.portraitStyleVersion,'approved-pixels-v11');
 assert.deepEqual(art,rewritten(sourceArt),'Hosted rewrite changed content or atlas regions');
 assert.equal(Object.keys(art.portraits).length,78);assert.equal(new Set(Object.values(art.portraits).map(source)).size,12);assert.equal(new Set(Object.values(art.portraits).map(signature)).size,72);
 assert.equal(Object.keys(art.backgrounds).length,44);assert.equal(new Set(Object.values(art.backgrounds).map(source)).size,11);assert.equal(new Set(Object.values(art.backgrounds).map(signature)).size,33);
 assert.equal(Object.keys(art.cgs).length,13);
-for(const [slot,entry] of Object.entries(art.portraits))validateRegion(entry,slot);
+for(const [slot,entry] of Object.entries(art.portraits)){validateRegion(entry,slot);assert.equal(typeof entry.clipPath,'string',slot+' missing original-sheet cutout');assert.match(entry.clipPath,/^M[\s\S]+Z$/);assert.equal(entry.clipPath,sourceArt.portraits[slot].clipPath,slot+' clipPath was treated as an asset path');}
 for(const [slot,entry] of Object.entries(art.backgrounds)){validateRegion(entry,slot);assert.equal(entry.region[2]*9,entry.region[3]*16,slot+' must be 16:9')}
 assert.deepEqual(art.title,art.backgrounds['cove-day']);
+const proof=JSON.parse(fs.readFileSync('docs/APPROVED-PORTRAITS.json','utf8'));
+assert.equal(proof.portraitStyleVersion,'approved-pixels-v11');assert.equal(proof.sources.length,12);
+assert.deepEqual(new Set(proof.sources.map(v=>v.src)),new Set(Object.values(sourceArt.portraits).map(source)),'Approved original sheet list differs from source manifest');
+for(const row of proof.sources){assert.match(row.src,/^assets\/portrait-approved\/[^/]+\.png$/);const sha=crypto.createHash('sha256').update(fs.readFileSync(row.src)).digest('hex');assert.equal(sha,row.sha256,'Original approved PNG changed: '+row.src);assert.equal(sha,row.reviewSourceSha256,'Review proof mismatch: '+row.src);}
+const renderer=fs.readFileSync('dist/src/assets.js','utf8');
+assert.match(renderer,/<clipPath/);assert.match(renderer,/clipPathUnits="userSpaceOnUse"/);assert.match(renderer,/clip-path="url\(#/);assert.ok(renderer.includes('value.clipPath'),'Hosted renderer does not consume approved cutout');
+assert.deepEqual(art.backgrounds,rewritten(sourceArt.backgrounds),'Backgrounds changed during portrait packaging');assert.deepEqual(art.cgs,rewritten(sourceArt.cgs),'CGs changed during portrait packaging');
+
 visit(art);paths.add('assets/favicon.svg');
 for(const p of paths){const raw=fs.readFileSync('dist/'+p);assert.ok(raw.length>0,'Missing hosted image: '+p);dimensions(raw,p)}
 // PNG is kept when its lossless original is smaller. WebP is never mandatory.
@@ -47,4 +56,4 @@ for(const src of sourcePaths){
 }
 for(const f of ['index.html','src/app.js','src/engine.js','src/assets.js','src/storage.js','src/audio.js','src/style.css','data/common.json','data/fio.json','data/gina.json','data/jobs.json'])assert.ok(fs.statSync('dist/'+f).size>0,'Missing hosted file: '+f);
 const total=[...paths].reduce((n,p)=>n+fs.statSync('dist/'+p).size,0);
-console.log(`PASS Hosted package: ${paths.size} complete lossless image resources, 78 portrait slots / 12 atlases, 33 background views, 13 CGs, ${(total/1048576).toFixed(2)} MiB of image data; all atlas regions preserved.`);
+console.log(`PASS Hosted package: ${paths.size} complete lossless image resources, 78 portrait slots / 12 byte-verified approved sheets, 33 background views, 13 CGs, ${(total/1048576).toFixed(2)} MiB of image data; all sheet regions and SVG cutout paths preserved.`);

@@ -25,3 +25,7 @@
 .portrait{max-height:min(720px,calc(100svh - 270px))}
 @media(max-width:760px) and (orientation:portrait){.portrait{max-height:calc(100svh - 333px)}}
 @media(max-height:540px) and (orientation:landscape){.portrait{max-height:calc(100svh - 178px)}}
+/* Approved head-and-shoulder artwork keeps the face large and the original ink. */
+.portrait.portrait-original{height:min(68svh,calc(100svh - 260px));max-height:720px;max-width:48vw;right:8%;bottom:165px}
+@media(max-width:760px) and (orientation:portrait){.portrait.portrait-original{height:min(54svh,calc(100svh - 300px));max-height:none;max-width:78vw;right:2%;bottom:228px}}
+@media(max-height:540px) and (orientation:landscape){.portrait.portrait-original{height:min(70svh,calc(100svh - 168px));max-height:none;max-width:40vw;right:3%;bottom:105px}}
