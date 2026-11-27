@@ -25,7 +25,7 @@ for(const original of [...assetPaths].sort()){
  assets[original]={mime,data:bytes.toString('base64')};
 }
 const payload={files:Object.fromEntries(names.map(n=>[n,JSON.parse(read(`data/${n}.json`))])),jobs:JSON.parse(read('data/jobs.json')),art,stats:JSON.parse(read('data/audit.json')),assets};
-const moduleIds=['engine','storage','assets','audio','app'];
+const moduleIds=['engine','storage','assets','portraits','audio','app'];
 function moduleCode(name){
  let source=read(`src/${name}.js`);
  const exported=[...source.matchAll(/\bexport\s+(?:async\s+)?(?:const|let|var|function)\s+(\w+)/g)].map(m=>m[1]);

@@ -1,9 +1,20 @@
 import {storage} from './storage.js';
-const defaults={master:.5,ambience:.45,music:.3,engine:.08,ui:.18,muted:false,typing:false,speed:28,reduceMotion:false,numbers:false};
-let storedSettings={};try{const value=JSON.parse(storage.getItem('adriatic-settings')||'{}');if(value&&typeof value==='object'&&!Array.isArray(value))storedSettings=value}catch{}
-export let settings={...defaults,...storedSettings};
+const defaults={master:.5,ambience:.45,music:.3,engine:.08,ui:.18,muted:false,typing:false,speed:28,reduceMotion:false,numbers:false,dialogueOpacity:.94};
+export function normalizeSettings(value={}){
+ const input=value&&typeof value==='object'&&!Array.isArray(value)?value:{},clean={};
+ for(const [key,fallback] of Object.entries(defaults)){
+  const stored=input[key];
+  if(typeof fallback==='boolean')clean[key]=typeof stored==='boolean'?stored:fallback;
+  else {const [min,max]=key==='speed'?[0,70]:key==='dialogueOpacity'?[0,1]:[0,1];clean[key]=typeof stored==='number'&&Number.isFinite(stored)?Math.min(max,Math.max(min,stored)):fallback;}
+ }
+ return clean;
+}
+let storedSettings={};try{storedSettings=JSON.parse(storage.getItem('adriatic-settings')||'{}')}catch{}
+export let settings=normalizeSettings(storedSettings);
+export function applyReadingSettings(){document.documentElement.style?.setProperty('--dialogue-opacity',String(settings.dialogueOpacity));document.documentElement.classList.toggle('reduce-motion',settings.reduceMotion)}
+applyReadingSettings();
 let ctx,master,buses={},timer,notes=[146.83,174.61,220,293.66,261.63,220,174.61,164.81],step=0;
-export function saveSettings(){storage.setItem('adriatic-settings',JSON.stringify(settings));updateAudio();document.documentElement.classList.toggle('reduce-motion',settings.reduceMotion)}
+export function saveSettings(){Object.assign(settings,normalizeSettings(settings));storage.setItem('adriatic-settings',JSON.stringify(settings));updateAudio();applyReadingSettings()}
 export function startAudio(){if(ctx){ctx.resume();return}try{ctx=new AudioContext();master=ctx.createGain();master.connect(ctx.destination);for(const key of ['ambience','music','engine','ui']){buses[key]=ctx.createGain();buses[key].connect(master)}
  const data=ctx.createBuffer(1,ctx.sampleRate*8,ctx.sampleRate),ch=data.getChannelData(0);for(let i=0;i<ch.length;i++)ch[i]=(Math.random()*2-1)*.32;
  for(const [cut,level] of [[430,.55],[1400,.14]]){const noise=ctx.createBufferSource();noise.buffer=data;noise.loop=true;const filter=ctx.createBiquadFilter();filter.type='lowpass';filter.frequency.value=cut;const g=ctx.createGain();g.gain.value=level;noise.connect(filter).connect(g).connect(buses.ambience);noise.start();const lfo=ctx.createOscillator();lfo.frequency.value=.065;const lg=ctx.createGain();lg.gain.value=level*.35;lfo.connect(lg).connect(g.gain);lfo.start()}

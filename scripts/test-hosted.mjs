@@ -27,20 +27,32 @@ function validateRegion(entry,label){
 }
 
 assert.equal(art.styleVersion,'film-review-v10');
-assert.equal(art.portraitStyleVersion,'approved-pixels-v11');
+assert.equal(art.portraitStyleVersion,'fullbody-parts-v12');
 assert.deepEqual(art,rewritten(sourceArt),'Hosted rewrite changed content or atlas regions');
-assert.equal(Object.keys(art.portraits).length,78);assert.equal(new Set(Object.values(art.portraits).map(source)).size,12);assert.equal(new Set(Object.values(art.portraits).map(signature)).size,72);
+assert.equal(Object.keys(art.portraits).length,90);assert.equal(new Set(Object.values(art.portraits).map(source)).size,13);assert.equal(new Set(Object.values(art.portraits).map(signature)).size,78);
 assert.equal(Object.keys(art.backgrounds).length,44);assert.equal(new Set(Object.values(art.backgrounds).map(source)).size,11);assert.equal(new Set(Object.values(art.backgrounds).map(signature)).size,33);
 assert.equal(Object.keys(art.cgs).length,13);
-for(const [slot,entry] of Object.entries(art.portraits)){validateRegion(entry,slot);assert.equal(typeof entry.clipPath,'string',slot+' missing original-sheet cutout');assert.match(entry.clipPath,/^M[\s\S]+Z$/);assert.equal(entry.clipPath,sourceArt.portraits[slot].clipPath,slot+' clipPath was treated as an asset path');}
+for(const [slot,entry] of Object.entries(art.portraits)){
+ validateRegion(entry,slot);assert.ok(entry.region[3]>entry.region[2],slot+' still uses a head/shoulder crop');assert.ok(entry.layers?.length,slot+' missing full-body layers');
+ assert.equal(entry.layers[0].src,entry.src);assert.deepEqual(entry.layers[0].canvas,entry.canvas);assert.ok(!entry.layers[0].transform,slot+' body base was transformed');
+ assert.equal(entry.layers.length===1,slot.endsWith('-neutral'),slot+' expression donor missing or neutral is repainted');
+ for(const [i,layer] of entry.layers.entries()){
+  assert.equal(typeof layer.clipPath,'string',slot+' missing original-sheet cutout');assert.match(layer.clipPath,/^M[\s\S]+Z$/);assert.equal(layer.clipPath,sourceArt.portraits[slot].layers[i].clipPath,slot+' clipPath was treated as an asset path');
+  assert.deepEqual(dimensions(fs.readFileSync('dist/'+layer.src),layer.src),layer.canvas,slot+' layer canvas mismatch');
+  if(i){if(layer.transform)assert.match(layer.transform,/^matrix\([\d+eE.,\s-]+\)$/);assert.equal(layer.transform,sourceArt.portraits[slot].layers[i].transform,slot+' expression matrix changed during packaging');}
+ }
+}
 for(const [slot,entry] of Object.entries(art.backgrounds)){validateRegion(entry,slot);assert.equal(entry.region[2]*9,entry.region[3]*16,slot+' must be 16:9')}
 assert.deepEqual(art.title,art.backgrounds['cove-day']);
 const proof=JSON.parse(fs.readFileSync('docs/APPROVED-PORTRAITS.json','utf8'));
-assert.equal(proof.portraitStyleVersion,'approved-pixels-v11');assert.equal(proof.sources.length,12);
+assert.equal(proof.portraitStyleVersion,'fullbody-parts-v12');assert.equal(proof.sources.length,13);
+ assert.ok(!proof.sources.some(v=>v.src.endsWith('/fio-strawhat-unified.png')),'Reverted unified strawhat remains active');const hat=proof.sources.find(v=>v.src==='assets/portrait-approved/fio-strawhat.png');assert.ok(hat,'Original approved strawhat missing');assert.equal(hat.kind,'approved-original');assert.equal(hat.sha256,'a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad','Original strawhat is not the previously approved image');
 assert.deepEqual(new Set(proof.sources.map(v=>v.src)),new Set(Object.values(sourceArt.portraits).map(source)),'Approved original sheet list differs from source manifest');
-for(const row of proof.sources){assert.match(row.src,/^assets\/portrait-approved\/[^/]+\.png$/);const sha=crypto.createHash('sha256').update(fs.readFileSync(row.src)).digest('hex');assert.equal(sha,row.sha256,'Original approved PNG changed: '+row.src);assert.equal(sha,row.reviewSourceSha256,'Review proof mismatch: '+row.src);}
+for(const row of proof.sources){assert.match(row.src,/^assets\/portrait-approved\/[^/]+\.png$/);const sha=crypto.createHash('sha256').update(fs.readFileSync(row.src)).digest('hex');assert.equal(sha,row.sha256,'Original approved PNG changed: '+row.src);if(row.kind==='approved-original'&&row.reviewSourceSha256)assert.equal(sha,row.reviewSourceSha256,'Review proof mismatch: '+row.src);}
+assert.equal(proof.sources.filter(v=>v.kind==='approved-original').length,12);assert.equal(proof.sources.filter(v=>v.kind==='targeted-edit').length,1);
+const provenSources=new Set(proof.sources.map(v=>v.src));for(const entry of Object.values(sourceArt.portraits))for(const layer of entry.layers)assert.ok(provenSources.has(layer.src),'Unproven donor PNG: '+layer.src);
 const renderer=fs.readFileSync('dist/src/assets.js','utf8');
-assert.match(renderer,/<clipPath/);assert.match(renderer,/clipPathUnits="userSpaceOnUse"/);assert.match(renderer,/clip-path="url\(#/);assert.ok(renderer.includes('value.clipPath'),'Hosted renderer does not consume approved cutout');
+assert.match(renderer,/<clipPath/);assert.match(renderer,/clipPathUnits="userSpaceOnUse"/);assert.match(renderer,/clip-path="url\(#/);assert.ok(renderer.includes('value.layers.map')&&renderer.includes('layer.clipPath')&&renderer.includes('layer.transform'),'Hosted renderer does not consume body and expression layers');
 assert.deepEqual(art.backgrounds,rewritten(sourceArt.backgrounds),'Backgrounds changed during portrait packaging');assert.deepEqual(art.cgs,rewritten(sourceArt.cgs),'CGs changed during portrait packaging');
 
 visit(art);paths.add('assets/favicon.svg');
@@ -54,6 +66,6 @@ for(const src of sourcePaths){
  if(entry?.sourceSha256)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(src)).digest('hex'),entry.sourceSha256,'Stale optimization cache: '+src);
  if(entry?.sha256)assert.equal(crypto.createHash('sha256').update(output).digest('hex'),entry.sha256,'Corrupt hosted encoding: '+src);
 }
-for(const f of ['index.html','src/app.js','src/engine.js','src/assets.js','src/storage.js','src/audio.js','src/style.css','data/common.json','data/fio.json','data/gina.json','data/jobs.json'])assert.ok(fs.statSync('dist/'+f).size>0,'Missing hosted file: '+f);
+for(const f of ['index.html','src/app.js','src/engine.js','src/portraits.js','src/assets.js','src/storage.js','src/audio.js','src/style.css','data/common.json','data/fio.json','data/gina.json','data/jobs.json'])assert.ok(fs.statSync('dist/'+f).size>0,'Missing hosted file: '+f);
 const total=[...paths].reduce((n,p)=>n+fs.statSync('dist/'+p).size,0);
-console.log(`PASS Hosted package: ${paths.size} complete lossless image resources, 78 portrait slots / 12 byte-verified approved sheets, 33 background views, 13 CGs, ${(total/1048576).toFixed(2)} MiB of image data; all sheet regions and SVG cutout paths preserved.`);
+console.log(`PASS Hosted package: ${paths.size} complete lossless image resources, 90 portrait slots / 13 verified body sheets with local expression layers, 33 background views, 13 CGs, ${(total/1048576).toFixed(2)} MiB of image data; all sheet regions and SVG cutout paths preserved.`);

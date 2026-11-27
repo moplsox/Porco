@@ -4074,7 +4074,10 @@
           }
         }
       }
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "fio_swim_water",
@@ -4098,7 +4101,8 @@
         "speaker": "菲尔",
         "text": "它自己住在口袋里。今天已经放它假了。",
         "outfit": "swim",
-        "expression": "surprise"
+        "expression": "surprise",
+        "portraitOutfit": "swim-dry"
       },
       {
         "speaker": "旁白",
@@ -4108,7 +4112,8 @@
         "speaker": "菲尔",
         "text": "这边很好。脚一放下就能踩到沙。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4118,7 +4123,8 @@
         "speaker": "菲尔",
         "text": "你平常也这样吗？等别人转弯，假装自己只是在看浪？",
         "outfit": "swim",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4132,7 +4138,8 @@
         "speaker": "菲尔",
         "text": "我想泼你一下。可以吗？不碰铁盒。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4142,7 +4149,8 @@
         "speaker": "菲尔",
         "text": "两只手，一点海水。还来得及拒绝。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       }
     ],
     "cg": "fio-swimming",
@@ -4170,7 +4178,10 @@
     ],
     "hidePortraits": [
       "porco"
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "swim-wet"
+    }
   },
   {
     "id": "fio_swim_splash",
@@ -4190,7 +4201,8 @@
         "speaker": "菲尔",
         "text": "这算你偷看航图！",
         "outfit": "swim",
-        "expression": "surprise"
+        "expression": "surprise",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4208,7 +4220,8 @@
         "speaker": "菲尔",
         "text": "账单请写我的名字。别再寄给祖父。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4218,7 +4231,8 @@
         "speaker": "菲尔",
         "text": "够了。再晒下去，我明天量图时会分不清自己是冷还是热。",
         "outfit": "swim",
-        "expression": "tired"
+        "expression": "tired",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4228,7 +4242,10 @@
     "next": "fio_swim_after",
     "hidePortraits": [
       "porco"
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "swim-wet"
+    }
   },
   {
     "id": "fio_swim_quiet",
@@ -4248,7 +4265,8 @@
         "speaker": "菲尔",
         "text": "刚才在机库，我差点又改掉今天的安排。不是有新问题，只是还有几条旧数据没抄清。",
         "outfit": "swim",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4258,7 +4276,8 @@
         "speaker": "菲尔",
         "text": "嗯。艾达说，清不清楚的，不差我这两个小时。她说得对，我还是在门口站了好一会儿。",
         "outfit": "swim",
-        "expression": "tired"
+        "expression": "tired",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4272,7 +4291,8 @@
         "speaker": "菲尔",
         "text": "不查我带没带图？",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4286,7 +4306,10 @@
     "next": "fio_swim_after",
     "hidePortraits": [
       "porco"
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "swim-wet"
+    }
   },
   {
     "id": "fio_swim_after",
@@ -4306,7 +4329,8 @@
         "speaker": "菲尔",
         "text": "昨天我本来想带新泳衣。结果试穿的时候，肩带卡在一枚扣子上。我觉得假期不必从修理扣子开始，就穿旧的来了。",
         "outfit": "swim",
-        "expression": "tired"
+        "expression": "tired",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4320,7 +4344,8 @@
         "speaker": "菲尔",
         "text": "我想过你会不会说忙，或者只来替我看着东西。你来了，我反而有点不知道该怎么过一个普通的下午。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4330,7 +4355,8 @@
         "speaker": "菲尔",
         "text": "你总有一种很实际的办法，让人不必立刻说出漂亮话。",
         "outfit": "swim",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4340,7 +4366,8 @@
         "speaker": "菲尔",
         "text": "明天上午我还是得回去。新订单要我亲自回信，那组排水孔也不能由别的人替我负责。我喜欢今天，不想用它换掉那些事。",
         "outfit": "swim",
-        "expression": "serious"
+        "expression": "serious",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "菲尔",
@@ -4350,7 +4377,8 @@
         "when": {
           "flag": "currentTrusted",
           "eq": true
-        }
+        },
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "菲尔",
@@ -4360,7 +4388,8 @@
         "when": {
           "flag": "currentTrusted",
           "eq": false
-        }
+        },
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4370,7 +4399,8 @@
         "speaker": "菲尔",
         "text": "那很好。我们可以都去干自己的活，再把下一次约好。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4406,7 +4436,10 @@
     ],
     "hidePortraits": [
       "porco"
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "swim-wet"
+    }
   },
   {
     "id": "fio_swim_romance",
@@ -4426,7 +4459,8 @@
         "speaker": "菲尔",
         "text": "是现在想约我，对吗？不是八年前留下的一句话，也不是我回来以后，你觉得应当补上的一件事。",
         "outfit": "swim",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4436,7 +4470,8 @@
         "speaker": "菲尔",
         "text": "那我愿意。不过下一次，别把“等我有空”当时间。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4450,7 +4485,8 @@
         "speaker": "菲尔",
         "text": "这样可以？",
         "outfit": "swim",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4468,7 +4504,8 @@
         "speaker": "菲尔",
         "text": "明天见。明天见面要先把记录交了，才轮到牵手。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4486,7 +4523,10 @@
     },
     "hidePortraits": [
       "porco"
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "swim-wet"
+    }
   },
   {
     "id": "fio_swim_friend",
@@ -4502,7 +4542,8 @@
         "speaker": "菲尔",
         "text": "好。就算下次你只想坐岸上，也可以直说。我约你，不是让你猜一张请帖后面还有多少条件。",
         "outfit": "swim",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4516,7 +4557,8 @@
         "speaker": "菲尔",
         "text": "这次本来就是我请。你半路买来，连发票都没留，不能算工坊报销。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4526,7 +4568,8 @@
         "speaker": "菲尔",
         "text": "吉娜明天要推餐车试新坡道，你如果去帮忙，告诉她毛巾我洗好了送回去。别替我答应洗旅馆全部的床单。",
         "outfit": "swim",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4544,7 +4587,10 @@
     },
     "hidePortraits": [
       "porco"
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "swim-wet"
+    }
   },
   {
     "id": "fio_swim_bankside",
@@ -4560,7 +4606,8 @@
         "speaker": "菲尔",
         "text": "那我游一小圈。你帮我看着岸上那条毛巾，风快把它偷走了。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "work"
       },
       {
         "speaker": "旁白",
@@ -4574,7 +4621,8 @@
         "speaker": "菲尔",
         "text": "两秒。刚才忘记问了，对不起。下次先申请。",
         "outfit": "swim",
-        "expression": "smile"
+        "expression": "smile",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "旁白",
@@ -4584,7 +4632,8 @@
         "speaker": "菲尔",
         "text": "这也很好。我以前以为休息一定要把每件好玩的事做完，现在觉得，有人替毛巾压一块石头，也算一起过了下午。",
         "outfit": "swim",
-        "expression": "neutral"
+        "expression": "neutral",
+        "portraitOutfit": "swim-wet"
       },
       {
         "speaker": "波鲁克",
@@ -4605,7 +4654,10 @@
     },
     "hidePortraits": [
       "porco"
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "swim-wet"
+    }
   },
   {
     "id": "fio_swim_rain",
@@ -4679,7 +4731,10 @@
     },
     "hidePortraits": [
       "porco"
-    ]
+    ],
+    "portraitOutfits": {
+      "fio": "work"
+    }
   },
   {
     "id": "fio_swim_echo",

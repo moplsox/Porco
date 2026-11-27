@@ -1,81 +1,98 @@
 {
-  "portraitStyleVersion": "approved-pixels-v11",
+  "portraitStyleVersion": "fullbody-parts-v12",
   "sources": [
     {
       "src": "assets/portrait-approved/fio-date.png",
       "sha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
-      "reviewSourceSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
-      "reviewFileName": "fio-date-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "fio-date-sheet.png",
+      "reviewSourceSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58"
     },
     {
       "src": "assets/portrait-approved/fio-flight.png",
       "sha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
-      "reviewSourceSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
-      "reviewFileName": "fio-flight-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "fio-flight-sheet.png",
+      "reviewSourceSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c"
     },
     {
       "src": "assets/portrait-approved/fio-strawhat.png",
       "sha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
-      "reviewSourceSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
-      "reviewFileName": "fio-strawhat-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "fio-strawhat-sheet.png",
+      "reviewSourceSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad"
+    },
+    {
+      "src": "assets/portrait-approved/fio-swim-dry.png",
+      "sha256": "df9359d8939c26c51610717d16329e489d5dbb49d417206f34618b44fe6b81ce",
+      "kind": "targeted-edit"
     },
     {
       "src": "assets/portrait-approved/fio-swim.png",
       "sha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
-      "reviewSourceSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
-      "reviewFileName": "fio-swim-wet-white-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "fio-swim-wet-white-sheet.png",
+      "reviewSourceSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c"
     },
     {
       "src": "assets/portrait-approved/fio-work.png",
       "sha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
-      "reviewSourceSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
-      "reviewFileName": "fio-work-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "fio-work-sheet.png",
+      "reviewSourceSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1"
     },
     {
       "src": "assets/portrait-approved/gina-date.png",
       "sha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0",
-      "reviewSourceSha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0",
-      "reviewFileName": "gina-date-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "gina-date-sheet.png",
+      "reviewSourceSha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0"
     },
     {
       "src": "assets/portrait-approved/gina-morning.png",
       "sha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26",
-      "reviewSourceSha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26",
-      "reviewFileName": "gina-morning-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "gina-morning-sheet.png",
+      "reviewSourceSha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26"
     },
     {
       "src": "assets/portrait-approved/gina-stage.png",
       "sha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d",
-      "reviewSourceSha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d",
-      "reviewFileName": "gina-stage-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "gina-stage-sheet.png",
+      "reviewSourceSha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d"
     },
     {
       "src": "assets/portrait-approved/porco-coat.png",
       "sha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e",
-      "reviewSourceSha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e",
-      "reviewFileName": "porco-coat-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "porco-coat-sheet.png",
+      "reviewSourceSha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e"
     },
     {
       "src": "assets/portrait-approved/porco-flight.png",
       "sha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b",
-      "reviewSourceSha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b",
-      "reviewFileName": "porco-flight-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "porco-flight-sheet.png",
+      "reviewSourceSha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b"
     },
     {
       "src": "assets/portrait-approved/porco-goggles-up.png",
       "sha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d",
-      "reviewSourceSha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d",
-      "reviewFileName": "porco-flight-goggles-up-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "porco-flight-goggles-up-sheet.png",
+      "reviewSourceSha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d"
     },
     {
       "src": "assets/portrait-approved/porco-work.png",
       "sha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9",
-      "reviewSourceSha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9",
-      "reviewFileName": "porco-work-sheet.png"
+      "kind": "approved-original",
+      "reviewFileName": "porco-work-sheet.png",
+      "reviewSourceSha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9"
     }
   ],
   "unchanged": {
     "baseline": "55df303b4f3a2bd1d9a07dedeb4eee634e22cc40"
   },
-  "rendering": "原PNG不修改，SVG仅以原画布坐标clipPath裁去纸底/编号；六张原表情直接放大显示。"
+  "rendering": "认可稿完整身体为基底，原眉眼/嘴局部SVG组合六表情；草帽原稿已恢复，新统一脸稿不接入；仅新增干泳装。"
 }

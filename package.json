@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node scripts/audit.mjs && node scripts/test.mjs && node scripts/test-swimming.mjs",
+    "test": "node scripts/audit.mjs && node scripts/test.mjs && node scripts/test-swimming.mjs && node scripts/test-portrait-display.mjs",
     "build:standalone": "node scripts/build-standalone.mjs",
     "test:standalone": "node scripts/test-standalone.mjs",
     "test:art": "python3 scripts/test-reference-art.py",
