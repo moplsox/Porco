@@ -10,3 +10,15 @@ export function assetUrl(path){
  const url=URL.createObjectURL(new Blob([bytes],{type:entry.mime}));
  assetCache.set(path,url);return url;
 }
+
+// A reviewed atlas is decoded once. SVG viewports expose only the requested
+// illustration, so labels, neighbouring expressions and review panels stay out.
+export function artMarkup(entry,className='',alt='',fit='slice'){
+ if(!entry)return '';
+ const value=typeof entry==='string'?{src:entry}:entry;
+ const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const url=escape(assetUrl(value.src));
+ if(!value.region)return `<img class="${escape(className)} art-image" src="${url}" alt="${escape(alt)}" style="object-fit:${fit==='meet'?'contain':'cover'}" draggable="false">`;
+ const [x,y,w,h]=value.region,[cw,ch]=value.canvas;
+ return `<svg class="${escape(className)} art-viewport" viewBox="${x} ${y} ${w} ${h}" preserveAspectRatio="xMidYMid ${fit}" role="img" aria-label="${escape(alt)}" style="aspect-ratio:${w}/${h}" xmlns="http://www.w3.org/2000/svg"><image href="${url}" width="${cw}" height="${ch}"/></svg>`;
+}

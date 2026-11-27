@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Audit the active film-reference-v2 artwork without changing game files.
+"""Read-only validation of reviewed image files and atlas regions.
 
-This checks formats, transparency, references, bindings, and replacement bytes.
-Hashes do not prove likeness, expression quality, or fidelity to a film style.
+Pixel hashes prove different pictures, not likeness, style or acting quality.
+Pillow only reads regions for analysis; it never saves or edits any image.
 """
 from __future__ import annotations
 import argparse
@@ -16,197 +16,203 @@ from PIL import Image
 
 ROOT=Path(__file__).resolve().parents[1]
 EXPRESSIONS=('neutral','smile','serious','sad','surprise','tired')
-OUTFITS={'fio':('work','date','flight'),'gina':('morning','work','date','stage'),'porco':('work',)}
-INDEPENDENT={'fio':('work','date','flight'),'gina':('morning','date','stage'),'porco':('work',)}
-CG_IDS={'letter','yellow-quilt','dinner-fio','kitchen','silence','dock','mailbag','storm','first-flight','key','garden','last-boat'}
-
-
+OUTFITS={'fio':('work','date','flight','strawhat','swim'),'gina':('morning','work','date','stage'),'porco':('work','flight','coat','goggles-up')}
+INDEPENDENT={who:tuple(o for o in outfits if not (who=='gina' and o=='work')) for who,outfits in OUTFITS.items()}
+LOCATIONS=('cove','sea','hotel','hangar','market','post','lighthouse','garden','ferry','kitchen','dock')
+PRESERVED={'yellow-quilt','dinner-fio','last-boat','storm','kitchen','key'}
+REPLACED={'letter','silence','dock','mailbag','first-flight','garden'}
+CG_IDS=PRESERVED|REPLACED|{'fio-swimming'}
 def digest(data):return hashlib.sha256(data).hexdigest()
+def source(entry):return entry if isinstance(entry,str) else entry.get('src')
+def region_key(entry):return json.dumps(entry,sort_keys=True,separators=(',',':'))
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('--baseline',default='cf42651',help='Git revision before this full artwork replacement')
-    args=parser.parse_args()
-    checks=[];image_info={};cg_info=[];binding_info=[];scene_info={}
+    parser.add_argument('--baseline',default='5722c7a7e1a4418f526ebb3b3db268bee288acd7',help='Git revision whose selected six CGs must stay byte-identical')
+    args=parser.parse_args();checks=[];image_info={};cg_info=[]
     try:
         manifest=json.loads((ROOT/'assets/manifest.json').read_text())
-        scenes=[scene for name in ['common','fio','gina','quests','endings','port'] for scene in json.loads((ROOT/f'data/{name}.json').read_text())]
+        scenes=[s for name in ['common','fio','gina','quests','endings','port'] for s in json.loads((ROOT/f'data/{name}.json').read_text())]
     except Exception as exc:
         print('FAIL 无法读取正式清单或剧情：'+str(exc));return 1
-    portraits=manifest.get('portraits',{})
-    by_id={scene['id']:scene for scene in scenes}
-
+    portraits=manifest.get('portraits',{});backgrounds=manifest.get('backgrounds',{});by_id={s['id']:s for s in scenes}
     def test(name,fn):
         try:
-            detail=fn()
-            checks.append({'name':name,'status':'passed','detail':detail})
-            print('PASS '+name,flush=True)
+            detail=fn();checks.append({'name':name,'status':'passed','detail':detail});print('PASS '+name,flush=True)
         except Exception as exc:
-            checks.append({'name':name,'status':'failed','error':str(exc)})
-            print('FAIL '+name+' · '+str(exc),flush=True)
-
+            checks.append({'name':name,'status':'failed','error':str(exc)});print('FAIL '+name+' · '+str(exc),flush=True)
     def local_path(src):
         assert isinstance(src,str) and src,'资源路径为空或无效'
-        p=(ROOT/src).resolve()
-        assert p.is_relative_to(ROOT),f'资源越出项目目录：{src}'
+        p=(ROOT/src).resolve();assert p.is_relative_to(ROOT),f'资源越出项目目录：{src}'
         assert p.is_file(),f'资源文件缺失：{src}'
         return p
-
-    def image_data(src):
+    def image_data(entry):
+        src=source(entry)
         if src in image_info:return image_info[src]
         p=local_path(src);raw=p.read_bytes()
         with Image.open(p) as im:
             assert im.format=='PNG',f'不是实际PNG：{src} ({im.format})'
             im.verify()
         with Image.open(p) as im:
-            extrema=im.getchannel('A').getextrema() if im.mode=='RGBA' else None
-            record={'src':src,'width':im.width,'height':im.height,'mode':im.mode,'alphaRange':list(extrema) if extrema else None,'sha256':digest(raw),'pixelSha256':digest(im.tobytes()),'bytes':len(raw)}
-        image_info[src]=record
-        return record
-
+            alpha=im.getchannel('A').getextrema() if 'A' in im.getbands() else None
+            record={'src':src,'width':im.width,'height':im.height,'mode':im.mode,'alphaRange':list(alpha) if alpha else None,'sha256':digest(raw),'bytes':len(raw)}
+        image_info[src]=record;return record
+    def validate_region(entry,label,aspect=None):
+        assert isinstance(entry,dict),f'{label}尚未使用独立视区'
+        info=image_data(entry);region=entry.get('region');canvas=entry.get('canvas')
+        assert isinstance(region,list) and len(region)==4,f'{label}缺少region'
+        assert isinstance(canvas,list) and len(canvas)==2,f'{label}缺少canvas'
+        assert all(isinstance(n,int) and not isinstance(n,bool) for n in region+canvas),f'{label}矩形不是整数'
+        assert canvas==[info['width'],info['height']],f'{label}声明画布与实际PNG不符'
+        x,y,w,h=region
+        assert x>=0 and y>=0 and w>0 and h>0 and x+w<=canvas[0] and y+h<=canvas[1],f'{label}视区越界：{region}'
+        if aspect:assert w*aspect[1]==h*aspect[0],f'{label}不是{aspect[0]}:{aspect[1]}视区'
+        return info
     def version_and_legacy():
-        assert manifest.get('styleVersion')=='film-reference-v2',f"尚未启用 film-reference-v2：{manifest.get('styleVersion')!r}"
-        assert 'setting' not in manifest,'旧setting仍在active清单中'
-        assert all(str(src).lower().endswith('.png') for src in portraits.values()),'active人物清单仍引用旧SVG或非PNG'
-        assert not any('character-setting' in str(src) for src in portraits.values()),'active人物仍使用旧设定图'
-        return {'styleVersion':manifest['styleVersion'],'oldSettingActive':False,'oldSvgPortraitActive':False}
-    test('启用film-reference-v2且旧SVG人物与旧setting不再active',version_and_legacy)
-
+        assert manifest.get('styleVersion')=='film-review-v10',f"尚未启用film-review-v10：{manifest.get('styleVersion')!r}"
+        assert 'setting' not in manifest,'旧setting仍在active清单'
+        assert all(str(source(v)).lower().endswith('.png') for v in portraits.values()),'人物仍引用SVG/非PNG'
+        assert not any('character-setting' in str(source(v)) for v in portraits.values()),'人物仍使用旧设定图'
+        return {'styleVersion':manifest['styleVersion'],'oldSettingActive':False}
+    test('启用film-review-v10，旧人物设定图退出active清单',version_and_legacy)
     def slots():
         expected={f'{who}-{outfit}-{expr}' for who,outfits in OUTFITS.items() for outfit in outfits for expr in EXPRESSIONS}
         assert set(portraits)==expected,f'立绘slot集合不符；缺少{sorted(expected-set(portraits))}，多出{sorted(set(portraits)-expected)}'
-        assert len(portraits)==48,f'立绘slot为{len(portraits)}，应为48'
-        assert len(set(portraits.values()))==42,f'独立PNG为{len(set(portraits.values()))}，应为42'
-        for expr in EXPRESSIONS:
-            assert portraits[f'gina-work-{expr}']==portraits[f'gina-morning-{expr}'],f'Gina work没有别名到morning：{expr}'
+        files={source(v) for v in portraits.values()};regions={region_key(v) for v in portraits.values()}
+        assert len(files)==12,f'独立透明atlas为{len(files)}，应为12'
+        assert len(regions)==72,f'独立表情视区为{len(regions)}，应为72'
+        for expr in EXPRESSIONS:assert portraits[f'gina-work-{expr}']==portraits[f'gina-morning-{expr}'],f'Gina work未别名morning：{expr}'
         for who,outfits in INDEPENDENT.items():
-            paths={portraits[f'{who}-{outfit}-{expr}'] for outfit in outfits for expr in EXPRESSIONS}
-            assert len(paths)==len(outfits)*6,f'{who}独立衣装文件出现别名或缺失'
-        return {'slots':48,'uniquePngs':42,'fioUnique':18,'ginaUnique':18,'porcoUnique':6,'ginaWorkAliasesMorning':True}
-    test('48立绘slot对应42独立PNG，Gina工作别名映射正确',slots)
-
+            entries=[portraits[f'{who}-{outfit}-{expr}'] for outfit in outfits for expr in EXPRESSIONS]
+            assert len({region_key(v) for v in entries})==len(outfits)*6,f'{who}独立衣装/表情视区出现别名'
+        return {'slots':len(expected),'uniqueAtlases':len(files),'uniqueExpressionRegions':len(regions),'ginaWorkAliasesMorning':True}
+    test('78立绘slot对应12透明atlas和72独立表情视区',slots)
     def transparency():
-        dimensions=set()
-        for src in set(portraits.values()):
-            info=image_data(src)
-            assert info['mode']=='RGBA',f"{src} 不是RGBA：{info['mode']}"
-            assert info['alphaRange'][0]==0 and info['alphaRange'][1]>0,f'{src}缺少全透明区或完全不可见'
-            dimensions.add((info['width'],info['height']))
-        assert len(dimensions)==1,f'立绘画布尺寸不一致：{sorted(dimensions)}'
-        return {'validated':len(set(portraits.values())),'allRGBA':True,'transparentRegionPresent':True,'canvas':list(next(iter(dimensions)))}
-    test('42独立人物PNG完整可读、RGBA透明区与画布尺寸一致',transparency)
-
+        for slot,entry in portraits.items():
+            info=validate_region(entry,slot)
+            assert info['mode']=='RGBA',f"{slot}不是RGBA：{info['mode']}"
+            assert info['alphaRange'][0]==0 and info['alphaRange'][1]>0,f'{slot}缺少透明或可见像素'
+            x,y,w,h=entry['region']
+            with Image.open(local_path(source(entry))) as im:alpha=im.getchannel('A').crop((x,y,x+w,y+h)).getextrema()
+            assert alpha[0]==0 and alpha[1]>0,f'{slot}自身视区没有透明边缘或人物'
+        return {'validatedSlots':len(portraits),'allRGBA':True,'allRegionsVisibleAndTransparent':True}
+    test('人物PNG与每个视区合法、可见并保留透明边缘',transparency)
     def expressions():
         groups=[]
         for who,outfits in INDEPENDENT.items():
             for outfit in outfits:
-                infos=[image_data(portraits[f'{who}-{outfit}-{expr}']) for expr in EXPRESSIONS]
-                assert len({info['sha256'] for info in infos})==6,f'{who}-{outfit}六表情文件SHA重复'
-                assert len({info['pixelSha256'] for info in infos})==6,f'{who}-{outfit}六表情像素完全相同'
-                assert len({(info['width'],info['height']) for info in infos})==1,f'{who}-{outfit}组内尺寸不同'
-                groups.append({'character':who,'outfit':outfit,'expressions':6,'distinctByteHashes':6,'distinctPixelHashes':6})
+                entries=[portraits[f'{who}-{outfit}-{expr}'] for expr in EXPRESSIONS];hashes=[]
+                for entry in entries:
+                    validate_region(entry,f'{who}-{outfit}');x,y,w,h=entry['region']
+                    with Image.open(local_path(source(entry))) as im:hashes.append(digest(im.crop((x,y,x+w,y+h)).tobytes()))
+                assert len(set(hashes))==6,f'{who}-{outfit}六表情视区像素完全相同'
+                groups.append({'character':who,'outfit':outfit,'expressions':6,'distinctRegionPixelHashes':6})
         return groups
-    test('七套独立衣装各有六张不同文件与不同像素的表情图',expressions)
-
+    test('十二套独立衣装各有六个不同像素的表情区域',expressions)
+    def background_regions():
+        expected={loc for loc in LOCATIONS}|{f'{loc}-{v}' for loc in LOCATIONS for v in ('day','night','rain')}
+        assert set(backgrounds)==expected,f'背景槽不完整：{sorted(expected-set(backgrounds))}'
+        files={source(v) for v in backgrounds.values()};regions={region_key(v) for v in backgrounds.values()}
+        assert len(files)==11 and len(regions)==33,f'背景应11board/33区域，实际{len(files)}/{len(regions)}'
+        for loc in LOCATIONS:
+            assert backgrounds[loc]==backgrounds[f'{loc}-day'],f'{loc}默认未映射白天'
+            for variant in ('day','night','rain'):
+                label=f'{loc}-{variant}';entry=backgrounds[label];validate_region(entry,label,(16,9))
+                x,y,w,h=entry['region'];cw,ch=entry['canvas']
+                assert not (x>=cw/2 and y>=ch/2),f'{label}误用D人物测试格'
+                assert (x+w<=cw/2 or x>=cw/2) and (y+h<=ch/2 or y>=ch/2),f'{label}跨格/跨边框'
+                assert y%512>=50 or x%768>=50,f'{label}可能包含左上角审阅标签'
+        assert manifest.get('title')==backgrounds['cove-day'],'标题未采用红飞机海湾白天'
+        return {'slots':len(backgrounds),'locations':len(LOCATIONS),'uniqueBoards':len(files),'independent16by9Regions':len(regions),'title':'cove-day'}
+    test('十一地点33个16:9背景视区排除审阅标签与D测试格',background_regions)
     def scene_outfits():
-        mappings=0;line_mappings=0
-        names={'菲尔':'fio','吉娜':'gina','波鲁克':'porco'}
+        mappings=0;lines=0;names={'菲尔':'fio','吉娜':'gina','波鲁克':'porco'}
         for scene in scenes:
             override=scene.get('portraitOutfits',{})
             for who,outfit in override.items():
-                assert who in OUTFITS,f"{scene['id']} 未知人物{who}"
-                for expr in EXPRESSIONS:
-                    key=f'{who}-{outfit}-{expr}'
-                    assert key in portraits,f"{scene['id']} 缺少 {key}"
-                    local_path(portraits[key])
+                assert who in OUTFITS,f"{scene['id']}未知人物{who}"
+                for expr in EXPRESSIONS:assert f'{who}-{outfit}-{expr}' in portraits,f"{scene['id']}缺少{who}-{outfit}-{expr}"
                 mappings+=1
             for line in scene['lines']:
                 who=names.get(line.get('speaker'))
                 if not who:continue
-                outfit=override.get(who) or line.get('outfit') or ('morning' if who=='gina' else 'work')
-                expr=line.get('expression','neutral')
-                key=f'{who}-{outfit}-{expr}'
-                assert key in portraits,f"{scene['id']} 对白无法解析立绘 {key}"
-                line_mappings+=1
-        scene_info.update({'scenes':len(scenes),'explicitOutfitMappings':mappings,'resolvedCharacterLines':line_mappings})
-        return dict(scene_info)
-    test('每个场景衣装映射及人物对白表情均能解析active PNG',scene_outfits)
-
-    def changed_cgs():
-        cgs=manifest.get('cgs',{})
-        assert set(cgs)==CG_IDS,f'CG集合不符：{sorted(cgs)}'
-        assert len(cgs)==12
+                default='morning' if who=='gina' else 'work'
+                if who=='porco':default='flight' if scene.get('location') in ['sea','lighthouse'] else 'goggles-up' if scene.get('location')=='cove' else 'work'
+                outfit=override.get(who) or line.get('outfit') or default;expr=line.get('expression','neutral');key=f'{who}-{outfit}-{expr}'
+                assert key in portraits,f"{scene['id']}对白无法解析立绘{key}"
+                local_path(source(portraits[key]));lines+=1
+        return {'scenes':len(scenes),'explicitOutfitMappings':mappings,'resolvedCharacterLines':lines}
+    test('所有剧情衣装映射与对白表情均能解析资源',scene_outfits)
+    def cgs_and_preservation():
+        cgs=manifest.get('cgs',{});assert set(cgs)==CG_IDS,f'CG集合不符：{sorted(cgs)}'
+        assert len({source(v) for v in cgs.values()})==13,'13个CG未对应13个独立文件'
+        baseline_manifest=subprocess.run(['git','show',f'{args.baseline}:assets/manifest.json'],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=False)
+        assert baseline_manifest.returncode==0,f'无法读取{args.baseline}的正式美术清单'
+        baseline_cgs=json.loads(baseline_manifest.stdout)['cgs']
         for id in sorted(cgs):
-            cg=cgs[id];src=cg['src'] if isinstance(cg,dict) else cg
-            assert src.lower().endswith('.png'),f'{id}不是PNG路径'
-            if isinstance(cg,dict):
-                assert cg.get('styleVersion')=='film-reference-v2',f'{id}缺少新版本标记'
-                assert cg.get('placeholder') is False,f'{id}仍标临时图'
-            info=image_data(src)
-            assert info['width']>info['height'],f'{id}不是横向CG'
-            result=subprocess.run(['git','show',f'{args.baseline}:{src}'],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=False)
-            assert result.returncode==0,f"无法取得{args.baseline}原CG {src}：{result.stderr.decode(errors='replace')[:180]}"
-            old_sha=digest(result.stdout)
-            assert old_sha!=info['sha256'],f'{id}内容与{args.baseline}原CG完全相同'
-            cg_info.append({'id':id,'src':src,'size':[info['width'],info['height']],'beforeSha256':old_sha,'afterSha256':info['sha256'],'bytesChanged':True})
-        return {'count':12,'baseline':args.baseline,'allActualPngs':True,'allContentHashesChanged':True}
-    test('12张active CG均为实际PNG且内容SHA不同于替换前版本',changed_cgs)
-
+            cg=cgs[id];src=source(cg);assert src.lower().endswith('.png'),f'{id}非PNG路径';info=image_data(cg)
+            assert info['width']>info['height'] and info['width']>=1200 and info['height']>=650,f'{id}完整横向CG尺寸过小'
+            assert cg.get('placeholder') is False,f'{id}仍标临时图'
+            old_src=source(baseline_cgs[id]) if id in baseline_cgs else src
+            result=subprocess.run(['git','show',f'{args.baseline}:{old_src}'],cwd=ROOT,stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=False)
+            old_sha=digest(result.stdout) if result.returncode==0 else None
+            if id in PRESERVED:
+                assert result.returncode==0,f'{id}无法读取保留原图';assert result.stdout==local_path(src).read_bytes(),f'{id}应原样保留，实际已改变'
+                state='preserved'
+            elif id in REPLACED:
+                assert result.returncode==0,f'{id}无法读取替换前原图';assert old_sha!=info['sha256'],f'{id}尚未替换'
+                assert cg.get('styleVersion')=='film-review-v10',f'{id}缺少v10标记';state='replaced'
+            else:
+                assert id not in baseline_cgs,'新增泳装CG在基线已存在';assert cg.get('styleVersion')=='film-review-v10','泳装CG缺少v10标记';state='added'
+            cg_info.append({'id':id,'src':src,'baselineSrc':old_src if id in baseline_cgs else None,'size':[info['width'],info['height']],'beforeSha256':old_sha,'afterSha256':info['sha256'],'state':state})
+        return {'count':len(cgs),'baseline':args.baseline,'preserved':len(PRESERVED),'replaced':len(REPLACED),'added':1}
+    test('13张正式CG：六张原样保留、六张替换、泳装新增',cgs_and_preservation)
     def important_bindings():
-        expected=[
-            ('common_d66_gap','storm',66,0,{'fio':'work','gina':'morning'}),
-            ('common_d81_firstflight','first-flight',81,0,{'fio':'flight'}),
-            ('gina_d04','garden',51,2,{'gina':'morning'}),
-            ('gina_d01','kitchen',9,2,{'gina':'stage'}),
-            ('gina_d02','silence',21,2,{'gina':'morning'}),
-            ('gina_e10','key',70,0,{'gina':'morning'}),
-            ('fio_d02','dinner-fio',24,2,{'fio':'date'}),
-            ('fio_d02_after',None,0,2,{'fio':'date'}),
-            ('opening','letter',1,0,{'fio':'flight'}),
-            ('common_d89_boat','last-boat',89,2,{'fio':'work','gina':'date'}),
-        ]
-        for id,cg,day,period,outfits in expected:
-            assert id in by_id,f'关键场景不存在：{id}'
-            s=by_id[id]
-            assert s.get('cg')==cg,f"{id} CG绑定应为{cg}，实际{s.get('cg')}"
-            assert (s['day'],s['period'])==(day,period),f'{id} 日期/昼夜错误'
-            for who,outfit in outfits.items():assert s.get('portraitOutfits',{}).get(who)==outfit,f'{id} {who}衣装应为{outfit}'
-            binding_info.append({'scene':id,'day':day,'period':period,'cg':cg,'outfits':outfits})
-        assert 'common_d66_gap' in manifest['cgs']['storm'].get('unlock',''),'storm清单解锁条件未更新'
-        assert 'common_d81_firstflight' in manifest['cgs']['first-flight'].get('unlock',''),'first-flight清单解锁条件未更新'
-        assert '夜' in manifest['cgs']['garden'].get('composition',''),'garden清单构图仍未说明夜晚'
-        return binding_info
-    test('首航、天气图、夜花园及厨房/晚餐前后衣装绑定一致',important_bindings)
-
+        expected={'common_d66_gap':'storm','common_d81_firstflight':'first-flight','gina_d04':'garden','gina_d01':'kitchen','gina_d02':'silence','gina_e10':'key','fio_d02':'dinner-fio','opening':'letter','common_d89_boat':'last-boat'}
+        for id,cg in expected.items():assert id in by_id and by_id[id].get('cg')==cg,f'{id} CG绑定改变或丢失'
+        bound={s.get('cg') for s in scenes if s.get('cg')};assert CG_IDS<=bound,f'相册存在未绑定正文CG：{sorted(CG_IDS-bound)}'
+        swim=[s for s in scenes if s.get('cg')=='fio-swimming'];assert swim,'泳装CG没有正式剧情'
+        swim_outfits=[s for s in scenes if s.get('portraitOutfits',{}).get('fio')=='swim' or any(l.get('speaker')=='菲尔' and l.get('outfit')=='swim' for l in s.get('lines',[]))]
+        assert swim_outfits,'泳装立绘没有正式对白绑定'
+        assert 'common_d66_gap' in manifest['cgs']['storm'].get('unlock',''),'storm解锁场景丢失'
+        assert 'common_d81_firstflight' in manifest['cgs']['first-flight'].get('unlock',''),'first-flight解锁场景丢失'
+        return {'retainedBindings':expected,'swimmingCGScenes':[s['id'] for s in swim],'swimmingPortraitScenes':[s['id'] for s in swim_outfits]}
+    test('13张相册CG均绑定正文，泳装CG与立绘均有剧情展示',important_bindings)
     def privacy():
         active=json.dumps(manifest,ensure_ascii=False)
-        assert '/workspace/art-references' not in active and '/Users/' not in active,'active清单泄露本地参考路径'
-        assert not any(str(src).lower().endswith(('.pdf','.jpeg','.jpg')) for src in portraits.values()),'人物清单误用原参考文件'
-        assert not list(ROOT.rglob('*.pdf')),'项目目录中意外存在原PDF，应留在本地参考目录'
+        assert '/workspace/' not in active and '/Users/' not in active,'正式清单泄露本地路径'
+        assert not list(ROOT.rglob('*.pdf')),'原参考PDF进入项目'
+        assert not any(str(source(v)).lower().endswith(('.pdf','.jpeg','.jpg')) for v in portraits.values()),'人物误用参考文件'
         return {'referencePdfsInProject':0,'privateReferencePathsInActiveManifest':0}
-    test('用户参考PDF和本地参考目录未进入active资源清单',privacy)
-
-    passed=sum(c['status']=='passed' for c in checks);failed=[c for c in checks if c['status']=='failed'];status='passed' if not failed else 'failed'
-    summary={'status':status,'passed':passed,'total':len(checks),'styleVersion':manifest.get('styleVersion'),'portraitSlots':len(portraits),'uniquePortraitFiles':len(set(portraits.values())),'changedCGs':len(cg_info),'browserVerification':False,'checks':checks}
-    when=datetime.now(timezone.utc).isoformat()
-    story_report='主代理报告剧情检查已完成；本美术脚本不重复运行剧情或浏览器检查。'
-    audit_path=ROOT/'data/audit.json'
-    if audit_path.is_file():
-        audit=json.loads(audit_path.read_text())
-        tests=audit.get('tests',{})
-        summary['existingStoryAudit']={'source':'data/audit.json','status':audit.get('status'),'uniqueCharacters':audit.get('uniqueCharacters'),'uniqueHanziCharacters':audit.get('uniqueHanziCharacters'),'sceneCount':audit.get('sceneCount'),'passedTests':tests.get('passed'),'totalTests':tests.get('total'),'testStatus':tests.get('status')}
-        story_report=f"主代理已另外执行正式剧情/引擎检查。现有 `data/audit.json` 记录：{tests.get('passed','?')}/{tests.get('total','?')} 项通过，状态 `{tests.get('status','unknown')}`；{audit.get('sceneCount','?')} 个场景、{audit.get('uniqueCharacters','?'):,} 个去重正文字符，其中汉字 {audit.get('uniqueHanziCharacters','?'):,} 字。本美术脚本仅读取该既有记录，没有重跑剧情或浏览器检查。"
+    test('参考PDF与本地参考路径没有进入正式资源',privacy)
+    passed=sum(c['status']=='passed' for c in checks);failed=[c for c in checks if c['status']=='failed'];status='failed' if failed else 'passed'
+    summary={'status':status,'passed':passed,'total':len(checks),'styleVersion':manifest.get('styleVersion'),'portraitSlots':len(portraits),'uniquePortraitAtlases':len({source(v) for v in portraits.values()}),'cgs':len(manifest.get('cgs',{})),'browserVerification':False,'checks':checks}
     rows='\n'.join(f"| {c['name']} | {'通过' if c['status']=='passed' else '失败'} | {c.get('error','')} |" for c in checks)
-    portrait_rows=[]
-    for who,outfits in INDEPENDENT.items():
-        for outfit in outfits:
-            infos=[image_info.get(portraits.get(f'{who}-{outfit}-{expr}')) for expr in EXPRESSIONS]
-            good=[i for i in infos if i]
-            sizes=sorted({(i['width'],i['height']) for i in good})
-            portrait_rows.append(f"| {who} | {outfit} | {len(good)} | {', '.join(str(w)+'×'+str(h) for w,h in sizes) or '未验证'} | {len({i['sha256'] for i in good})} |")
-    cg_rows='\n'.join(f"| {c['id']} | {c['beforeSha256'][:16]}… | {c['afterSha256'][:16]}… | 已改变 |" for c in cg_info) or '| 尚未验证 | — | — | — |'
-    binding_rows='\n'.join(f"| {c['scene']} | 第{c['day']}天 / {['上午','下午','夜晚'][c['period']]} | {c['cg'] or '延续对白'} | {', '.join(k+': '+v for k,v in c['outfits'].items())} |" for c in binding_info)
-    report=f'''# 原参考角色美术接入验收\n\n执行：`python scripts/test-reference-art.py --baseline {args.baseline}`。时间：{when}。结果：**{passed}/{len(checks)} 项通过，{status}**。\n\n本检查以正式 `assets/manifest.json` 与游戏实际载入的六份剧情为准。它不修改代码、清单、剧情或图片，也不重新生成构建产物。\n\n| 检查 | 结果 | 未通过原因 |\n|---|---|---|\n{rows}\n\n## 人物文件\n\nActive 人物清单 {len(portraits)} 个slot，引用 {len(set(portraits.values()))} 个独立文件。Gina 的work六slot应与morning六slot共享同一组PNG，其余七套服装各有六个独立表情文件。透明度检查要求RGBA、至少有完全透明像素和可见像素；图像文件均通过PNG读取校验。\n\n| 人物 | 独立服装 | 已验证文件 | 画布尺寸 | 不同文件SHA数 |\n|---|---|---:|---|---:|\n{chr(10).join(portrait_rows)}\n\n## CG实际内容替换\n\n下表逐个读取当前PNG，并同 `git show {args.baseline}:资源路径` 得到的替换前二进制比较。SHA变化只证明文件内容改变，不证明电影风格、人物相似程度或逐像素复现参考图。不同表情的像素SHA也只证明像素不同，不替代对情绪和表情的人工判断。\n\n| CG | 替换前SHA256前16位 | 当前SHA256前16位 | 文件内容 |\n|---|---|---|---|\n{cg_rows}\n\n## 关键剧情绑定\n\n| 场景 | 时间 | CG | 人物衣装 |\n|---|---|---|---|\n{binding_rows}\n\n## 相关剧情检查\n\n{story_report}\n\n## 视觉复核与隐私边界\n\n角色脸型、发型、胡须颜色、画线与平涂方向，以及CG中的视线、服装、鞋、钥匙、船桨等细节，仍由人工对照用户提供的电影参考审阅。本脚本不把哈希或版本字段当作视觉风格合格证。原参考PDF和提取参考图仅保留在本地工作区，不随游戏公开；本报告只记录active清单与项目目录未引用原PDF及本地参考路径。\n\n本次美术审计未重试已确认的浏览器策略：真实 `file://` 导航此前被 Chromium 管理员策略以 `ERR_BLOCKED_BY_ADMINISTRATOR` 阻止；没有绕过策略，也没有宣称浏览器视觉、触控或音频已经通过。此前的单文件静态/VM检查与真实浏览器限制见 [STANDALONE-QA.md](STANDALONE-QA.md)。\n'''
+    cg_rows='\n'.join(f"| {c['id']} | {(c['beforeSha256'] or '新增')[:16]} | {c['afterSha256'][:16]} | {c['state']} |" for c in cg_info)
+    report=f'''# 审阅美术与泳装剧情接入验收
+
+执行：`python3 scripts/test-reference-art.py --baseline {args.baseline}`。时间：{datetime.now(timezone.utc).isoformat()}。结果：**{passed}/{len(checks)} 项通过，{status}**。
+
+检查读取正式清单、六份剧情、PNG及声明视区，不修改图片。Gina work仅别名morning；区域像素SHA证明画面不同，不保证表情演技、脸型或电影风格。
+
+| 检查 | 结果 | 未通过原因 |
+|---|---|---|
+{rows}
+
+## CG保留与替换
+
+保留图允许原版本标记不变；保留与替换按二进制比较，泳装CG为新增正式剧情图。
+
+| CG | 基线SHA256前16位 | 当前SHA256前16位 | 状态 |
+|---|---|---|---|
+{cg_rows}
+
+## 验证范围
+
+11地点/33个16:9背景视区、12透明人物atlas/78槽、13张独立CG、指定六张CG字节保留与泳装剧情绑定。Pillow仅在内存读取区域进行透明度和像素分析，没有保存或修改图像。
+
+此脚本不运行浏览器，也不将文件/哈希检查称为触控、版式或电影风格验收。真实浏览器验证由主代理单独报告。
+'''
     (ROOT/'docs/REFERENCE-ART-QA.md').write_text(report)
     print(json.dumps(summary,ensure_ascii=False,indent=2),flush=True)
     return 1 if failed else 0

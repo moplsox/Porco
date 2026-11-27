@@ -13,7 +13,7 @@ if(encoded.status!==0)throw Error(encoded.stderr||'Unable to encode standalone a
 process.stdout.write(encoded.stdout);
 const cache=JSON.parse(read('.cache/standalone-art/manifest.json'));
 const art=JSON.parse(read('assets/manifest.json'));
-const assetPaths=new Set(['assets/cover-generated.png','assets/favicon.svg']);
+const assetPaths=new Set(['assets/favicon.svg']);
 function collect(value){if(typeof value==='string'&&/^assets\/[^?#]+\.(?:png|svg|webp)$/.test(value))assetPaths.add(value);else if(Array.isArray(value))value.forEach(collect);else if(value&&typeof value==='object')Object.values(value).forEach(collect)}
 collect(art);
 const assets={};

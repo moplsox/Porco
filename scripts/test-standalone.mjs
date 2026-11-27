@@ -5,7 +5,7 @@ import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 
 // This is a classic-script/DOM-adapter smoke test, not a browser or layout test.
-// Actual file:// Chromium navigation is tested separately by test-standalone.py.
+// It does not claim Chromium/file:// rendering, layout, touch or audio coverage.
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const htmlFile=path.join(root,'index.html');
 const html=fs.readFileSync(htmlFile,'utf8');
@@ -21,6 +21,13 @@ const decodeHTML=s=>String(s??'').replace(/<[^>]*>/g,'').replace(/&(?:amp|lt|gt|
 const extractAttr=(attrs,name)=>attrs.match(new RegExp('\\b'+name+'\\s*=\\s*["\']([^"\']*)["\']','i'))?.[1];
 let embeddedBytes=0;
 const assets=new Map();
+const assetSource=entry=>typeof entry==='string'?entry:entry?.src;
+function validateAtlasRegion(entry,label){
+ assert.ok(entry&&typeof entry==='object',label+' missing atlas entry');
+ assert.ok(Array.isArray(entry.region)&&entry.region.length===4,label+' missing region');assert.ok(Array.isArray(entry.canvas)&&entry.canvas.length===2,label+' missing canvas');
+ const [x,y,w,h]=entry.region,[cw,ch]=entry.canvas;assert.ok([...entry.region,...entry.canvas].every(Number.isInteger),label+' noninteger region');assert.ok(x>=0&&y>=0&&w>0&&h>0&&x+w<=cw&&y+h<=ch,label+' region outside atlas');
+ const asset=assets.get(entry.src);assert.ok(asset,label+' atlas not embedded');assert.deepEqual(asset.dimensions,entry.canvas,label+' atlas canvas mismatch');
+}
 function dimensions(buf,mime){
  if(mime==='image/png'){assert.ok(buf.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),'PNG signature');return [buf.readUInt32BE(16),buf.readUInt32BE(20)]}
  if(mime==='image/webp'){
@@ -46,12 +53,21 @@ await test('单个HTML没有外链脚本、样式或执行模块依赖',()=>{
 });
 await test('全部实际故事、24委托、8结局与图像字节已内嵌',()=>{
  for(const name of ['common','fio','gina','quests','endings','port'])assert.ok(Array.isArray(payload.files?.[name])&&payload.files[name].length>0,'missing story '+name);
- assert.equal(payload.jobs.length,24);assert.equal(payload.files.endings.filter(s=>s.kind==='ending').length,8);assert.equal(Object.keys(payload.art.cgs).length,12);
+ assert.equal(payload.jobs.length,24);assert.equal(payload.files.endings.filter(s=>s.kind==='ending').length,8);assert.equal(Object.keys(payload.art.cgs).length,13);assert.equal(payload.art.styleVersion,'film-review-v10');
  for(const [assetPath,value] of Object.entries(payload.assets||{})){assert.ok(value&&typeof value.mime==='string'&&typeof value.data==='string',assetPath+' missing MIME/base64');assert.match(value.data,/^[A-Za-z0-9+/]*={0,2}$/,'invalid base64 '+assetPath);const bytes=Buffer.from(value.data,'base64');assert.ok(bytes.length>0,assetPath+' empty');assert.equal(bytes.toString('base64'),value.data,'noncanonical/truncated base64 '+assetPath);const size=dimensions(bytes,value.mime);embeddedBytes+=bytes.length;assets.set(assetPath,{mime:value.mime,bytes:bytes.length,dimensions:size})}
- const references=[...Object.values(payload.art.backgrounds||{}),...Object.values(payload.art.portraits||{}),...Object.values(payload.art.cgs||{}).map(c=>typeof c==='string'?c:c.src)];for(const ref of references)assert.ok(assets.has(ref),'manifest resource not embedded: '+ref);
+ const references=[payload.art.title,...Object.values(payload.art.backgrounds||{}),...Object.values(payload.art.portraits||{}),...Object.values(payload.art.cgs||{})].map(assetSource);for(const ref of references)assert.ok(assets.has(ref),'manifest resource not embedded: '+ref);
  for(const [id,cg] of Object.entries(payload.art.cgs)){const a=assets.get(typeof cg==='string'?cg:cg.src);assert.ok(a.bytes>1024,id+' CG has no substantial image bytes');if(a.dimensions)assert.ok(a.dimensions[0]>=400&&a.dimensions[1]>=400,id+' CG dimensions too small')}
- assert.ok(assets.has('assets/cover-generated.png'),'title cover missing');
- return {scenes:Object.values(payload.files).reduce((n,a)=>n+a.length,0),images:assets.size,imageBytes:embeddedBytes,cgs:12};
+ assert.ok(assets.has(assetSource(payload.art.title)),'active title cover missing');
+ return {scenes:Object.values(payload.files).reduce((n,a)=>n+a.length,0),images:assets.size,imageBytes:embeddedBytes,cgs:13};
+});
+await test('78人物槽与33背景视区的源图、几何和标题均完整内嵌',()=>{
+ const portraits=Object.entries(payload.art.portraits),backgrounds=Object.entries(payload.art.backgrounds);
+ assert.equal(portraits.length,78);assert.equal(new Set(portraits.map(([,v])=>v.src)).size,12);assert.equal(new Set(portraits.map(([,v])=>JSON.stringify(v))).size,72);
+ assert.equal(backgrounds.length,44);assert.equal(new Set(backgrounds.map(([,v])=>v.src)).size,11);assert.equal(new Set(backgrounds.map(([,v])=>JSON.stringify(v))).size,33);
+ for(const [slot,entry] of portraits)validateAtlasRegion(entry,slot);
+ for(const [slot,entry] of backgrounds){validateAtlasRegion(entry,slot);assert.equal(entry.region[2]*9,entry.region[3]*16,slot+' background must be 16:9')}
+ assert.deepEqual(payload.art.title,payload.art.backgrounds['cove-day']);
+ return {portraitSlots:portraits.length,portraitAtlases:12,backgroundViews:33,backgroundBoards:11};
 });
 
 class Element{
@@ -91,13 +107,13 @@ function createHarness({persisted=new Map(),denied=false,corrupt=false}={}){
  h.change=async target=>h.dispatch('change',{target});
  h.export=async()=>{await h.click('panel:saves');const n=h.downloads.length;await h.click('export');assert.equal(h.downloads.length,n+1,'UI did not create export download');const text=await h.downloads.at(-1).blob.text();return {text,data:JSON.parse(text)}};
  h.boot=async()=>{for(const [i,s] of executable.entries())vm.runInContext(s.text,h.context,{filename:'standalone-classic-'+i+'.js',timeout:30000});for(let i=0;i<5;i++){await Promise.resolve();await new Promise(r=>setImmediate(r))}assert.ok(h.app.innerHTML.includes('开始这个夏天'),'Title did not boot: '+h.app.innerHTML.slice(0,200));assert.equal(h.fetches.length,0,'Standalone boot performed fetch');return h};
- h.checkRenderedAssets=()=>{const urls=[...[...h.app.innerHTML.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["']/gi)].map(m=>m[1]),...[...h.app.innerHTML.matchAll(/url\(["']?([^"')]+)["']?\)/gi)].map(m=>m[1])];assert.ok(urls.length,'No rendered image URLs');for(const url of urls){assert.match(url,/^(?:blob:|data:)/,'Rendered resource still depends on path: '+url);if(url.startsWith('blob:'))assert.ok(h.blobs.has(url),'Rendered Blob URL was not decoded')}return urls.length};
+ h.checkRenderedAssets=()=>{const urls=[...[...h.app.innerHTML.matchAll(/<img\b[^>]*\bsrc=["']([^"']+)["']/gi)].map(m=>m[1]),...[...h.app.innerHTML.matchAll(/<image\b[^>]*\b(?:href|xlink:href)=["']([^"']+)["']/gi)].map(m=>m[1]),...[...h.app.innerHTML.matchAll(/url\(["']?([^"')]+)["']?\)/gi)].map(m=>m[1])];assert.ok(urls.length,'No rendered image URLs');for(const url of urls){assert.match(url,/^(?:blob:|data:)/,'Rendered resource still depends on path: '+url);if(url.startsWith('blob:'))assert.ok(h.blobs.has(url),'Rendered Blob URL was not decoded')}return urls.length};
  h.firstChoice=async()=>{for(let i=0;i<250;i++){const choice=h.actions().find(x=>x.dataset.action?.startsWith('choice:')&&!x.disabled);if(choice)return choice.dataset.action;assert.ok(h.actions().some(x=>x.dataset.action==='advance'),'Expected dialogue advance before first choice');await h.click('advance')}throw Error('No first choice within 250 rendered advances')};
  return h;
 }
 let normalStore;
 await test('实际classic脚本在禁止所有fetch时启动并展示波鲁克首句',async()=>{
- const h=await createHarness().boot();h.checkRenderedAssets();await h.click('new');h.checkRenderedAssets();const first=payload.files.common.find(s=>s.id==='opening').lines[0];assert.ok(h.app.innerHTML.includes(esc(first.text)),'Actual first story line not rendered');assert.equal(h.fetches.length,0);normalStore=h.persisted;return {firstSpeaker:first.speaker,firstLine:first.text};
+ const h=await createHarness().boot();h.checkRenderedAssets();assert.ok(h.app.innerHTML.includes(`viewBox="${payload.art.title.region.join(' ')}"`),'Title did not render the declared single atlas region');assert.match(h.app.innerHTML,/<image\b[^>]*\bhref=["']blob:/i,'Atlas title did not use an embedded Blob URL');await h.click('new');h.checkRenderedAssets();const first=payload.files.common.find(s=>s.id==='opening').lines[0];assert.ok(h.app.innerHTML.includes(esc(first.text)),'Actual first story line not rendered');assert.equal(h.fetches.length,0);normalStore=h.persisted;return {firstSpeaker:first.speaker,firstLine:first.text};
 });
 await test('渲染事件推进、选择、手动存读档与导出导入精确恢复',async()=>{
  const h=await createHarness().boot();await h.click('new');const choice=await h.firstChoice();await h.click(choice);await h.click('quicksave');const saved=await h.export();assert.ok(saved.data.state.pending||saved.data.state.sceneId,'No current scene in export');await h.click('save:slot1');await h.click('close');await h.click('advance');

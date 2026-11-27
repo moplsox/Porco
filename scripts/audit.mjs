@@ -22,7 +22,7 @@ const statKeys=['money','fuel','condition','mail','fioClose','fioTrust','ginaClo
 const relationKeys=['fioClose','fioTrust','ginaClose','ginaTrust'];
 const routes=['fio','gina','friend','solo'];
 const conditionKeys=['flag','eq','notFlag','route',...relationKeys];
-const effectKeys=[...statKeys,'flags','promise','resolvePromise'];
+const effectKeys=[...statKeys,'flags','promise','resolvePromise','rememberDay'];
 const promiseIds=new Set();
 function condition(c,where){
  if(c===undefined)return;
@@ -40,7 +40,8 @@ function effect(e,where){
  for(const k of statKeys)if(e[k]!==undefined&&!Number.isFinite(e[k]))fail(`${where} ${k} 不是有限数值。`);
  if(e.flags&&(!e.flags||typeof e.flags!=='object'||Array.isArray(e.flags)))fail(`${where} flags 格式错误。`);
  for(const [k,v] of Object.entries(e.flags||{}))if(!['boolean','number','string'].includes(typeof v)||typeof v==='number'&&!Number.isFinite(v))fail(`${where} 标记 ${k} 不是可保存的标量。`);
- if(e.promise){const p=e.promise;promiseIds.add(p.id);if(!p.id||!['fio','gina'].includes(p.person)||!Number.isInteger(p.day)||p.day<1||p.day>90||![0,1,2].includes(p.period)||!p.title)fail(`${where} 邀约信息无效。`)}
+ if(e.rememberDay!==undefined&&(typeof e.rememberDay!=='string'||!e.rememberDay))fail(`${where} rememberDay 必须是记忆标记名称。`);
+ if(e.promise){const p=e.promise;promiseIds.add(p.id);if(p.daysFromNow!==undefined&&(!Number.isInteger(p.daysFromNow)||p.daysFromNow<1||p.daysFromNow>89))fail(`${where} 邀约相对日期无效。`);if(!p.id||!['fio','gina'].includes(p.person)||!Number.isInteger(p.day)||p.day<1||p.day>90||![0,1,2].includes(p.period)||!p.title)fail(`${where} 邀约信息无效。`)}
 }
 for(const s of scenes){
  if(!s.id||byId.has(s.id))fail(`重复或缺失的场景 ID：${s.id}`);else byId.set(s.id,s);
@@ -50,11 +51,14 @@ for(const s of scenes){
  if(s.day>0&&Math.min(6,Math.floor((s.day-1)/15)+1)!==s.chapter)fail(`${s.id} 日期不属于其章节。`);
  if(!LOCATIONS[s.location])fail(`${s.id} 地点未接入：${s.location}`);
  if(s.route&&!routes.includes(s.route))fail(`${s.id} 路线无效。`);
+ if(s.expiresDay!==undefined&&(!Number.isInteger(s.expiresDay)||s.expiresDay<s.day||s.expiresDay>90))fail(`${s.id} 截止日期无效。`);
+ if(s.afterMemory&&(!s.afterMemory.flag||!Number.isInteger(s.afterMemory.days)||s.afterMemory.days<0))fail(`${s.id} 延迟回响无效。`);
  condition(s.requires,`${s.id}.requires`);effect(s.effects,`${s.id}.effects`);
  for(const [i,l] of (s.lines||[]).entries()){if(!l.speaker||typeof l.text!=='string'||!l.text.trim())fail(`${s.id} 第${i+1}行无效。`);condition(l.when,`${s.id}.lines[${i}]`)}
  for(const [i,c] of (s.choices||[]).entries()){if(!c.text)fail(`${s.id} 选项${i+1}缺少文字。`);if(c.reply!==undefined&&typeof c.reply!=='string')fail(`${s.id} 选后对白格式错误。`);condition(c.when,`${s.id}.choices[${i}]`);effect(c.effects,`${s.id}.choices[${i}]`)}
  if(s.kind==='date'){if(!Number.isFinite(s.cost)||s.cost<0||![1,2].includes(s.duration)||!s.invitation)fail(`${s.id} 约会缺少花费、时长或邀约说明。`)}
 }
+for(const s of scenes)for(const e of [s.effects,...(s.choices||[]).map(c=>c.effects)])if(e?.promise?.scene&&!byId.has(e.promise.scene))fail(`${s.id} 约定指向不存在的 ${e.promise.scene}`);
 for(const s of scenes)for(const target of [s.next,...(s.choices||[]).map(c=>c.next)].filter(Boolean))if(!byId.has(target))fail(`${s.id} 跳转到不存在的 ${target}`);
 for(const s of scenes)for(const [where,e] of [[s.id,s.effects],...(s.choices||[]).map((c,i)=>[`${s.id}选项${i+1}`,c.effects])])if(e?.resolvePromise&&!promiseIds.has(e.resolvePromise))warnings.push(`${where} 兑现的 ${e.resolvePromise} 不在静态邀约表，需由界面邀约建立。`);
 for(const j of jobs){
@@ -70,6 +74,7 @@ for(const j of jobs){
 // acquired from reachable choices/effects; unreferenced draft text is not counted.
 const flagValues=new Map();
 const acquiredPromises=new Map();
+const promisedScenes=new Map();
 const manualLaunches=[...new Set([...app.matchAll(/\blaunch\(['"]([^'"]+)['"]/g)].map(m=>m[1]))];
 for(const id of manualLaunches)if(!byId.has(id))fail(`界面手动入口指向不存在的 ${id}`);
 const putFlag=(k,v,d)=>{if(!flagValues.has(k))flagValues.set(k,new Map());const a=flagValues.get(k),key=JSON.stringify(v),old=a.get(key);if(!old||d<old.day){a.set(key,{value:v,day:d});return true}return false};
@@ -84,22 +89,36 @@ function availableDay(c,minDay=1,maxDay=90){
  if(c.flag===c.notFlag&&c.flag&&c.eq!==false)return null;
  return d<=maxDay?d:null;
 }
-function acquire(e,day){let changed=false;if(e?.flags)for(const [k,v] of Object.entries(e.flags))changed=putFlag(k,v,day)||changed;if(e?.promise){const p=e.promise,pday=p.day<day?Math.min(90,day+1):p.day;changed=putFlag('missed_'+p.id,true,pday)||changed;if(!acquiredPromises.has(p.id)||acquiredPromises.get(p.id)>pday){acquiredPromises.set(p.id,pday);changed=true}}return changed}
+function acquire(e,day){
+ let changed=false;
+ if(e?.flags)for(const [k,v] of Object.entries(e.flags))changed=putFlag(k,v,day)||changed;
+ if(e?.rememberDay)changed=putFlag(e.rememberDay,day,day)||changed;
+ if(e?.promise){
+  const p=e.promise,pday=Number.isInteger(p.daysFromNow)&&p.daysFromNow>0?Math.min(90,day+p.daysFromNow):p.day<day?Math.min(90,day+1):p.day;
+  changed=putFlag('missed_'+p.id,true,pday)||changed;
+  if(!acquiredPromises.has(p.id)||acquiredPromises.get(p.id)>pday){acquiredPromises.set(p.id,pday);changed=true}
+  if(p.scene&&(!promisedScenes.has(p.scene)||promisedScenes.get(p.scene)>pday)){promisedScenes.set(p.scene,pday);changed=true}
+ }
+ return changed;
+}
 const reached=new Map();
 const candidates=new Map();
 for(const s of scenes){
- if(s.kind==='main'&&s.day>0)candidates.set(s.id,{day:s.day,end:90});
+ if(s.kind==='main'&&s.day>0)candidates.set(s.id,{day:s.day,end:s.expiresDay??90});
  if(['event','date'].includes(s.kind)&&s.day>0)candidates.set(s.id,{day:s.day,end:Math.min(90,s.chapter*15)});
  if(s.kind==='ending'&&s.day===90)candidates.set(s.id,{day:90,end:90});
 }
 let changed=true,rounds=0;
 while(changed&&rounds++<scenes.length*4){
  changed=false;
+ for(const [id,d] of promisedScenes){const old=candidates.get(id);if(!old||d<old.day){candidates.set(id,{day:d,end:90});changed=true}}
  for(const id of manualLaunches){const sc=byId.get(id);if(sc?.day===0&&sc.effects?.resolvePromise&&acquiredPromises.has(sc.effects.resolvePromise)){const d=acquiredPromises.get(sc.effects.resolvePromise),old=candidates.get(id);if(!old||d<old.day){candidates.set(id,{day:d,end:90});changed=true}}}
  for(const j of jobs){const d=availableDay(j.requires,j.day,90);if(d!==null){const prev=candidates.get(j.scene);if(!prev||d<prev.day){candidates.set(j.scene,{day:d,end:90});changed=true}}}
  for(const [id,window] of [...candidates]){
   const s=byId.get(id);if(!s)continue;
-  const d=availableDay(s.requires,window.day,window.end);if(d===null)continue;
+  let earliest=window.day;
+  if(s.afterMemory){const records=[...(flagValues.get(s.afterMemory.flag)?.values()||[])].filter(v=>typeof v.value==='number');if(!records.length)continue;earliest=Math.max(earliest,Math.min(...records.map(v=>v.value+s.afterMemory.days)))}
+  const d=availableDay(s.requires,earliest,Math.min(window.end,s.expiresDay??90));if(d===null)continue;
   const old=reached.get(id);if(!old||d<old.day){reached.set(id,{day:d,end:window.end});changed=true}
   changed=acquire(s.effects,d)||changed;
   const edges=[];if(s.next)edges.push({target:s.next,day:d});
@@ -119,17 +138,17 @@ const hanCount=t=>(t.match(/\p{Script=Han}/gu)||[]).length;
 const uniqueCharacters=[...textSet].reduce((n,t)=>n+length(t),0);
 const uniqueHanziCharacters=[...textSet].reduce((n,t)=>n+hanCount(t),0);
 const perChapter=chapterSets.map((set,i)=>({chapter:i+1,title:CHAPTERS[i],uniqueCharacters:[...set].reduce((n,t)=>n+length(t),0),uniqueHanziCharacters:[...set].reduce((n,t)=>n+hanCount(t),0),scenes:scenes.filter(s=>s.chapter===i+1&&reached.has(s.id)).length}));
-const heroineCounts=Object.fromEntries(['fio','gina'].map(route=>[route,{events:scenes.filter(s=>s.route===route&&s.kind==='event'&&s.day>0&&reached.has(s.id)).length,dates:scenes.filter(s=>s.route===route&&s.kind==='date'&&s.day>0&&reached.has(s.id)).length}]));
+const heroineCounts=Object.fromEntries(['fio','gina'].map(route=>[route,{events:scenes.filter(s=>s.route===route&&s.kind==='event'&&s.day>0&&reached.has(s.id)).length,dates:scenes.filter(s=>s.route===route&&s.kind==='date'&&(s.day>0||promisedScenes.has(s.id))&&reached.has(s.id)).length}]));
 const usedCG=new Set(scenes.filter(s=>reached.has(s.id)&&s.cg).map(s=>s.cg));
 const referencedAssets=[];
-for(const [key,value] of Object.entries(art.backgrounds||{}))referencedAssets.push({where:`backgrounds.${key}`,src:value});
-for(const [key,value] of Object.entries(art.portraits||{}))referencedAssets.push({where:`portraits.${key}`,src:value});
+for(const [key,value] of Object.entries(art.backgrounds||{}))referencedAssets.push({where:`backgrounds.${key}`,src:typeof value==='string'?value:value?.src});
+for(const [key,value] of Object.entries(art.portraits||{}))referencedAssets.push({where:`portraits.${key}`,src:typeof value==='string'?value:value?.src});
 for(const [key,value] of Object.entries(art.cgs||{}))referencedAssets.push({where:`cgs.${key}`,src:typeof value==='string'?value:value?.src});
 for(const {where,src} of referencedAssets){if(typeof src!=='string'||!src){fail(`美术清单 ${where} 路径无效。`);continue}const p=path.resolve(root,src);if(!p.startsWith(root+path.sep)||!fs.existsSync(p)||!fs.statSync(p).isFile())fail(`美术文件缺失：${where} → ${src}`)}
 for(const id of usedCG)if(!art.cgs?.[id])fail(`场景 CG ${id} 未在美术清单中接入。`);
 for(const id of Object.keys(art.cgs||{}))if(!usedCG.has(id))fail(`相册 CG ${id} 没有可达剧情解锁。`);
 for(const s of scenes){if(!reached.has(s.id))continue;if(!art.backgrounds?.[s.location]&&!art.backgrounds?.[s.location+'-day'])fail(`${s.id} 地点背景未接入：${s.location}`)}
-const backgroundFiles=new Set(Object.values(art.backgrounds||{}));
+const backgroundFiles=new Set(Object.values(art.backgrounds||{}).map(value=>JSON.stringify(typeof value==='string'?{src:value}:value)));
 const endings=scenes.filter(s=>s.kind==='ending'&&s.day===90);
 const baseJobs=jobs.filter(j=>!j.followup&&!j.requires);
 const multiBaseJobs=baseJobs.filter(j=>j.multi);
@@ -154,7 +173,7 @@ const output={schemaVersion:1,generatedAt:new Date().toISOString(),sourceFiles:c
 fs.writeFileSync(path.join(root,'data/audit.json'),JSON.stringify(output,null,2)+'\n');
 const rows=perChapter.map(c=>`| ${c.chapter} · ${c.title} | ${c.scenes} | ${c.uniqueCharacters.toLocaleString('en-US')} | ${c.uniqueHanziCharacters.toLocaleString('en-US')} |`).join('\n');
 const reqRows=requirements.map(r=>`| ${r.label} | ${r.actual} | ${r.pass?'通过':'未达到'} |`).join('\n');
-const doc=`# 实际内容与验收记录\n\n本记录由 \`node scripts/audit.mjs\` 从游戏实际载入的文件生成。生成时间：${output.generatedAt}。\n\n## 正文统计\n\n去重可见正文 **${uniqueCharacters.toLocaleString('en-US')} 字符**，其中汉字 **${uniqueHanziCharacters.toLocaleString('en-US')} 字**。${output.countingMethod} 同一结局或路线的多次访问不重复计数；表内各章单独去重，跨章若出现相同整段，全局只计一次。\n\n| 章节 | 可达场景 | 正文字符 | 汉字 |\n|---|---:|---:|---:|\n${rows}\n\n## 内容与资源检查\n\n${reached.size}/${scenes.length} 个场景有实际入口；${jobs.length} 个公告包含 ${baseJobs.length} 个初始委托与 ${jobs.length-baseJobs.length} 个延后续单。检查了所有跳转、条件字段、数值效果、日期、时段、邀约及实际美术路径。\n\n| 要求 | 实际 | 状态 |\n|---|---:|---|\n${reqRows}\n\n## 限制与待办\n\n${warnings.length?warnings.map(w=>'- '+w).join('\n'):'静态审计未发现额外警告。'}\n\n${errors.length?'未通过项：\n\n'+errors.map(e=>'- '+e).join('\n'):'静态检查通过。'}\n\n临时插画及美术制作状态见 [ART.md](ART.md)。浏览器实测尝试受当前环境的浏览器 relay 连接失败阻止，尚未完成真实浏览器验收。声音播放与触屏布局仍待浏览器确认；本脚本不替代这些检查。\n\n<!-- TEST_RESULTS_START -->\n引擎与三条路线模拟测试尚未运行。执行 \`node scripts/test.mjs\` 更新此段。\n<!-- TEST_RESULTS_END -->\n`;
+const doc=`# 实际内容与验收记录\n\n本记录由 \`node scripts/audit.mjs\` 从游戏实际载入的文件生成。生成时间：${output.generatedAt}。\n\n## 正文统计\n\n去重可见正文 **${uniqueCharacters.toLocaleString('en-US')} 字符**，其中汉字 **${uniqueHanziCharacters.toLocaleString('en-US')} 字**。${output.countingMethod} 同一结局或路线的多次访问不重复计数；表内各章单独去重，跨章若出现相同整段，全局只计一次。\n\n| 章节 | 可达场景 | 正文字符 | 汉字 |\n|---|---:|---:|---:|\n${rows}\n\n## 内容与资源检查\n\n${reached.size}/${scenes.length} 个场景有实际入口；${jobs.length} 个公告包含 ${baseJobs.length} 个初始委托与 ${jobs.length-baseJobs.length} 个延后续单。检查了所有跳转、条件字段、数值效果、日期、时段、邀约及实际美术路径。\n\n| 要求 | 实际 | 状态 |\n|---|---:|---|\n${reqRows}\n\n## 限制与待办\n\n${warnings.length?warnings.map(w=>'- '+w).join('\n'):'静态审计未发现额外警告。'}\n\n${errors.length?'未通过项：\n\n'+errors.map(e=>'- '+e).join('\n'):'静态检查通过。'}\n\n临时插画及美术制作状态见 [ART.md](ART.md)。真实浏览器检查单独记录于 BROWSER-QA.md；本脚本检查剧情与资源，不替代画面、声音或触屏验证。\n\n<!-- TEST_RESULTS_START -->\n引擎与三条路线模拟测试尚未运行。执行 \`node scripts/test.mjs\` 更新此段。\n<!-- TEST_RESULTS_END -->\n`;
 fs.writeFileSync(path.join(root,'docs/ACCEPTANCE.md'),doc);
 console.log(JSON.stringify({status:output.status,scenes:reached.size,uniqueCharacters,uniqueHanziCharacters,heroineCounts,jobs:output.jobs,assets:output.assets,errors,warnings},null,2));
 if(errors.length)process.exitCode=1;

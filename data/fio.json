@@ -510,7 +510,7 @@
     "duration": 1,
     "invitation": "星期日下午的沿岸渡轮。船票两张8里拉，约半天；这一次两人都不用开飞机。",
     "portraitOutfits": {
-      "fio": "date"
+      "fio": "strawhat"
     }
   },
   {
@@ -1721,7 +1721,7 @@
     "duration": 1,
     "invitation": "收市后买两只桃子，沿修鞋铺后的小路散步。2里拉，约半天；不需要订座。",
     "portraitOutfits": {
-      "fio": "work"
+      "fio": "strawhat"
     }
   },
   {
@@ -3785,6 +3785,997 @@
     },
     "portraitOutfits": {
       "fio": "work"
+    }
+  },
+  {
+    "id": "fio_swim_invitation",
+    "title": "把一个下午借给海",
+    "chapter": 3,
+    "day": 40,
+    "period": 0,
+    "location": "hangar",
+    "kind": "main",
+    "route": null,
+    "lines": [
+      {
+        "speaker": "波鲁克",
+        "text": "“我的飞机不收游泳课的钱。它已经喝够了。”"
+      },
+      {
+        "speaker": "旁白",
+        "text": "菲尔拿着一张空白的工时纸，站在刚排干水的浮筒边。她先看了看你那桶咸水，才把纸翻过来。背面没有铆钉数，也没有要你签名的试飞栏。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "我没来找飞机。我找你。后天下午，来海湾游泳，好不好？",
+        "outfit": "work",
+        "expression": "smile"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "保可洛现在还接打捞生意？"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "现在的保可洛批准自己休半天假。压力试验交给鲁迪和艾达；表格我今天午饭前签。他们两个也有权在我不盯着的时候完成工作。",
+        "outfit": "work",
+        "expression": "serious"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她指甲上有一道没洗掉的蓝墨水。工时纸的另一面写着几笔小字：两条毛巾，饮水，桃子。最末一项被划掉，又添在旁边——别把量水尺带来。"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "这项恐怕很难。你看见水就想量。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "所以我才请你。要是我开始讲浮力，你负责提醒我，今天没有薪水。",
+        "outfit": "work",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "旁白",
+        "text": "吉娜从库门口递进一把借来的椅子，让菲尔看看椅脚能不能再矮一寸。旅馆新坡道要试着推餐车，椅子则留给腿脚不便的客人。她明天下午约了木匠，已经把海湾那一栏从自己的记事簿上划开。"
+      },
+      {
+        "speaker": "吉娜",
+        "text": "别把我的毛巾当抹布。还有，记得回来。我礼拜天要清点床单，可没有空去海里找一位设计师。",
+        "outfit": "morning",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "两条毛巾都算我的借用。我签字。",
+        "outfit": "work",
+        "expression": "smile"
+      },
+      {
+        "speaker": "吉娜",
+        "text": "也用不着每件事都签字。那两个桃子自己付钱，我已经算错一回果铺的账。",
+        "outfit": "morning",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "旁白",
+        "text": "吉娜带椅子走了。菲尔没有立即把话题换回飞机。她把那张纸平摊在你面前，压住它的不是扳手，而是一枚干净的桃核。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "浅湾里，有一段底下是细沙。我上星期自己去看过，离系船绳远，也没有出湾的急流。我们不必游得多远。",
+        "outfit": "work",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "听着像一份很便宜的飞行计划。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "它不是飞行计划。我想有一个下午，回来时想起你，不是想起你在左转时踩了多少舵。",
+        "outfit": "work",
+        "expression": "tired"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她说完，拿起空杯子喝了一口，才发现里面没有水。你把自己那壶推过去，没有替她找个比较不直接的说法。库外一阵风把纸角抬起来，她仍旧按着，等你回答。"
+      }
+    ],
+    "expiresDay": 84,
+    "requires": {
+      "notFlag": "finalChoice"
+    },
+    "effects": {
+      "flags": {
+        "fioSwimInvited": true
+      }
+    },
+    "choices": [
+      {
+        "text": "“后天下午。桃子我带，尺子留这里。”",
+        "reply": "“两点，旧滑道旁。”她在工时纸上写下时间，再添一句“免费；一个下午；不用飞机”。你把纸收好，先把下午那笔可有可无的测绘委托划掉。",
+        "effects": {
+          "promise": {
+            "id": "fio_swim_plan",
+            "person": "fio",
+            "day": 42,
+            "period": 1,
+            "title": "菲尔邀你游泳 · 海湾 · 免费 · 1时段",
+            "scene": "fio_swim_shore",
+            "daysFromNow": 2
+          },
+          "flags": {
+            "fioSwimPlan": "accept"
+          },
+          "rememberDay": "fioSwimInvitationDay"
+        }
+      },
+      {
+        "text": "“那天下午有活。改到再后两天，我先把时间空出来。”",
+        "reply": "菲尔翻过自己的工期表：“那就再后两天，还是下午。我上午见供货商，两点以后只归海湾。”你们把新时间都记下，没让一句“到时候再说”占住半个星期。",
+        "effects": {
+          "fioTrust": 1,
+          "promise": {
+            "id": "fio_swim_plan",
+            "person": "fio",
+            "day": 44,
+            "period": 1,
+            "title": "改约：菲尔与你去海湾 · 免费 · 1时段",
+            "scene": "fio_swim_shore",
+            "daysFromNow": 4
+          },
+          "flags": {
+            "fioSwimPlan": "rescheduled"
+          },
+          "rememberDay": "fioSwimInvitationDay"
+        }
+      },
+      {
+        "text": "“这次我想一个人待着。别替我空着下午。”",
+        "reply": "“好。”她把你那一栏划掉，给艾达写了一张便条，问她下工后要不要一起去海边。“你不用找个坏天气给我。我听得懂这句。”临走时，她仍把周四的工单留在你手边。",
+        "effects": {
+          "flags": {
+            "fioSwimPlan": "declined"
+          },
+          "rememberDay": "fioSwimInvitationDay"
+        }
+      }
+    ]
+  },
+  {
+    "id": "fio_swim_shore",
+    "title": "岸边留了两条毛巾",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "date",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "旁白",
+        "text": "滑道旁的木桩上，挂着两条颜色不同的毛巾。一条压在阳光里，另一条搭在阴影边。菲尔坐在上面吃桃子，鞋底并排朝着海，没来得及换下蓝白格纹衬衫。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "你来了。我没有借秤，也没有准备记录纸。",
+        "outfit": "work",
+        "expression": "smile"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "那是我白带了一手字。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "留到明天写。今天如果要工作，你先问我愿不愿意加班。",
+        "outfit": "work",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "旁白",
+        "text": "你把水壶放在两块平石之间。海水在滑道边一进一退，把她脚旁的小石子推得发亮。挂衣服的短绳绕在内侧木桩上，另一端离开通向飞机的系缆，谁也不必在进出水时跨过它。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "我把背风的地方留给你了。想下水就下，不想也可以坐着。邀请的是一个下午，不是游到对岸的保证书。",
+        "outfit": "work",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "我可不想跟一艘渡轮抢道。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "它也未必想赢你。",
+        "outfit": "work",
+        "expression": "smile"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她先用脚试水，又停住，转头看你。往常在这里，她会问你发动机有没有异常；今天她等的是另一件可以说“不”的事。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "风把第一滴雨送到水壶盖上。菲尔伸手接了接，望向湾口那条颜色变深的浪线，已经把鞋子拿回滑道里侧。",
+        "when": {
+          "flag": "currentRain",
+          "eq": true
+        }
+      },
+      {
+        "speaker": "菲尔",
+        "text": "今天不下水。我约你来过下午，没约你跟天气赌输赢。棚下还有地方，两条毛巾可以当坐垫。",
+        "outfit": "work",
+        "expression": "serious",
+        "when": {
+          "flag": "currentRain",
+          "eq": true
+        }
+      },
+      {
+        "speaker": "旁白",
+        "text": "湾口很平，细沙一直清楚地延伸到内侧岩礁。她指给你看那条止步的界线：以木桩和礁石为端点，不绕过去，也不追着浮物游出湾。",
+        "when": {
+          "flag": "currentRain",
+          "eq": false
+        }
+      }
+    ],
+    "cost": 0,
+    "duration": 1,
+    "invitation": "菲尔主动邀约：在秘密海湾的背风浅水里游泳、分桃子。免费，占下午1时段，不用飞机或燃油；可从日历提前改约。",
+    "effects": {
+      "flags": {
+        "fioSwimVisited": true
+      },
+      "rememberDay": "fioSwimVisitDay"
+    },
+    "choices": [
+      {
+        "text": "“下水吧。到了那块礁石就回头。”",
+        "when": {
+          "flag": "currentRain",
+          "eq": false
+        },
+        "next": "fio_swim_water",
+        "effects": {
+          "flags": {
+            "fioSwimWeather": "clear"
+          }
+        }
+      },
+      {
+        "text": "“今天替你看着桃子。岸上也不错。”",
+        "when": {
+          "flag": "currentRain",
+          "eq": false
+        },
+        "next": "fio_swim_bankside",
+        "effects": {
+          "flags": {
+            "fioSwimWeather": "bankside"
+          }
+        }
+      },
+      {
+        "text": "收起晒着的毛巾，和她去棚下分桃子。",
+        "when": {
+          "flag": "currentRain",
+          "eq": true
+        },
+        "next": "fio_swim_rain",
+        "effects": {
+          "fioTrust": 1,
+          "flags": {
+            "fioSwimWeather": "rain"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "fio_swim_water",
+    "title": "只游到那块礁石",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "event",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "旁白",
+        "text": "你把飞行镜和眼镜收进铁盒，合上盖子，放到浪打不到的高处。菲尔在帆布后换好衣服，白色上衣盖住腰腹，白短裤松松地落到大腿中段。她拎着换下的衬衫，先把口袋里那截铅笔取出来，和你的眼镜放在一起。"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "抓到一个偷带工具的。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "它自己住在口袋里。今天已经放它假了。",
+        "outfit": "swim",
+        "expression": "surprise"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她挽好马尾，从细沙那段慢慢走入水中。海水到腰边时，她回头向你伸出手，掌心朝上。你站稳才搭过去，她借了一点力，又自己松开，向前游了一小段。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "这边很好。脚一放下就能踩到沙。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "旁白",
+        "text": "你们沿着岸游，没有比赛。她到那块礁石前便折回来，湿掉的碎发贴着额角。她侧头朝你望来，抬起一臂划水，小小的水花落在阳光里。岸上叠着她的格纹衬衫和毛巾；你在她转身的地方等着，留出足够的距离，让她能按自己的节奏回来。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "你平常也这样吗？等别人转弯，假装自己只是在看浪？",
+        "outfit": "swim",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "这浪不好收钱。只好看得认真点。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她游回浅处，笑着抹掉眉毛上的水，一只手扶着平稳的浅石。你们站在同一片细沙上，肩头隔着一臂远。水没有发动机那么吵，话说轻一点，也能被另一个人听见。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "我想泼你一下。可以吗？不碰铁盒。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "先报个油耗。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "两只手，一点海水。还来得及拒绝。",
+        "outfit": "swim",
+        "expression": "smile"
+      }
+    ],
+    "cg": "fio-swimming",
+    "choices": [
+      {
+        "text": "“批准。不过我这边也有两只手。”",
+        "next": "fio_swim_splash",
+        "effects": {
+          "fioClose": 1,
+          "flags": {
+            "fioSwimPlay": true
+          }
+        }
+      },
+      {
+        "text": "“给老飞行员留点体面。陪我漂一会儿。”",
+        "next": "fio_swim_quiet",
+        "effects": {
+          "fioTrust": 1,
+          "flags": {
+            "fioSwimQuiet": true
+          }
+        }
+      }
+    ],
+    "hidePortraits": [
+      "porco"
+    ]
+  },
+  {
+    "id": "fio_swim_splash",
+    "title": "海水不算修理费",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "event",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "旁白",
+        "text": "她先把一小捧水送到你袖口那么高的地方，水花散开，只沾到手臂。你用掌心拨回一点，瞄的是她身旁那片空海面，浪推过来，仍把她的辫梢晃湿了。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "这算你偷看航图！",
+        "outfit": "swim",
+        "expression": "surprise"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "我从来不往不知道水深的地方开火。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她笑得向后退了一步，随即停住，脚尖重新摸到细沙。你也放下手，等她确认站稳。她冲你点一下头，才又把两指夹着的一滴水弹过来，正落在你的鼻尖。"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "这回记账。盐水，鼻子一次。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "账单请写我的名字。别再寄给祖父。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "旁白",
+        "text": "那句话把你们都逗笑了。她不是等你保护的一位乘客，也不是来证明自己能游多远的设计师，只是一个会在周四前赶完工、在今天赢到一滴海水的人。她赢了，便大方地停战，抬手遮住眼睛看岸上的毛巾。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "够了。再晒下去，我明天量图时会分不清自己是冷还是热。",
+        "outfit": "swim",
+        "expression": "tired"
+      },
+      {
+        "speaker": "旁白",
+        "text": "你让她先往浅处走，自己在外侧慢半步，没有碰她。她回头看见你脚下那块湿石，指了一条更好走的沙路。你照她说的绕过去，替两个人都省下一笔修理费。"
+      }
+    ],
+    "next": "fio_swim_after",
+    "hidePortraits": [
+      "porco"
+    ]
+  },
+  {
+    "id": "fio_swim_quiet",
+    "title": "把手放在水面上",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "event",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "旁白",
+        "text": "她把准备扬起的水放回海里。你们找了一段还能踩到底的浅水，先让身体松下来；谁想站起，只要把脚放下就行。她没有要求你闭眼，也没有把安静当成需要修好的故障。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "刚才在机库，我差点又改掉今天的安排。不是有新问题，只是还有几条旧数据没抄清。",
+        "outfit": "swim",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "现在也还在那儿。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "嗯。艾达说，清不清楚的，不差我这两个小时。她说得对，我还是在门口站了好一会儿。",
+        "outfit": "swim",
+        "expression": "tired"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她用手背轻轻拨水，水把阳光推成一道晃动的细线。你从来知道怎样从一间有人等你的屋子里走掉；她正学怎样从一张还没做完的桌子旁走开。你没有把两件事混成一句劝告。"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "下次我到门口。你把杯子洗了就走。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "不查我带没带图？",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "查。扣在岸上，收保管费。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她把自己那只湿手平放在水面上，离你的手不远。两道小浪碰到一起，谁也没急着把它说成别的。过了一会儿，她先站起来，伸展游酸的肩膀，说今天的休假已经开始像休假。"
+      }
+    ],
+    "next": "fio_swim_after",
+    "hidePortraits": [
+      "porco"
+    ]
+  },
+  {
+    "id": "fio_swim_after",
+    "title": "毛巾干的那一面",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "event",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "旁白",
+        "text": "回到滑道，你把阳光里的毛巾递给她，自己拿另一条。菲尔没有一口气把头发搓乱，只沿着辫梢挤去海水，再松开一点扎得太紧的发圈。白上衣仍盖着腰腹，湿布料在风里慢慢失去凉意。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "昨天我本来想带新泳衣。结果试穿的时候，肩带卡在一枚扣子上。我觉得假期不必从修理扣子开始，就穿旧的来了。",
+        "outfit": "swim",
+        "expression": "tired"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "好决定。今天停修。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "你把水壶递过去。她喝完，自己把盖子旋紧，没有让水漏进那只装着眼镜和铅笔的铁盒。两只桃子被太阳晒得发软，吃的时候要托着下巴，免得果汁滴在衣服上。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "我想过你会不会说忙，或者只来替我看着东西。你来了，我反而有点不知道该怎么过一个普通的下午。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "咬桃子。别咬核。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "你总有一种很实际的办法，让人不必立刻说出漂亮话。",
+        "outfit": "swim",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她把自己那颗桃子转了半圈，找没碰过的地方又咬一口，眼睛看着湾口。远处有一架陌生邮机经过，没有入湾。你们都听了一下声音，谁也没有站起去找记录本。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "明天上午我还是得回去。新订单要我亲自回信，那组排水孔也不能由别的人替我负责。我喜欢今天，不想用它换掉那些事。",
+        "outfit": "swim",
+        "expression": "serious"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "明天那份载重记录，我愿意先听你的。今天来游泳，并没有替你交掉它。",
+        "outfit": "swim",
+        "expression": "neutral",
+        "when": {
+          "flag": "currentTrusted",
+          "eq": true
+        }
+      },
+      {
+        "speaker": "菲尔",
+        "text": "还有，明天的验证班仍按工期表由艾达带。你肯来陪我，我很高兴；要换那张排班，得把完整记录交给我。两件事不互相抵账。",
+        "outfit": "swim",
+        "expression": "serious",
+        "when": {
+          "flag": "currentTrusted",
+          "eq": false
+        }
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "我的飞机也没答应替我吃早饭。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "那很好。我们可以都去干自己的活，再把下一次约好。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "旁白",
+        "text": "你把她那条被风掀开的毛巾角压回石上。石头原本在你这边，你挪过去一点，她坐的位置就不再迎着风。她看见了，把剩下的桃子放低，等着你这一次怎么称呼“下一次”。"
+      }
+    ],
+    "choices": [
+      {
+        "text": "“我想再约你。就我们两个，工作以外。”",
+        "when": {
+          "route": "fio"
+        },
+        "next": "fio_swim_romance",
+        "effects": {
+          "fioClose": 2,
+          "flags": {
+            "fioSwimRomance": true,
+            "fioSwimFriend": false
+          }
+        }
+      },
+      {
+        "text": "“朋友的休假，也值得再空一个下午。”",
+        "next": "fio_swim_friend",
+        "effects": {
+          "fioTrust": 1,
+          "flags": {
+            "fioSwimFriend": true,
+            "fioSwimRomance": false
+          }
+        }
+      }
+    ],
+    "hidePortraits": [
+      "porco"
+    ]
+  },
+  {
+    "id": "fio_swim_romance",
+    "title": "下次，还是这个位置",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "event",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "旁白",
+        "text": "菲尔没有马上笑。她把手上的桃核包好，放到纸袋里，才把湿毛巾从肩上拿下来，折到腿上。你认识她思考操纵误差的神情；这次她要作出的判断，没有谁能替她签字。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "是现在想约我，对吗？不是八年前留下的一句话，也不是我回来以后，你觉得应当补上的一件事。",
+        "outfit": "swim",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "我今天下午还嫌你泼水。欠账的事，哪有这么新。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "那我愿意。不过下一次，别把“等我有空”当时间。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "你把供货商打发走。我把周四飞完。两边都写信，写具体点。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她点头，手指搭到你摊在石上的掌边，先轻轻碰了一下。你把掌心转过去，留着让她选择的那一点空隙。她自己把手放进来，握住，没有借力，也没有要站起来。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "这样可以？",
+        "outfit": "swim",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "这块石头不收两个座位的钱。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她终于笑了，肩膀挨到你的衣袖。湿发上有一点咸味，毛巾干燥的一角搭在你手背上。你没去谈天气，也没许诺每天都能在这里；只把另一只手移开，让她能坐得更舒服一点。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "后来是她先说要回去，今晚要和艾达算加班钱。你松开手，替她拿起装着衬衫的纸袋。她走了两步，又把自己的桃核袋从你手里取回，说工友可没有义务替总设计师丢垃圾。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "明天见。明天见面要先把记录交了，才轮到牵手。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "这规矩真费铅笔。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "你们没有改掉它。回去之前，你把两条毛巾都搭在向阳的短绳上，留出能被风吹透的距离。"
+      }
+    ],
+    "effects": {
+      "flags": {
+        "fioSwimFinished": true
+      }
+    },
+    "hidePortraits": [
+      "porco"
+    ]
+  },
+  {
+    "id": "fio_swim_friend",
+    "title": "不必变成别的下午",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "event",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "菲尔",
+        "text": "好。就算下次你只想坐岸上，也可以直说。我约你，不是让你猜一张请帖后面还有多少条件。",
+        "outfit": "swim",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她把桃核收进纸袋，把另一半尚未沾果汁的纸铺在两人中间。你们把借来的毛巾折好，让它们各自沾水的那一面朝着风。"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "下次换你付桃子钱。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "这次本来就是我请。你半路买来，连发票都没留，不能算工坊报销。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "旁白",
+        "text": "你们花了半分钟争论两只桃子的归属，谁也没有受伤。她拿回自己的衬衫，继续讲起艾达想去夜市买的一副耳钉；你答应下次路过时替她们看看有没有晚归的船。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "吉娜明天要推餐车试新坡道，你如果去帮忙，告诉她毛巾我洗好了送回去。别替我答应洗旅馆全部的床单。",
+        "outfit": "swim",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "那得另收一个海湾的钱。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她笑着先往小路走。你把那只装着眼镜和铅笔的铁盒打开，各取走自己的东西。这个下午没有变成一场需要拒绝谁的谈话，仍然值得她在工时表的空格里认真留下来。"
+      }
+    ],
+    "effects": {
+      "flags": {
+        "fioSwimFinished": true
+      }
+    },
+    "hidePortraits": [
+      "porco"
+    ]
+  },
+  {
+    "id": "fio_swim_bankside",
+    "title": "谁也不用证明会游泳",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "event",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "菲尔",
+        "text": "那我游一小圈。你帮我看着岸上那条毛巾，风快把它偷走了。",
+        "outfit": "work",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她换好衣服，沿着细沙走入水中，只游到约好的礁石前就折回来。你坐在能看清整片浅湾的位置，不替她报秒。她上岸时，第一件事是把凉手背贴到你的前臂上，见你一缩便笑得站住不动。"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "岸上还有伏击？"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "两秒。刚才忘记问了，对不起。下次先申请。",
+        "outfit": "swim",
+        "expression": "smile"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她把干毛巾拎过来，你让出晒热的那半块石头。她没有说服你也下去，只一边拧干辫梢，一边问你想先吃哪只桃子。远处的飞机滑出湾口，你们同时看了一眼，谁也没跟上去。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "这也很好。我以前以为休息一定要把每件好玩的事做完，现在觉得，有人替毛巾压一块石头，也算一起过了下午。",
+        "outfit": "swim",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "石头要是能说话，会找你多算工钱。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "你们坐到阴影移过水壶才走。她回机库之前，先绕去旅馆还装桃子的篮子；吉娜的木匠还在，等着她看第二版坡道的轮距。这个下午留下空白，却没让谁的夏天停下来。"
+      }
+    ],
+    "effects": {
+      "fioTrust": 1,
+      "flags": {
+        "fioSwimFinished": true,
+        "fioSwimFriend": true,
+        "fioSwimRomance": false
+      }
+    },
+    "hidePortraits": [
+      "porco"
+    ]
+  },
+  {
+    "id": "fio_swim_rain",
+    "title": "雨天也有干的地方",
+    "chapter": 3,
+    "day": 0,
+    "period": 1,
+    "location": "cove",
+    "kind": "event",
+    "route": "fio",
+    "lines": [
+      {
+        "speaker": "旁白",
+        "text": "你们把两条毛巾都收进棚下。雨没有变大，湾口却已经看不清那块约好的礁石。菲尔坐下来，把原本准备用来记账的纸折成一只浅浅的小船，放到水桶里。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "它不领薪水，也不用在坏天气出航。",
+        "outfit": "work",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "比我那架聪明。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她推着纸船撞了一下你的手指，先问可不可以靠港。你把桶边的锈钉压平，才让它停到手掌旁。她端详一会儿，笑着认领了这个什么邮件也不必带的下午。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "我其实有一点失望。上星期来看水的时候，还想过今天阳光会照到哪里。",
+        "outfit": "work",
+        "expression": "tired"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "下次带上它。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "你能开阳光的发票？",
+        "outfit": "work",
+        "expression": "smile"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "阴天退一只桃子。"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她掰开桃子，把较完整的一半给你。你们没有临时许下一次更贵的补偿，也没有把没能下水算到谁的账上。她只说回去以后会洗干净毛巾，下一个空闲下午，再看那天的风。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "谢谢你没有说，“来都来了”。我想和你一起休息，不想回去多写一张事故表。",
+        "outfit": "work",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "旁白",
+        "text": "离开时她带走纸船，夹在空工时表里。你替棚门加上一块木楔，雨滴落在上面，响得很轻。泳湾还在那里，没有因为这次没能进去就欠你们什么。"
+      }
+    ],
+    "effects": {
+      "flags": {
+        "fioSwimFinished": true,
+        "fioSwimFriend": true,
+        "fioSwimRomance": false
+      }
+    },
+    "hidePortraits": [
+      "porco"
+    ]
+  },
+  {
+    "id": "fio_swim_echo",
+    "title": "一块石头的位置",
+    "chapter": 4,
+    "day": 49,
+    "period": 1,
+    "location": "hangar",
+    "kind": "main",
+    "route": null,
+    "lines": [
+      {
+        "speaker": "旁白",
+        "text": "机库窗沿多了一只洗净的小铁盒。里面放着两支削好的铅笔，一块用来压纸的小石头。菲尔正在把新订单的附件逐页签完，艾达坐在旁边核对材料，谁也没因为你进门就停下工作。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "先等一下。这一页签完，我就听你的操纵感受。",
+        "outfit": "work",
+        "expression": "neutral"
+      },
+      {
+        "speaker": "波鲁克",
+        "text": "我今天带的是另一件坏消息。果铺涨价了。"
+      },
+      {
+        "speaker": "菲尔",
+        "text": "两只桃子还付得起。飞机暂时不许涨。",
+        "outfit": "work",
+        "expression": "smile"
+      },
+      {
+        "speaker": "旁白",
+        "text": "她签完最后一页，把笔递给你时，没有立刻松开。手指只停了一下，随即把正式记录纸推正。你把测试结论写清楚，才把那条洗好晒干的毛巾递到她手边。",
+        "when": {
+          "flag": "fioSwimRomance"
+        }
+      },
+      {
+        "speaker": "菲尔",
+        "text": "休假那天的规矩还在。今天先工作。下周有半个下午，我会写在信里，不只写“有空”。",
+        "outfit": "work",
+        "expression": "smile",
+        "when": {
+          "flag": "fioSwimRomance"
+        }
+      },
+      {
+        "speaker": "旁白",
+        "text": "她把那块石头挪到靠你的一边，压好卷起来的记录纸。你认出它在海湾压过毛巾，便坐下，把今天的图纸铺到旁边。两种下午，各有各的位置。",
+        "when": {
+          "flag": "fioSwimFriend"
+        }
+      },
+      {
+        "speaker": "菲尔",
+        "text": "艾达问下次能不能一起去。我说先问你愿不愿意当三个桃子的采购员。游不游，你自己决定。",
+        "outfit": "work",
+        "expression": "neutral",
+        "when": {
+          "flag": "fioSwimFriend"
+        }
+      },
+      {
+        "speaker": "旁白",
+        "text": "铁盒盖内还夹着一只晾平的纸船。没有寄件人，没有收件人，底上只有一道浅浅的水痕。她说等下一次晴天，要让它待在岸上看真正的海。",
+        "when": {
+          "flag": "fioSwimWeather",
+          "eq": "rain"
+        }
+      },
+      {
+        "speaker": "旁白",
+        "text": "艾达问你们在笑什么。菲尔说一笔一直没结清的盐水账，你只把铁盒往她面前推了推，免得水杯碰到铅笔。",
+        "when": {
+          "flag": "fioSwimPlay"
+        }
+      },
+      {
+        "speaker": "旁白",
+        "text": "窗外的海面没什么浪。菲尔在完成的那一栏画了一道短横线，把明天下工的时间圈起来。她看你一眼，没解释这次为什么要准时走。",
+        "when": {
+          "flag": "fioSwimQuiet"
+        }
+      },
+      {
+        "speaker": "旁白",
+        "text": "旅馆的人来取坡道副图。吉娜在纸条上写，餐车已经推得过去，下一笔钱要留给雨棚。菲尔替她算完角度，让来人把小铁盒也带去——里面的石头留下，两条毛巾终于都回到了借用簿上。"
+      }
+    ],
+    "requires": {
+      "flag": "fioSwimFinished"
+    },
+    "afterMemory": {
+      "flag": "fioSwimVisitDay",
+      "days": 5
     }
   }
 ]

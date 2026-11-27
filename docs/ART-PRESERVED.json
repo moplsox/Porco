@@ -1,0 +1,29 @@
+{
+  "baseline": "5722c7a7e1a4418f526ebb3b3db268bee288acd7",
+  "cgs": {
+    "yellow-quilt": {
+      "src": "assets/cg-yellow-quilt.png",
+      "sha256": "fc7f77a2fe031c5b633eaf9e53362a720cc2a464ffae9d60324fc9be7a51ba85"
+    },
+    "dinner-fio": {
+      "src": "assets/cg-dinner-fio.png",
+      "sha256": "413b195abc09dc051dea72cd46213c60b58ff3d69b037d54a843054919e6d567"
+    },
+    "last-boat": {
+      "src": "assets/cg-last-boat.png",
+      "sha256": "83b073e6b4b30bcd301a1e9c019b91a34b9e6fca2346da5b79f5981560f9ee1c"
+    },
+    "storm": {
+      "src": "assets/cg-storm.png",
+      "sha256": "f56d532c47ce8c3e63ffd3b96f6e8f5c9ab142c94480ed5714dc60810982a2f9"
+    },
+    "kitchen": {
+      "src": "assets/cg-kitchen.png",
+      "sha256": "a703708d486f5413fda03af37c0b11d633e28adc606ad4062f33466a5ee2a5a4"
+    },
+    "key": {
+      "src": "assets/cg-key.png",
+      "sha256": "a22be1dd28887c9fcb3f59919a779671e3f23699ef70fbf06aa70777d51dac51"
+    }
+  }
+}

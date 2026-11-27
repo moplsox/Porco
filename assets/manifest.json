@@ -1,99 +1,1593 @@
 {
   "backgrounds": {
-    "cove": "assets/cover-generated.png",
-    "sea": "assets/bg-sea.png",
-    "hotel": "assets/bg-hotel.png",
-    "hangar": "assets/bg-hangar.png",
-    "market": "assets/bg-market.png",
-    "post": "assets/bg-post.png",
-    "lighthouse": "assets/bg-lighthouse.png",
-    "garden": "assets/bg-garden.png",
-    "ferry": "assets/bg-ferry.png",
-    "kitchen": "assets/bg-kitchen.png",
-    "dock": "assets/bg-hotel.png",
-    "cove-day": "assets/cover-generated.png",
-    "cove-night": "assets/bg-cove-night.svg",
-    "cove-rain": "assets/bg-cove-rain.svg",
-    "hangar-day": "assets/bg-hangar.png",
-    "hangar-night": "assets/bg-hangar-night.svg",
-    "hangar-rain": "assets/bg-hangar-rain.svg",
-    "hotel-day": "assets/bg-hotel.png",
-    "hotel-night": "assets/bg-hotel-night.svg",
-    "hotel-rain": "assets/bg-hotel-rain.svg",
-    "market-day": "assets/bg-market.png",
-    "market-night": "assets/bg-market-night.svg",
-    "market-rain": "assets/bg-market-rain.svg",
-    "post-day": "assets/bg-post.png",
-    "post-night": "assets/bg-post-night.svg",
-    "post-rain": "assets/bg-post-rain.svg",
-    "lighthouse-day": "assets/bg-lighthouse.png",
-    "lighthouse-night": "assets/bg-lighthouse-night.svg",
-    "lighthouse-rain": "assets/bg-lighthouse-rain.svg",
-    "sea-day": "assets/bg-sea.png",
-    "sea-night": "assets/bg-sea-night.svg",
-    "sea-rain": "assets/bg-sea-rain.svg",
-    "kitchen-day": "assets/bg-kitchen.png",
-    "kitchen-night": "assets/bg-kitchen-night.svg",
-    "kitchen-rain": "assets/bg-kitchen-rain.svg",
-    "garden-day": "assets/bg-garden.png",
-    "garden-night": "assets/bg-garden-night.svg",
-    "garden-rain": "assets/bg-garden-rain.svg",
-    "ferry-day": "assets/bg-ferry.png",
-    "ferry-night": "assets/bg-ferry-night.svg",
-    "ferry-rain": "assets/bg-ferry-rain.svg",
-    "dock-day": "assets/bg-hotel.png",
-    "dock-night": "assets/bg-dock-night.svg",
-    "dock-rain": "assets/bg-dock-rain.svg"
+    "cove-day": {
+      "src": "assets/bg-v10/cove.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "cove-night": {
+      "src": "assets/bg-v10/cove.png",
+      "region": [
+        776,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "cove-rain": {
+      "src": "assets/bg-v10/cove.png",
+      "region": [
+        8,
+        568,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "cove": {
+      "src": "assets/bg-v10/cove.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "sea-day": {
+      "src": "assets/bg-v10/sea.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "sea-night": {
+      "src": "assets/bg-v10/sea.png",
+      "region": [
+        776,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "sea-rain": {
+      "src": "assets/bg-v10/sea.png",
+      "region": [
+        8,
+        568,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "sea": {
+      "src": "assets/bg-v10/sea.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "hotel-day": {
+      "src": "assets/bg-v10/hotel.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "hotel-night": {
+      "src": "assets/bg-v10/hotel.png",
+      "region": [
+        776,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "hotel-rain": {
+      "src": "assets/bg-v10/hotel.png",
+      "region": [
+        8,
+        568,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "hotel": {
+      "src": "assets/bg-v10/hotel.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "hangar-day": {
+      "src": "assets/bg-v10/hangar.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "hangar-night": {
+      "src": "assets/bg-v10/hangar.png",
+      "region": [
+        776,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "hangar-rain": {
+      "src": "assets/bg-v10/hangar.png",
+      "region": [
+        8,
+        568,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "hangar": {
+      "src": "assets/bg-v10/hangar.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "market-day": {
+      "src": "assets/bg-v10/market.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "market-night": {
+      "src": "assets/bg-v10/market.png",
+      "region": [
+        776,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "market-rain": {
+      "src": "assets/bg-v10/market.png",
+      "region": [
+        8,
+        568,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "market": {
+      "src": "assets/bg-v10/market.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "post-day": {
+      "src": "assets/bg-v10/post.png",
+      "region": [
+        56,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "post-night": {
+      "src": "assets/bg-v10/post.png",
+      "region": [
+        824,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "post-rain": {
+      "src": "assets/bg-v10/post.png",
+      "region": [
+        56,
+        520,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "post": {
+      "src": "assets/bg-v10/post.png",
+      "region": [
+        56,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "lighthouse-day": {
+      "src": "assets/bg-v10/lighthouse.png",
+      "region": [
+        56,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "lighthouse-night": {
+      "src": "assets/bg-v10/lighthouse.png",
+      "region": [
+        824,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "lighthouse-rain": {
+      "src": "assets/bg-v10/lighthouse.png",
+      "region": [
+        56,
+        520,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "lighthouse": {
+      "src": "assets/bg-v10/lighthouse.png",
+      "region": [
+        56,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "garden-day": {
+      "src": "assets/bg-v10/garden.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "garden-night": {
+      "src": "assets/bg-v10/garden.png",
+      "region": [
+        776,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "garden-rain": {
+      "src": "assets/bg-v10/garden.png",
+      "region": [
+        8,
+        568,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "garden": {
+      "src": "assets/bg-v10/garden.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "ferry-day": {
+      "src": "assets/bg-v10/ferry.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "ferry-night": {
+      "src": "assets/bg-v10/ferry.png",
+      "region": [
+        776,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "ferry-rain": {
+      "src": "assets/bg-v10/ferry.png",
+      "region": [
+        8,
+        568,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "ferry": {
+      "src": "assets/bg-v10/ferry.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "kitchen-day": {
+      "src": "assets/bg-v10/kitchen.png",
+      "region": [
+        56,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "kitchen-night": {
+      "src": "assets/bg-v10/kitchen.png",
+      "region": [
+        824,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "kitchen-rain": {
+      "src": "assets/bg-v10/kitchen.png",
+      "region": [
+        56,
+        520,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "kitchen": {
+      "src": "assets/bg-v10/kitchen.png",
+      "region": [
+        56,
+        8,
+        704,
+        396
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "dock-day": {
+      "src": "assets/bg-v10/dock.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "dock-night": {
+      "src": "assets/bg-v10/dock.png",
+      "region": [
+        776,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "dock-rain": {
+      "src": "assets/bg-v10/dock.png",
+      "region": [
+        8,
+        568,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "dock": {
+      "src": "assets/bg-v10/dock.png",
+      "region": [
+        8,
+        56,
+        752,
+        423
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    }
   },
   "portraits": {
-    "fio-work-neutral": "assets/portrait-fio-work-neutral.png",
-    "fio-work-smile": "assets/portrait-fio-work-smile.png",
-    "fio-work-serious": "assets/portrait-fio-work-serious.png",
-    "fio-work-sad": "assets/portrait-fio-work-sad.png",
-    "fio-work-surprise": "assets/portrait-fio-work-surprise.png",
-    "fio-work-tired": "assets/portrait-fio-work-tired.png",
-    "fio-date-neutral": "assets/portrait-fio-date-neutral.png",
-    "fio-date-smile": "assets/portrait-fio-date-smile.png",
-    "fio-date-serious": "assets/portrait-fio-date-serious.png",
-    "fio-date-sad": "assets/portrait-fio-date-sad.png",
-    "fio-date-surprise": "assets/portrait-fio-date-surprise.png",
-    "fio-date-tired": "assets/portrait-fio-date-tired.png",
-    "fio-flight-neutral": "assets/portrait-fio-flight-neutral.png",
-    "fio-flight-smile": "assets/portrait-fio-flight-smile.png",
-    "fio-flight-serious": "assets/portrait-fio-flight-serious.png",
-    "fio-flight-sad": "assets/portrait-fio-flight-sad.png",
-    "fio-flight-surprise": "assets/portrait-fio-flight-surprise.png",
-    "fio-flight-tired": "assets/portrait-fio-flight-tired.png",
-    "gina-morning-neutral": "assets/portrait-gina-morning-neutral.png",
-    "gina-morning-smile": "assets/portrait-gina-morning-smile.png",
-    "gina-morning-serious": "assets/portrait-gina-morning-serious.png",
-    "gina-morning-sad": "assets/portrait-gina-morning-sad.png",
-    "gina-morning-surprise": "assets/portrait-gina-morning-surprise.png",
-    "gina-morning-tired": "assets/portrait-gina-morning-tired.png",
-    "gina-work-neutral": "assets/portrait-gina-morning-neutral.png",
-    "gina-work-smile": "assets/portrait-gina-morning-smile.png",
-    "gina-work-serious": "assets/portrait-gina-morning-serious.png",
-    "gina-work-sad": "assets/portrait-gina-morning-sad.png",
-    "gina-work-surprise": "assets/portrait-gina-morning-surprise.png",
-    "gina-work-tired": "assets/portrait-gina-morning-tired.png",
-    "gina-date-neutral": "assets/portrait-gina-date-neutral.png",
-    "gina-date-smile": "assets/portrait-gina-date-smile.png",
-    "gina-date-serious": "assets/portrait-gina-date-serious.png",
-    "gina-date-sad": "assets/portrait-gina-date-sad.png",
-    "gina-date-surprise": "assets/portrait-gina-date-surprise.png",
-    "gina-date-tired": "assets/portrait-gina-date-tired.png",
-    "gina-stage-neutral": "assets/portrait-gina-stage-neutral.png",
-    "gina-stage-smile": "assets/portrait-gina-stage-smile.png",
-    "gina-stage-serious": "assets/portrait-gina-stage-serious.png",
-    "gina-stage-sad": "assets/portrait-gina-stage-sad.png",
-    "gina-stage-surprise": "assets/portrait-gina-stage-surprise.png",
-    "gina-stage-tired": "assets/portrait-gina-stage-tired.png",
-    "porco-work-neutral": "assets/portrait-porco-work-neutral.png",
-    "porco-work-smile": "assets/portrait-porco-work-smile.png",
-    "porco-work-serious": "assets/portrait-porco-work-serious.png",
-    "porco-work-sad": "assets/portrait-porco-work-sad.png",
-    "porco-work-surprise": "assets/portrait-porco-work-surprise.png",
-    "porco-work-tired": "assets/portrait-porco-work-tired.png"
+    "fio-work-neutral": {
+      "src": "assets/portrait-fio-work-atlas.png",
+      "region": [
+        180,
+        0,
+        198,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-work-smile": {
+      "src": "assets/portrait-fio-work-atlas.png",
+      "region": [
+        660,
+        0,
+        198,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-work-serious": {
+      "src": "assets/portrait-fio-work-atlas.png",
+      "region": [
+        1140,
+        0,
+        198,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-work-sad": {
+      "src": "assets/portrait-fio-work-atlas.png",
+      "region": [
+        180,
+        512,
+        198,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-work-surprise": {
+      "src": "assets/portrait-fio-work-atlas.png",
+      "region": [
+        660,
+        512,
+        198,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-work-tired": {
+      "src": "assets/portrait-fio-work-atlas.png",
+      "region": [
+        1140,
+        512,
+        198,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-date-neutral": {
+      "src": "assets/portrait-fio-date-atlas.png",
+      "region": [
+        182,
+        0,
+        188,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-date-smile": {
+      "src": "assets/portrait-fio-date-atlas.png",
+      "region": [
+        662,
+        0,
+        188,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-date-serious": {
+      "src": "assets/portrait-fio-date-atlas.png",
+      "region": [
+        1174,
+        0,
+        188,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-date-sad": {
+      "src": "assets/portrait-fio-date-atlas.png",
+      "region": [
+        182,
+        512,
+        188,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-date-surprise": {
+      "src": "assets/portrait-fio-date-atlas.png",
+      "region": [
+        662,
+        512,
+        188,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-date-tired": {
+      "src": "assets/portrait-fio-date-atlas.png",
+      "region": [
+        1174,
+        512,
+        188,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-flight-neutral": {
+      "src": "assets/portrait-fio-flight-atlas.png",
+      "region": [
+        163,
+        0,
+        178,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-flight-smile": {
+      "src": "assets/portrait-fio-flight-atlas.png",
+      "region": [
+        675,
+        0,
+        178,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-flight-serious": {
+      "src": "assets/portrait-fio-flight-atlas.png",
+      "region": [
+        1187,
+        0,
+        178,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-flight-sad": {
+      "src": "assets/portrait-fio-flight-atlas.png",
+      "region": [
+        163,
+        512,
+        178,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-flight-surprise": {
+      "src": "assets/portrait-fio-flight-atlas.png",
+      "region": [
+        676,
+        512,
+        178,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-flight-tired": {
+      "src": "assets/portrait-fio-flight-atlas.png",
+      "region": [
+        1187,
+        512,
+        178,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-strawhat-neutral": {
+      "src": "assets/portrait-fio-strawhat-atlas.png",
+      "region": [
+        165,
+        0,
+        206,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-strawhat-smile": {
+      "src": "assets/portrait-fio-strawhat-atlas.png",
+      "region": [
+        650,
+        0,
+        206,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-strawhat-serious": {
+      "src": "assets/portrait-fio-strawhat-atlas.png",
+      "region": [
+        1136,
+        0,
+        206,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-strawhat-sad": {
+      "src": "assets/portrait-fio-strawhat-atlas.png",
+      "region": [
+        166,
+        512,
+        206,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-strawhat-surprise": {
+      "src": "assets/portrait-fio-strawhat-atlas.png",
+      "region": [
+        651,
+        512,
+        206,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-strawhat-tired": {
+      "src": "assets/portrait-fio-strawhat-atlas.png",
+      "region": [
+        1137,
+        512,
+        206,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-swim-neutral": {
+      "src": "assets/portrait-fio-swim-atlas.png",
+      "region": [
+        174,
+        0,
+        191,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-swim-smile": {
+      "src": "assets/portrait-fio-swim-atlas.png",
+      "region": [
+        654,
+        0,
+        191,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-swim-serious": {
+      "src": "assets/portrait-fio-swim-atlas.png",
+      "region": [
+        1134,
+        0,
+        191,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-swim-sad": {
+      "src": "assets/portrait-fio-swim-atlas.png",
+      "region": [
+        174,
+        512,
+        191,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-swim-surprise": {
+      "src": "assets/portrait-fio-swim-atlas.png",
+      "region": [
+        654,
+        512,
+        191,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "fio-swim-tired": {
+      "src": "assets/portrait-fio-swim-atlas.png",
+      "region": [
+        1135,
+        512,
+        191,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-morning-neutral": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        176,
+        0,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-morning-smile": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        688,
+        0,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-morning-serious": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        1200,
+        0,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-morning-sad": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        176,
+        512,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-morning-surprise": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        688,
+        512,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-morning-tired": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        1200,
+        512,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-date-neutral": {
+      "src": "assets/portrait-gina-date-atlas.png",
+      "region": [
+        169,
+        0,
+        181,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-date-smile": {
+      "src": "assets/portrait-gina-date-atlas.png",
+      "region": [
+        681,
+        0,
+        181,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-date-serious": {
+      "src": "assets/portrait-gina-date-atlas.png",
+      "region": [
+        1193,
+        0,
+        181,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-date-sad": {
+      "src": "assets/portrait-gina-date-atlas.png",
+      "region": [
+        169,
+        512,
+        181,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-date-surprise": {
+      "src": "assets/portrait-gina-date-atlas.png",
+      "region": [
+        682,
+        512,
+        181,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-date-tired": {
+      "src": "assets/portrait-gina-date-atlas.png",
+      "region": [
+        1193,
+        512,
+        181,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-stage-neutral": {
+      "src": "assets/portrait-gina-stage-atlas.png",
+      "region": [
+        179,
+        0,
+        155,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-stage-smile": {
+      "src": "assets/portrait-gina-stage-atlas.png",
+      "region": [
+        691,
+        0,
+        155,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-stage-serious": {
+      "src": "assets/portrait-gina-stage-atlas.png",
+      "region": [
+        1203,
+        0,
+        155,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-stage-sad": {
+      "src": "assets/portrait-gina-stage-atlas.png",
+      "region": [
+        179,
+        512,
+        155,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-stage-surprise": {
+      "src": "assets/portrait-gina-stage-atlas.png",
+      "region": [
+        691,
+        512,
+        155,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-stage-tired": {
+      "src": "assets/portrait-gina-stage-atlas.png",
+      "region": [
+        1203,
+        512,
+        155,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-work-neutral": {
+      "src": "assets/portrait-porco-work-atlas.png",
+      "region": [
+        130,
+        0,
+        264,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-work-smile": {
+      "src": "assets/portrait-porco-work-atlas.png",
+      "region": [
+        642,
+        0,
+        264,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-work-serious": {
+      "src": "assets/portrait-porco-work-atlas.png",
+      "region": [
+        1154,
+        0,
+        264,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-work-sad": {
+      "src": "assets/portrait-porco-work-atlas.png",
+      "region": [
+        130,
+        512,
+        264,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-work-surprise": {
+      "src": "assets/portrait-porco-work-atlas.png",
+      "region": [
+        642,
+        512,
+        264,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-work-tired": {
+      "src": "assets/portrait-porco-work-atlas.png",
+      "region": [
+        1154,
+        512,
+        264,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-flight-neutral": {
+      "src": "assets/portrait-porco-flight-atlas.png",
+      "region": [
+        128,
+        0,
+        257,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-flight-smile": {
+      "src": "assets/portrait-porco-flight-atlas.png",
+      "region": [
+        640,
+        0,
+        257,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-flight-serious": {
+      "src": "assets/portrait-porco-flight-atlas.png",
+      "region": [
+        1152,
+        0,
+        257,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-flight-sad": {
+      "src": "assets/portrait-porco-flight-atlas.png",
+      "region": [
+        128,
+        512,
+        257,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-flight-surprise": {
+      "src": "assets/portrait-porco-flight-atlas.png",
+      "region": [
+        640,
+        512,
+        257,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-flight-tired": {
+      "src": "assets/portrait-porco-flight-atlas.png",
+      "region": [
+        1152,
+        512,
+        257,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-coat-neutral": {
+      "src": "assets/portrait-porco-coat-atlas.png",
+      "region": [
+        142,
+        0,
+        286,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-coat-smile": {
+      "src": "assets/portrait-porco-coat-atlas.png",
+      "region": [
+        622,
+        0,
+        286,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-coat-serious": {
+      "src": "assets/portrait-porco-coat-atlas.png",
+      "region": [
+        1102,
+        0,
+        286,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-coat-sad": {
+      "src": "assets/portrait-porco-coat-atlas.png",
+      "region": [
+        142,
+        512,
+        286,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-coat-surprise": {
+      "src": "assets/portrait-porco-coat-atlas.png",
+      "region": [
+        622,
+        512,
+        286,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-coat-tired": {
+      "src": "assets/portrait-porco-coat-atlas.png",
+      "region": [
+        1102,
+        512,
+        286,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-goggles-up-neutral": {
+      "src": "assets/portrait-porco-goggles-up-atlas.png",
+      "region": [
+        138,
+        0,
+        254,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-goggles-up-smile": {
+      "src": "assets/portrait-porco-goggles-up-atlas.png",
+      "region": [
+        645,
+        0,
+        254,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-goggles-up-serious": {
+      "src": "assets/portrait-porco-goggles-up-atlas.png",
+      "region": [
+        1153,
+        0,
+        254,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-goggles-up-sad": {
+      "src": "assets/portrait-porco-goggles-up-atlas.png",
+      "region": [
+        138,
+        512,
+        254,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-goggles-up-surprise": {
+      "src": "assets/portrait-porco-goggles-up-atlas.png",
+      "region": [
+        646,
+        512,
+        254,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "porco-goggles-up-tired": {
+      "src": "assets/portrait-porco-goggles-up-atlas.png",
+      "region": [
+        1153,
+        512,
+        254,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-work-neutral": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        176,
+        0,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-work-smile": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        688,
+        0,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-work-serious": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        1200,
+        0,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-work-sad": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        176,
+        512,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-work-surprise": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        688,
+        512,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    },
+    "gina-work-tired": {
+      "src": "assets/portrait-gina-morning-atlas.png",
+      "region": [
+        1200,
+        512,
+        159,
+        512
+      ],
+      "canvas": [
+        1536,
+        1024
+      ]
+    }
   },
   "cgs": {
     "letter": {
@@ -101,7 +1595,7 @@
       "title": "不用去了",
       "composition": "清晨右侧海湾红机；波鲁克齐膝站在水中，菲尔在背后递出一支铅笔；信封在机翼暖光里。",
       "placeholder": false,
-      "styleVersion": "film-reference-v2"
+      "styleVersion": "film-review-v10"
     },
     "yellow-quilt": {
       "src": "assets/cg-yellow-quilt.png",
@@ -129,21 +1623,21 @@
       "title": "无人点歌的傍晚",
       "composition": "橙色落日，平静小船，吉娜不唱歌，双手自然搭着船沿；波鲁克放下划桨，两人共享海面的静默。",
       "placeholder": false,
-      "styleVersion": "film-reference-v2"
+      "styleVersion": "film-review-v10"
     },
     "dock": {
       "src": "assets/cg-dock.png",
       "title": "一条能推轮椅的坡道",
       "composition": "白昼码头斜坡，菲尔蹲看水位与卷尺，吉娜拿账本核工费；波鲁克在边缘扶木料，生活与工程的交点。",
       "placeholder": false,
-      "styleVersion": "film-reference-v2"
+      "styleVersion": "film-review-v10"
     },
     "mailbag": {
       "src": "assets/cg-mailbag.png",
       "title": "被风吹走的邮袋",
       "composition": "低角度礁石上的旧邮袋开了缝，露出一封浅黄信，远处另一座岛与红机；风、距离和待履行约定同时在场。",
       "placeholder": false,
-      "styleVersion": "film-reference-v2"
+      "styleVersion": "film-review-v10"
     },
     "storm": {
       "src": "assets/cg-storm.png",
@@ -158,7 +1652,7 @@
       "title": "在机首签字的人",
       "composition": "首航后照片，菲尔独立站在机首拿正式飞行记录，正面日光；波鲁克仅在右边缘露半只扶梯的手。",
       "placeholder": false,
-      "styleVersion": "film-reference-v2",
+      "styleVersion": "film-review-v10",
       "unlock": "common_d81_firstflight / friend"
     },
     "key": {
@@ -173,7 +1667,7 @@
       "title": "花园里留下的座位",
       "composition": "第51天夜，旅馆暖窗光落在花园的旧椅、两杯咖啡和相邻的帽子上；不展示波鲁克的人脸，不替赌约标日期。",
       "placeholder": false,
-      "styleVersion": "film-reference-v2"
+      "styleVersion": "film-review-v10"
     },
     "last-boat": {
       "src": "assets/cg-last-boat.png",
@@ -181,9 +1675,29 @@
       "composition": "夕阳里末班船离港，三人背影站码头；信袋、工具箱和账本各自留在手里，仍有秋天要过。",
       "placeholder": false,
       "styleVersion": "film-reference-v2"
+    },
+    "fio-swimming": {
+      "src": "assets/cg-fio-swimming.png",
+      "styleVersion": "film-review-v10",
+      "placeholder": false,
+      "title": "游过海湾",
+      "composition": "成年菲尔游过安静的浅湾，侧头抬臂向岸上的波鲁克招呼。湿发、正常长度白上衣与白色中腿短裤，在白日海光里连着一段工作以外的约会。",
+      "unlock": "fio_swim_water"
     }
   },
-  "title": "assets/cover-generated.png",
-  "styleVersion": "film-reference-v2",
-  "referencePolicy": "角色外观以用户提供的三份电影参考集为依据；新CG采用原创剧情构图。参考PDF及个人设备路径不随游戏公开。"
+  "title": {
+    "src": "assets/bg-v10/cove.png",
+    "region": [
+      8,
+      56,
+      752,
+      423
+    ],
+    "canvas": [
+      1536,
+      1024
+    ]
+  },
+  "styleVersion": "film-review-v10",
+  "referencePolicy": "采用用户审阅的背景与人物设定；运行时按视区显示独立画面，不显示审阅表标签。保留用户指定六张CG原文件，其余CG重绘并新增游泳。参考PDF不随游戏公开。"
 }

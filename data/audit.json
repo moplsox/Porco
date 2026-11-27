@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T02:34:18.133Z",
+  "generatedAt": "2026-11-27T08:14:41.634Z",
   "sourceFiles": [
     "data/common.json",
     "data/fio.json",
@@ -10,13 +10,13 @@
     "data/port.json"
   ],
   "countingMethod": "仅统计应用载入、入口可达且条件可满足的 lines.text 与 choices.reply；按整段去重并去空白，排除选项标签、界面、代码和未引用场景。条件互斥的原创段落分别计入。",
-  "uniqueCharacters": 111087,
-  "uniqueHanziCharacters": 99888,
-  "visibleEntries": 2354,
-  "distinctVisibleEntries": 2354,
+  "uniqueCharacters": 116415,
+  "uniqueHanziCharacters": 104630,
+  "visibleEntries": 2482,
+  "distinctVisibleEntries": 2482,
   "excludedConditionalLines": 0,
-  "sceneCount": 134,
-  "reachableSceneCount": 134,
+  "sceneCount": 145,
+  "reachableSceneCount": 145,
   "unreachable": [],
   "manualLaunches": [
     "opening",
@@ -40,16 +40,16 @@
     {
       "chapter": 3,
       "title": "停业三天的旅馆",
-      "uniqueCharacters": 15377,
-      "uniqueHanziCharacters": 13817,
-      "scenes": 19
+      "uniqueCharacters": 20110,
+      "uniqueHanziCharacters": 18026,
+      "scenes": 29
     },
     {
       "chapter": 4,
       "title": "没有寄件人的邮袋",
-      "uniqueCharacters": 14231,
-      "uniqueHanziCharacters": 12773,
-      "scenes": 17
+      "uniqueCharacters": 14826,
+      "uniqueHanziCharacters": 13306,
+      "scenes": 18
     },
     {
       "chapter": 5,
@@ -69,7 +69,7 @@
   "heroineCounts": {
     "fio": {
       "events": 18,
-      "dates": 6
+      "dates": 7
     },
     "gina": {
       "events": 12,
@@ -117,16 +117,16 @@
     }
   ],
   "assets": {
-    "backgroundFiles": 32,
-    "portraitVariants": 48,
-    "cgs": 12,
-    "referencedFiles": 86
+    "backgroundFiles": 33,
+    "portraitVariants": 78,
+    "cgs": 13,
+    "referencedFiles": 36
   },
   "requirements": [
     {
       "id": "story-volume",
       "label": "可见正文去重字符",
-      "actual": 111087,
+      "actual": 116415,
       "min": 80000,
       "max": 120000,
       "pass": true
@@ -141,7 +141,7 @@
     {
       "id": "fio-dates",
       "label": "菲尔不同约会",
-      "actual": 6,
+      "actual": 7,
       "min": 6,
       "pass": true
     },
@@ -184,21 +184,21 @@
     {
       "id": "backgrounds",
       "label": "不同背景资源",
-      "actual": 32,
+      "actual": 33,
       "min": 10,
       "pass": true
     },
     {
       "id": "cgs",
       "label": "实际可解锁CG",
-      "actual": 12,
+      "actual": 13,
       "min": 12,
       "pass": true
     },
     {
       "id": "fio-outfits",
       "label": "fio 至少六表情的服装套数",
-      "actual": 3,
+      "actual": 5,
       "min": 2,
       "pass": true
     },
@@ -215,7 +215,7 @@
   "status": "passed",
   "testStatus": "passed",
   "tests": {
-    "generatedAt": "2026-11-26T02:34:18.450Z",
+    "generatedAt": "2026-11-27T08:14:41.762Z",
     "status": "passed",
     "passed": 19,
     "total": 19,
@@ -225,8 +225,8 @@
         "mailChoice": "message",
         "ending": "fio_good",
         "days": 90,
-        "mainScenes": 43,
-        "playedScenes": 106,
+        "mainScenes": 44,
+        "playedScenes": 107,
         "heroineEvents": 18,
         "dates": 6,
         "jobs": 24,
@@ -242,14 +242,14 @@
         "mailChoice": "return",
         "ending": "gina_good",
         "days": 90,
-        "mainScenes": 43,
-        "playedScenes": 99,
+        "mainScenes": 44,
+        "playedScenes": 100,
         "heroineEvents": 12,
         "dates": 6,
         "jobs": 24,
         "finalMoney": 2174,
         "finalFuel": 1,
-        "fioTrust": 24,
+        "fioTrust": 23,
         "ginaTrust": 50,
         "recoveries": 0,
         "refuels": 12
@@ -259,8 +259,8 @@
         "mailChoice": "search",
         "ending": "friend",
         "days": 90,
-        "mainScenes": 43,
-        "playedScenes": 124,
+        "mainScenes": 44,
+        "playedScenes": 125,
         "heroineEvents": 30,
         "dates": 12,
         "jobs": 24,
@@ -387,8 +387,8 @@
           "mailChoice": "message",
           "ending": "fio_good",
           "days": 90,
-          "mainScenes": 43,
-          "playedScenes": 106,
+          "mainScenes": 44,
+          "playedScenes": 107,
           "heroineEvents": 18,
           "dates": 6,
           "jobs": 24,
@@ -408,14 +408,14 @@
           "mailChoice": "return",
           "ending": "gina_good",
           "days": 90,
-          "mainScenes": 43,
-          "playedScenes": 99,
+          "mainScenes": 44,
+          "playedScenes": 100,
           "heroineEvents": 12,
           "dates": 6,
           "jobs": 24,
           "finalMoney": 2174,
           "finalFuel": 1,
-          "fioTrust": 24,
+          "fioTrust": 23,
           "ginaTrust": 50,
           "recoveries": 0,
           "refuels": 12
@@ -429,8 +429,8 @@
           "mailChoice": "search",
           "ending": "friend",
           "days": 90,
-          "mainScenes": 43,
-          "playedScenes": 124,
+          "mainScenes": 44,
+          "playedScenes": 125,
           "heroineEvents": 30,
           "dates": 12,
           "jobs": 24,
