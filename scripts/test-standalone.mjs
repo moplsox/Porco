@@ -182,6 +182,29 @@ await test('渲染事件推进、选择、手动存读档与导出导入精确�
 await test('新VM读取既有浏览器存储后可继续同一对白位置',async()=>{
  assert.ok(normalStore);const h=await createHarness({persisted:normalStore}).boot();const auto=JSON.parse(normalStore.get('adriatic-auto')).state;await h.click('continue');const exported=await h.export();assert.deepEqual(exported.data.state,auto,'Reload/continue differs from saved state');assert.equal(h.fetches.length,0);return {scene:auto.sceneId,lineIndex:auto.lineIndex};
 });
+await test('离线版导入旧平静表情缓存后，三人六表情实际渲染且不改对白位置',async()=>{
+ const h=await createHarness().boot();await h.click('new');
+ const baseline=(await h.export()).data.state;await h.click('close');
+ const all=Object.values(payload.files).flat();let cases=0;
+ for(const [speaker,who] of [['菲尔','fio'],['吉娜','gina'],['波鲁克','porco']])for(const expression of ['neutral','smile','serious','sad','surprise','tired']){
+  const sc=all.find(s=>!s.cg&&!s.hidePortraits?.includes(who)&&s.lines.some(l=>l.speaker===speaker&&!l.when&&(l.expression||'neutral')===expression));
+  assert.ok(sc,who+' missing non-CG expression example '+expression);
+  const index=sc.lines.findIndex(l=>l.speaker===speaker&&!l.when&&(l.expression||'neutral')===expression);
+  const cached=structuredClone(sc.lines);for(const line of cached)line.expression='neutral';
+  const oldState={...structuredClone(baseline),day:sc.day||1,sceneId:sc.id,lineIndex:index,activeLines:cached,pending:null};
+  await h.click('panel:saves');const input=h.find('#import-save');input.files=[{text:async()=>JSON.stringify({state:oldState})}];await h.change(input);
+  const markup=h.app.innerHTML.match(/<svg\b[^>]*class="portrait [^"]*"[^>]*>[\s\S]*?<\/svg>/)?.[0];
+  assert.ok(markup,'Actual imported save has no speaking sprite: '+who+' '+expression);
+  const resolved=vm.runInContext(`__portraits.resolvePortrait(${JSON.stringify(sc)},${JSON.stringify(cached[index])},${oldState.day})`,h.context);
+  assert.equal(resolved.expression,expression,'Embedded resolver kept old neutral metadata');
+  const expected=payload.art.portraits[`${who}-${resolved.outfit}-${expression}`];assert.ok(expected);
+  assert.equal([...markup.matchAll(/<image\b/g)].length,expected.layers.length,'Wrong expression donor layer count');
+  for(const layer of expected.layers)assert.ok(markup.includes(layer.clipPath),'Embedded dialogue omitted expression cutout');
+  h.checkRenderedAssets();const restored=(await h.export()).data.state;
+  assert.deepEqual(restored,oldState,'Expression refresh rewrote imported game state');await h.click('close');cases++;
+ }
+ assert.equal(h.fetches.length,0);return {oldSaveImports:cases,characters:3,expressionsPerCharacter:6,browserVerification:false};
+});
 await test('损坏的设置、meta与存档JSON不会阻止开局',async()=>{
  const h=await createHarness({corrupt:true}).boot();await h.click('new');assert.ok(h.app.innerHTML.includes(esc(payload.files.common.find(s=>s.id==='opening').lines[0].text)),'Corrupt storage prevents opening');const exported=await h.export();assert.equal(exported.data.state.sceneId,'opening');assert.equal(h.fetches.length,0);
 });

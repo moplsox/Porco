@@ -1,5 +1,13 @@
 # 单文件浏览器验收
 
+## 2026-11-28 对白表情版的当前检查
+
+当前交付index.html为80,261,224字节，SHA-256：`3ac12509ea3eed7f34caca2e1acb79ade0245c9a91ffd28de58fd87afc1a34f6`。145场景、38张内嵌图像、13张CG。`npm run test:standalone`实际classic脚本及DOM适配器检查11/11通过，新增三人六表情共18次旧缓存导入恢复，均显示新表情并保持原存档数据。源码检查另覆盖36个缺省/旧平静缓存案例。
+
+真实浏览器复测未完成：当前浏览器工具受用量上限限制。以上不是浏览器画面、图像解码、声音或手机触控验收。下文保留早期file://受阻的历史记录，其包体与检查数量不代表当前版本。
+
+## 早期真实浏览器尝试记录
+
 执行：`python scripts/test-standalone.py`。目标：`file:///workspace/sites/adriatic-letters/index.html`。
 
 时间：2026-11-25T14:49:41.065286+00:00；Chromium：156.0.8078.79；最终状态：**blocked**。

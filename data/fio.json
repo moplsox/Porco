@@ -59,7 +59,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "也可能是你的醉汉比较听话。"
+        "text": "也可能是你的醉汉比较听话。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -69,7 +70,7 @@
         "speaker": "菲尔",
         "text": "我最不需要的就是你替我开得漂亮。镇上那位顾问已经说过三次，年轻人能做到这样很不错。我不是拿年龄换合格证的。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "serious"
       },
       {
         "speaker": "旁白",
@@ -83,7 +84,7 @@
         "speaker": "菲尔",
         "text": "把这句写上。别替我改成专业词。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -103,7 +104,7 @@
         "speaker": "菲尔",
         "text": "所以我得先说清楚，我也要下工。有时我想去买鞋，而不是一直替飞机长大。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "tired"
       },
       {
         "speaker": "旁白",
@@ -176,7 +177,7 @@
         "speaker": "菲尔",
         "text": "鲁迪的妹妹要结婚。安东尼奥有一场球赛。他们问我星期天到底算不算星期天，我才发现我昨天说过三次“就差一点”。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "tired"
       },
       {
         "speaker": "波鲁克",
@@ -186,7 +187,7 @@
         "speaker": "菲尔",
         "text": "他们骂得还算客气。米兰那边寄来的汇票又晚了，我先垫工资，材料款留到下周一。你别看我的钱袋，今天不接受长辈赞助。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -204,7 +205,7 @@
         "speaker": "菲尔",
         "text": "我知道。不是忘了，是在等邮局兑现。告诉莫雷蒂，下回请他写到期日，不要画骷髅。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "tired"
       },
       {
         "speaker": "旁白",
@@ -218,7 +219,7 @@
         "speaker": "菲尔",
         "text": "他要是能画，早不做五金了。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -256,13 +257,14 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "知道了。规矩贴门上，免得某头猪看不见。"
+        "text": "知道了。规矩贴门上，免得某头猪看不见。",
+        "expression": "serious"
       },
       {
         "speaker": "菲尔",
         "text": "写在你的烟盒上会不会更有效？",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -377,7 +379,7 @@
         "speaker": "菲尔",
         "text": "今天谁都不负责发动机。听见奇怪的声响，也得等船长先听见。",
         "outfit": "date",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "波鲁克",
@@ -387,7 +389,7 @@
         "speaker": "菲尔",
         "text": "能。你负责别在船长听见之前，把午饭都吃完。",
         "outfit": "date",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -535,7 +537,7 @@
         "speaker": "菲尔",
         "text": "那就再找。不是工具贵，是我不想让一把钳子跟着谁一起下水。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "serious"
       },
       {
         "speaker": "旁白",
@@ -567,7 +569,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "你祖父也记不住。他只是骂得早，让人以为他早知道。"
+        "text": "你祖父也记不住。他只是骂得早，让人以为他早知道。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -577,7 +580,7 @@
         "speaker": "菲尔",
         "text": "那我不用学他闭眼数了。先学会给人一个不会被骂到不敢说话的下午。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -716,7 +719,7 @@
         "speaker": "菲尔",
         "text": "午饭来不来？不是工餐，我约了城里那家便宜的炖豆子。布鲁诺也来。你要是想骂我排班，至少吃饱再骂。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "波鲁克",
@@ -738,13 +741,14 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "明白。饭桌有我的位子，飞机看记录。"
+        "text": "明白。饭桌有我的位子，飞机看记录。",
+        "expression": "serious"
       },
       {
         "speaker": "菲尔",
         "text": "对。你总能把我一大段话说得像一张菜单。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -848,7 +852,7 @@
         "speaker": "菲尔",
         "text": "所以我改的是班表，不是海。可是每改一次，码头那边就得重排人。我昨天跟吉娜算到打烊，最后发现我们把一艘星期二才来的货船算进星期四了。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "tired"
       },
       {
         "speaker": "旁白",
@@ -898,7 +902,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "能。坏的时候也算你的，好才会算你的。"
+        "text": "能。坏的时候也算你的，好才会算你的。",
+        "expression": "serious"
       },
       {
         "speaker": "旁白",
@@ -961,7 +966,7 @@
         "speaker": "菲尔",
         "text": "迟到这次算我的。不是试飞，是拉链。我以为机械师总该会对付一条拉链。",
         "outfit": "date",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "波鲁克",
@@ -975,7 +980,7 @@
         "speaker": "菲尔",
         "text": "你不用装没看见。我是想穿裙子，又不是想换一个职业。",
         "outfit": "date",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -1123,11 +1128,12 @@
         "speaker": "菲尔",
         "text": "我也该早点说。刚才你看着我时，我差点又只想证明自己会做飞机。原来我们都还有别的功课。",
         "outfit": "date",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "波鲁克",
-        "text": "裙子不错。菜难吃的部分，不用负责。"
+        "text": "裙子不错。菜难吃的部分，不用负责。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -1211,7 +1217,7 @@
           "flag": "fioDinnerPrivate"
         },
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -1237,11 +1243,12 @@
         "speaker": "菲尔",
         "text": "现在发现还得一次次说，哪里是办公室，哪里是晚饭。也不全是别人的错，我有时为了让谈话容易，会先把自己摆回他们认识的位置。",
         "outfit": "work",
-        "expression": "neutral"
+        "expression": "tired"
       },
       {
         "speaker": "波鲁克",
-        "text": "那就换个位置。我今天站树的另一边。"
+        "text": "那就换个位置。我今天站树的另一边。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -1365,7 +1372,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "有个杯子。柄缺了，倒满会烫手。别人总想替我扔掉。"
+        "text": "有个杯子。柄缺了，倒满会烫手。别人总想替我扔掉。",
+        "expression": "sad"
       },
       {
         "speaker": "菲尔",
@@ -1507,7 +1515,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "能开。人不能出来。"
+        "text": "能开。人不能出来。",
+        "expression": "serious"
       },
       {
         "speaker": "菲尔",
@@ -1655,7 +1664,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "会。想完也可能只是去买盐。"
+        "text": "会。想完也可能只是去买盐。",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -1764,7 +1774,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "旗子别用白的。他会以为整座岛投降了。"
+        "text": "旗子别用白的。他会以为整座岛投降了。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -1971,7 +1982,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "可以骂。记得写完再骂，免得邮局收费。"
+        "text": "可以骂。记得写完再骂，免得邮局收费。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -2107,7 +2119,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "这两个想法，不冲突。"
+        "text": "这两个想法，不冲突。",
+        "expression": "serious"
       },
       {
         "speaker": "菲尔",
@@ -2225,7 +2238,7 @@
         "speaker": "菲尔",
         "text": "很好，今天的第一项共同成果。",
         "outfit": "date",
-        "expression": "neutral"
+        "expression": "surprise"
       },
       {
         "speaker": "旁白",
@@ -2273,7 +2286,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "可以。船票另算。"
+        "text": "可以。船票另算。",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -2398,7 +2412,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "没说出来，能省一个工友。"
+        "text": "没说出来，能省一个工友。",
+        "expression": "serious"
       },
       {
         "speaker": "菲尔",
@@ -2562,7 +2577,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "想骂就骂。今天风大，邮局听不见。"
+        "text": "想骂就骂。今天风大，邮局听不见。",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -2675,7 +2691,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "两趟不够的时候呢？"
+        "text": "两趟不够的时候呢？",
+        "expression": "sad"
       },
       {
         "speaker": "菲尔",
@@ -2860,7 +2877,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "主角应该先买张带午饭的票。"
+        "text": "主角应该先买张带午饭的票。",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -2997,7 +3015,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "电报挺贵。"
+        "text": "电报挺贵。",
+        "expression": "sad"
       },
       {
         "speaker": "菲尔",
@@ -3178,7 +3197,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "上去还得有人扶。照片总要留点能干活的。"
+        "text": "上去还得有人扶。照片总要留点能干活的。",
+        "expression": "serious"
       },
       {
         "speaker": "旁白",
@@ -3256,7 +3276,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "这椅子不是不能坐人？"
+        "text": "这椅子不是不能坐人？",
+        "expression": "surprise"
       },
       {
         "speaker": "菲尔",
@@ -3338,7 +3359,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "我那台收音机也还没修好。"
+        "text": "我那台收音机也还没修好。",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -3472,7 +3494,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "改过的时间，也是时间。"
+        "text": "改过的时间，也是时间。",
+        "expression": "serious"
       },
       {
         "speaker": "旁白",
@@ -3672,7 +3695,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "字丑会影响航线评价？"
+        "text": "字丑会影响航线评价？",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -3752,11 +3776,13 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "收油门以前。右手先觉得不对，发动机还没听见。"
+        "text": "收油门以前。右手先觉得不对，发动机还没听见。",
+        "expression": "serious"
       },
       {
         "speaker": "菲尔",
-        "text": "这句很好。不能把它换成“像条死鱼”。鱼又不会替我签图。"
+        "text": "这句很好。不能把它换成“像条死鱼”。鱼又不会替我签图。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -3764,7 +3790,8 @@
       },
       {
         "speaker": "菲尔",
-        "text": "午饭照旧。工作这一栏，也可以照旧了。"
+        "text": "午饭照旧。工作这一栏，也可以照旧了。",
+        "expression": "smile"
       },
       {
         "speaker": "波鲁克",
@@ -3827,7 +3854,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "这项恐怕很难。你看见水就想量。"
+        "text": "这项恐怕很难。你看见水就想量。",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -3843,7 +3871,7 @@
         "speaker": "吉娜",
         "text": "别把我的毛巾当抹布。还有，记得回来。我礼拜天要清点床单，可没有空去海里找一位设计师。",
         "outfit": "morning",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -3855,7 +3883,7 @@
         "speaker": "吉娜",
         "text": "也用不着每件事都签字。那两个桃子自己付钱，我已经算错一回果铺的账。",
         "outfit": "morning",
-        "expression": "neutral"
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -4206,7 +4234,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "我从来不往不知道水深的地方开火。"
+        "text": "我从来不往不知道水深的地方开火。",
+        "expression": "serious"
       },
       {
         "speaker": "旁白",
@@ -4214,7 +4243,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "这回记账。盐水，鼻子一次。"
+        "text": "这回记账。盐水，鼻子一次。",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",
@@ -4285,7 +4315,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "下次我到门口。你把杯子洗了就走。"
+        "text": "下次我到门口。你把杯子洗了就走。",
+        "expression": "serious"
       },
       {
         "speaker": "菲尔",
@@ -4334,7 +4365,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "好决定。今天停修。"
+        "text": "好决定。今天停修。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -4490,7 +4522,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "这块石头不收两个座位的钱。"
+        "text": "这块石头不收两个座位的钱。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -4573,7 +4606,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "那得另收一个海湾的钱。"
+        "text": "那得另收一个海湾的钱。",
+        "expression": "smile"
       },
       {
         "speaker": "旁白",
@@ -4615,7 +4649,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "岸上还有伏击？"
+        "text": "岸上还有伏击？",
+        "expression": "surprise"
       },
       {
         "speaker": "菲尔",
@@ -4758,7 +4793,8 @@
       },
       {
         "speaker": "波鲁克",
-        "text": "我今天带的是另一件坏消息。果铺涨价了。"
+        "text": "我今天带的是另一件坏消息。果铺涨价了。",
+        "expression": "smile"
       },
       {
         "speaker": "菲尔",

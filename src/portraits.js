@@ -15,8 +15,13 @@ export function resolvePortrait(scene,line,day=1){
  // Saves cache already-filtered lines. Read new presentation metadata from the
  // matching authored line without replacing its text or saved dialogue index.
  const authored=(scene.lines||[]).find(l=>l.speaker===line.speaker&&l.text===line.text);
- const displayLine={...line,portraitOutfit:authored?.portraitOutfit??line.portraitOutfit,portraitSide:authored?.portraitSide??line.portraitSide};
+ const displayLine={
+  ...line,
+  expression:authored?.expression??line.expression,
+  portraitOutfit:authored?.portraitOutfit??line.portraitOutfit,
+  portraitSide:authored?.portraitSide??line.portraitSide
+ };
  const rain=weather(day).includes('雨');
  const fallback=who==='gina'?'morning':who==='porco'?(['sea','lighthouse'].includes(scene.location)?'flight':scene.location==='cove'?'goggles-up':rain?'coat':'work'):'work';
- return {who,outfit:displayLine.portraitOutfit||(rain?scene.portraitOutfitsRain?.[who]:null)||scene.portraitOutfits?.[who]||line.outfit||fallback,expression:line.expression||'neutral',side:portraitPlacement(scene,who,displayLine)};
+ return {who,outfit:displayLine.portraitOutfit||(rain?scene.portraitOutfitsRain?.[who]:null)||scene.portraitOutfits?.[who]||line.outfit||fallback,expression:displayLine.expression||'neutral',side:portraitPlacement(scene,who,displayLine)};
 }

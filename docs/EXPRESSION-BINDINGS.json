@@ -1,0 +1,2296 @@
+{
+  "schemaVersion": 1,
+  "baselineCommit": "19f4d46ddf81fbde3ae3ec1bf8e7777b9a29d56c",
+  "scope": "只补对白的expression元数据；完整比较排除expression后的六个剧情文件，正文、顺序、条件、选择和效果完全一致。",
+  "curation": "按完整场景上下文人工标注；没有随机轮换或关键词运行推断。CG中的人物仍是固定插画。",
+  "changes": [
+    {
+      "sceneId": "opening",
+      "lineIndex": 11,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "她已自行抵达，用借铅笔的熟悉玩笑开启成年后的重逢，轻轻含笑而非等待夸奖。",
+      "text": "不用去了。能借我一支铅笔吗？"
+    },
+    {
+      "sceneId": "opening",
+      "lineIndex": 15,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "把迟到十九天的信说成邮机的商机，是顺着波鲁克打趣的真实幽默。",
+      "text": "比我多用了十九天。看来我的邮机有生意可做。"
+    },
+    {
+      "sceneId": "common_d1_hotel",
+      "lineIndex": 9,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "接住给上帝收邮费的玩笑，笑意里仍保留让岛民按时收到信的认真。",
+      "text": "如果他住在岛上，也应该按时收到信。"
+    },
+    {
+      "sceneId": "common_d1_hotel",
+      "lineIndex": 13,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "两份记录有一份专供他弄丢，主动调侃老相识，让第一天非CG对话有轻快表情。",
+      "text": "我下午回机库，试飞记录留了两份。一份给你，一份让你弄丢。"
+    },
+    {
+      "sceneId": "common_d2_ramp",
+      "lineIndex": 2,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "把坡道说成比船长脾气更长，是她与吉娜边干活边逗趣的默契。",
+      "text": "那我们就让坡道比他的脾气长一点。这里加一块可拆的板，修桩时从厨房门进，邮车也能走。"
+    },
+    {
+      "sceneId": "common_d2_ramp",
+      "lineIndex": 6,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "明确防滑条借用和邮袋停放费各自结算，认真保护双方经营边界。",
+      "text": "我不会让你替我的航线填窟窿，吉娜。这笔防滑条算我借给旅馆，邮袋停放费另算。"
+    },
+    {
+      "sceneId": "common_d2_log",
+      "lineIndex": 1,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "试飞后直接追问左偏发生的时刻，集中判断真实操纵问题。",
+      "text": "我没有请你来夸它。进水后向左偏的那一下，你得告诉我是在松油门之前，还是之后。"
+    },
+    {
+      "sceneId": "common_d2_log",
+      "lineIndex": 7,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "当着工友承担改图与延期责任，语气坚定，不把事故风险推给驾驶员。",
+      "text": "那就改首航表。我签过这张图，半天得算在我名下，不能等驾驶员下水以后才说他技术不好。"
+    },
+    {
+      "sceneId": "common_d3_routes",
+      "lineIndex": 6,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "她在拨款面前论证困难航线的实际成本，拒绝用漂亮总数掩盖长期后果。",
+      "text": "可以。但今年的验证如果只证明给最容易收到信的人送信有利润，明年的钱也只会批给他们。我们得把麻烦写进成本里，不能藏在漂亮的总数下面。"
+    },
+    {
+      "sceneId": "common_mail_return",
+      "lineIndex": 4,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "为称量等到黄昏，见他准时回来先松口气，带一点等候后的疲倦。",
+      "text": "我还以为得把飞机挪回去。左边先，别急着松手。"
+    },
+    {
+      "sceneId": "common_mail_return",
+      "lineIndex": 6,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "既听到未完成的邮袋情况又看到履约，她认可这种可依靠的诚实，温和地笑。",
+      "text": "那我们今晚把那条石滩也标到航图上。以后不能每次靠你记得。你答应来的事来了，没做完的事也告诉我，这两件我都需要。"
+    },
+    {
+      "sceneId": "common_mail_search",
+      "lineIndex": 6,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "理解继续找信的价值，同时明确人手与工钱没有因此消失，保持专业决定。",
+      "text": "我理解你为什么去。我也会想去。但这不等于我今天空出来的人手没有付过工钱。明早我和艾达称量，你先把航路记录交来。"
+    },
+    {
+      "sceneId": "common_mail_search",
+      "lineIndex": 8,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "冷掉的解释接住鱼汤笑话；是收工后克制的疲惫，不以笑抹掉失约。",
+      "text": "那正好。凉掉的解释也不好喝。"
+    },
+    {
+      "sceneId": "common_first_thursday",
+      "lineIndex": 3,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "守约与记录让试飞能够照计划开展，她对可靠合作给出轻松的肯定。",
+      "text": "昨天的称量有效，今天可以照原计划试飞。你带回来的图我看过了，石滩那边我给星期六的邮船发了位置。收件人会晚两天知道，但不必有人冒险乱找。"
+    },
+    {
+      "sceneId": "common_first_thursday",
+      "lineIndex": 5,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "无故迟到后首轮改给艾达，但晚饭照旧，认真区分工作信任与亲近。",
+      "text": "艾达今天飞首轮，她知道新秤的误差。你上午把记录补齐，我们下午还可以一起吃饭。工作交给谁，我得按拿得到的数据决定。"
+    },
+    {
+      "sceneId": "common_first_thursday",
+      "lineIndex": 7,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "提前捎信后双方都安排好了清晨，见他早到三分钟时自然露出认可。",
+      "text": "你比六点早了三分钟。工友的早班改好了，我也睡过了，不必用一个通宵表示歉意。右边那只扶稳，我们把昨天没做的事做完。"
+    },
+    {
+      "sceneId": "common_d15_sign",
+      "lineIndex": 2,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "夜里核工资，把自己的钱排最后，简短回答透出当老板后的疲惫。",
+      "text": "我最后拿。"
+    },
+    {
+      "sceneId": "common_d15_sign",
+      "lineIndex": 5,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "她要求以自己的名字承担设计责任，不让成年后的成果被说成小姑娘练习。",
+      "text": "我不反对你写试飞意见。但设计责任我签，不想出问题的时候让你替我解释那是个小姑娘的练习。那会让我以后每一张图都得重新证明年龄。"
+    },
+    {
+      "sceneId": "common_d15_sign",
+      "lineIndex": 10,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "新铅笔已经买好，却仍保留借来的短铅笔，用轻柔玩笑承接他的关心。",
+      "text": "我已经买了。借你的那支还没用完，等量完最后一个浮筒再还。"
+    },
+    {
+      "sceneId": "common_d16_clock",
+      "lineIndex": 1,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "按时告知可能延期是正式运营责任，她制止把关键说明藏到背面。",
+      "text": "让人白等一天，比告诉他我们可能迟到更不可靠。不能飞的时候谁去贴通知，也得写名字。"
+    },
+    {
+      "sceneId": "common_d22_weight",
+      "lineIndex": 1,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "还带着假胡子笑话的余兴接话，随后才把注意力带回第四次转弯。",
+      "text": "还好你没把这个写进偏航报告。现在告诉我，满载之后，第四次转弯为什么比第三次慢？"
+    },
+    {
+      "sceneId": "common_d22_weight",
+      "lineIndex": 7,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "她坦白仍愿意听笑话，但不能用逗笑抵扣记录；关系亲密与工作信任分开。",
+      "text": "我愿意听你讲这些。可飞机要托给按时把东西交给我的人。两件事都是真的，不必拿一件抵另一件。"
+    },
+    {
+      "sceneId": "common_d22_weight",
+      "lineIndex": 9,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "说到不能让工友牺牲睡眠时，后文紧接揉眼睛，显露实际的管理疲劳。",
+      "text": "我现在付工钱了，不能总让余地从别人睡觉的时间里来。"
+    },
+    {
+      "sceneId": "common_d25_island",
+      "lineIndex": 4,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "要求从陌生驾驶员的视角再走一次，专注落点安全而非迎合老手经验。",
+      "text": "你知道石头在这里，不代表第一回来的驾驶员知道。别替我省这个来回。"
+    },
+    {
+      "sceneId": "common_d25_island",
+      "lineIndex": 6,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "把试飞费接成散步用鞋的笑话，认真检查间也能与他自然抬杠。",
+      "text": "包括你告诉我，散步还需要哪双鞋。"
+    },
+    {
+      "sceneId": "common_d31_closed",
+      "lineIndex": 5,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "与吉娜把帮工边界说清后，用吃完就走的回话轻快结束，不板着脸谈每笔账。",
+      "text": "那正好，可以吃完就走。"
+    },
+    {
+      "sceneId": "common_d44_seat",
+      "lineIndex": 7,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "面对他把自己的远行说成给他放假，带笑把各自生活的自由还给他。",
+      "text": "你本来也有。别把你自己的日子说得像我的加班表。"
+    },
+    {
+      "sceneId": "common_d56_backup",
+      "lineIndex": 9,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "他拿自己会让工坊倒闭自嘲，她以修理费赚回来回敬，合作中的熟稔显露出来。",
+      "text": "那倒未必。修理费会赚回来。"
+    },
+    {
+      "sceneId": "common_d63_waiting",
+      "lineIndex": 5,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "拆检还需两天，旁白明确电话里的声音更累；她仍把交期如实说清。",
+      "text": "拆检还要两天。我不想用一句“很快”让大家空出两天。你们可以骂我慢，别替我把日期说短。"
+    },
+    {
+      "sceneId": "common_d64_joint",
+      "lineIndex": 4,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "发现两人都会算错后提议分工，笑意让吉娜不必扮演万能经营者。",
+      "text": "不如你算人，我算重量。算错了也容易找到是谁错。"
+    },
+    {
+      "sceneId": "common_d66_gap",
+      "lineIndex": 4,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "货主把停飞曲解成私人担心，她明确放行条件对任何驾驶员都一样。",
+      "text": "因为这架飞机不满足我签字的放行条件。换一位驾驶员，答案一样。"
+    },
+    {
+      "sceneId": "common_d71_soup",
+      "lineIndex": 2,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "她自己承认垫圈画反且返工四次，与吉娜一样只想先吃完热汤。",
+      "text": "我也不想。今天有一颗螺帽拧了四次，最后发现不是螺帽，是我把垫圈画错了方向。"
+    },
+    {
+      "sceneId": "common_d71_soup",
+      "lineIndex": 8,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "看到领班能独立处理客人，感到把事情交给别人也可以安心，笑意放松。",
+      "text": "你看，别人能做好，真是省心。"
+    },
+    {
+      "sceneId": "common_d74_clearance",
+      "lineIndex": 10,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "终于能印正式时刻表，带着高兴提醒不要一口气印一万张，保留她的务实幽默。",
+      "text": "可以。先印一百张，不要一高兴印一万。"
+    },
+    {
+      "sceneId": "common_d84_sidework",
+      "lineIndex": 7,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "成功后又遇返工，刚用手背压过眼睛，买外套的愿望再次延后，真实疲倦应显露。",
+      "text": "我今天本来想买一件不沾油的外套。现在又要推后。你若准备说我可以不那么拼，先等我把这张检查单做完。"
+    },
+    {
+      "sceneId": "common_d89_boat",
+      "lineIndex": 2,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "看他没上船却接回旧报纸，笑问每次都能拿东西，夏末仍有平常日子的亲近。",
+      "text": "你每次不上船，都能拿点东西回来？"
+    },
+    {
+      "sceneId": "port_autumn",
+      "lineIndex": 13,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "摊主请她给推车设计签字，她用转弯半径太差拒单，接入三人的玩笑而非认真发火。",
+      "text": "转弯半径太差，不接。"
+    },
+    {
+      "sceneId": "fio_good",
+      "lineIndex": 4,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "一个夏天等到的是真实操纵细节，她为终于形成的信任露出满足笑意。",
+      "text": "这句我等了你一个夏天。不是夸奖，是这一句。"
+    },
+    {
+      "sceneId": "fio_good",
+      "lineIndex": 13,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "答应给他留工厂椅子却要他自己修椅腿，亲昵而保留各自的日常。",
+      "text": "那我也给你留一张椅子。工厂里那张，腿有一点短。你得自己修。"
+    },
+    {
+      "sceneId": "fio_open",
+      "lineIndex": 3,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "她这次选择渡轮只是想一路睡过去，不必继续盯浪；让告别保有身体的疲倦。",
+      "text": "我知道。但我这次想睡一路。醒来不用先看浪有多高。"
+    },
+    {
+      "sceneId": "fio_open",
+      "lineIndex": 5,
+      "speaker": "菲尔",
+      "expression": "sad",
+      "reason": "仍有感情却不能假装信任问题解决，坦率承认遗憾而不控诉。",
+      "text": "有些事这个夏天我们做得很好。有些事，我还不知道能不能交给你。我不想为了赶上这班船，假装它们已经解决了。"
+    },
+    {
+      "sceneId": "fio_open",
+      "lineIndex": 13,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "拆信前用是不是别人代写打趣，表明悬而未决也不取消彼此愿意继续接近的部分。",
+      "text": "那我更得看看，是不是谁替你写的。"
+    },
+    {
+      "sceneId": "fio_missed",
+      "lineIndex": 8,
+      "speaker": "菲尔",
+      "expression": "sad",
+      "reason": "承认喜欢过相处的时刻，同时决定不再等；悲伤是告别的代价而非索要挽留。",
+      "text": "我喜欢过这个夏天里的一些时候，也喜欢过和你在一起。我没有把那些弄错。只是我不想继续等下一次，看看自己能不能被放进你的安排。"
+    },
+    {
+      "sceneId": "fio_missed",
+      "lineIndex": 10,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "明确拒绝他用天气回避这次告别，要求在场听见她的决定。",
+      "text": "你要是说天快下雨了，我会生气。"
+    },
+    {
+      "sceneId": "fio_e01",
+      "lineIndex": 12,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "不愿被以年龄宽容的夸奖代替合格判断，她直接说清专业底线。",
+      "text": "我最不需要的就是你替我开得漂亮。镇上那位顾问已经说过三次，年轻人能做到这样很不错。我不是拿年龄换合格证的。"
+    },
+    {
+      "sceneId": "fio_e01",
+      "lineIndex": 15,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "刚听完另收座位钱的醉汉笑话，也已笑过，带着余笑请他保留原话。",
+      "text": "把这句写上。别替我改成专业词。"
+    },
+    {
+      "sceneId": "fio_e01",
+      "lineIndex": 19,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "她也需要下工买鞋，不想永远替飞机长大，工作之外的生活愿望带出倦意。",
+      "text": "所以我得先说清楚，我也要下工。有时我想去买鞋，而不是一直替飞机长大。"
+    },
+    {
+      "sceneId": "fio_e02",
+      "lineIndex": 1,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "连续说就差一点才发现占掉工友的星期天，她反省自己也需要休息的排班。",
+      "text": "鲁迪的妹妹要结婚。安东尼奥有一场球赛。他们问我星期天到底算不算星期天，我才发现我昨天说过三次“就差一点”。"
+    },
+    {
+      "sceneId": "fio_e02",
+      "lineIndex": 3,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "故意叫他长辈并拒绝赞助，旁白明确说带着故意的轻快，是平等重逢后的逗趣。",
+      "text": "他们骂得还算客气。米兰那边寄来的汇票又晚了，我先垫工资，材料款留到下周一。你别看我的钱袋，今天不接受长辈赞助。"
+    },
+    {
+      "sceneId": "fio_e02",
+      "lineIndex": 7,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "洗手仍接到画骷髅的催款单，她已为工资垫钱，口气有实际收入压力下的疲倦。",
+      "text": "我知道。不是忘了，是在等邮局兑现。告诉莫雷蒂，下回请他写到期日，不要画骷髅。"
+    },
+    {
+      "sceneId": "fio_e02",
+      "lineIndex": 10,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "顺着骷髅画像能卖钱回敬五金商，旁白接着说她终于笑起来。",
+      "text": "他要是能画，早不做五金了。"
+    },
+    {
+      "sceneId": "fio_e02",
+      "lineIndex": 19,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "把截止时间贴到烟盒上的调侃，并未撤掉规矩，却让提醒具有两人熟悉的幽默。",
+      "text": "写在你的烟盒上会不会更有效？"
+    },
+    {
+      "sceneId": "fio_e13",
+      "lineIndex": 2,
+      "speaker": "菲尔",
+      "expression": "serious",
+      "reason": "丢钳子的风险在于会跟飞机下水，先止住玩笑认真找工具。",
+      "text": "那就再找。不是工具贵，是我不想让一把钳子跟着谁一起下水。"
+    },
+    {
+      "sceneId": "fio_e13",
+      "lineIndex": 11,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "祖父闭眼数工具的神话被笑话卸下，她笑着接受不必复制长辈的轻松。",
+      "text": "那我不用学他闭眼数了。先学会给人一个不会被骂到不敢说话的下午。"
+    },
+    {
+      "sceneId": "fio_e03",
+      "lineIndex": 13,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "试飞席位可以换人，午饭仍主动邀请，带一点容他骂排班的玩笑。",
+      "text": "午饭来不来？不是工餐，我约了城里那家便宜的炖豆子。布鲁诺也来。你要是想骂我排班，至少吃饱再骂。"
+    },
+    {
+      "sceneId": "fio_e03",
+      "lineIndex": 19,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "他终于把饭桌与记录分清，她用菜单笑话确认理解，而非继续训话。",
+      "text": "对。你总能把我一大段话说得像一张菜单。"
+    },
+    {
+      "sceneId": "fio_e04",
+      "lineIndex": 6,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "她和吉娜算到打烊仍把星期二的船算进星期四，坦白错误时露出熬夜后的疲惫。",
+      "text": "所以我改的是班表，不是海。可是每改一次，码头那边就得重排人。我昨天跟吉娜算到打烊，最后发现我们把一艘星期二才来的货船算进星期四了。"
+    },
+    {
+      "sceneId": "fio_d01",
+      "lineIndex": 8,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "难得两个人都不用负责发动机，笑着替自己规定休假，让放松区别于工作状态。",
+      "text": "今天谁都不负责发动机。听见奇怪的声响，也得等船长先听见。"
+    },
+    {
+      "sceneId": "fio_d01",
+      "lineIndex": 10,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "他想负责午饭，她回以别在船长听见前吃光，是真实轻快的约会互动。",
+      "text": "能。你负责别在船长听见之前，把午饭都吃完。"
+    },
+    {
+      "sceneId": "fio_d02",
+      "lineIndex": 1,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "因新裙拉链迟到七分钟，她先认账再自嘲机械师也会败给拉链，带一点不好意思。",
+      "text": "迟到这次算我的。不是试飞，是拉链。我以为机械师总该会对付一条拉链。"
+    },
+    {
+      "sceneId": "fio_d02",
+      "lineIndex": 4,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "笑着承认指甲机油和穿裙子的愿望可以并存，无需为职业身份辩解。",
+      "text": "你不用装没看见。我是想穿裙子，又不是想换一个职业。"
+    },
+    {
+      "sceneId": "fio_d02_after",
+      "lineIndex": 3,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "刚把私人愿望说清，也坦白自己仍会急着证明能做飞机，温柔自嘲双方还有功课。",
+      "text": "我也该早点说。刚才你看着我时，我差点又只想证明自己会做飞机。原来我们都还有别的功课。"
+    },
+    {
+      "sceneId": "fio_e14",
+      "lineIndex": 12,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "想起受保护的私人晚餐，她明确说喜欢，不再只是机器说明书的轻松值得看到。",
+      "text": "上次后来那一段晚饭，我很喜欢。不是因为你说裙子好看，是我终于能不把自己当成一架新飞机的说明书。"
+    },
+    {
+      "sceneId": "fio_e14",
+      "lineIndex": 16,
+      "speaker": "菲尔",
+      "expression": "tired",
+      "reason": "一次次区分办公室与晚饭也消耗精力，她承认自己会退回别人熟悉的位置。",
+      "text": "现在发现还得一次次说，哪里是办公室，哪里是晚饭。也不全是别人的错，我有时为了让谈话容易，会先把自己摆回他们认识的位置。"
+    },
+    {
+      "sceneId": "fio_log_delivery",
+      "lineIndex": 5,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "他补来的具体感觉终于能用，她用死鱼不会签图的笑话肯定这份诚实记录。",
+      "text": "这句很好。不能把它换成“像条死鱼”。鱼又不会替我签图。"
+    },
+    {
+      "sceneId": "fio_log_delivery",
+      "lineIndex": 7,
+      "speaker": "菲尔",
+      "expression": "smile",
+      "reason": "记录及时入档，排班可以恢复，午饭也照旧，信任兑现后是真实的轻松。",
+      "text": "午饭照旧。工作这一栏，也可以照旧了。"
+    },
+    {
+      "sceneId": "fio_d04",
+      "lineIndex": 7,
+      "speaker": "菲尔",
+      "expression": "surprise",
+      "reason": "汽水意外喷湿两个人的手，她还带着被溅到的惊讶，用共同成果自嘲收场。",
+      "text": "很好，今天的第一项共同成果。"
+    },
+    {
+      "sceneId": "common_d1_hotel",
+      "lineIndex": 1,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "刚见面就拿六和零打趣，是柜台后的熟稔招呼。",
+      "text": "你来得正好。帮我确认一下，这个六究竟是六，还是一位很自信的零？"
+    },
+    {
+      "sceneId": "common_d1_hotel",
+      "lineIndex": 5,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "三个胡子里有人没有胡子，是她主动邀请菲尔进入港口生活的玩笑。",
+      "text": "防潮不难。认名字很贵。我这里有三个船长都叫胡子，有一个连胡子都没有。"
+    },
+    {
+      "sceneId": "common_d2_ramp",
+      "lineIndex": 10,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "刚在账边画了猪鼻子，接着抓到他尺子悬空，是轻巧回敬。",
+      "text": "等你把尺子扶直了再谈。"
+    },
+    {
+      "sceneId": "common_d3_routes",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她中止英雄式鼓掌，把航线能否持续和风险责任拉回桌面。",
+      "text": "所以先别让谁为勇气鼓掌。我们要的是秋天还来得了的一班，不是报纸上只飞一次的英雄。"
+    },
+    {
+      "sceneId": "common_first_thursday",
+      "lineIndex": 9,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "带面包来打断两人的工作争论，先让烤面包的人收钱，是温暖解围。",
+      "text": "我带了面包。你们要是已经吵完，就让烤面包的那个人先收钱。"
+    },
+    {
+      "sceneId": "common_d8_table",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "九点后不再空等，她正在给多年习惯设明确截止时间。",
+      "text": "留到九点。九点以后拿来折菜单。习惯可以有截止时间，我最近正在学。"
+    },
+    {
+      "sceneId": "common_d8_table",
+      "lineIndex": 9,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "不替两张纸作感情裁判，只用一句你都可以回轻轻推他行动。",
+      "text": "你都可以回。"
+    },
+    {
+      "sceneId": "common_d16_clock",
+      "lineIndex": 5,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "孩子看错钟，她没有纠正出难堪，而是温柔替不一样的钟留五分钟。",
+      "text": "很好，那我们给不一样的钟也留五分钟。别站在太阳底下等，你的鞋底很薄。"
+    },
+    {
+      "sceneId": "common_d18_crates",
+      "lineIndex": 5,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "波鲁克讨演技费，她顺势说他坐着已经很像不挪位熟客。",
+      "text": "你坐着就已经很像，不必演。"
+    },
+    {
+      "sceneId": "common_d29_balance",
+      "lineIndex": 6,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "这是她拒绝被写成等待英雄救活的经营者的明确界限。",
+      "text": "我会自己决定旅馆的那一笔。你们可以帮忙，但别把我经营了这些年的地方写成等一位飞行员救活的笑话。"
+    },
+    {
+      "sceneId": "common_d31_closed",
+      "lineIndex": 8,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "发现安东可能未收到通知，轻松搬家气氛转为具体的担忧。",
+      "text": "我记得叫人捎给安东了。他耳朵不好，不爱读告示。他来这里四十年，若今天白走一趟，恐怕连生气都不会给我看见。"
+    },
+    {
+      "sceneId": "common_d33_drawer",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "旁白已写困到同张收据读三遍，她现在只求把必须付的钱分好。",
+      "text": "你可以帮我一件事。别说我做得已经很好了。我知道有些做得很好，也知道有些做得乱七八糟。帮我把这些钱分成明天真要付的，和可以等人睡醒再付的。"
+    },
+    {
+      "sceneId": "common_d33_drawer",
+      "lineIndex": 6,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "发现不是自己少记钱而是订金未到账，松口气后自嘲记性比银行勤快。",
+      "text": "原来我的记性比银行勤快。白白担心了半晚上。"
+    },
+    {
+      "sceneId": "common_d34_opening",
+      "lineIndex": 2,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "坡道验收时请最擅长挡路的人来演，熟稔玩笑让测试照常进行。",
+      "text": "还没试过有人半路停下跟你说话。波鲁克，你最擅长挡路，来一次。"
+    },
+    {
+      "sceneId": "common_d56_backup",
+      "lineIndex": 3,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "旁白刚写她捂嘴笑，拿别人替他倒酒调侃他的旁观神情。",
+      "text": "你脸色像在看别人替你倒酒。"
+    },
+    {
+      "sceneId": "common_d64_joint",
+      "lineIndex": 5,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "刚把周一错认成周二，她自己拆掉歌唱得好就会算船票的体面。",
+      "text": "那你负责提醒我，不能因为我唱过一首好歌，就觉得我会算好每一张船票。"
+    },
+    {
+      "sceneId": "common_d64_joint",
+      "lineIndex": 8,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他把调度名单抄清，她给出一句带欣赏的简短夸奖。",
+      "text": "你还真会做调度。"
+    },
+    {
+      "sceneId": "common_d71_soup",
+      "lineIndex": 1,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "停雨后第一夜她只想吃完热汤，不想继续主持庆祝和漂亮话。",
+      "text": "今晚不庆祝。我想先吃完这碗，没人请我说一段漂亮话。"
+    },
+    {
+      "sceneId": "common_d71_soup",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "顺着螺帽葬礼的冷笑话追讨修理费，三个人终于可以一起笑。",
+      "text": "等它付清修理费再说。"
+    },
+    {
+      "sceneId": "common_d74_clearance",
+      "lineIndex": 3,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "面对缩小安全规定的请求，她强调规定必须在出事前看得见。",
+      "text": "可以。放得够看见就行。看不见的规定，在出事以后才会变得很大。"
+    },
+    {
+      "sceneId": "common_d81_after",
+      "lineIndex": 9,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他嫌脸放大纸贵，她指出照片其实只露一只手，是首航后的轻松打趣。",
+      "text": "你只露了一只手。"
+    },
+    {
+      "sceneId": "common_d86_accounts",
+      "lineIndex": 1,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "教领班按期收账，不让熟识关系转嫁供应商账期，是负责的交接。",
+      "text": "这桌客人可以赊一周，超过就先结清旧的。不是他不体面，是我也得按时付供应商。你不用因为我认得他，就替我不好意思。"
+    },
+    {
+      "sceneId": "common_d89_boat",
+      "lineIndex": 10,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "她把柜台交给领班后明确说想睡到自然醒，夏末不再额外招待。",
+      "text": "明天别太早来。我想睡到自然醒。"
+    },
+    {
+      "sceneId": "fio_swim_invitation",
+      "lineIndex": 9,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "她借毛巾又假装警告别丢设计师，关心被藏在熟朋友的打趣里。",
+      "text": "别把我的毛巾当抹布。还有，记得回来。我礼拜天要清点床单，可没有空去海里找一位设计师。"
+    },
+    {
+      "sceneId": "fio_swim_invitation",
+      "lineIndex": 11,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "菲尔连毛巾都要签字，她拿桃子和自己算错的账温柔拆解。",
+      "text": "也用不着每件事都签字。那两个桃子自己付钱，我已经算错一回果铺的账。"
+    },
+    {
+      "sceneId": "gina_e01",
+      "lineIndex": 1,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "接住他嫌咖啡贵的挖苦，把早餐钱推给海湾，彼此熟悉的开场。",
+      "text": "那你应该向海湾付早餐钱。我今天的咖啡只收现金。"
+    },
+    {
+      "sceneId": "gina_e01",
+      "lineIndex": 8,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他否认露出嘲笑神情，她故意说胡子已经替他露了。",
+      "text": "你的胡子已经在替你露了。"
+    },
+    {
+      "sceneId": "gina_e01",
+      "lineIndex": 20,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她解释为何不能每次算错都靠朋友补钱，拒绝付钱代替经营判断。",
+      "text": "这里的工钱、厨房的菜、钢琴调音，都是不同的事。我不能每次出错都接受朋友送钱。那样连我自己都不知道这家旅馆到底能不能经营下去。"
+    },
+    {
+      "sceneId": "gina_e01",
+      "lineIndex": 30,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他追问是否只看螺丝价钱，她拿供应商的可靠程度取笑他。",
+      "text": "你肯把见到的价钱告诉我，就已经比一半的供应商有用了。"
+    },
+    {
+      "sceneId": "gina_e02",
+      "lineIndex": 9,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "把飞行员不愿照看杯子的抱怨还成乘客安全玩笑，仍愿与他亲近。",
+      "text": "所以它们目前比你的乘客安全。"
+    },
+    {
+      "sceneId": "gina_e02",
+      "lineIndex": 15,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "刚揉过磨红的脚踝又叠反桌布，她直接要求分担最后三张桌子。",
+      "text": "也可以把这句话改成“那三张桌子交给我”。"
+    },
+    {
+      "sceneId": "gina_e02",
+      "lineIndex": 18,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她不要无法控制天气的保证，只要能据此排晚饭的人和消息。",
+      "text": "我不需要你保证海上的风。我想知道，谁会提前告诉我多摆一份饭。"
+    },
+    {
+      "sceneId": "gina_e02",
+      "lineIndex": 23,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "说明并非拿一顿冷饭雇他一辈子，边界里仍留着熟悉的幽默。",
+      "text": "我知道你不是旅馆的员工。也没打算用一顿冷饭把你雇一辈子。"
+    },
+    {
+      "sceneId": "gina_d01",
+      "lineIndex": 1,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "婚宴挤掉预约，她刚从客人面前卸下招待笑容，累着安排厨房晚餐。",
+      "text": "我把你的预订弄丢了。赔偿是一间整个晚上都不用听敬酒词的私人餐厅。"
+    },
+    {
+      "sceneId": "gina_d01",
+      "lineIndex": 3,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "把柴房说成更贵的房间，主动把失误变为两人私下的笑料。",
+      "text": "厨房。柴房要贵一些，那里没有洗不完的锅。"
+    },
+    {
+      "sceneId": "gina_d01",
+      "lineIndex": 16,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "不信任分支里她要求今晚说明明早安排，不让修鞋再等没有日期的明天。",
+      "text": "若明早有别的安排，今晚告诉我。我可以自己送鞋去修，别让它也等一个没写日期的明天。"
+    },
+    {
+      "sceneId": "gina_d01",
+      "lineIndex": 27,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他曾留意蓝铁盒，于是真的找到领扣，她的你果然看到了有被看见的高兴。",
+      "text": "你果然看到了。领扣是你的，布带是我后来加的。不然每次开盒它都滚到底下。"
+    },
+    {
+      "sceneId": "gina_d01",
+      "lineIndex": 29,
+      "speaker": "吉娜",
+      "expression": "sad",
+      "reason": "没留意蓝铁盒的分支中，保管领扣比记住第二天容易，说出旧等待的酸楚。",
+      "text": "你那时候说第二天回来拿。我后来发现，保管它比记住你的第二天容易。"
+    },
+    {
+      "sceneId": "gina_d01",
+      "lineIndex": 38,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他以漏口袋推迟归还，她拿修一件装重要东西的物件亲昵追问。",
+      "text": "你能不能至少修好一件用来装重要东西的东西？"
+    },
+    {
+      "sceneId": "gina_e03",
+      "lineIndex": 6,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她愿意提供停靠点，却要保护厨师工时，不能默认多出两双手。",
+      "text": "厨房也不能全天替邮局搬货。我愿意留地方，不等于厨师的手每天多出两双。"
+    },
+    {
+      "sceneId": "gina_e03",
+      "lineIndex": 9,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "指出便宜方案其实将持续接送劳动藏到自己名下，是实际责任判断。",
+      "text": "如果答案永远是我，那不是便宜，是把价钱写在别处。"
+    },
+    {
+      "sceneId": "gina_e03",
+      "lineIndex": 25,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他说明涨潮前运横梁，她以留码头不留借口回敬，事情已有进展。",
+      "text": "好。我给你留码头，不给你留借口。"
+    },
+    {
+      "sceneId": "gina_d02",
+      "lineIndex": 8,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "唱片不端酒，她说给侍者加工钱世界并没结束，带着难得离店的轻松。",
+      "text": "所以我给侍者加了两里拉工钱。世界没有因此结束。"
+    },
+    {
+      "sceneId": "gina_d02",
+      "lineIndex": 17,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他又谈风向，她先笑着指出天气又在替他工作，沉默无需被修补。",
+      "text": "你看，你又打算让天气替你工作。"
+    },
+    {
+      "sceneId": "gina_d02",
+      "lineIndex": 25,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她明确要求不需要哄这句回答被认真听见，而非当作礼貌推辞。",
+      "text": "现在不需要。现在我只需要你别把这句回答听成客气。"
+    },
+    {
+      "sceneId": "gina_d02",
+      "lineIndex": 35,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "两人共同编船底检查的说法，她顺势追问检查结果，共享一个私下玩笑。",
+      "text": "检查结果？"
+    },
+    {
+      "sceneId": "gina_e04",
+      "lineIndex": 1,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "识破给扶手用的镀层冒充黄铜，关系真实跌落风险，她当场核实。",
+      "text": "这不是黄铜。你把镀层当成海水也骗得过的东西了。"
+    },
+    {
+      "sceneId": "gina_e04",
+      "lineIndex": 11,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "戴眼镜算错钱以后，他说没开口，她顽皮说已听见他在准备。",
+      "text": "我听见你正在准备。"
+    },
+    {
+      "sceneId": "gina_e04",
+      "lineIndex": 18,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "用呼吸和给肺签合同的冷幽默回绝随意加演出，语气轻而非怒斥。",
+      "text": "我平常也在呼吸，先生。您不能因此认为给我肺签合同很简单。"
+    },
+    {
+      "sceneId": "gina_e04",
+      "lineIndex": 23,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "谈判最终要求她休息也算数，这句是守住自身日程的清楚决定。",
+      "text": "我不是所有的日程空格。我已经写进去的东西，包括休息，都算数。"
+    },
+    {
+      "sceneId": "gina_e05",
+      "lineIndex": 2,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "她替请假人多站六小时，这次不上第三首台阶，先让演出结束。",
+      "text": "今晚到这里。让他们听一会儿海。"
+    },
+    {
+      "sceneId": "gina_e05",
+      "lineIndex": 8,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "把钢琴和想下班的椅子分开，疲劳里仍有只对熟人开的玩笑。",
+      "text": "钢琴没意见。它的椅子想下班。"
+    },
+    {
+      "sceneId": "gina_e05",
+      "lineIndex": 20,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "他以床单笑话回避，她直接要求认真回答是否愿见不表演的自己。",
+      "text": "我认真问的。"
+    },
+    {
+      "sceneId": "gina_e05",
+      "lineIndex": 22,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "承认也想被招待好，是刚结束额外工作后真实的疲惫与需要。",
+      "text": "有时候我也想让别人把自己招待好。不是因为我厌倦这里，是因为我还打算把这里经营很久。"
+    },
+    {
+      "sceneId": "gina_e05",
+      "lineIndex": 29,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他的帽子留在旁边，她以椅子已被帽子预订回应被陪伴的轻松。",
+      "text": "我知道。你的帽子已经替你订了这把椅子。"
+    },
+    {
+      "sceneId": "gina_d03",
+      "lineIndex": 7,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "两人绕过把他认成丈夫的摊主，她继续拿昂贵证明玩笑，不逼答案。",
+      "text": "别让她听见。她会先给我们开一张很贵的证明。"
+    },
+    {
+      "sceneId": "gina_d03",
+      "lineIndex": 15,
+      "speaker": "吉娜",
+      "expression": "surprise",
+      "reason": "前一句旁白明确写她十分意外：多年以为被吃掉的腌果皮原来留在抽屉。",
+      "text": "原来我这些年一直在奖励一只抽屉。"
+    },
+    {
+      "sceneId": "gina_d03",
+      "lineIndex": 21,
+      "speaker": "吉娜",
+      "expression": "sad",
+      "reason": "她承认曾把某些人的三个月无限拉长，说的是整理旧物也改变等待的习惯。",
+      "text": "不是。满三个月的旧东西会整理一次。可我以前总把某些人的三个月算得特别长。"
+    },
+    {
+      "sceneId": "gina_d03",
+      "lineIndex": 28,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "她主动提出下次由他请、先看日程，邀约亲近而不要求昂贵餐桌。",
+      "text": "下次你请。不必订桌，先看看你那天空不空。"
+    },
+    {
+      "sceneId": "gina_d03",
+      "lineIndex": 30,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "桃子过季仍有别的水果，笑着把两个人的约会从固定菜单里解放出来。",
+      "text": "会有别的东西成熟。难道所有约会都得照着同一张菜单？"
+    },
+    {
+      "sceneId": "gina_e06",
+      "lineIndex": 18,
+      "speaker": "吉娜",
+      "expression": "surprise",
+      "reason": "刚让熟客写下真名，她意外发现记得酒量并不等于真的记得这个人。",
+      "text": "我还以为自己什么都记得。原来记住一个人喝什么酒，并不等于真的记住他。"
+    },
+    {
+      "sceneId": "gina_e06",
+      "lineIndex": 20,
+      "speaker": "吉娜",
+      "expression": "sad",
+      "reason": "由还能补记的人转到再寄不到手里的账本，触及已经失去的人。",
+      "text": "有些人来得及。有些人的账本已经寄不到他手里了。"
+    },
+    {
+      "sceneId": "gina_e07",
+      "lineIndex": 1,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "局长每次犯错就先烧水，她用错误随水一起变老的玩笑观察熟人。",
+      "text": "他每次认错之前都要喝水，等水烧开，错就已经老了一点。"
+    },
+    {
+      "sceneId": "gina_e07",
+      "lineIndex": 12,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她要求远行后的消息也说真实不好，不让他擅自改成一切很好。",
+      "text": "以后我要是出门，你收到的消息也别总替我改成“一切很好”。我分得清哪一种不好需要担心，哪一种只需要带一件厚外套。"
+    },
+    {
+      "sceneId": "gina_e07",
+      "lineIndex": 14,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "接受他直写冷的笨拙办法，温柔说两个字胜过七行风向。",
+      "text": "很好。两个字比七行风向有用。"
+    },
+    {
+      "sceneId": "gina_e07",
+      "lineIndex": 22,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "守周四的前置成立，她承认因他真正做到才敢再交出别的事项。",
+      "text": "周四收桌那件事，你已经比我想的做得好。这次我才敢把别的事情也写给你。"
+    },
+    {
+      "sceneId": "gina_e07",
+      "lineIndex": 25,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "把上台坐火车的好事留自己，分给他无聊任务，是主动亲昵的便宜。",
+      "text": "我保留上台和坐火车。你总得让我占一点便宜。"
+    },
+    {
+      "sceneId": "gina_d04",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "修鞋分支里她用结实到舍不得扔来夸他，带着熟人的调皮。",
+      "text": "那双鞋后来又穿了三次。你修得有点过于结实，我想扔掉它们都找不到合理的理由。"
+    },
+    {
+      "sceneId": "gina_d04",
+      "lineIndex": 5,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "未修鞋分支里她说新鞋也该习惯她，把生活小改变讲得有趣。",
+      "text": "厨房那晚以后，我终于买了双不磨脚的鞋。鞋店老板说人要先习惯它，我说它最好也习惯我。"
+    },
+    {
+      "sceneId": "gina_d04",
+      "lineIndex": 13,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "被旁人追着给花园故事证明结尾，她终于露出对这些要求的厌倦。",
+      "text": "不付。还总要我证明结尾。"
+    },
+    {
+      "sceneId": "gina_d04",
+      "lineIndex": 22,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "刚说算账眼睛疼、想借肩膀歇头，她把今晚先欠着说得放松疲倦。",
+      "text": "今晚先欠着。"
+    },
+    {
+      "sceneId": "gina_e08",
+      "lineIndex": 2,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他问蓝封能否飞得快，她回敬也不能让他少说话，三人工作时的打趣。",
+      "text": "也不能让你少说一句话。"
+    },
+    {
+      "sceneId": "gina_e08",
+      "lineIndex": 17,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "接完索要加唱的电话，已有轻敲或闭眼动作，她不想继续说话。",
+      "text": "不用问。我今天已经说过足够多的话。"
+    },
+    {
+      "sceneId": "gina_e08",
+      "lineIndex": 25,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "两人终于把活做完，她用没用意见扣工资只剩一杯咖啡亲昵结账。",
+      "text": "扣掉你没用的意见，正好一杯。"
+    },
+    {
+      "sceneId": "gina_e09",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她不许坏天气自动吞掉员工各自的生活，是人员调度的原则。",
+      "text": "我不想让他们以为，天气一坏，自己的日子就该自动让位。"
+    },
+    {
+      "sceneId": "gina_e09",
+      "lineIndex": 6,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "承认自己还在努力不把三个人的班都顶上，疲惫并未因懂道理消失。",
+      "text": "正在努力不这么准备。"
+    },
+    {
+      "sceneId": "gina_e09",
+      "lineIndex": 19,
+      "speaker": "吉娜",
+      "expression": "surprise",
+      "reason": "菲尔主动提前安排好机库睡处并来信，她确实比吉娜预料更早解决。",
+      "text": "她这次比我想得早。"
+    },
+    {
+      "sceneId": "gina_e09",
+      "lineIndex": 27,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "被看见又划掉自己的休息，她仍想硬撑留下，疲惫藏在借口后。",
+      "text": "四点钟还有两批人要问船。我总得留一个知道答案的人。"
+    },
+    {
+      "sceneId": "gina_e09",
+      "lineIndex": 29,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他替她把无船答案说得太凶，她终于以海是他开的回嘴，恢复一点松弛。",
+      "text": "你说得太凶，他们会以为海是你开的。"
+    },
+    {
+      "sceneId": "gina_d05",
+      "lineIndex": 1,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "停电把约会缩成一盏灯，她主动用范围征询意见，让眼前的晚餐仍是邀约。",
+      "text": "今天的约会只有一张桌子的照明。你对范围有什么意见？"
+    },
+    {
+      "sceneId": "gina_d05",
+      "lineIndex": 6,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "他又要修发电机，她先守住主动空出的这个晚上，不把两人时间送给机器。",
+      "text": "明天再谈。我把这一个晚上空出来，不想把它全送给那台机器。"
+    },
+    {
+      "sceneId": "gina_d05",
+      "lineIndex": 14,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他允许她坐着说错规则，她看穿他想赢回那颗豆子，彼此玩得轻松。",
+      "text": "我听出来了，你打算靠它赢回那颗豆子。"
+    },
+    {
+      "sceneId": "gina_d05",
+      "lineIndex": 24,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "她直接承认累和想见他可以同时存在，不要求自己像打扫好的客房。",
+      "text": "累和想见你可以同时存在。我不想每次见你以前都先把自己收拾得像一间空房。"
+    },
+    {
+      "sceneId": "gina_d05",
+      "lineIndex": 30,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "牵手以后说明邀请不是因为他飞不走，天晴也想主动约他，有具体的期待。",
+      "text": "我不是因此才请你。等天气好，我也想有一次不用看云就约你的机会。"
+    },
+    {
+      "sceneId": "gina_e10",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "钥匙并非随时来、替她决定留宿的许可，这是明确职责边界。",
+      "text": "先把话说清。钥匙不代表你想几点来都行，也不代表你可以替我决定谁该留宿。登记簿在这里，空房在第二栏，收不到钱的急事另记。"
+    },
+    {
+      "sceneId": "gina_e10",
+      "lineIndex": 19,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "真正值夜的工作不能再被临时赏金挤掉，她要求先安排飞行事项。",
+      "text": "你要是答应，飞机上的事情先安排。我不接受你半夜忽然想起还有一笔更紧急的奖金。"
+    },
+    {
+      "sceneId": "gina_e10",
+      "lineIndex": 25,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他担心不会唱歌，她乐于拿夜班客人主要想睡觉化解紧张。",
+      "text": "太好了。夜班客人主要需要睡觉。"
+    },
+    {
+      "sceneId": "gina_e11",
+      "lineIndex": 8,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "曾记真名的分支里，她带一点终于写对的高兴，请客人再确认一次。",
+      "text": "我这次写对了。您先看看，别等到结账才说。"
+    },
+    {
+      "sceneId": "gina_e11",
+      "lineIndex": 13,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "提醒侍者不能为留下就替家人说无所谓，保护家庭与工作的真实选择。",
+      "text": "别为了留下说你家里无所谓。那不是我能替你问的。"
+    },
+    {
+      "sceneId": "gina_e11",
+      "lineIndex": 17,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他担心合同藏终身条款，她以终身得另谈回应，旁白已明确顽皮。",
+      "text": "我没那么便宜。终身得另外谈。"
+    },
+    {
+      "sceneId": "gina_e11",
+      "lineIndex": 19,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "顺着合同修理条款，戳破他每次心虚就重钉码头的习惯，是熟悉后的亲昵。",
+      "text": "那你也得允许我写，修理工不能每次心虚都把整个码头重新钉一遍。"
+    },
+    {
+      "sceneId": "gina_d06",
+      "lineIndex": 2,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "爬坡摘帽已经累，她仍拿再说一句帽子就更重来逗他。",
+      "text": "尤其你再说一句的时候。"
+    },
+    {
+      "sceneId": "gina_d06",
+      "lineIndex": 10,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "演出合同休息条款过小，她要求放大，是需要落实的职业边界。",
+      "text": "剧院寄来了。四场的名字印得很大，休息的地方印得很小。我让他们放大一点。"
+    },
+    {
+      "sceneId": "gina_d06",
+      "lineIndex": 22,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "要求信比她先到，轻轻回收开场迟到信的旧毛病，带着愿意见面的期待。",
+      "text": "可以。也可以把信写得早一点，让它比我先到。"
+    },
+    {
+      "sceneId": "gina_d06",
+      "lineIndex": 35,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "她说最好的事是两次改主意他仍在且不替她选，开心来自被尊重而非被留住。",
+      "text": "这排第二。第一是我改变了两次主意，你都还在这里，也没有假装是你替我选的。"
+    },
+    {
+      "sceneId": "gina_e12",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她不再先写信等他碰巧经过，今晚要求一个可以不合她心意的真实答复。",
+      "text": "我不想写了再看你会不会碰巧经过。今天说，就算你不打算给我想听的答案。"
+    },
+    {
+      "sceneId": "gina_e12",
+      "lineIndex": 17,
+      "speaker": "吉娜",
+      "expression": "sad",
+      "reason": "承认若他只偶尔来自己会难过，也不愿再替沉默安排日子，脆弱与边界并存。",
+      "text": "如果你想慢一些，就说慢一些。如果你只想偶尔来，也请这样说。我会难过，可能会生你的气，可我不想继续替一个没说出口的答案安排自己的日子。"
+    },
+    {
+      "sceneId": "gina_e12",
+      "lineIndex": 20,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他坦承不会漂亮话，她把要求收在先讲清下周四，给出可做到的温柔入口。",
+      "text": "我知道。你可以先把下星期四说清。"
+    },
+    {
+      "sceneId": "gina_e12",
+      "lineIndex": 27,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "不让他把自己写成飞机准时的原因，以承担不起所有天气的笑话守住各自选择。",
+      "text": "这听起来是你的决定。别把我写成让飞机准时的原因，我承担不起所有天气。"
+    },
+    {
+      "sceneId": "fio_good",
+      "lineIndex": 15,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "她从门外催还行李秤，拿两人的爱情称不了柑橘打趣，自己的夏天也在继续。",
+      "text": "两位，行李秤借完了要还。明早我要称十二筐柑橘，不能用你们的爱情估重量。"
+    },
+    {
+      "sceneId": "fio_missed",
+      "lineIndex": 16,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "菲尔不愿把普通午餐叫送行饭，她轻松改成今天的午饭，友情不因失恋结束。",
+      "text": "那就叫今天的午饭。后天另算。"
+    },
+    {
+      "sceneId": "gina_good",
+      "lineIndex": 3,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "接过踢坏门算住宿费的玩笑，亲昵提醒修理账不能抵所有关系。",
+      "text": "算修门费。你不能每次都用修理账把别的账抵掉。"
+    },
+    {
+      "sceneId": "gina_good",
+      "lineIndex": 12,
+      "speaker": "吉娜",
+      "expression": "tired",
+      "reason": "终于直说不想当最懂分寸的人，先允许被看见工作之后的累。",
+      "text": "好。我这几天不想当最懂分寸的人。明天可能也不想。你得自己看我是不是累了，别总等我开口。"
+    },
+    {
+      "sceneId": "gina_good",
+      "lineIndex": 14,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "承认累也高兴，并主动让他挪近椅子，是关系落地后的温柔邀请。",
+      "text": "累。也高兴。你把那边的椅子挪近一点。"
+    },
+    {
+      "sceneId": "gina_open",
+      "lineIndex": 11,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她要求由自己决定晚不晚，不让多年熟悉继续替她安排是否见面。",
+      "text": "下回你可以让我决定晚不晚。我经营旅馆很久了，不能连自己要不要见一个人都请他替我安排。"
+    },
+    {
+      "sceneId": "gina_open",
+      "lineIndex": 16,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他认真说想来以后，她主动邀他去集市买鱼，试着把新的相处继续下去。",
+      "text": "这句听起来像能继续往下谈。今晚没有音乐，我去买鱼。你愿意，就和我走到集市。"
+    },
+    {
+      "sceneId": "gina_missed",
+      "lineIndex": 7,
+      "speaker": "吉娜",
+      "expression": "serious",
+      "reason": "她说明不再把他也许会来当作最不能改的安排，不带惩罚地收回生活。",
+      "text": "我想你未必全知道。我并不要求你每天出现，也不需要每个晚上的解释。我只是不能再把你也许会来的那一部分，当作我生活里最不能更改的安排。"
+    },
+    {
+      "sceneId": "gina_missed",
+      "lineIndex": 11,
+      "speaker": "吉娜",
+      "expression": "sad",
+      "reason": "听见不能让她一直守夜，她决定把这句话当真，结束等待仍有失落。",
+      "text": "是。我现在想把这句话当真。"
+    },
+    {
+      "sceneId": "friend",
+      "lineIndex": 2,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "航线终于合力运转，她仍笑着追早餐咖啡账，三人回到可持续的日常。",
+      "text": "那太好了，我还来得及把旅馆的早餐钱写进去。局长，你不能连续三周只付面包的钱，咖啡不会自己走到壶里。"
+    },
+    {
+      "sceneId": "port_bags",
+      "lineIndex": 4,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "局长说过去只有一种袋子，她拿催款信和喜帖曾放反温和回敬。",
+      "text": "过去你还会把催款信和喜帖放反。时代总得进步一点。"
+    },
+    {
+      "sceneId": "port_autumn",
+      "lineIndex": 12,
+      "speaker": "吉娜",
+      "expression": "smile",
+      "reason": "他抱怨像四轮搬运车，她和菲尔把独立签图拿来开玩笑，平等交情自然。",
+      "text": "先付定金。菲尔，她能独立签设计图，今天正好在。"
+    },
+    {
+      "sceneId": "opening",
+      "lineIndex": 14,
+      "speaker": "波鲁克",
+      "expression": "surprise",
+      "reason": "刚看完迟到三周的信，寄信人却已经站在背后；嘴损是掩饰这次真实重逢的意外。",
+      "text": "你那封信游泳来的？"
+    },
+    {
+      "sceneId": "common_d1_hotel",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "认出吉娜账上害怕的六，熟人间很轻的揶揄，不需大笑。",
+      "text": "是六。零不会写得那么害怕。"
+    },
+    {
+      "sceneId": "common_d1_night",
+      "lineIndex": 5,
+      "speaker": "波鲁克",
+      "expression": "tired",
+      "reason": "初日修漏、收拾第二座位后已入夜；收尾低语带一天手上工作的疲劳。",
+      "text": "明天有风。也有泥。够忙的。"
+    },
+    {
+      "sceneId": "common_d2_ramp",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "看见她们在改账旁画猪鼻，顺着玩笑讨演技费，属于三人的熟悉默契。",
+      "text": "侮辱同行，要另外付钱。"
+    },
+    {
+      "sceneId": "common_d2_log",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "明确交代收油前的偏航感受，先认真给设计师真实操纵反馈。",
+      "text": "之前。你把驾驶员的脚想得太勤快了。"
+    },
+    {
+      "sceneId": "common_d3_routes",
+      "lineIndex": 3,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "圣卢卡着水风险具体存在；说保险费被浪洗，是提醒不能拿勇气替代落点评估。",
+      "text": "圣卢卡的浪会把保险费也洗一遍。"
+    },
+    {
+      "sceneId": "common_mail_return",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "已按约返航并补画石滩，拿表格重量开句轻玩笑，让履约后的机库松口气。",
+      "text": "别把表格加得比飞机还重。"
+    },
+    {
+      "sceneId": "common_mail_search",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "为找信失约后，菲尔指出工友实际损失；短短一句鱼汤没带回，是心虚与歉意的低落。",
+      "text": "嗯。鱼汤没带回来。"
+    },
+    {
+      "sceneId": "common_mail_message",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "亲口确认清晨六点到，改约必须由他承担，不能只留下一个俏皮话。",
+      "text": "告诉她，猪没有那么好用。六点，我到。"
+    },
+    {
+      "sceneId": "common_d11_thursday",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "反驳好天气就该照相，强调晴天照样能失事；飞行安全判断。",
+      "text": "天气好也能摔得很清楚。"
+    },
+    {
+      "sceneId": "common_d18_crates",
+      "lineIndex": 4,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "被她们安排扮不挪椅子的熟客，演技费的干笑落在一起干活的亲近里。",
+      "text": "演技费另算。"
+    },
+    {
+      "sceneId": "common_d22_weight",
+      "lineIndex": 5,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "前文明确收起笑意，说明第四次主动松舵，所以数据不能混算。",
+      "text": "有。所以那个数不能和前三次算在一起。"
+    },
+    {
+      "sceneId": "common_d25_island",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "浮标已经打牢，面对岛民开个轻微收费玩笑，掩住被送行的在意。",
+      "text": "别都来送。人一多，我容易收费。"
+    },
+    {
+      "sceneId": "common_d31_closed",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "吉娜担心听力差的老客扑空，他直接说去旧泊位，给出能落实的行动。",
+      "text": "我去旧泊位看看。花盆别替我浇死。"
+    },
+    {
+      "sceneId": "common_d32_oldpier",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "为亡妻生日留空椅、切碎蛋糕后，他用算赚了护住老人和吉娜的体面，笑意不能压过悼念。",
+      "text": "碎的比较多。算你赚了。"
+    },
+    {
+      "sceneId": "common_d44_seat",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "得知菲尔将为工友冬季工作远行，给我一点假的玩笑里短暂露出舍不得，随后仍尊重她选择。",
+      "text": "你总算打算给我一点假。"
+    },
+    {
+      "sceneId": "common_d46_unsigned",
+      "lineIndex": 8,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "不凭绰号猜投旧信，先查寄袋人，承担投递隐私与来历责任。",
+      "text": "先找送袋子的人。谁都说以前，那这班飞机永远飞不到明年。"
+    },
+    {
+      "sceneId": "common_d56_backup",
+      "lineIndex": 4,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "看备用驾驶员操纵，具体指出半秒舵量差异，属于专业观察而非吃醋。",
+      "text": "她少收了一点舵。该早半秒。"
+    },
+    {
+      "sceneId": "common_d59_notice",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "停飞通知要逐字确认对方听见，电话摇两次是可靠联络程序。",
+      "text": "电话要摇两次。第一次响的时候，别以为已经有人听见。"
+    },
+    {
+      "sceneId": "common_d61_weather",
+      "lineIndex": 1,
+      "speaker": "波鲁克",
+      "expression": "tired",
+      "reason": "连续潮湿坏天气里拉帆布，雨已灌进袖口，抱怨预报时是干活后的湿冷疲态。",
+      "text": "天气预报总算也肯认真上一次班。"
+    },
+    {
+      "sceneId": "common_d66_gap",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "货主以二十分钟诱飞，他指出回程没有这么短，拒绝把天气窗当担保。",
+      "text": "看出来了。回程没有你许的那么短。"
+    },
+    {
+      "sceneId": "common_d71_soup",
+      "lineIndex": 3,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "对菲尔反复拧错垫圈的沮丧，用替螺帽办葬礼的干幽默让她喘口气。",
+      "text": "那要不要替它办一场葬礼？"
+    },
+    {
+      "sceneId": "common_d76_lastship",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "放弃更高奖金的护送，并明确自己已写进首航表，不含糊地承担既定工作。",
+      "text": "把那封护送转给愿意去的人。我这边已经在表上写了名字。"
+    },
+    {
+      "sceneId": "common_d79_signals",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "tired",
+      "reason": "旗子已经反复举过，后文手臂发酸；仍等大家认清才放下，疲惫与可靠并存。",
+      "text": "举。你这回若认错，午饭归我。"
+    },
+    {
+      "sceneId": "common_d81_after",
+      "lineIndex": 10,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "照片只露一只扶梯子的手，他借手艺比脸值钱承认自己也想留一张。",
+      "text": "那更得留。手艺比脸值钱。"
+    },
+    {
+      "sceneId": "common_d84_sidework",
+      "lineIndex": 5,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "首航后发现隐患，认真指出冲击方向而非一味安慰，帮助复检落到实处。",
+      "text": "这里。不是碰得最重，是方向不对。"
+    },
+    {
+      "sceneId": "common_d86_accounts",
+      "lineIndex": 5,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "吉娜允许他不把钱全投回去，借多收一杯水回一个熟悉而放松的玩笑。",
+      "text": "有人这么说，你替我多收他一杯水。"
+    },
+    {
+      "sceneId": "common_d88_names",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "要求保留旧绰号，给活得久的人留下名字的位置，是对收信者的郑重。",
+      "text": "留着。别让一个人活得久一点，连旧名字都没处放。"
+    },
+    {
+      "sceneId": "fio_e01",
+      "lineIndex": 10,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "听她承认知道故障的人会替飞机使力，用听话醉汉回敬，同行之间第一次松动。",
+      "text": "也可能是你的醉汉比较听话。"
+    },
+    {
+      "sceneId": "fio_e02",
+      "lineIndex": 18,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "接受记录交付的规矩并要求贴门上，承担时间承诺而非继续打岔。",
+      "text": "知道了。规矩贴门上，免得某头猪看不见。"
+    },
+    {
+      "sceneId": "fio_e13",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她为没继承祖父的万能记性自责，他揭穿祖父骂得早的诀窍，让她卸下那件重外套。",
+      "text": "你祖父也记不住。他只是骂得早，让人以为他早知道。"
+    },
+    {
+      "sceneId": "fio_e03",
+      "lineIndex": 18,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "把晚饭的座位和首航驾驶资格分清，承认亲密不能替代记录和信任。",
+      "text": "明白。饭桌有我的位子，飞机看记录。"
+    },
+    {
+      "sceneId": "fio_e04",
+      "lineIndex": 15,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "明确好坏都属于签图的人，支持她自己承担职业决定，不代她签名。",
+      "text": "能。坏的时候也算你的，好才会算你的。"
+    },
+    {
+      "sceneId": "fio_d02_after",
+      "lineIndex": 4,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "晚餐后终于夸裙子，顺带免去她对难吃菜的责任，是只对她说的小幅温柔。",
+      "text": "裙子不错。菜难吃的部分，不用负责。"
+    },
+    {
+      "sceneId": "fio_e14",
+      "lineIndex": 17,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她想从老客户眼里的旧位置走开，他真的站到树另一边，配合她的新日常。",
+      "text": "那就换个位置。我今天站树的另一边。"
+    },
+    {
+      "sceneId": "fio_e05",
+      "lineIndex": 14,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "被问到自己的住处时第一次说起不肯扔的缺柄杯，安静露出长期独居的旧习惯。",
+      "text": "有个杯子。柄缺了，倒满会烫手。别人总想替我扔掉。"
+    },
+    {
+      "sceneId": "fio_e06",
+      "lineIndex": 13,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "客舱门能开但人出不来，直接报告设计边界，不能拿晴天的浪漫当客运许可。",
+      "text": "能开。人不能出来。"
+    },
+    {
+      "sceneId": "fio_d03",
+      "lineIndex": 16,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "坦承不飞时也会想走，但可能只是去买盐，为随后敲她的门留下轻松空间。",
+      "text": "会。想完也可能只是去买盐。"
+    },
+    {
+      "sceneId": "fio_e15",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "白旗会让守塔人以为全岛投降，玩笑配合她把联系方式写实的工作。",
+      "text": "旗子别用白的。他会以为整座岛投降了。"
+    },
+    {
+      "sceneId": "fio_e07",
+      "lineIndex": 19,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她承担挂耳失误后需要骂一会，他允许抱怨并拿邮局收费缓解紧绷，不抢她发言。",
+      "text": "可以骂。记得写完再骂，免得邮局收费。"
+    },
+    {
+      "sceneId": "fio_e08",
+      "lineIndex": 16,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "肯定飞机能独立运转与想见他不冲突，郑重支持她不围绕自己开工。",
+      "text": "这两个想法，不冲突。"
+    },
+    {
+      "sceneId": "fio_d04",
+      "lineIndex": 17,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她终于可以不用借飞机表达想见，他用船票另算接住直白邀约，轻微笑而非承诺表演。",
+      "text": "可以。船票另算。"
+    },
+    {
+      "sceneId": "fio_e16",
+      "lineIndex": 11,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "菲尔没把单位错误推给工友，他认真指出这样能留住一个伙伴，守住责任边界。",
+      "text": "没说出来，能省一个工友。"
+    },
+    {
+      "sceneId": "fio_e09",
+      "lineIndex": 14,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "货主离开后她独自系缆，他用风大邮局听不见的旧笑话允许她卸下一点怒气。",
+      "text": "想骂就骂。今天风大，邮局听不见。"
+    },
+    {
+      "sceneId": "fio_e10",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "她已决定回米兰，他问两趟不够时怎么办，短暂露出两地生活里真实的舍不得。",
+      "text": "两趟不够的时候呢？"
+    },
+    {
+      "sceneId": "fio_d05",
+      "lineIndex": 13,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "电影火车式结尾被她拆开，他提带午饭的票，回应选择完还要过日子的默契。",
+      "text": "主角应该先买张带午饭的票。"
+    },
+    {
+      "sceneId": "fio_e17",
+      "lineIndex": 10,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "她指出过去他不告而别，让人猜天气；电报贵的借口此时带内疚，不当逗笑用。",
+      "text": "电报挺贵。"
+    },
+    {
+      "sceneId": "fio_e11",
+      "lineIndex": 15,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "摄影时梯脚在湿木板上，他坚持留在下面扶稳，让设计师独立站在镜头中央。",
+      "text": "上去还得有人扶。照片总要留点能干活的。"
+    },
+    {
+      "sceneId": "fio_e12",
+      "lineIndex": 1,
+      "speaker": "波鲁克",
+      "expression": "surprise",
+      "reason": "原来模拟货舱的旧编号椅子出现在她新住处，认出物件的新用途时微微一怔。",
+      "text": "这椅子不是不能坐人？"
+    },
+    {
+      "sceneId": "fio_e12",
+      "lineIndex": 16,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她希望没修好自己也能见面，他承认收音机也没修好，用同样的不完美接近她。",
+      "text": "我那台收音机也还没修好。"
+    },
+    {
+      "sceneId": "fio_d06",
+      "lineIndex": 10,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "她改过数次约，他仍承认改约后的时间也要认真履行，是具体可靠的回答。",
+      "text": "改过的时间，也是时间。"
+    },
+    {
+      "sceneId": "fio_e18",
+      "lineIndex": 16,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "被要求亲手抄收信地址，他拿字丑会否影响评价自嘲，已愿意配合新生活。",
+      "text": "字丑会影响航线评价？"
+    },
+    {
+      "sceneId": "fio_log_delivery",
+      "lineIndex": 4,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "九点前交本后，准确说明收油前右手先感到异常，让记录能够真正交付。",
+      "text": "收油门以前。右手先觉得不对，发动机还没听见。"
+    },
+    {
+      "sceneId": "fio_swim_invitation",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她主动休假并划掉量水尺，他温和逗她看水就想量，是工作外邀约的轻快起点。",
+      "text": "这项恐怕很难。你看见水就想量。"
+    },
+    {
+      "sceneId": "fio_swim_splash",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "戏水时仍守约定浅处，不向不知道深度的地方乱泼乱追；保持安全的冷静底色。",
+      "text": "我从来不往不知道水深的地方开火。"
+    },
+    {
+      "sceneId": "fio_swim_splash",
+      "lineIndex": 4,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "许可后的水花落到猪鼻上，记盐水账是实际玩起来后的放松笑意。",
+      "text": "这回记账。盐水，鼻子一次。"
+    },
+    {
+      "sceneId": "fio_swim_quiet",
+      "lineIndex": 5,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "她难以从工作桌旁走开，他提出下次在门口等，给的是能落实的休假帮助。",
+      "text": "下次我到门口。你把杯子洗了就走。"
+    },
+    {
+      "sceneId": "fio_swim_after",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她没为换泳衣修扣子，他认同今天停修，一起把普通半日假过下去。",
+      "text": "好决定。今天停修。"
+    },
+    {
+      "sceneId": "fio_swim_romance",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她确认这样牵手可不可以，他用石头不收两个座位钱接受靠近，保留波鲁克的轻淡。",
+      "text": "这块石头不收两个座位的钱。"
+    },
+    {
+      "sceneId": "fio_swim_bankside",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "surprise",
+      "reason": "她上岸忽然把凉手背贴到他的前臂，他真的一缩，再发现岸上也有伏击。",
+      "text": "岸上还有伏击？"
+    },
+    {
+      "sceneId": "fio_swim_friend",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她怕被替答应洗全旅馆床单，他顺着另收海湾钱，友情分支同样轻松。",
+      "text": "那得另收一个海湾的钱。"
+    },
+    {
+      "sceneId": "fio_swim_echo",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "数日后拿桃子涨价当坏消息，回收共同下午的私下记忆。",
+      "text": "我今天带的是另一件坏消息。果铺涨价了。"
+    },
+    {
+      "sceneId": "gina_e01",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她不许他露出算错账的笑脸，他说还没有露，胡子已经出卖了抑住的笑。",
+      "text": "我还没有露。"
+    },
+    {
+      "sceneId": "gina_e01",
+      "lineIndex": 21,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "认可经营账不能用朋友补贴糊过去，具体圈错单、要求对方认账。",
+      "text": "把第二张用红笔圈上。跟他说，账可以抵，利息请他送四个结实的灯罩。"
+    },
+    {
+      "sceneId": "gina_e02",
+      "lineIndex": 20,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "她需要知道是否多摆一份饭，他承诺晚了由灯塔捎信，把周四写清。",
+      "text": "如果晚了，我请灯塔的人带句话。"
+    },
+    {
+      "sceneId": "gina_e02",
+      "lineIndex": 24,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "一辈子只给一顿的冷笑话让熟人同时松一口气，但下一拍仍要回应约定。",
+      "text": "一辈子只给一顿？你的经营终于有起色了。"
+    },
+    {
+      "sceneId": "gina_d01",
+      "lineIndex": 30,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "看到保存多年的旧领扣，意识到第二天回来被拖了很久，低声说生锈了。",
+      "text": "生锈了。"
+    },
+    {
+      "sceneId": "gina_e03",
+      "lineIndex": 17,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "提出旧浮筒横梁可用但先刮锈，拿实际材料支持保留泊位，不替两位负责人拍板。",
+      "text": "旧浮筒支架的横梁还能用。先刮锈，别把它们卖成废铁。"
+    },
+    {
+      "sceneId": "gina_d02",
+      "lineIndex": 36,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "无须唱歌、也无须说完故事的小船可以再坐一会，难得放松的微笑。",
+      "text": "还可以再坐一会儿。"
+    },
+    {
+      "sceneId": "gina_e04",
+      "lineIndex": 10,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她戴上眼镜警告不许开口，他说我没说，熟悉她的小失误却不借机羞她。",
+      "text": "我没说。"
+    },
+    {
+      "sceneId": "gina_e05",
+      "lineIndex": 23,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "她认真想被招待，他停止讲漂亮话，问面在哪里，准备把普通晚饭真的做起来。",
+      "text": "面在哪？"
+    },
+    {
+      "sceneId": "gina_d03",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "摊主把拿东西的男人都当丈夫，他调侃户籍效率，保留两人早晨的小顽皮。",
+      "text": "她应该去管户籍，效率比邮局高。"
+    },
+    {
+      "sceneId": "gina_e06",
+      "lineIndex": 19,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "听见她说记住酒不等于记住人，用现在还来得及轻接旧客与逝者的遗憾。",
+      "text": "现在记住也来得及。"
+    },
+    {
+      "sceneId": "gina_e07",
+      "lineIndex": 13,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "她要求别替她把消息改成一切很好，他同意直接写冷，认真学习真实告知。",
+      "text": "我可以直接写冷。"
+    },
+    {
+      "sceneId": "gina_d04",
+      "lineIndex": 21,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "她想借肩膀十分钟，他拿修理费作低调同意，亲近仍是熟人的声音。",
+      "text": "我肩上也收过修理费。"
+    },
+    {
+      "sceneId": "gina_e08",
+      "lineIndex": 8,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "戴手套能开不等于浪里能开，指出封口必须继续做真实环境测试。",
+      "text": "戴着手套能开，不代表在浪里能开。"
+    },
+    {
+      "sceneId": "gina_e09",
+      "lineIndex": 25,
+      "speaker": "波鲁克",
+      "expression": "tired",
+      "reason": "冒脏雨水疏通排水口后终于坐下喝热汤，身体实在累了，仍说明人也会回来。",
+      "text": "告诉她，水已经肯走了。人也会。"
+    },
+    {
+      "sceneId": "gina_d05",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "只偿还一颗豆子的纸牌局里，说残酷是不用待客姿态的玩笑。",
+      "text": "这比我想象的还残酷。"
+    },
+    {
+      "sceneId": "gina_d05",
+      "lineIndex": 32,
+      "speaker": "波鲁克",
+      "expression": "tired",
+      "reason": "晚间玩牌谈话收尾，油灯将尽，两人停止延长这一夜，疲态克制地落下来。",
+      "text": "灯要灭了。"
+    },
+    {
+      "sceneId": "gina_e10",
+      "lineIndex": 15,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "钥匙首先是值夜交接责任，他提出先看门，不把它只当恋爱的比喻。",
+      "text": "我可以先看看门。"
+    },
+    {
+      "sceneId": "gina_e11",
+      "lineIndex": 11,
+      "speaker": "波鲁克",
+      "expression": "surprise",
+      "reason": "维修清单突然变成一整年的合作邀请，单字年是实在超出预期的停顿。",
+      "text": "年？"
+    },
+    {
+      "sceneId": "gina_d06",
+      "lineIndex": 25,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "她尚未定返船日，他留空而不代填；空着不等于忘记，承诺保持准确。",
+      "text": "那就留空。空着不等于忘了。"
+    },
+    {
+      "sceneId": "gina_e12",
+      "lineIndex": 14,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "她已有自己的秋季安排，他明确说看见了，再商量真正重合的部分。",
+      "text": "我看见了。"
+    },
+    {
+      "sceneId": "quest_02",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "新娘为鞋伤心有自己的理由，他让相机先放下，不替别人判定什么值得。",
+      "text": "先把相机放下。镜头不该替人决定什么值得伤心。"
+    },
+    {
+      "sceneId": "quest_03",
+      "lineIndex": 8,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "孩子担心的不只是坏表，他提醒椅子刻在结实后盖，轻轻让孩子放心。",
+      "text": "刻在后盖上。你担心的地方，比发条结实。"
+    },
+    {
+      "sceneId": "quest_05",
+      "lineIndex": 3,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "海上救狗时先辨认恐惧并制止催促，船梯安全比赶时间重要。",
+      "text": "不是浪。它在等你先别着急。"
+    },
+    {
+      "sceneId": "quest_06",
+      "lineIndex": 3,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "问海豚不是开玩笑，正在按孩子可能追逐或躲避的动机推断搜救方向。",
+      "text": "见到了，可能还在追。没见到，八成正躲着人。"
+    },
+    {
+      "sceneId": "quest_07",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "运面粉前先问谁画过吃水标记，不能拿合作烤炉开张心愿抵载重。",
+      "text": "那十二家里，谁做过船的吃水标记？"
+    },
+    {
+      "sceneId": "quest_08",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "乐手终于不必相互逞强，他说这句该早写合同，用微笑认可对方自己做的决定。",
+      "text": "这句该早点写在合同上。"
+    },
+    {
+      "sceneId": "quest_10",
+      "lineIndex": 8,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "汇票不能替兄弟强求原谅，列清收或退的正规选择。",
+      "text": "那你可以拿它修别的。也可以按规矩退回，邮局有表。"
+    },
+    {
+      "sceneId": "quest_11",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "孩子怕父亲借成绩贬低母亲，他安静说明那句话不是孩子的分数，低落而不煽情。",
+      "text": "那句话不是你的分数。"
+    },
+    {
+      "sceneId": "quest_13b",
+      "lineIndex": 7,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "拒绝把航拍测量冒写成定井推荐，保证照片真实但不越权签字。",
+      "text": "别替我多接一份工作。我只保证照片没把台阶拍平。"
+    },
+    {
+      "sceneId": "quest_15",
+      "lineIndex": 8,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "正式报告由写报告的人负责，不能把老飞行员的话原样当免责依据。",
+      "text": "你要对报告负责。觉得对再写。"
+    },
+    {
+      "sceneId": "quest_16",
+      "lineIndex": 5,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "看见空贼讲究吃相却抢补给，直问有没有顾过被抢者的饥饿，保持压力而不滑成调笑。",
+      "text": "吃得还挺讲究。抢船的时候，也这样问过人家饿不饿？"
+    },
+    {
+      "sceneId": "quest_16b",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "修过壶盖也必须还罐头，明确善举与抢劫责任不互相抵消。",
+      "text": "修过盖，也照样得还罐头。两件事不抵。"
+    },
+    {
+      "sceneId": "quest_17",
+      "lineIndex": 5,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "保险员想拖赔，他坚持查明哪项写哪项，宁可承担纸钱也不含混。",
+      "text": "查明了哪一件，就写哪一件。你嫌字多，纸钱从我这里扣。"
+    },
+    {
+      "sceneId": "quest_19",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "罗盘偏四度是已知误差，知道后装不知才会错；将经验落实成能校准的规则。",
+      "text": "他知道针偏了。知道以后还装不知道，才会一直错。"
+    },
+    {
+      "sceneId": "quest_24",
+      "lineIndex": 5,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "发现年轻工人想放弃休息，直说不行，维护明日搬运安全与真实工时。",
+      "text": "不行。今天不休，明天倒在箱子下面，别人又要替你做算术。"
+    },
+    {
+      "sceneId": "fio_good",
+      "lineIndex": 12,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "给她留星期四的座位，却不要求每周回来，以轻微笑意接受有职业远行的相处。",
+      "text": "星期四的座位给你留着。不是每周都得坐。你来，就坐你的。"
+    },
+    {
+      "sceneId": "fio_open",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "她仍愿意吃饭却不交冬季试飞，他点出那两份记录，承认没有解决的失信。",
+      "text": "比如那两份记录。"
+    },
+    {
+      "sceneId": "fio_open",
+      "lineIndex": 10,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "接受由维托首飞，提醒结冰舵面与厚手套，仍以专业照顾事业选择。",
+      "text": "他对结冰的舵面有经验。让他带厚手套。"
+    },
+    {
+      "sceneId": "fio_missed",
+      "lineIndex": 9,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "她明确不再等他把自己排进生活，他只回应嗯，不用天气躲开错过。",
+      "text": "嗯。"
+    },
+    {
+      "sceneId": "gina_good",
+      "lineIndex": 10,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "终于把想陪你与回来也想来完整说出口，熟悉关系里小幅、坦率的温柔。",
+      "text": "我想陪你。回来以后，也想来这里。"
+    },
+    {
+      "sceneId": "gina_open",
+      "lineIndex": 15,
+      "speaker": "波鲁克",
+      "expression": "serious",
+      "reason": "明确想来，同时承认她未必愿意等很晚，把主动和她的选择一并说清。",
+      "text": "我想来。也知道你不一定想等到那么晚。"
+    },
+    {
+      "sceneId": "gina_missed",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "sad",
+      "reason": "她让出最后一桌后松了口气，他承认知道了，给长期不履约的错过留下安静。",
+      "text": "我知道了。"
+    },
+    {
+      "sceneId": "solo",
+      "lineIndex": 2,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "正文下一句明确他自己笑了一声；独处是有内容的选择，不用低落惩罚单身结局。",
+      "text": "至少这回，浮筒没喝我的咖啡钱。"
+    },
+    {
+      "sceneId": "port_names",
+      "lineIndex": 6,
+      "speaker": "波鲁克",
+      "expression": "smile",
+      "reason": "看车时调侃活鸡与缝纫机的摆法，是愿意留下十分钟帮忙的闲适。",
+      "text": "你这送货单挺有秩序。会叫的放左边？"
+    },
+    {
+      "sceneId": "port_autumn",
+      "lineIndex": 11,
+      "speaker": "波鲁克",
+      "expression": "tired",
+      "reason": "正提着煤筐做搬运，想装四个轮子的抱怨来自实际手臂劳累，保留冷幽默。",
+      "text": "我看这摊位还卖轮子。你们想不想给我装四个？"
+    }
+  ]
+}
