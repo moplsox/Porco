@@ -370,7 +370,7 @@
     },
     {
       "src": "assets/portrait-approved/fio-swim-dry.png",
-      "sourceSha256": "df9359d8939c26c51610717d16329e489d5dbb49d417206f34618b44fe6b81ce",
+      "sourceSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
       "oldClipPathSha256": "486c1b72853fbc620b8b7643890e1628b3e92486d9d7ab10ccd5308a6e05a8fe",
       "newClipPathSha256": "32571d5b5f85b413692d0ef4a9cf070a59b260f94bd8b16e4e74d5b7c5e740aa",
       "holes": [
@@ -400,7 +400,8 @@
           "x": 250,
           "y": 50
         }
-      ]
+      ],
+      "sourceCorrection": "Restored approved blue-shorts dry-swim original in native-seam-edge-v19; original edge geometry retained as provenance."
     }
   ],
   "method": "SVG silhouette geometry only: remove previous one-pixel dilation and verified background pockets; use even-odd holes and constrain expression layers inside the same cleaned silhouette. Original PNGs, face layers, transforms, poses and settings remain unchanged."

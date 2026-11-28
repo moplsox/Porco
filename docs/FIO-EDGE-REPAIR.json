@@ -1,0 +1,296 @@
+{
+  "version": "approved-native-edge-clean-v19",
+  "method": "Shared outfit alpha, hand-confirmed hair background and source outline matte decontamination restricted to partial exterior pixels. No face RGB changes, no opaque interior RGB changes, no dark outline alpha loss.",
+  "records": [
+    {
+      "outfit": "work",
+      "paperRGB": [
+        253.0,
+        244.0,
+        231.0
+      ],
+      "sharedAlpha": true,
+      "alphaChangedPixels": 465,
+      "hairBackgroundPixelsCleared": 24,
+      "boundaryRGBMaskPixels": 801,
+      "opaqueInteriorRGBChangedPixels": 0,
+      "protectedDarkAlphaChangedPixels": 0,
+      "faceRGBChangedPixels": 0,
+      "wetDropAlphaChangedPixels": 0,
+      "items": [
+        {
+          "file": "fio-work-neutral.png",
+          "sourceSHA256": "5974ac8858a725aa2b6cb070d3dd457cdee353fdac98361f67c7052af6910d43",
+          "edgeOnlyIntermediateSHA256": "8710c9876ba86c6a1e25278c8df1aec4067c1fc82727cd4f3d503fb79d4f66ae"
+        },
+        {
+          "file": "fio-work-smile.png",
+          "sourceSHA256": "eb0f5558dfde6839fb06d8c36302dbc753c5958fddaf730221589ee297b6a24c",
+          "edgeOnlyIntermediateSHA256": "6e073f3b18ffed6da92952ec5f2a5b2c26b855fb19db885398f103ff554a9e21"
+        },
+        {
+          "file": "fio-work-serious.png",
+          "sourceSHA256": "2ce644c9286d6188e671bd651732689658d69cd62edf2c1514c3ed53a0c22379",
+          "edgeOnlyIntermediateSHA256": "d714f654d20a9315d61fe903a709c668eb9527bd743a726b297f2751be4d4dac"
+        },
+        {
+          "file": "fio-work-sad.png",
+          "sourceSHA256": "9c5205969cd3741193dc8ca593b3e00b864cca684de86c1f063fb80a2638abcc",
+          "edgeOnlyIntermediateSHA256": "e53605a21cc048f427c0605de98b93674ab06a6b535eec62d6bb7ba7d4e8b5ae"
+        },
+        {
+          "file": "fio-work-surprise.png",
+          "sourceSHA256": "006ea77e5ad9b51f2ac804a52553946f423182d09a47452373968972d0c2fe5a",
+          "edgeOnlyIntermediateSHA256": "8889642d3eabd43a251541cf2cbbb515c78c3a4096d856c10852c9a7ed98e4e8"
+        },
+        {
+          "file": "fio-work-tired.png",
+          "sourceSHA256": "4f5ca657539e3028e1299e8d85128796bd157d40672da4491e1f7dd24d1650be",
+          "edgeOnlyIntermediateSHA256": "22a750f439f010b4404ad61efe56da376cc15741ca8263a8e5c268e2bc02d937"
+        }
+      ]
+    },
+    {
+      "outfit": "date",
+      "paperRGB": [
+        253.0,
+        245.0,
+        232.0
+      ],
+      "sharedAlpha": true,
+      "alphaChangedPixels": 461,
+      "hairBackgroundPixelsCleared": 4,
+      "boundaryRGBMaskPixels": 825,
+      "opaqueInteriorRGBChangedPixels": 0,
+      "protectedDarkAlphaChangedPixels": 0,
+      "faceRGBChangedPixels": 0,
+      "wetDropAlphaChangedPixels": 0,
+      "items": [
+        {
+          "file": "fio-date-neutral.png",
+          "sourceSHA256": "0ac11771c79dc89760f47c0ce1fb32f59d29eb80522285de611c2cdddcab6426",
+          "edgeOnlyIntermediateSHA256": "d38796b5b751f79fe63edf02714757ea2cef8fe9cabe087b16b03da17094d350"
+        },
+        {
+          "file": "fio-date-smile.png",
+          "sourceSHA256": "dd75d80b6058c9545bcb99fa6dd39b971d898cbb95fe39a18dae196442058a60",
+          "edgeOnlyIntermediateSHA256": "70671dd4c5a0824029cdcc780ab1d42962550281d433058032f05f4a89a35984"
+        },
+        {
+          "file": "fio-date-serious.png",
+          "sourceSHA256": "a563310a6bbabf325b05720b648ecd009f7d7faeb3647250955e962b86bf3c43",
+          "edgeOnlyIntermediateSHA256": "3ecc2565616930396ddde2c01e7542bf0c9f131476c11c7e9cdf7f593022d4b7"
+        },
+        {
+          "file": "fio-date-sad.png",
+          "sourceSHA256": "a91140c72ad4300b65307f0f50384d41be76171d2386340e7640d51c11cb8dcb",
+          "edgeOnlyIntermediateSHA256": "1df9d762a90fd84676717928a82389e1ee679a74a5b8d7bc226e6c660049f8db"
+        },
+        {
+          "file": "fio-date-surprise.png",
+          "sourceSHA256": "f0430022a02077e19c16365d00991f4e458b7e2e06b3ee662b7269c1e9991740",
+          "edgeOnlyIntermediateSHA256": "e8208ee97160b11d0ec9fdd507687c886ab0f127ccdf62be677a354f08641af5"
+        },
+        {
+          "file": "fio-date-tired.png",
+          "sourceSHA256": "9da1a3df4d29bfbfc59ca5fbd7d1904f1119e1d810e6520cfc644f7e007c92ec",
+          "edgeOnlyIntermediateSHA256": "ccaed2495de7ec73316c93f3b0b1a8ff10aa9a13e907b5b1dc963d046c5af2c5"
+        }
+      ]
+    },
+    {
+      "outfit": "flight",
+      "paperRGB": [
+        254.0,
+        244.0,
+        229.0
+      ],
+      "sharedAlpha": true,
+      "alphaChangedPixels": 384,
+      "hairBackgroundPixelsCleared": 0,
+      "boundaryRGBMaskPixels": 639,
+      "opaqueInteriorRGBChangedPixels": 0,
+      "protectedDarkAlphaChangedPixels": 0,
+      "faceRGBChangedPixels": 0,
+      "wetDropAlphaChangedPixels": 0,
+      "items": [
+        {
+          "file": "fio-flight-neutral.png",
+          "sourceSHA256": "0d67ea51df2cb276973e6ab8ca9d052822341777e46308eb602127263246ab5b",
+          "edgeOnlyIntermediateSHA256": "a30c7fc440caab1f6ef16f3db8f004b550e83c5c0949caca416830d9d9fc9acc"
+        },
+        {
+          "file": "fio-flight-smile.png",
+          "sourceSHA256": "bc029e9bc91293c0da648425e2278da27de61763ff0431a76c0c05629ffa994d",
+          "edgeOnlyIntermediateSHA256": "1f87ae80dab276bae9669b3e2edd2ddaef9c9728fdf733c7e79920f73050e331"
+        },
+        {
+          "file": "fio-flight-serious.png",
+          "sourceSHA256": "0c69648afca8c54f09d8c071074992227eb320ad2eff0b1ad68288008be4c423",
+          "edgeOnlyIntermediateSHA256": "b7dc665d577976974a1b51744449bcf4b74acca3c33d4b3916f1802fc40f00cd"
+        },
+        {
+          "file": "fio-flight-sad.png",
+          "sourceSHA256": "ca3638c3a8e057500c48e23737109ce157346737549410e18be8deb6a19dabfb",
+          "edgeOnlyIntermediateSHA256": "e3211cc8908856ecbbbe360e16645aad6d2d8ab6ac63d9730380594cf6e4edfa"
+        },
+        {
+          "file": "fio-flight-surprise.png",
+          "sourceSHA256": "45a8d72a3132c19a2bb8ac2f5b78c44ec5f2a4944d4a617531089e58fafeccd7",
+          "edgeOnlyIntermediateSHA256": "b5c3f49ebd0c9b2ea3e5a16591c305ded2edc8e1ff8ce0d1062f07ca50faf64d"
+        },
+        {
+          "file": "fio-flight-tired.png",
+          "sourceSHA256": "3d823a0866ec09e3fd44269ca36793676f32441e13e52ed5fe1e326bf2273d0e",
+          "edgeOnlyIntermediateSHA256": "db5b6c68afa9043a5b3c5ae83857c7dff2496716c08ba29c257dac39ecb0deb2"
+        }
+      ]
+    },
+    {
+      "outfit": "strawhat",
+      "paperRGB": [
+        254.0,
+        245.0,
+        225.0
+      ],
+      "sharedAlpha": true,
+      "alphaChangedPixels": 457,
+      "hairBackgroundPixelsCleared": 4,
+      "boundaryRGBMaskPixels": 844,
+      "opaqueInteriorRGBChangedPixels": 0,
+      "protectedDarkAlphaChangedPixels": 0,
+      "faceRGBChangedPixels": 0,
+      "wetDropAlphaChangedPixels": 0,
+      "items": [
+        {
+          "file": "fio-strawhat-neutral.png",
+          "sourceSHA256": "e8d12167d53fdbb79c2c9b56a2848f4b26d1128aadee71d7786c3f60e265f8cd",
+          "edgeOnlyIntermediateSHA256": "4a353603d1e00e18bd2069698fdfe6dc31fb3e87475d37f972b96f2bb6a831cf"
+        },
+        {
+          "file": "fio-strawhat-smile.png",
+          "sourceSHA256": "04e63ee01267abaae2cfb9f0bf14223abbad32769b6ecb58231ebab5c4c6422a",
+          "edgeOnlyIntermediateSHA256": "302caf348031750d250a0a40213485be29c591290eec847101b3b7d588431dab"
+        },
+        {
+          "file": "fio-strawhat-serious.png",
+          "sourceSHA256": "c843b6a7ddb3f66e78962fd80020a5b31dc09a62942094a52a0f235485e745ff",
+          "edgeOnlyIntermediateSHA256": "157f4a2a2d434d71b5b4efe288754aa1308f64b8d3d5a944f582f1b44347c1f2"
+        },
+        {
+          "file": "fio-strawhat-sad.png",
+          "sourceSHA256": "52b3c97c703f166528af748a53e8964b1138812899f2f66aff556f57e4877129",
+          "edgeOnlyIntermediateSHA256": "3ac7dc59ec75767dfcdab5951795dc46c050df2eb3bc0a90951c1c3356041720"
+        },
+        {
+          "file": "fio-strawhat-surprise.png",
+          "sourceSHA256": "88db3cc171c8181b97f0eff33456ade0b985fbda5681abc83175c0bb621babbb",
+          "edgeOnlyIntermediateSHA256": "c0e2010ff1a974f4f524b3a5a5e2c42d824c5444cbc04fd334bcc8c2edc819ba"
+        },
+        {
+          "file": "fio-strawhat-tired.png",
+          "sourceSHA256": "2d4a103b61dc06664d608c66bc3726cc750ffa5a381fcf3bed18ad052d74d487",
+          "edgeOnlyIntermediateSHA256": "1e98420b1a84b93f52d6e5fcf36a772dbb1139acfee1dfa4a907875c33eca6c0"
+        }
+      ]
+    },
+    {
+      "outfit": "swim-dry",
+      "paperRGB": [
+        252.0,
+        243.0,
+        231.0
+      ],
+      "sharedAlpha": true,
+      "alphaChangedPixels": 457,
+      "hairBackgroundPixelsCleared": 27,
+      "boundaryRGBMaskPixels": 797,
+      "opaqueInteriorRGBChangedPixels": 0,
+      "protectedDarkAlphaChangedPixels": 0,
+      "faceRGBChangedPixels": 0,
+      "wetDropAlphaChangedPixels": 0,
+      "items": [
+        {
+          "file": "fio-swim-dry-neutral.png",
+          "sourceSHA256": "f80a0488895aeced9e57efa8c1dabfef6e65d11efeefecbd6a1efd523497de3b",
+          "edgeOnlyIntermediateSHA256": "39583c2285bb4b6319f40fcaedcdc478522c18d7b42327a6ca832d985c0c111a"
+        },
+        {
+          "file": "fio-swim-dry-smile.png",
+          "sourceSHA256": "f125cae0defc0dbec2bb5381ac6f88f02600159180d93233a74d000f2eee8243",
+          "edgeOnlyIntermediateSHA256": "d0548ffdb9f10edbe43ecf8cae79e126b2b5d0f06d7a6e7202d4d1b21c7bd4b0"
+        },
+        {
+          "file": "fio-swim-dry-serious.png",
+          "sourceSHA256": "655aa964fa505dc1f25451fbb3c587e34da6edcb799bc49809a6cd07d9f7aa79",
+          "edgeOnlyIntermediateSHA256": "2cb6e780c8846f92a1c5dfaff4876e1ccb08c3e6f43561266ff7d996c88a315d"
+        },
+        {
+          "file": "fio-swim-dry-sad.png",
+          "sourceSHA256": "4a40981cfecb0b29e4a0af7c2a953076c166dd6b15952c7119978293b4981761",
+          "edgeOnlyIntermediateSHA256": "c127712886c23cacc06478fd75667b0993232f9c547b21d2761e8bc5d16d179b"
+        },
+        {
+          "file": "fio-swim-dry-surprise.png",
+          "sourceSHA256": "a0ca650020722645fe57634f841d04a411accd3837c20efc7c5088f1f367875a",
+          "edgeOnlyIntermediateSHA256": "4ef780d43a5f13659d08ec156502accdca480b7139ec5aa2c233e11edede4666"
+        },
+        {
+          "file": "fio-swim-dry-tired.png",
+          "sourceSHA256": "13454951483cfed77aa3e65e0831797c14707a468f0b7e2c20034295556f4e10",
+          "edgeOnlyIntermediateSHA256": "40de109accd2bd95cba9c55ee42b3b3c3b82fdeab8d8cbe6006f4b4de6082844"
+        }
+      ]
+    },
+    {
+      "outfit": "swim-wet",
+      "paperRGB": [
+        253.0,
+        243.0,
+        231.0
+      ],
+      "sharedAlpha": true,
+      "alphaChangedPixels": 435,
+      "hairBackgroundPixelsCleared": 0,
+      "boundaryRGBMaskPixels": 754,
+      "opaqueInteriorRGBChangedPixels": 0,
+      "protectedDarkAlphaChangedPixels": 0,
+      "faceRGBChangedPixels": 0,
+      "wetDropAlphaChangedPixels": 0,
+      "items": [
+        {
+          "file": "fio-swim-wet-neutral.png",
+          "sourceSHA256": "89a2f4362f5f4c2b0d306e85142d8cf522c337f5e11f82720674e2ae1e21481d",
+          "edgeOnlyIntermediateSHA256": "d9b75c536e5a9d96fb63eb3382b7d73b3a47cc5d6c7e50bf679b0c7f21d42827"
+        },
+        {
+          "file": "fio-swim-wet-smile.png",
+          "sourceSHA256": "f483ea6877ea79abbc78204721f7b496071a3e3985a64f18a968615fe23b37cb",
+          "edgeOnlyIntermediateSHA256": "50a6989642a4bdef5ead5f3a5698a8e9c310bb1ae11101956be6eafdada4ac16"
+        },
+        {
+          "file": "fio-swim-wet-serious.png",
+          "sourceSHA256": "c02d152c9767e7c2fbdb1ac3f048433360f2ffce4f2575cf73b1f80cc9f339b4",
+          "edgeOnlyIntermediateSHA256": "9c4f174c5568b56e55c0eb870c2b2612096ed3a295f4a6d4c0afb66c7dab5e81"
+        },
+        {
+          "file": "fio-swim-wet-sad.png",
+          "sourceSHA256": "7b2764b49fd7c21e772b3a91617e93aad4aaf15bbd460c9d192b39d87523b424",
+          "edgeOnlyIntermediateSHA256": "3e0151ffb428db5d70846c8d1cbd0c9d34131a87b1f9c4f4c612955b612c5932"
+        },
+        {
+          "file": "fio-swim-wet-surprise.png",
+          "sourceSHA256": "90c828d306574dea165602f8d11a61be972a3517edf9765456e9ce84a5191808",
+          "edgeOnlyIntermediateSHA256": "02e49424691c7114a62edad1d204d7f2a35c17a5018711d70d1598fbbce6c83d"
+        },
+        {
+          "file": "fio-swim-wet-tired.png",
+          "sourceSHA256": "7e5ea55b56513c51f61c1a8d8c1f77ae6ad5ac84d8356afbebb29edbb08a4c7f",
+          "edgeOnlyIntermediateSHA256": "ce15cecefb41cc1e3ca9348424b5702b55fc3d93e4582bf4f0e2d85d2527822d"
+        }
+      ]
+    }
+  ],
+  "sourceScheme": "User-selected six-outfit, six-expression native review; prior source hash recorded per item.",
+  "finalMasterProof": "FIO-NATIVE.json"
+}

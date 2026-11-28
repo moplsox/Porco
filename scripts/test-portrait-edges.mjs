@@ -21,16 +21,16 @@ function contains(path,x,y){
  return inside;
 }
 assert.equal(art.portraitEdgesVersion,'paper-edge-v13');assert.equal(proof.items.length,13);
-const currentCopy=clone(art),beforeCopy=clone(before);delete currentCopy.portraitEdgesVersion;
+const currentCopy=clone(art),beforeCopy=clone(before);delete currentCopy.portraitEdgesVersion;delete currentCopy.fioPortraitVersion;
 for(const [slot,entry] of Object.entries(currentCopy.portraits)){
- delete entry.layers[0].clipPath;const previous=beforeCopy.portraits[slot];delete previous.layers[0].clipPath;
+ delete entry.layers[0].clipPath;delete entry.nativeSrc;delete entry.nativeCanvas;const previous=beforeCopy.portraits[slot];delete previous.layers[0].clipPath;
 }
 assert.deepEqual(currentCopy,beforeCopy,'Edge cleanup changed expression pixels, matrices, poses, outfits, framing, BG or CG');
 console.log('PASS 90个立绘槽仅调整身体遮罩，其他表情层、姿势、站位和资源不变');
 let holes=0,protectedPoints=0;
 for(const record of proof.items){
  const bytes=fs.readFileSync(record.src),oldBytes=execFileSync('git',['show',proof.baseline+':'+record.src],{maxBuffer:8*1024*1024});
- assert.equal(sha(bytes),record.sourceSha256);assert.deepEqual(bytes,oldBytes,'Original PNG pixels changed: '+record.src);
+ assert.equal(sha(bytes),record.sourceSha256);if(record.src==='assets/portrait-approved/fio-swim-dry.png'){assert.equal(sha(bytes),'38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c','Wrong restored blue-shorts dry swim source');assert.ok(record.sourceCorrection);}else assert.deepEqual(bytes,oldBytes,'Original PNG pixels changed: '+record.src);
  const entries=Object.entries(art.portraits).filter(([,e])=>e.src===record.src);assert.ok(entries.length>=6);
  for(const [slot,entry]of entries){
   const path=entry.layers[0].clipPath,oldPath=before.portraits[slot].layers[0].clipPath;
@@ -40,12 +40,13 @@ for(const record of proof.items){
  }
  holes+=record.holes.length;protectedPoints+=record.preservePoints.length;
 }
-console.log(`PASS 13张源PNG逐字节保留，${holes}处纸底间隙透明、${protectedPoints}个白衣/帽/肤色保留点可见`);
+console.log(`PASS 12张源PNG逐字节保留，干泳装恢复原认可蓝短裤图，${holes}处纸底间隙透明、${protectedPoints}个白衣/帽/肤色保留点可见`);
 globalThis.window={};const {artMarkup}=await import('../src/assets.js');
 for(const record of proof.items){
  const entry=Object.values(art.portraits).find(e=>e.src===record.src),markup=artMarkup(entry,'portrait','edge-check','meet');
+ if(entry.nativeSrc){assert.equal([...markup.matchAll(/<image\b/g)].length,1,'Native Fio draws old expression parts');assert.ok(markup.includes('portrait-native-alpha'));continue}
  const body=markup.match(/<clipPath id="(portrait-body-\d+)"[^>]*><path d="([^"]+)" clip-rule="evenodd" fill-rule="evenodd"\/><\/clipPath>/);
  assert.ok(body,'No even-odd body clip');assert.equal(body[2],entry.layers[0].clipPath);assert.ok(markup.includes(`<g clip-path="url(#${body[1]})">`),'Expression layers escape body contour');
 }
-console.log('PASS 所有表情层受同一精确外轮廓限制，内孔采用evenodd规则');
+console.log('PASS 非Fio分层受同一精确外轮廓限制，Fio改用单张透明PNG');
 console.log(JSON.stringify({status:'passed',checks:3,sources:13,slots:90,transparentPockets:holes,protectedPoints,browserVerification:false}));

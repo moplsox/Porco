@@ -18,6 +18,12 @@ export function artMarkup(entry,className='',alt='',fit='slice'){
  if(!entry)return '';
  const value=typeof entry==='string'?{src:entry}:entry;
  const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ // Fio's reviewed expressions are finished transparent sprites. Draw each once;
+ // the retained sheet/layer metadata records provenance, not runtime face parts.
+ if(value.nativeSrc){
+  const [nw,nh]=value.nativeCanvas;
+  return `<svg class="${escape(className)} art-viewport portrait-fullbody portrait-native-alpha" viewBox="0 0 ${nw} ${nh}" preserveAspectRatio="xMidYMid ${fit}" role="img" aria-label="${escape(alt)}" style="aspect-ratio:${nw}/${nh}" xmlns="http://www.w3.org/2000/svg"><image href="${escape(assetUrl(value.nativeSrc))}" width="${nw}" height="${nh}"/></svg>`;
+ }
  const url=escape(assetUrl(value.src));
  if(!value.region)return `<img class="${escape(className)} art-image" src="${url}" alt="${escape(alt)}" style="object-fit:${fit==='meet'?'contain':'cover'}" draggable="false">`;
  const [x,y,w,h]=value.region,[cw,ch]=value.canvas;

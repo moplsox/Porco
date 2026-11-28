@@ -1,0 +1,700 @@
+{
+  "version": "native-seam-edge-v19",
+  "immutableMasterVersion": true,
+  "selectedScheme": "The user-selected six-outfit × six-expression review: work, date, flight, original strawhat, approved blue-shorts dry swim, and separate white-shorts wet swim. Existing poses, outfits, hair and base face contours retained.",
+  "imageGenerationUsed": false,
+  "runtime": "One completed transparent PNG per expression; original sheet/layer metadata retained only for provenance/fallback. No runtime facial part composition for Fio.",
+  "outfits": 6,
+  "expressionsPerOutfit": 6,
+  "uniqueNativeSprites": 36,
+  "legacyAliasSlots": 6,
+  "faceRepairProof": "FIO-FACE-REPAIR.json",
+  "edgeRepairProof": "FIO-EDGE-REPAIR.json",
+  "originalSourceProof": "APPROVED-PORTRAITS.json",
+  "records": [
+    {
+      "slot": "fio-work-neutral",
+      "nativeSrc": "assets/portrait-fio-native/fio-work-neutral.png",
+      "nativeCanvas": [
+        376,
+        923
+      ],
+      "nativeSha256": "8710c9876ba86c6a1e25278c8df1aec4067c1fc82727cd4f3d503fb79d4f66ae",
+      "alphaSha256": "0a919fd1743d0395cb0b9557f0bb08772373c26621836be50cca6960c2a02292",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        20,
+        51,
+        376,
+        923
+      ],
+      "selectedSchemeNativeSha256": "5974ac8858a725aa2b6cb070d3dd457cdee353fdac98361f67c7052af6910d43"
+    },
+    {
+      "slot": "fio-work-smile",
+      "nativeSrc": "assets/portrait-fio-native/fio-work-smile.png",
+      "nativeCanvas": [
+        376,
+        923
+      ],
+      "nativeSha256": "3e32123802fdde3c69ab7ca1bcde308b24cd799bebef110127b08cc573e9005b",
+      "alphaSha256": "0a919fd1743d0395cb0b9557f0bb08772373c26621836be50cca6960c2a02292",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        20,
+        51,
+        376,
+        923
+      ],
+      "selectedSchemeNativeSha256": "eb0f5558dfde6839fb06d8c36302dbc753c5958fddaf730221589ee297b6a24c"
+    },
+    {
+      "slot": "fio-work-serious",
+      "nativeSrc": "assets/portrait-fio-native/fio-work-serious.png",
+      "nativeCanvas": [
+        376,
+        923
+      ],
+      "nativeSha256": "a328b9c2a06bd1351a8618c3c0af6bbed5445fa38c9f72232b403ffce1ea6162",
+      "alphaSha256": "0a919fd1743d0395cb0b9557f0bb08772373c26621836be50cca6960c2a02292",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        20,
+        51,
+        376,
+        923
+      ],
+      "selectedSchemeNativeSha256": "2ce644c9286d6188e671bd651732689658d69cd62edf2c1514c3ed53a0c22379"
+    },
+    {
+      "slot": "fio-work-sad",
+      "nativeSrc": "assets/portrait-fio-native/fio-work-sad.png",
+      "nativeCanvas": [
+        376,
+        923
+      ],
+      "nativeSha256": "36240510af57b8514392b8f3f30c56a5645149ecc868324f6ad2de387cb022f2",
+      "alphaSha256": "0a919fd1743d0395cb0b9557f0bb08772373c26621836be50cca6960c2a02292",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        20,
+        51,
+        376,
+        923
+      ],
+      "selectedSchemeNativeSha256": "9c5205969cd3741193dc8ca593b3e00b864cca684de86c1f063fb80a2638abcc"
+    },
+    {
+      "slot": "fio-work-surprise",
+      "nativeSrc": "assets/portrait-fio-native/fio-work-surprise.png",
+      "nativeCanvas": [
+        376,
+        923
+      ],
+      "nativeSha256": "c4cc5a8cc29d2934f309792a9b083204eceed7c073828b6efb005e9ff03ce295",
+      "alphaSha256": "0a919fd1743d0395cb0b9557f0bb08772373c26621836be50cca6960c2a02292",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        20,
+        51,
+        376,
+        923
+      ],
+      "selectedSchemeNativeSha256": "006ea77e5ad9b51f2ac804a52553946f423182d09a47452373968972d0c2fe5a"
+    },
+    {
+      "slot": "fio-work-tired",
+      "nativeSrc": "assets/portrait-fio-native/fio-work-tired.png",
+      "nativeCanvas": [
+        376,
+        923
+      ],
+      "nativeSha256": "c8d7244f05644755429ad5d5c444115ce4f8755207141091f0c0e3bf7e57e43e",
+      "alphaSha256": "0a919fd1743d0395cb0b9557f0bb08772373c26621836be50cca6960c2a02292",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        20,
+        51,
+        376,
+        923
+      ],
+      "selectedSchemeNativeSha256": "4f5ca657539e3028e1299e8d85128796bd157d40672da4491e1f7dd24d1650be"
+    },
+    {
+      "slot": "fio-date-neutral",
+      "nativeSrc": "assets/portrait-fio-native/fio-date-neutral.png",
+      "nativeCanvas": [
+        341,
+        985
+      ],
+      "nativeSha256": "d38796b5b751f79fe63edf02714757ea2cef8fe9cabe087b16b03da17094d350",
+      "alphaSha256": "41768fd2fd77220ac2acc3ca2507bb183f6ff18f60a9f989682957bffd352af3",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        55,
+        27,
+        341,
+        985
+      ],
+      "selectedSchemeNativeSha256": "0ac11771c79dc89760f47c0ce1fb32f59d29eb80522285de611c2cdddcab6426"
+    },
+    {
+      "slot": "fio-date-smile",
+      "nativeSrc": "assets/portrait-fio-native/fio-date-smile.png",
+      "nativeCanvas": [
+        341,
+        985
+      ],
+      "nativeSha256": "48d8f6b552165eb49b836ec47bb0b5f6e818309ba9e0cf174f2cf4891e36f9b5",
+      "alphaSha256": "41768fd2fd77220ac2acc3ca2507bb183f6ff18f60a9f989682957bffd352af3",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        55,
+        27,
+        341,
+        985
+      ],
+      "selectedSchemeNativeSha256": "dd75d80b6058c9545bcb99fa6dd39b971d898cbb95fe39a18dae196442058a60"
+    },
+    {
+      "slot": "fio-date-serious",
+      "nativeSrc": "assets/portrait-fio-native/fio-date-serious.png",
+      "nativeCanvas": [
+        341,
+        985
+      ],
+      "nativeSha256": "d0530722ceff6f2ba8274b682f0e06380d1ce309f100a0a9947cc6577dc8471f",
+      "alphaSha256": "41768fd2fd77220ac2acc3ca2507bb183f6ff18f60a9f989682957bffd352af3",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        55,
+        27,
+        341,
+        985
+      ],
+      "selectedSchemeNativeSha256": "a563310a6bbabf325b05720b648ecd009f7d7faeb3647250955e962b86bf3c43"
+    },
+    {
+      "slot": "fio-date-sad",
+      "nativeSrc": "assets/portrait-fio-native/fio-date-sad.png",
+      "nativeCanvas": [
+        341,
+        985
+      ],
+      "nativeSha256": "bd8ff7b254925e2f25832c04e421760d80d7d9bb94ea8f25a04a5cedd1cb6aee",
+      "alphaSha256": "41768fd2fd77220ac2acc3ca2507bb183f6ff18f60a9f989682957bffd352af3",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        55,
+        27,
+        341,
+        985
+      ],
+      "selectedSchemeNativeSha256": "a91140c72ad4300b65307f0f50384d41be76171d2386340e7640d51c11cb8dcb"
+    },
+    {
+      "slot": "fio-date-surprise",
+      "nativeSrc": "assets/portrait-fio-native/fio-date-surprise.png",
+      "nativeCanvas": [
+        341,
+        985
+      ],
+      "nativeSha256": "2c1c9aafe92c776ba691984d6662caa6b6a64819724ad7f09ac5f2bd17effe66",
+      "alphaSha256": "41768fd2fd77220ac2acc3ca2507bb183f6ff18f60a9f989682957bffd352af3",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        55,
+        27,
+        341,
+        985
+      ],
+      "selectedSchemeNativeSha256": "f0430022a02077e19c16365d00991f4e458b7e2e06b3ee662b7269c1e9991740"
+    },
+    {
+      "slot": "fio-date-tired",
+      "nativeSrc": "assets/portrait-fio-native/fio-date-tired.png",
+      "nativeCanvas": [
+        341,
+        985
+      ],
+      "nativeSha256": "2d3f167c5f9864d76725f785d7502d943442381722c7fd6603b09f56a8630b7d",
+      "alphaSha256": "41768fd2fd77220ac2acc3ca2507bb183f6ff18f60a9f989682957bffd352af3",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        55,
+        27,
+        341,
+        985
+      ],
+      "selectedSchemeNativeSha256": "9da1a3df4d29bfbfc59ca5fbd7d1904f1119e1d810e6520cfc644f7e007c92ec"
+    },
+    {
+      "slot": "fio-flight-neutral",
+      "nativeSrc": "assets/portrait-fio-native/fio-flight-neutral.png",
+      "nativeCanvas": [
+        370,
+        1010
+      ],
+      "nativeSha256": "a30c7fc440caab1f6ef16f3db8f004b550e83c5c0949caca416830d9d9fc9acc",
+      "alphaSha256": "a7dfc543d82000be7f06d30f5d983a7a2eedfe23d7bb1872165285ed2719faea",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        16,
+        8,
+        370,
+        1010
+      ],
+      "selectedSchemeNativeSha256": "0d67ea51df2cb276973e6ab8ca9d052822341777e46308eb602127263246ab5b"
+    },
+    {
+      "slot": "fio-flight-smile",
+      "nativeSrc": "assets/portrait-fio-native/fio-flight-smile.png",
+      "nativeCanvas": [
+        370,
+        1010
+      ],
+      "nativeSha256": "90cb803cbd0b8f258ae86cd4fa5131ea017d30dcb42e72f36ffcdb7cc7374f57",
+      "alphaSha256": "a7dfc543d82000be7f06d30f5d983a7a2eedfe23d7bb1872165285ed2719faea",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        16,
+        8,
+        370,
+        1010
+      ],
+      "selectedSchemeNativeSha256": "bc029e9bc91293c0da648425e2278da27de61763ff0431a76c0c05629ffa994d"
+    },
+    {
+      "slot": "fio-flight-serious",
+      "nativeSrc": "assets/portrait-fio-native/fio-flight-serious.png",
+      "nativeCanvas": [
+        370,
+        1010
+      ],
+      "nativeSha256": "ffed92131a3257009953974fbba63490332b6d4bccc9fe39ebe8fa942af2cf59",
+      "alphaSha256": "a7dfc543d82000be7f06d30f5d983a7a2eedfe23d7bb1872165285ed2719faea",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        16,
+        8,
+        370,
+        1010
+      ],
+      "selectedSchemeNativeSha256": "0c69648afca8c54f09d8c071074992227eb320ad2eff0b1ad68288008be4c423"
+    },
+    {
+      "slot": "fio-flight-sad",
+      "nativeSrc": "assets/portrait-fio-native/fio-flight-sad.png",
+      "nativeCanvas": [
+        370,
+        1010
+      ],
+      "nativeSha256": "e574aad362645af1c03bad8f9a210d910cf49d0759328e0e34e49b586b59d608",
+      "alphaSha256": "a7dfc543d82000be7f06d30f5d983a7a2eedfe23d7bb1872165285ed2719faea",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        16,
+        8,
+        370,
+        1010
+      ],
+      "selectedSchemeNativeSha256": "ca3638c3a8e057500c48e23737109ce157346737549410e18be8deb6a19dabfb"
+    },
+    {
+      "slot": "fio-flight-surprise",
+      "nativeSrc": "assets/portrait-fio-native/fio-flight-surprise.png",
+      "nativeCanvas": [
+        370,
+        1010
+      ],
+      "nativeSha256": "30ff66c0ead530c6a9798ae59172ab9a990129d47a1ef2bcd5a65fee001709ad",
+      "alphaSha256": "a7dfc543d82000be7f06d30f5d983a7a2eedfe23d7bb1872165285ed2719faea",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        16,
+        8,
+        370,
+        1010
+      ],
+      "selectedSchemeNativeSha256": "45a8d72a3132c19a2bb8ac2f5b78c44ec5f2a4944d4a617531089e58fafeccd7"
+    },
+    {
+      "slot": "fio-flight-tired",
+      "nativeSrc": "assets/portrait-fio-native/fio-flight-tired.png",
+      "nativeCanvas": [
+        370,
+        1010
+      ],
+      "nativeSha256": "f4ce74c0e9fe9053a4b0795d2247bdb1cba10d59e30ebd3ced8904ad22947829",
+      "alphaSha256": "a7dfc543d82000be7f06d30f5d983a7a2eedfe23d7bb1872165285ed2719faea",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        16,
+        8,
+        370,
+        1010
+      ],
+      "selectedSchemeNativeSha256": "3d823a0866ec09e3fd44269ca36793676f32441e13e52ed5fe1e326bf2273d0e"
+    },
+    {
+      "slot": "fio-strawhat-neutral",
+      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-neutral.png",
+      "nativeCanvas": [
+        374,
+        998
+      ],
+      "nativeSha256": "4a353603d1e00e18bd2069698fdfe6dc31fb3e87475d37f972b96f2bb6a831cf",
+      "alphaSha256": "b55855ba7068cdbdf384d0ae3de891ce779ac8ce12ee8fe9924bacb91c9f434f",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        22,
+        10,
+        374,
+        998
+      ],
+      "selectedSchemeNativeSha256": "e8d12167d53fdbb79c2c9b56a2848f4b26d1128aadee71d7786c3f60e265f8cd"
+    },
+    {
+      "slot": "fio-strawhat-smile",
+      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-smile.png",
+      "nativeCanvas": [
+        374,
+        998
+      ],
+      "nativeSha256": "40d930489839fa04f9e1253f802748cec74e8253608c3d3b3658e4eefa7ad9f8",
+      "alphaSha256": "b55855ba7068cdbdf384d0ae3de891ce779ac8ce12ee8fe9924bacb91c9f434f",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        22,
+        10,
+        374,
+        998
+      ],
+      "selectedSchemeNativeSha256": "04e63ee01267abaae2cfb9f0bf14223abbad32769b6ecb58231ebab5c4c6422a"
+    },
+    {
+      "slot": "fio-strawhat-serious",
+      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-serious.png",
+      "nativeCanvas": [
+        374,
+        998
+      ],
+      "nativeSha256": "08c1158058c1035c0aabdd9253f2a4db9ae1b11cead498c683bbcb2935a7a776",
+      "alphaSha256": "b55855ba7068cdbdf384d0ae3de891ce779ac8ce12ee8fe9924bacb91c9f434f",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        22,
+        10,
+        374,
+        998
+      ],
+      "selectedSchemeNativeSha256": "c843b6a7ddb3f66e78962fd80020a5b31dc09a62942094a52a0f235485e745ff"
+    },
+    {
+      "slot": "fio-strawhat-sad",
+      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-sad.png",
+      "nativeCanvas": [
+        374,
+        998
+      ],
+      "nativeSha256": "efb7771162f2a5bf4ec0a546be8110fd2be6f0b1202bc50f82d779cb4e95f6b9",
+      "alphaSha256": "b55855ba7068cdbdf384d0ae3de891ce779ac8ce12ee8fe9924bacb91c9f434f",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        22,
+        10,
+        374,
+        998
+      ],
+      "selectedSchemeNativeSha256": "52b3c97c703f166528af748a53e8964b1138812899f2f66aff556f57e4877129"
+    },
+    {
+      "slot": "fio-strawhat-surprise",
+      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-surprise.png",
+      "nativeCanvas": [
+        374,
+        998
+      ],
+      "nativeSha256": "4169a73b32eacd42fdb65820c16d29f5b8f4a0962675bdda1461f0b38215a743",
+      "alphaSha256": "b55855ba7068cdbdf384d0ae3de891ce779ac8ce12ee8fe9924bacb91c9f434f",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        22,
+        10,
+        374,
+        998
+      ],
+      "selectedSchemeNativeSha256": "88db3cc171c8181b97f0eff33456ade0b985fbda5681abc83175c0bb621babbb"
+    },
+    {
+      "slot": "fio-strawhat-tired",
+      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-tired.png",
+      "nativeCanvas": [
+        374,
+        998
+      ],
+      "nativeSha256": "bf9f270d4770d414785a4224be9e5b39c93c9c6917377dcbfadc9e84e704557a",
+      "alphaSha256": "b55855ba7068cdbdf384d0ae3de891ce779ac8ce12ee8fe9924bacb91c9f434f",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        22,
+        10,
+        374,
+        998
+      ],
+      "selectedSchemeNativeSha256": "2d4a103b61dc06664d608c66bc3726cc750ffa5a381fcf3bed18ad052d74d487"
+    },
+    {
+      "slot": "fio-swim-dry-neutral",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-neutral.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "39583c2285bb4b6319f40fcaedcdc478522c18d7b42327a6ca832d985c0c111a",
+      "alphaSha256": "5b24e4237da2a788db84c7b852bb7ea9f0041be19cc6a4b647f86fd84d88aed4",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "f80a0488895aeced9e57efa8c1dabfef6e65d11efeefecbd6a1efd523497de3b"
+    },
+    {
+      "slot": "fio-swim-dry-smile",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-smile.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "ce4d330b6f3580e2eb4082ed6566ab8cd3d7292b38ec0591e0655382f19f7c18",
+      "alphaSha256": "5b24e4237da2a788db84c7b852bb7ea9f0041be19cc6a4b647f86fd84d88aed4",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "f125cae0defc0dbec2bb5381ac6f88f02600159180d93233a74d000f2eee8243"
+    },
+    {
+      "slot": "fio-swim-dry-serious",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-serious.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "2fe90428aa1257cc51920c21abbd25af11102905e574bb4ab62d475868102903",
+      "alphaSha256": "5b24e4237da2a788db84c7b852bb7ea9f0041be19cc6a4b647f86fd84d88aed4",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "655aa964fa505dc1f25451fbb3c587e34da6edcb799bc49809a6cd07d9f7aa79"
+    },
+    {
+      "slot": "fio-swim-dry-sad",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-sad.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "1340d44f7d43950cc084aa4762516470f4d40a24fcc7d336fb727ca0fb3a0337",
+      "alphaSha256": "5b24e4237da2a788db84c7b852bb7ea9f0041be19cc6a4b647f86fd84d88aed4",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "4a40981cfecb0b29e4a0af7c2a953076c166dd6b15952c7119978293b4981761"
+    },
+    {
+      "slot": "fio-swim-dry-surprise",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-surprise.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "14708b1781d72e1b6393463de085cc8d7786fea403a3eefdfaba63ea93ee74b4",
+      "alphaSha256": "5b24e4237da2a788db84c7b852bb7ea9f0041be19cc6a4b647f86fd84d88aed4",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "a0ca650020722645fe57634f841d04a411accd3837c20efc7c5088f1f367875a"
+    },
+    {
+      "slot": "fio-swim-dry-tired",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-tired.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "46b3a01665f808a5c07d261893cf0c7c88981375e88aa90694ab526c8cd2a657",
+      "alphaSha256": "5b24e4237da2a788db84c7b852bb7ea9f0041be19cc6a4b647f86fd84d88aed4",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "13454951483cfed77aa3e65e0831797c14707a468f0b7e2c20034295556f4e10"
+    },
+    {
+      "slot": "fio-swim-wet-neutral",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-neutral.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "d9b75c536e5a9d96fb63eb3382b7d73b3a47cc5d6c7e50bf679b0c7f21d42827",
+      "alphaSha256": "d30775899543880f5320b1e985b0ce874b31fd89d60efffddfa47d0db00755d4",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "89a2f4362f5f4c2b0d306e85142d8cf522c337f5e11f82720674e2ae1e21481d"
+    },
+    {
+      "slot": "fio-swim-wet-smile",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-smile.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "535c757c4b1ad157fd5ec284e91da764f3f399e18e3e8f87dd37e4930ccccb26",
+      "alphaSha256": "d30775899543880f5320b1e985b0ce874b31fd89d60efffddfa47d0db00755d4",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "f483ea6877ea79abbc78204721f7b496071a3e3985a64f18a968615fe23b37cb"
+    },
+    {
+      "slot": "fio-swim-wet-serious",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-serious.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "5dd82dcfd85a741634943c3ba94f308d0981fc6116765add40116528143f1a90",
+      "alphaSha256": "d30775899543880f5320b1e985b0ce874b31fd89d60efffddfa47d0db00755d4",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "c02d152c9767e7c2fbdb1ac3f048433360f2ffce4f2575cf73b1f80cc9f339b4"
+    },
+    {
+      "slot": "fio-swim-wet-sad",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-sad.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "345bd1340bef23ef08f76f798f1881e653374e52003804f5da46db1ba6258edf",
+      "alphaSha256": "d30775899543880f5320b1e985b0ce874b31fd89d60efffddfa47d0db00755d4",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "7b2764b49fd7c21e772b3a91617e93aad4aaf15bbd460c9d192b39d87523b424"
+    },
+    {
+      "slot": "fio-swim-wet-surprise",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-surprise.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "dc955b086accea63cb3ac9e30cba167cb00bfc8a9f547d5079aec643a083a08b",
+      "alphaSha256": "d30775899543880f5320b1e985b0ce874b31fd89d60efffddfa47d0db00755d4",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "90c828d306574dea165602f8d11a61be972a3517edf9765456e9ce84a5191808"
+    },
+    {
+      "slot": "fio-swim-wet-tired",
+      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-tired.png",
+      "nativeCanvas": [
+        358,
+        995
+      ],
+      "nativeSha256": "64067d5a62a4bf94f79ff70d3c4128879a9518975fa1ded84b201155ec0fae74",
+      "alphaSha256": "d30775899543880f5320b1e985b0ce874b31fd89d60efffddfa47d0db00755d4",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        74,
+        16,
+        358,
+        995
+      ],
+      "selectedSchemeNativeSha256": "7e5ea55b56513c51f61c1a8d8c1f77ae6ad5ac84d8356afbebb29edbb08a4c7f"
+    }
+  ]
+}

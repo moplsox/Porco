@@ -115,7 +115,8 @@ def main():
         records=proof.get('sources');assert isinstance(records,list) and len(records)==13,'凭据缺少13个独立PNG'
         evidence={v['src']:v for v in records};assert len(evidence)==13,'凭据路径重复'
         original={f'assets/portrait-approved/{name}.png':sha for name,sha in APPROVED_SHA256.items()}
-        targeted={'assets/portrait-approved/fio-swim-dry.png'}
+        original['assets/portrait-approved/fio-swim-dry.png']='38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c'
+        targeted=set()
         assert set(evidence)==set(original)|targeted,'凭据源文件集合不符'
         assert {source(v) for v in portraits.values()}==set(evidence),'active全身基底并非凭据中的13张PNG'
         details=[]
@@ -137,10 +138,10 @@ def main():
             else:
                 assert record.get('kind')=='targeted-edit',f'{src}缺少明确局部修改标记'
             details.append({'src':src,'sha256':sha,'kind':record['kind']})
-        assert sum(v['kind']=='approved-original' for v in records)==12
-        assert sum(v['kind']=='targeted-edit' for v in records)==1
-        return {'approvedOriginalsUnchanged':12,'targetedEdits':1,'sources':details}
-    test('12张认可原图含旧草帽字节不变，仅干泳装修改有SHA凭据',original_sources)
+        assert sum(v['kind']=='approved-original' for v in records)==13
+        assert sum(v['kind']=='targeted-edit' for v in records)==0
+        return {'approvedOriginals':13,'restoredDrySwimOriginal':True,'targetedEdits':0,'sources':details}
+    test('13张认可原图含旧草帽与恢复的蓝短裤干泳装有SHA凭据',original_sources)
     number=re.compile(r'[-+]?(?:\d*\.\d+|\d+\.?\d*)(?:[eE][-+]?\d+)?')
     def path_points(clip,canvas,label):
         assert isinstance(clip,str) and clip.strip().startswith('M') and clip.strip().endswith('Z'),f'{label}没有闭合绝对轮廓'
@@ -177,7 +178,10 @@ def main():
         assert 'clipPathUnits="userSpaceOnUse"' in renderer and 'value.layers.map' in renderer,'renderer没有实际遍历全身/表情层'
         assert 'layer.clipPath' in renderer and 'layer.transform' in renderer and 'layer.src' in renderer,'renderer缺少轮廓/矩阵/供体源图'
         assert 'clip-path="url(#' in renderer and 'portrait-fullbody' in renderer,'renderer缺少局部裁切引用或全身布局class'
-        return {'validatedSlots':len(portraits),'validatedLayers':layer_count,'unalteredBodyBase':True,'localAffineExpressionLayers':True}
+        natives=[v for v in portraits.values() if v.get('nativeSrc')]
+        assert len(natives)==42 and len({v['nativeSrc'] for v in natives})==36,'Fio native bindings missing'
+        assert 'if(value.nativeSrc)' in renderer and 'portrait-native-alpha' in renderer,'Fio native renderer missing'
+        return {'validatedSlots':len(portraits),'provenanceLayers':layer_count,'unalteredBodyBase':True,'fioNativeSprites':36,'fioNativeBindings':42}
     test('全身原像素基底不变，局部表情层的轮廓/矩阵与运行时绘制合法',runtime_cutouts)
     def expressions():
         groups=[]

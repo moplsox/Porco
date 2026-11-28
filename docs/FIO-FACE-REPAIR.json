@@ -1,0 +1,341 @@
+{
+  "method": "Transfer approved facial ink/detail into the unchanged original skin; remove leftover neutral strokes; keep pose/hair/face outline/skin shading. No generated artwork.",
+  "items": [
+    {
+      "slot": "fio-work-neutral",
+      "facialRgbChangedPixels": 0,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": []
+    },
+    {
+      "slot": "fio-work-smile",
+      "facialRgbChangedPixels": 1268,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        339,
+        273,
+        236
+      ]
+    },
+    {
+      "slot": "fio-work-serious",
+      "facialRgbChangedPixels": 1263,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        386,
+        286,
+        67
+      ]
+    },
+    {
+      "slot": "fio-work-sad",
+      "facialRgbChangedPixels": 1288,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        330,
+        244,
+        35
+      ]
+    },
+    {
+      "slot": "fio-work-surprise",
+      "facialRgbChangedPixels": 1217,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        309,
+        256,
+        104
+      ]
+    },
+    {
+      "slot": "fio-work-tired",
+      "facialRgbChangedPixels": 1279,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        312,
+        239,
+        75
+      ]
+    },
+    {
+      "slot": "fio-date-neutral",
+      "facialRgbChangedPixels": 0,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": []
+    },
+    {
+      "slot": "fio-date-smile",
+      "facialRgbChangedPixels": 1238,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        386,
+        305,
+        191
+      ]
+    },
+    {
+      "slot": "fio-date-serious",
+      "facialRgbChangedPixels": 1292,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        318,
+        262,
+        56
+      ]
+    },
+    {
+      "slot": "fio-date-sad",
+      "facialRgbChangedPixels": 1304,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        271,
+        237,
+        37
+      ]
+    },
+    {
+      "slot": "fio-date-surprise",
+      "facialRgbChangedPixels": 1233,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        366,
+        297,
+        120
+      ]
+    },
+    {
+      "slot": "fio-date-tired",
+      "facialRgbChangedPixels": 1248,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        261,
+        202,
+        45
+      ]
+    },
+    {
+      "slot": "fio-flight-neutral",
+      "facialRgbChangedPixels": 0,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": []
+    },
+    {
+      "slot": "fio-flight-smile",
+      "facialRgbChangedPixels": 1378,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        372,
+        269,
+        246
+      ]
+    },
+    {
+      "slot": "fio-flight-serious",
+      "facialRgbChangedPixels": 1400,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        361,
+        243,
+        64
+      ]
+    },
+    {
+      "slot": "fio-flight-sad",
+      "facialRgbChangedPixels": 1365,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        316,
+        227,
+        45
+      ]
+    },
+    {
+      "slot": "fio-flight-surprise",
+      "facialRgbChangedPixels": 1309,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        322,
+        247,
+        109
+      ]
+    },
+    {
+      "slot": "fio-flight-tired",
+      "facialRgbChangedPixels": 1375,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        296,
+        214,
+        61
+      ]
+    },
+    {
+      "slot": "fio-strawhat-neutral",
+      "facialRgbChangedPixels": 0,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": []
+    },
+    {
+      "slot": "fio-strawhat-smile",
+      "facialRgbChangedPixels": 1446,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        400,
+        501,
+        105
+      ]
+    },
+    {
+      "slot": "fio-strawhat-serious",
+      "facialRgbChangedPixels": 1499,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        358,
+        444,
+        62
+      ]
+    },
+    {
+      "slot": "fio-strawhat-sad",
+      "facialRgbChangedPixels": 1509,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        387,
+        460,
+        54
+      ]
+    },
+    {
+      "slot": "fio-strawhat-surprise",
+      "facialRgbChangedPixels": 1560,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        420,
+        359,
+        112
+      ]
+    },
+    {
+      "slot": "fio-strawhat-tired",
+      "facialRgbChangedPixels": 1451,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        316,
+        296,
+        63
+      ]
+    },
+    {
+      "slot": "fio-swim-dry-neutral",
+      "facialRgbChangedPixels": 0,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": []
+    },
+    {
+      "slot": "fio-swim-dry-smile",
+      "facialRgbChangedPixels": 1199,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        341,
+        274,
+        127
+      ]
+    },
+    {
+      "slot": "fio-swim-dry-serious",
+      "facialRgbChangedPixels": 1266,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        349,
+        295,
+        47
+      ]
+    },
+    {
+      "slot": "fio-swim-dry-sad",
+      "facialRgbChangedPixels": 1222,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        316,
+        240,
+        39
+      ]
+    },
+    {
+      "slot": "fio-swim-dry-surprise",
+      "facialRgbChangedPixels": 1192,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        328,
+        278,
+        63
+      ]
+    },
+    {
+      "slot": "fio-swim-dry-tired",
+      "facialRgbChangedPixels": 1235,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        264,
+        232,
+        57
+      ]
+    },
+    {
+      "slot": "fio-swim-wet-neutral",
+      "facialRgbChangedPixels": 0,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": []
+    },
+    {
+      "slot": "fio-swim-wet-smile",
+      "facialRgbChangedPixels": 1134,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        344,
+        240,
+        123
+      ]
+    },
+    {
+      "slot": "fio-swim-wet-serious",
+      "facialRgbChangedPixels": 1194,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        372,
+        280,
+        51
+      ]
+    },
+    {
+      "slot": "fio-swim-wet-sad",
+      "facialRgbChangedPixels": 1130,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        294,
+        204,
+        41
+      ]
+    },
+    {
+      "slot": "fio-swim-wet-surprise",
+      "facialRgbChangedPixels": 1132,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        333,
+        277,
+        73
+      ]
+    },
+    {
+      "slot": "fio-swim-wet-tired",
+      "facialRgbChangedPixels": 1162,
+      "outsideFaceChangedPixels": 0,
+      "featurePixels": [
+        266,
+        216,
+        61
+      ]
+    }
+  ]
+}

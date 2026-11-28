@@ -24,8 +24,10 @@
     },
     {
       "src": "assets/portrait-approved/fio-swim-dry.png",
-      "sha256": "df9359d8939c26c51610717d16329e489d5dbb49d417206f34618b44fe6b81ce",
-      "kind": "targeted-edit"
+      "sha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "kind": "approved-original",
+      "reviewSourceSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "correction": "Restored the user-selected original dry swim sheet: white top, blue shorts, folded plaid shirt. Replaces the superseded white-shorts edit."
     },
     {
       "src": "assets/portrait-approved/fio-swim.png",

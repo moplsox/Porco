@@ -56,7 +56,7 @@ await test('全部实际故事、24委托、8结局与图像字节已内嵌',()=
  for(const name of ['common','fio','gina','quests','endings','port'])assert.ok(Array.isArray(payload.files?.[name])&&payload.files[name].length>0,'missing story '+name);
  assert.equal(payload.jobs.length,24);assert.equal(payload.files.endings.filter(s=>s.kind==='ending').length,8);assert.equal(Object.keys(payload.art.cgs).length,13);assert.equal(payload.art.styleVersion,'film-review-v10');assert.equal(payload.art.portraitStyleVersion,'fullbody-parts-v12');
  for(const [assetPath,value] of Object.entries(payload.assets||{})){assert.ok(value&&typeof value.mime==='string'&&typeof value.data==='string',assetPath+' missing MIME/base64');assert.match(value.data,/^[A-Za-z0-9+/]*={0,2}$/,'invalid base64 '+assetPath);const bytes=Buffer.from(value.data,'base64');assert.ok(bytes.length>0,assetPath+' empty');assert.equal(bytes.toString('base64'),value.data,'noncanonical/truncated base64 '+assetPath);const size=dimensions(bytes,value.mime);embeddedBytes+=bytes.length;assets.set(assetPath,{mime:value.mime,bytes:bytes.length,dimensions:size,sha256:crypto.createHash('sha256').update(bytes).digest('hex')})}
- const references=[payload.art.title,...Object.values(payload.art.backgrounds||{}),...Object.values(payload.art.portraits||{}),...Object.values(payload.art.cgs||{})].flatMap(entry=>[assetSource(entry),...(entry?.layers||[]).map(layer=>layer.src)]);for(const ref of references)assert.ok(assets.has(ref),'manifest resource not embedded: '+ref);
+ const references=[payload.art.title,...Object.values(payload.art.backgrounds||{}),...Object.values(payload.art.portraits||{}),...Object.values(payload.art.cgs||{})].flatMap(entry=>[assetSource(entry),entry?.nativeSrc,...(entry?.layers||[]).map(layer=>layer.src)].filter(Boolean));for(const ref of references)assert.ok(assets.has(ref),'manifest resource not embedded: '+ref);
  for(const [id,cg] of Object.entries(payload.art.cgs)){const a=assets.get(typeof cg==='string'?cg:cg.src);assert.ok(a.bytes>1024,id+' CG has no substantial image bytes');if(a.dimensions)assert.ok(a.dimensions[0]>=400&&a.dimensions[1]>=400,id+' CG dimensions too small')}
  assert.ok(assets.has(assetSource(payload.art.title)),'active title cover missing');
  return {scenes:Object.values(payload.files).reduce((n,a)=>n+a.length,0),images:assets.size,imageBytes:embeddedBytes,cgs:13};
@@ -66,6 +66,7 @@ await test('90人物槽与33背景视区的源图、几何和标题均完整内�
  assert.equal(portraits.length,90);assert.equal(new Set(portraits.map(([,v])=>v.src)).size,13);assert.equal(new Set(portraits.map(([,v])=>JSON.stringify(v))).size,78);
  assert.equal(backgrounds.length,44);assert.equal(new Set(backgrounds.map(([,v])=>v.src)).size,11);assert.equal(new Set(backgrounds.map(([,v])=>JSON.stringify(v))).size,33);
  for(const [slot,entry] of portraits){
+  if(entry.nativeSrc){assert.ok(assets.has(entry.nativeSrc),slot+' native PNG not embedded');assert.deepEqual(assets.get(entry.nativeSrc).dimensions,entry.nativeCanvas);assert.deepEqual(entry.nativeCanvas,entry.region.slice(2));}
   validateAtlasRegion(entry,slot);assert.ok(entry.region[3]>entry.region[2],slot+' is still cropped to the head');assert.ok(entry.layers?.length,slot+' missing body layers');
   assert.equal(entry.layers[0].src,entry.src);assert.deepEqual(entry.layers[0].canvas,entry.canvas);assert.ok(!entry.layers[0].transform,slot+' original body transformed');
   assert.equal(entry.layers.length===1,slot.endsWith('-neutral'),slot+' neutral/donor layer count mismatch');
@@ -73,7 +74,7 @@ await test('90人物槽与33背景视区的源图、几何和标题均完整内�
  }
  for(const [slot,entry] of backgrounds){validateAtlasRegion(entry,slot);assert.equal(entry.region[2]*9,entry.region[3]*16,slot+' background must be 16:9')}
  assert.deepEqual(payload.art.title,payload.art.backgrounds['cove-day']);
- return {portraitSlots:portraits.length,bodySourceSheets:13,independentBodyExpressionCombinations:78,backgroundViews:33,backgroundBoards:11};
+ return {portraitSlots:portraits.length,nativeSpriteSlots:42,uniqueNativeSprites:36,legacyLayeredSlots:48,provenanceBodySourceSheets:13,independentBodyExpressionCombinations:78,backgroundViews:33,backgroundBoards:11};
 });
 
 await test('原认可sheet的SHA凭据、内嵌编码与clipPath字符串完整保留',()=>{
@@ -90,10 +91,10 @@ await test('原认可sheet的SHA凭据、内嵌编码与clipPath字符串完整�
   assert.equal(sha,row.sha256,'Approved PNG source changed: '+row.src);if(row.kind==='approved-original'&&row.reviewSourceSha256)assert.equal(sha,row.reviewSourceSha256,'Approved review SHA mismatch: '+row.src);
   const optimized=cache[row.src],embedded=assets.get(row.src);assert.ok(embedded,'Approved sheet missing from embedded assets');assert.equal(optimized.sourceSha256,sha,'Cache came from a different face sheet');assert.equal(embedded.sha256,optimized.sha256,'Embedded bytes differ from verified lossless sheet cache');
  }
- assert.equal(proof.sources.filter(v=>v.kind==='approved-original').length,12);assert.equal(proof.sources.filter(v=>v.kind==='targeted-edit').length,1);
+ assert.equal(proof.sources.filter(v=>v.kind==='approved-original').length,13);assert.equal(proof.sources.filter(v=>v.kind==='targeted-edit').length,0);
  const proven=new Set(proof.sources.map(v=>v.src));
  for(const [slot,entry] of Object.entries(payload.art.portraits))for(const [i,layer] of entry.layers.entries()){assert.ok(proven.has(layer.src),'Unproven body/expression source: '+layer.src);assert.equal(layer.clipPath,sourceArt.portraits[slot].layers[i].clipPath,'Runtime clip was rewritten as an asset path');assert.equal(layer.transform,sourceArt.portraits[slot].layers[i].transform,'Runtime expression matrix changed');assert.ok(!assets.has(layer.clipPath),'An SVG outline was embedded as an external asset');}
- return {sourcePngHashesVerified:13,originalPngsUnchanged:12,targetedEditPngs:1,losslessEmbeddedSourcesVerified:13,layerGeometryPreserved:true};
+ return {sourcePngHashesVerified:13,approvedOriginalPngs:13,targetedEditPngs:0,losslessEmbeddedSourcesVerified:13,layerGeometryPreserved:true};
 });
 
 class Element{
@@ -138,11 +139,19 @@ function createHarness({persisted=new Map(),denied=false,corrupt=false}={}){
  return h;
 }
 
-await test('实际runtime绘制90全身人物槽的全部原图基底和局部表情层',async()=>{
+await test('实际runtime绘制42个菲尔透明PNG槽及48个原分层人物槽',async()=>{
  const h=await createHarness().boot(),ids=new Set();let renderedLayers=0;
  for(const [slot,entry] of Object.entries(payload.art.portraits)){
   const markup=vm.runInContext(`__assets.artMarkup(${JSON.stringify(entry)},'portrait','${slot}','meet')`,h.context);
-  assert.match(markup,/<svg\b[^>]*class="portrait art-viewport portrait-fullbody"/,'Full-body portrait layout class lost: '+slot);
+  assert.match(markup,/<svg\b[^>]*class="portrait art-viewport portrait-fullbody(?: [^"]*)?"/,'Full-body portrait layout class lost: '+slot);
+  if(entry.nativeSrc){
+   assert.ok(markup.includes(`viewBox="0 0 ${entry.nativeCanvas.join(' ')}"`),'Native canvas not rendered: '+slot);
+   assert.ok(markup.includes('portrait-native-alpha'),'Native layout class lost: '+slot);
+   assert.equal([...markup.matchAll(/<image\b/g)].length,1,'Native Fio still draws donor parts: '+slot);
+   assert.ok(!/<clipPath\b|<g\b|transform=/.test(markup),'Native sprite contains old face composition: '+slot);
+   assert.match(extractAttr(markup.match(/<image\b([^>]*)/)[1],'href')||'',/^blob:/,'Native PNG not decoded from embedded bytes');
+   renderedLayers++;continue;
+  }
   assert.ok(markup.includes(`viewBox="${entry.region.join(' ')}"`),'Original body region not rendered: '+slot);
   const bodyDefinition=[...markup.matchAll(/<clipPath\b([^>]*)>([\s\S]*?)<\/clipPath>/gi)].find(d=>(extractAttr(d[1],'id')||'').startsWith('portrait-body-'));
   assert.ok(bodyDefinition,'Missing shared clean silhouette: '+slot);
@@ -167,7 +176,7 @@ await test('实际runtime绘制90全身人物槽的全部原图基底和局部�
   }
   assert.ok(!/<filter\b|feColorMatrix|feComponentTransfer|mix-blend-mode/i.test(markup),'Runtime modifies face colors');
  }
- return {renderedSlots:90,renderedLayers,uniqueClipIds:ids.size,bodyBasePlusLocalExpressionParts:true,browserVerification:false};
+ return {renderedSlots:90,nativeSpriteSlots:42,uniqueNativeSprites:36,legacyLayeredSlots:48,renderedImages:renderedLayers,uniqueLegacyClipIds:ids.size,browserVerification:false};
 });
 let normalStore;
 await test('实际classic脚本在禁止所有fetch时启动并展示波鲁克首句',async()=>{
@@ -198,8 +207,9 @@ await test('离线版导入旧平静表情缓存后，三人六表情实际渲�
   const resolved=vm.runInContext(`__portraits.resolvePortrait(${JSON.stringify(sc)},${JSON.stringify(cached[index])},${oldState.day})`,h.context);
   assert.equal(resolved.expression,expression,'Embedded resolver kept old neutral metadata');
   const expected=payload.art.portraits[`${who}-${resolved.outfit}-${expression}`];assert.ok(expected);
-  assert.equal([...markup.matchAll(/<image\b/g)].length,expected.layers.length,'Wrong expression donor layer count');
-  for(const layer of expected.layers)assert.ok(markup.includes(layer.clipPath),'Embedded dialogue omitted expression cutout');
+  assert.equal([...markup.matchAll(/<image\b/g)].length,expected.nativeSrc?1:expected.layers.length,'Wrong expression image count');
+  if(expected.nativeSrc)assert.ok(markup.includes('portrait-native-alpha'),'Embedded dialogue omitted repaired expression sprite');
+  else for(const layer of expected.layers)assert.ok(markup.includes(layer.clipPath),'Embedded dialogue omitted expression cutout');
   h.checkRenderedAssets();const restored=(await h.export()).data.state;
   assert.deepEqual(restored,oldState,'Expression refresh rewrote imported game state');await h.click('close');cases++;
  }

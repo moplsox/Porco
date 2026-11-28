@@ -68,7 +68,8 @@ for(const who of Object.values(people))for(const expression of expressions){
   assert.equal(calls.length,2,'Expected background and speaking character');
   assert.equal(calls[1],expected,'Actual renderScene chose a different expression');
   assert.match(markup,/portrait-fullbody/,'Dialogue is no longer full body');
-  for(const layer of expected.layers)assert.ok(markup.includes(layer.clipPath),'Donor expression layer was not rendered');
+  if(expected.nativeSrc){assert.ok(markup.includes('portrait-native-alpha'),'Repaired Fio sprite was not rendered');assert.ok(markup.includes(expected.nativeSrc),'Wrong repaired expression image');}
+  else for(const layer of expected.layers)assert.ok(markup.includes(layer.clipPath),'Donor expression layer was not rendered');
   assert.equal(JSON.stringify({sc,cached}),before,'Presentation refresh changed saved text/metadata or authored scene');
   assert.equal(state.lineIndex,0,'Presentation refresh moved dialogue progress');
   cacheCases++;

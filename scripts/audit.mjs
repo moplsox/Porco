@@ -144,6 +144,7 @@ const referencedAssets=[];
 for(const [key,value] of Object.entries(art.backgrounds||{}))referencedAssets.push({where:`backgrounds.${key}`,src:typeof value==='string'?value:value?.src});
 for(const [key,value] of Object.entries(art.portraits||{}))referencedAssets.push({where:`portraits.${key}`,src:typeof value==='string'?value:value?.src});
 for(const [key,value] of Object.entries(art.cgs||{}))referencedAssets.push({where:`cgs.${key}`,src:typeof value==='string'?value:value?.src});
+for(const [key,value] of Object.entries(art.portraits||{}))if(value?.nativeSrc)referencedAssets.push({where:`portraits.${key}.nativeSrc`,src:value.nativeSrc});
 for(const {where,src} of referencedAssets){if(typeof src!=='string'||!src){fail(`美术清单 ${where} 路径无效。`);continue}const p=path.resolve(root,src);if(!p.startsWith(root+path.sep)||!fs.existsSync(p)||!fs.statSync(p).isFile())fail(`美术文件缺失：${where} → ${src}`)}
 for(const id of usedCG)if(!art.cgs?.[id])fail(`场景 CG ${id} 未在美术清单中接入。`);
 for(const id of Object.keys(art.cgs||{}))if(!usedCG.has(id))fail(`相册 CG ${id} 没有可达剧情解锁。`);
