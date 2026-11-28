@@ -1,0 +1,520 @@
+{
+  "version": "original-bust-expressions-v21",
+  "character": "gina",
+  "imageGenerationUsed": false,
+  "neutralChanged": false,
+  "bustSprites": 15,
+  "method": "Original complete head-and-shoulders from the approved expression cells. No face patches, resampling, pose edits, recoloring or added outlines. The prior reviewed silhouette paths retain pale hat/coat interiors; only exterior alpha and edge matte are cleaned.",
+  "records": [
+    {
+      "slot": "gina-morning-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-smile.png",
+      "nativeCanvas": [
+        355,
+        466
+      ],
+      "nativeSha256": "9fe422517f25016043468d77d8f4bb382241dc752c9991116813e58c89a17438",
+      "alphaSha256": "1a4312161c306281671685708cb5718ae9467488ed387955dbda715c89d1f943",
+      "originalSource": "assets/portrait-approved/gina-morning.png",
+      "originalSha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26",
+      "sourceRegion": [
+        788,
+        15,
+        355,
+        466
+      ],
+      "originalCellRegion": [
+        794,
+        21,
+        343,
+        454
+      ],
+      "paperRGB": [
+        251.0,
+        237.0,
+        220.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1232,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-morning-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-serious.png",
+      "nativeCanvas": [
+        359,
+        467
+      ],
+      "nativeSha256": "a83b1eb688cf3f705f9dee6abb14e77f2dbb1be37707fb7b3648fb7414653326",
+      "alphaSha256": "0522bec4084c790de897029b5a278a3342d07c23561bc31a0a679df2b650fcca",
+      "originalSource": "assets/portrait-approved/gina-morning.png",
+      "originalSha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26",
+      "sourceRegion": [
+        1162,
+        14,
+        359,
+        467
+      ],
+      "originalCellRegion": [
+        1168,
+        20,
+        347,
+        455
+      ],
+      "paperRGB": [
+        250.0,
+        237.0,
+        220.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1196,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-morning-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-sad.png",
+      "nativeCanvas": [
+        354,
+        469
+      ],
+      "nativeSha256": "de2c7d06f3c8c45619ea98b1b8bb1dba40b5429472d2a1c9da4c10e6ce5554a6",
+      "alphaSha256": "d37c3f04ce5bed7bb30117b27242d68e77138fa66cff1bb4e38bef1b85b4849d",
+      "originalSource": "assets/portrait-approved/gina-morning.png",
+      "originalSha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26",
+      "sourceRegion": [
+        416,
+        519,
+        354,
+        469
+      ],
+      "originalCellRegion": [
+        422,
+        525,
+        342,
+        457
+      ],
+      "paperRGB": [
+        251.0,
+        237.0,
+        220.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1228,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-morning-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-surprise.png",
+      "nativeCanvas": [
+        354,
+        469
+      ],
+      "nativeSha256": "a24382ec74033fcf0d9da2b22ec7e675a804b7588027203f79fc677443c3982b",
+      "alphaSha256": "92bf90bef47dcc58399e6d13625193b4bd7cacf0677b177e7231432d7aeed9e9",
+      "originalSource": "assets/portrait-approved/gina-morning.png",
+      "originalSha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26",
+      "sourceRegion": [
+        789,
+        519,
+        354,
+        469
+      ],
+      "originalCellRegion": [
+        795,
+        525,
+        342,
+        457
+      ],
+      "paperRGB": [
+        251.0,
+        237.0,
+        220.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1366,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-morning-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-tired.png",
+      "nativeCanvas": [
+        359,
+        469
+      ],
+      "nativeSha256": "133fbf23b97d60777917ba9bc83dbb89eb8d372ddb56df0a4bfdd9d727ffacfd",
+      "alphaSha256": "ede932030ac3076ffdf6257f14fb57f400bf876478c6eb4274cae5343a4ac0d3",
+      "originalSource": "assets/portrait-approved/gina-morning.png",
+      "originalSha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26",
+      "sourceRegion": [
+        1164,
+        519,
+        359,
+        469
+      ],
+      "originalCellRegion": [
+        1170,
+        525,
+        347,
+        457
+      ],
+      "paperRGB": [
+        251.0,
+        237.0,
+        220.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1107,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-date-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-smile.png",
+      "nativeCanvas": [
+        388,
+        463
+      ],
+      "nativeSha256": "e3f2863a500b613b94cf38dd452e1a1b2406edc0d02827e7a23e1ca90c65fc41",
+      "alphaSha256": "409fa5ba7562eca3dc37f27b58b9fbbcc58bbbf2ff7f1dba0acc33f6d3c92777",
+      "originalSource": "assets/portrait-approved/gina-date.png",
+      "originalSha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0",
+      "sourceRegion": [
+        718,
+        7,
+        388,
+        463
+      ],
+      "originalCellRegion": [
+        724,
+        13,
+        376,
+        451
+      ],
+      "paperRGB": [
+        252.0,
+        239.0,
+        219.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 2190,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-date-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-serious.png",
+      "nativeCanvas": [
+        408,
+        463
+      ],
+      "nativeSha256": "f5bc74352cb36223d7bd6beebf815e5bc13f3239c02b7d7b231f6f8c39ef7993",
+      "alphaSha256": "f107cb8533aad110db6151fe070723cb4492817355244f68e48bd4672bbe3475",
+      "originalSource": "assets/portrait-approved/gina-date.png",
+      "originalSha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0",
+      "sourceRegion": [
+        1102,
+        7,
+        408,
+        463
+      ],
+      "originalCellRegion": [
+        1108,
+        13,
+        396,
+        451
+      ],
+      "paperRGB": [
+        252.0,
+        239.0,
+        219.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 2464,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-date-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-sad.png",
+      "nativeCanvas": [
+        389,
+        462
+      ],
+      "nativeSha256": "e1476e5c9daa0624c4fb366c42cac11d3f927c1d0face4459ef8efcd7481345a",
+      "alphaSha256": "61014bb85ce3783b45abaedfadfc15d9336a8216cb7497e96b708c3c0ed26fcf",
+      "originalSource": "assets/portrait-approved/gina-date.png",
+      "originalSha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0",
+      "sourceRegion": [
+        335,
+        509,
+        389,
+        462
+      ],
+      "originalCellRegion": [
+        341,
+        515,
+        377,
+        450
+      ],
+      "paperRGB": [
+        252.0,
+        239.0,
+        219.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 2376,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-date-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-surprise.png",
+      "nativeCanvas": [
+        391,
+        462
+      ],
+      "nativeSha256": "08f1641622c42cf786414887a0f48dda4f0151d3590222d6e28ebffb283df97f",
+      "alphaSha256": "b66d921e2eb81208466e8ff06b5bce4bdc316b99ab8324e2696a6ae6543303ca",
+      "originalSource": "assets/portrait-approved/gina-date.png",
+      "originalSha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0",
+      "sourceRegion": [
+        721,
+        509,
+        391,
+        462
+      ],
+      "originalCellRegion": [
+        727,
+        515,
+        379,
+        450
+      ],
+      "paperRGB": [
+        252.0,
+        239.0,
+        219.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 2687,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-date-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-tired.png",
+      "nativeCanvas": [
+        410,
+        462
+      ],
+      "nativeSha256": "10032302294a8ab72d920eb12db19326e7fb3686873ded6cc082d47a38522534",
+      "alphaSha256": "8d90283d37246122806083687c92269bc08a9ae1c556a2152291dc256c2fe086",
+      "originalSource": "assets/portrait-approved/gina-date.png",
+      "originalSha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0",
+      "sourceRegion": [
+        1108,
+        509,
+        410,
+        462
+      ],
+      "originalCellRegion": [
+        1114,
+        515,
+        398,
+        450
+      ],
+      "paperRGB": [
+        252.0,
+        239.0,
+        219.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 2827,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-stage-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-smile.png",
+      "nativeCanvas": [
+        335,
+        431
+      ],
+      "nativeSha256": "0f17ba9f27e42db922900155c4e740242588ba39a640a4b136e8cdee69823398",
+      "alphaSha256": "705c84b0f29a219be844926259d8b4afd5ea557ceeee26638659ec7abc0d7033",
+      "originalSource": "assets/portrait-approved/gina-stage.png",
+      "originalSha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d",
+      "sourceRegion": [
+        820,
+        14,
+        335,
+        431
+      ],
+      "originalCellRegion": [
+        826,
+        20,
+        323,
+        419
+      ],
+      "paperRGB": [
+        249.0,
+        239.0,
+        227.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1305,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-stage-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-serious.png",
+      "nativeCanvas": [
+        338,
+        431
+      ],
+      "nativeSha256": "f615ac239ca0c621d580f2e93b3b690f499fcd6a1710ef77b44cd59a543c8cac",
+      "alphaSha256": "8f0ad7c2edeccc211dc66a0b2be24b9f1709a39119f517f4f7c94888ab31b54d",
+      "originalSource": "assets/portrait-approved/gina-stage.png",
+      "originalSha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d",
+      "sourceRegion": [
+        1173,
+        14,
+        338,
+        431
+      ],
+      "originalCellRegion": [
+        1179,
+        20,
+        326,
+        419
+      ],
+      "paperRGB": [
+        249.0,
+        239.0,
+        226.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1405,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-stage-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-sad.png",
+      "nativeCanvas": [
+        333,
+        436
+      ],
+      "nativeSha256": "24de25021c2d0ed036e003c4b1a544e91f1ce989a43b2dbad3654c62a2ec9b0a",
+      "alphaSha256": "d558c6ec0c52cd3aa93f9eab33675af81add9bd2a0464fe2124e4e693548a9d1",
+      "originalSource": "assets/portrait-approved/gina-stage.png",
+      "originalSha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d",
+      "sourceRegion": [
+        471,
+        501,
+        333,
+        436
+      ],
+      "originalCellRegion": [
+        477,
+        507,
+        321,
+        424
+      ],
+      "paperRGB": [
+        249.0,
+        240.0,
+        229.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1447,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-stage-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-surprise.png",
+      "nativeCanvas": [
+        336,
+        437
+      ],
+      "nativeSha256": "8c97bd47bc149b747cbaaf72434c42eebe69c246f22ae8a4deb6037dd69f2bb6",
+      "alphaSha256": "97c189a03b6ac38585916a074f6db0d4f6d73d24be204ad6aadea65a02ff273c",
+      "originalSource": "assets/portrait-approved/gina-stage.png",
+      "originalSha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d",
+      "sourceRegion": [
+        820,
+        500,
+        336,
+        437
+      ],
+      "originalCellRegion": [
+        826,
+        506,
+        324,
+        425
+      ],
+      "paperRGB": [
+        249.0,
+        239.0,
+        229.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1438,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "gina-stage-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-tired.png",
+      "nativeCanvas": [
+        343,
+        433
+      ],
+      "nativeSha256": "7a6b14d3d9e71f0721eb19b3c616c525ecc717d67a444a05b9f851d16612d56c",
+      "alphaSha256": "7d1a0dc5aa91f3d73be5560d11cc3801cbd7a2fc25b0692204ef153e5f135885",
+      "originalSource": "assets/portrait-approved/gina-stage.png",
+      "originalSha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d",
+      "sourceRegion": [
+        1172,
+        504,
+        343,
+        433
+      ],
+      "originalCellRegion": [
+        1178,
+        510,
+        331,
+        421
+      ],
+      "paperRGB": [
+        249.0,
+        239.0,
+        229.0
+      ],
+      "exteriorPaperPixelsCleared": 0,
+      "boundaryRGBChangedPixels": 1443,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    }
+  ]
+}

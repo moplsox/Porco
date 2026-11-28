@@ -1,0 +1,247 @@
+{
+  "status": "passed",
+  "version": "original-bust-expressions-v21",
+  "sprites": 20,
+  "visualQA": {
+    "navyAndIvoryReviewed": true,
+    "whiteScarfAndCoatIntact": true,
+    "sourceLabelsAbsent": true,
+    "noFaceComposition": true
+  },
+  "records": [
+    {
+      "slot": "porco-work-smile",
+      "sha256": "1f9d5ebaf46545b00195c5daa1621d36d4adff7da1fed1460c266330add37b0a",
+      "opaqueInteriorPixels": 99805,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 43832,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-work-serious",
+      "sha256": "c6c899d91e45fe650565c7a011962a4fe077ce3a31fc5c65f5e60033a86e7a03",
+      "opaqueInteriorPixels": 103294,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 44415,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-work-sad",
+      "sha256": "e724b50c522177817f49ae8241b34718a4bb5257f2608a578b88640712a032e5",
+      "opaqueInteriorPixels": 100893,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 38451,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-work-surprise",
+      "sha256": "844051bbad9dc22bda6af81aa12e7256f91247be2df847de2bad8e2e80ac5fed",
+      "opaqueInteriorPixels": 103105,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 49942,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-work-tired",
+      "sha256": "bbe9f29a2e7374c1adc931c0bc5d6e972db34f13fb570a5d7b4deef4a6d726a3",
+      "opaqueInteriorPixels": 108007,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 41347,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-flight-smile",
+      "sha256": "67d2e4016281dd49492a0dc8669e903d1f9924dc2210c0d23e45517fd94ef077",
+      "opaqueInteriorPixels": 98671,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 24975,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-flight-serious",
+      "sha256": "c4845806c577dc7dbf4cb93eff96ebaf5b8fd839d6edee975388746b850e83ee",
+      "opaqueInteriorPixels": 101697,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 23762,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-flight-sad",
+      "sha256": "e4d7d8db77e5f30a598d8d2aa7848d778c92f72165f1476d11b0e5c281ae7b1f",
+      "opaqueInteriorPixels": 104617,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 22562,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-flight-surprise",
+      "sha256": "148daf19f31b4ace8af26e038c45485f8f012f4cf59caf622a8df985127bfefc",
+      "opaqueInteriorPixels": 102199,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 26224,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-flight-tired",
+      "sha256": "a5cc92468d88f6c8a2c01228639dd37736d8eefaa8b536b90eb821559270a77a",
+      "opaqueInteriorPixels": 106441,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 26129,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-coat-smile",
+      "sha256": "97546c4db2d2d28967ee797c1ae46455ff750bf618652982c5b45480d55b88b4",
+      "opaqueInteriorPixels": 96957,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 75278,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-coat-serious",
+      "sha256": "bb695a5fcd99da5d3fa362c0626834b3f6fe56f3f6cb61192091642da721ab4b",
+      "opaqueInteriorPixels": 105637,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 80030,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-coat-sad",
+      "sha256": "ce080e6666ef21fd0a7ebe0a7eeea3345ea1230e1258e85e753d71259ad2d32b",
+      "opaqueInteriorPixels": 101818,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 82363,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-coat-surprise",
+      "sha256": "8b2f34e67cbd1feecc6e519a8f6019e4d0fc83807c2ad8782eb0d9c477842bd1",
+      "opaqueInteriorPixels": 102142,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 82454,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-coat-tired",
+      "sha256": "7d9cb927abed7f3a8b3e46591409226f3280727e8a9a586b30e36184a2d11373",
+      "opaqueInteriorPixels": 105825,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 82795,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-goggles-up-smile",
+      "sha256": "8414ab5aeffc43bd49822b8e11b51237fe41dc8bd26b27e154071bc6da47bd5f",
+      "opaqueInteriorPixels": 101202,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 38979,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-goggles-up-serious",
+      "sha256": "ee249fdf1bef8def1a8a16ca8a75003c530726206ced30957dc8be34daa40043",
+      "opaqueInteriorPixels": 103853,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 39929,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-goggles-up-sad",
+      "sha256": "5190108b96bec01a1f36d1a8ed327bde0755c379930aa4e7dc09381c31cbc36d",
+      "opaqueInteriorPixels": 107856,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 41947,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-goggles-up-surprise",
+      "sha256": "786f6e5e9e8bf29cbd324f2a333627e7bcdde715b3054c457636bbc9072745a2",
+      "opaqueInteriorPixels": 104102,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 40782,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    },
+    {
+      "slot": "porco-goggles-up-tired",
+      "sha256": "8516e34caaae01987d944c55357f5b600c5c792266610b5dee45286c56646019",
+      "opaqueInteriorPixels": 109888,
+      "interiorRGBChanged": 0,
+      "interiorAlphaRemoved": 0,
+      "faceSamplePixels": 43883,
+      "faceRGBChanged": 0,
+      "faceAlphaRemoved": 0
+    }
+  ],
+  "whiteScarfRegressionSamples": [
+    {
+      "slot": "porco-flight-smile",
+      "sourcePoint": [
+        800,
+        340
+      ],
+      "alpha": 255
+    },
+    {
+      "slot": "porco-flight-smile",
+      "sourcePoint": [
+        820,
+        345
+      ],
+      "alpha": 255
+    },
+    {
+      "slot": "porco-flight-serious",
+      "sourcePoint": [
+        1170,
+        341
+      ],
+      "alpha": 255
+    },
+    {
+      "slot": "porco-flight-serious",
+      "sourcePoint": [
+        1190,
+        350
+      ],
+      "alpha": 255
+    }
+  ]
+}

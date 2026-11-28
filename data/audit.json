@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-28T07:50:53.502Z",
+  "generatedAt": "2026-11-28T16:36:56.746Z",
   "sourceFiles": [
     "data/common.json",
     "data/fio.json",
@@ -120,7 +120,7 @@
     "backgroundFiles": 33,
     "portraitVariants": 90,
     "cgs": 13,
-    "referencedFiles": 73
+    "referencedFiles": 108
   },
   "requirements": [
     {
@@ -215,7 +215,7 @@
   "status": "passed",
   "testStatus": "passed",
   "tests": {
-    "generatedAt": "2026-11-28T07:50:53.634Z",
+    "generatedAt": "2026-11-28T16:36:56.867Z",
     "status": "passed",
     "passed": 19,
     "total": 19,

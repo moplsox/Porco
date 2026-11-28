@@ -179,10 +179,11 @@ def main():
         assert 'layer.clipPath' in renderer and 'layer.transform' in renderer and 'layer.src' in renderer,'renderer缺少轮廓/矩阵/供体源图'
         assert 'clip-path="url(#' in renderer and 'portrait-fullbody' in renderer,'renderer缺少局部裁切引用或全身布局class'
         natives=[v for v in portraits.values() if v.get('nativeSrc')]
-        assert len(natives)==42 and len({v['nativeSrc'] for v in natives})==36,'Fio native bindings missing'
-        assert 'if(value.nativeSrc)' in renderer and 'portrait-native-alpha' in renderer,'Fio native renderer missing'
-        return {'validatedSlots':len(portraits),'provenanceLayers':layer_count,'unalteredBodyBase':True,'fioNativeSprites':36,'fioNativeBindings':42}
-    test('全身原像素基底不变，局部表情层的轮廓/矩阵与运行时绘制合法',runtime_cutouts)
+        assert len(natives)==82 and len({v['nativeSrc'] for v in natives})==71,'Original native portrait bindings missing'
+        assert sum(v.get('portraitFormat')=='bust' for v in natives)==75,'Non-neutral bust binding missing'
+        assert 'if(value.nativeSrc)' in renderer and 'portrait-native-alpha' in renderer,'Native portrait renderer missing'
+        return {'validatedSlots':len(portraits),'provenanceLayers':layer_count,'unalteredBodyBase':True,'nativeSprites':71,'nativeBindings':82,'bustBindings':75,'retainedLegacyNeutralBindings':8}
+    test('原图及分层凭据保留，完整头肩PNG与neutral原图绘制合法',runtime_cutouts)
     def expressions():
         groups=[]
         for who,outfits in INDEPENDENT.items():

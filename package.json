@@ -5,13 +5,14 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build.mjs",
-    "test": "node scripts/audit.mjs && node scripts/test.mjs && node scripts/test-swimming.mjs && node scripts/test-portrait-display.mjs && node scripts/test-portrait-edges.mjs && node scripts/test-expression-usage.mjs && python3 scripts/test-fio-native.py",
+    "test": "node scripts/audit.mjs && node scripts/test.mjs && node scripts/test-swimming.mjs && node scripts/test-portrait-display.mjs && node scripts/test-portrait-edges.mjs && node scripts/test-expression-usage.mjs && python3 scripts/test-fio-native.py && python3 scripts/test-character-busts.py",
     "build:standalone": "node scripts/build-standalone.mjs",
     "test:standalone": "node scripts/test-standalone.mjs",
     "test:art": "python3 scripts/test-reference-art.py",
     "test:hosted": "node scripts/test-hosted.mjs",
     "test:edges": "node scripts/test-portrait-edges.mjs",
     "test:expressions": "node scripts/test-expression-usage.mjs",
-    "test:native": "python3 scripts/test-fio-native.py"
+    "test:native": "python3 scripts/test-fio-native.py && python3 scripts/test-character-busts.py",
+    "test:character-busts": "python3 scripts/test-character-busts.py"
   }
 }

@@ -2703,7 +2703,19 @@
           "clipPath": "M879.6290 223.3025 L898.9292 218.8352 L917.3618 230.8149 L916.2051 252.7444 L891.2016 256.9072 L878.5686 243.4045 Z M932.5975 194.9764 L963.5935 185.6357 L984.0236 195.8895 L986.3799 223.5043 L962.6991 238.7334 L930.7659 229.6980 Z M932.3510 271.9325 L963.0579 268.0742 L977.4955 283.5059 L968.8307 303.2019 L938.2203 305.2327 Z",
           "transform": "matrix(0.52453349 -0.02913454 0.02766853 0.54567210 -289.57331389 26.77763830)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-smile.png",
+      "nativeCanvas": [
+        355,
+        466
+      ],
+      "bustRegion": [
+        788,
+        15,
+        355,
+        466
+      ],
+      "portraitFormat": "bust"
     },
     "gina-morning-serious": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -2735,7 +2747,19 @@
           "clipPath": "M1252.5918 222.7322 L1272.7181 218.5135 L1290.9491 231.3628 L1288.4220 254.1200 L1262.4474 257.8975 L1250.2753 243.5930 Z M1308.8071 194.4636 L1341.2619 185.4380 L1361.6529 196.5380 L1362.3930 225.2786 L1337.1042 240.5817 L1304.8059 230.4959 Z M1303.8612 274.4080 L1335.6843 271.0718 L1349.5952 287.4198 L1339.4809 307.6923 L1307.8684 309.1321 Z",
           "transform": "matrix(0.50870259 -0.03944954 0.05648891 0.52292435 -471.77859810 55.94209558)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-serious.png",
+      "nativeCanvas": [
+        359,
+        467
+      ],
+      "bustRegion": [
+        1162,
+        14,
+        359,
+        467
+      ],
+      "portraitFormat": "bust"
     },
     "gina-morning-sad": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -2767,7 +2791,19 @@
           "clipPath": "M511.8522 726.4229 L530.7902 722.0574 L548.7627 734.7405 L547.4754 757.4719 L522.9525 761.4421 L510.6721 747.2600 Z M563.9395 697.7770 L594.3690 688.5191 L614.3105 699.4396 L616.4246 728.1173 L593.1197 743.5850 L561.9013 733.7683 Z M563.1572 777.6003 L593.2649 774.0253 L607.2997 790.2334 L598.6732 810.5436 L568.6728 812.2244 Z",
           "transform": "matrix(0.53502304 -0.03720785 0.03029866 0.52579720 -117.86233764 -239.90620107)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-sad.png",
+      "nativeCanvas": [
+        354,
+        469
+      ],
+      "bustRegion": [
+        416,
+        519,
+        354,
+        469
+      ],
+      "portraitFormat": "bust"
     },
     "gina-morning-surprise": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -2799,7 +2835,19 @@
           "clipPath": "M879.3168 720.4822 L899.0577 715.4891 L918.4255 728.3730 L917.9281 752.2090 L892.3022 756.9123 L878.8608 742.3318 Z M932.9861 689.3226 L964.6212 678.9501 L985.9922 689.9443 L989.2937 719.9325 L965.3808 736.6503 L932.1985 727.0629 Z M935.1685 772.9417 L966.6793 768.5282 L982.0409 785.1916 L973.7383 806.6549 L942.2690 809.0820 Z",
           "transform": "matrix(0.50925087 -0.02476466 0.01062703 0.50292377 -277.44942246 -217.57162690)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-surprise.png",
+      "nativeCanvas": [
+        354,
+        469
+      ],
+      "bustRegion": [
+        789,
+        519,
+        354,
+        469
+      ],
+      "portraitFormat": "bust"
     },
     "gina-morning-tired": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -2831,7 +2879,19 @@
           "clipPath": "M1256.0275 730.6724 L1276.3879 726.5786 L1295.2442 739.5725 L1293.2387 762.3561 L1266.9207 765.9693 L1254.1892 751.5574 Z M1312.4878 702.7212 L1345.2649 693.8927 L1366.2742 705.1482 L1367.7392 733.9481 L1342.4044 749.1134 L1309.3126 738.7953 Z M1309.4406 782.7843 L1341.7164 779.6517 L1356.2666 796.1225 L1346.4847 816.3666 L1314.3761 817.6006 Z",
           "transform": "matrix(0.50000001 -0.04219012 0.04401023 0.52298049 -482.17085272 -206.13547384)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-tired.png",
+      "nativeCanvas": [
+        359,
+        469
+      ],
+      "bustRegion": [
+        1164,
+        519,
+        359,
+        469
+      ],
+      "portraitFormat": "bust"
     },
     "gina-work-neutral": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -2886,7 +2946,19 @@
           "clipPath": "M879.6290 223.3025 L898.9292 218.8352 L917.3618 230.8149 L916.2051 252.7444 L891.2016 256.9072 L878.5686 243.4045 Z M932.5975 194.9764 L963.5935 185.6357 L984.0236 195.8895 L986.3799 223.5043 L962.6991 238.7334 L930.7659 229.6980 Z M932.3510 271.9325 L963.0579 268.0742 L977.4955 283.5059 L968.8307 303.2019 L938.2203 305.2327 Z",
           "transform": "matrix(0.52453349 -0.02913454 0.02766853 0.54567210 -289.57331389 26.77763830)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-smile.png",
+      "nativeCanvas": [
+        355,
+        466
+      ],
+      "bustRegion": [
+        788,
+        15,
+        355,
+        466
+      ],
+      "portraitFormat": "bust"
     },
     "gina-work-serious": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -2918,7 +2990,19 @@
           "clipPath": "M1252.5918 222.7322 L1272.7181 218.5135 L1290.9491 231.3628 L1288.4220 254.1200 L1262.4474 257.8975 L1250.2753 243.5930 Z M1308.8071 194.4636 L1341.2619 185.4380 L1361.6529 196.5380 L1362.3930 225.2786 L1337.1042 240.5817 L1304.8059 230.4959 Z M1303.8612 274.4080 L1335.6843 271.0718 L1349.5952 287.4198 L1339.4809 307.6923 L1307.8684 309.1321 Z",
           "transform": "matrix(0.50870259 -0.03944954 0.05648891 0.52292435 -471.77859810 55.94209558)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-serious.png",
+      "nativeCanvas": [
+        359,
+        467
+      ],
+      "bustRegion": [
+        1162,
+        14,
+        359,
+        467
+      ],
+      "portraitFormat": "bust"
     },
     "gina-work-sad": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -2950,7 +3034,19 @@
           "clipPath": "M511.8522 726.4229 L530.7902 722.0574 L548.7627 734.7405 L547.4754 757.4719 L522.9525 761.4421 L510.6721 747.2600 Z M563.9395 697.7770 L594.3690 688.5191 L614.3105 699.4396 L616.4246 728.1173 L593.1197 743.5850 L561.9013 733.7683 Z M563.1572 777.6003 L593.2649 774.0253 L607.2997 790.2334 L598.6732 810.5436 L568.6728 812.2244 Z",
           "transform": "matrix(0.53502304 -0.03720785 0.03029866 0.52579720 -117.86233764 -239.90620107)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-sad.png",
+      "nativeCanvas": [
+        354,
+        469
+      ],
+      "bustRegion": [
+        416,
+        519,
+        354,
+        469
+      ],
+      "portraitFormat": "bust"
     },
     "gina-work-surprise": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -2982,7 +3078,19 @@
           "clipPath": "M879.3168 720.4822 L899.0577 715.4891 L918.4255 728.3730 L917.9281 752.2090 L892.3022 756.9123 L878.8608 742.3318 Z M932.9861 689.3226 L964.6212 678.9501 L985.9922 689.9443 L989.2937 719.9325 L965.3808 736.6503 L932.1985 727.0629 Z M935.1685 772.9417 L966.6793 768.5282 L982.0409 785.1916 L973.7383 806.6549 L942.2690 809.0820 Z",
           "transform": "matrix(0.50925087 -0.02476466 0.01062703 0.50292377 -277.44942246 -217.57162690)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-surprise.png",
+      "nativeCanvas": [
+        354,
+        469
+      ],
+      "bustRegion": [
+        789,
+        519,
+        354,
+        469
+      ],
+      "portraitFormat": "bust"
     },
     "gina-work-tired": {
       "src": "assets/portrait-approved/gina-morning.png",
@@ -3014,7 +3122,19 @@
           "clipPath": "M1256.0275 730.6724 L1276.3879 726.5786 L1295.2442 739.5725 L1293.2387 762.3561 L1266.9207 765.9693 L1254.1892 751.5574 Z M1312.4878 702.7212 L1345.2649 693.8927 L1366.2742 705.1482 L1367.7392 733.9481 L1342.4044 749.1134 L1309.3126 738.7953 Z M1309.4406 782.7843 L1341.7164 779.6517 L1356.2666 796.1225 L1346.4847 816.3666 L1314.3761 817.6006 Z",
           "transform": "matrix(0.50000001 -0.04219012 0.04401023 0.52298049 -482.17085272 -206.13547384)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-morning-tired.png",
+      "nativeCanvas": [
+        359,
+        469
+      ],
+      "bustRegion": [
+        1164,
+        519,
+        359,
+        469
+      ],
+      "portraitFormat": "bust"
     },
     "gina-date-neutral": {
       "src": "assets/portrait-approved/gina-date.png",
@@ -3069,7 +3189,19 @@
           "clipPath": "M859.8931 152.6255 L888.2374 147.7430 L907.8989 168.4300 L904.9182 213.8812 L881.5248 223.3944 L859.2668 215.5928 Z M935.0660 154.7894 L979.3983 146.4841 L993.8250 166.8691 L988.8156 216.5484 L961.7904 228.0246 L931.0918 215.3911 Z M903.6825 259.4331 L940.7513 255.0538 L952.8654 283.9956 L927.3012 299.9011 L903.5822 287.6702 Z",
           "transform": "matrix(0.57093702 -0.02655256 0.03744136 0.46029255 -359.65931402 80.57997495)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-smile.png",
+      "nativeCanvas": [
+        388,
+        463
+      ],
+      "bustRegion": [
+        718,
+        7,
+        388,
+        463
+      ],
+      "portraitFormat": "bust"
     },
     "gina-date-serious": {
       "src": "assets/portrait-approved/gina-date.png",
@@ -3101,7 +3233,19 @@
           "clipPath": "M1246.9528 156.8053 L1274.8959 152.4868 L1294.3432 173.7222 L1291.5246 219.4076 L1268.4769 228.4911 L1246.5030 220.1706 Z M1321.1019 160.5637 L1364.8049 153.1362 L1379.0884 173.9576 L1374.2800 223.8560 L1347.6556 234.8390 L1317.3437 221.4776 Z M1290.4272 265.2310 L1326.9767 261.6025 L1339.0020 290.9879 L1313.8304 306.4599 L1290.4036 293.6504 Z",
           "transform": "matrix(0.57810498 -0.03667092 0.03566716 0.45740313 -589.46243588 102.00366725)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-serious.png",
+      "nativeCanvas": [
+        408,
+        463
+      ],
+      "bustRegion": [
+        1102,
+        7,
+        408,
+        463
+      ],
+      "portraitFormat": "bust"
     },
     "gina-date-sad": {
       "src": "assets/portrait-approved/gina-date.png",
@@ -3133,7 +3277,19 @@
           "clipPath": "M478.8938 666.1198 L507.1871 661.8818 L527.1968 682.8923 L524.9379 728.0452 L501.6740 736.9984 L479.2707 728.7504 Z M554.1722 669.9155 L598.4140 662.6217 L613.1793 683.2174 L608.9570 732.5323 L582.0892 743.3590 L551.1602 730.1194 Z M524.4271 773.3364 L561.4611 769.7898 L574.0480 798.8478 L548.7132 814.1131 L524.7768 801.4265 Z",
           "transform": "matrix(0.56977619 -0.03664235 0.02850531 0.46325303 -154.85026113 -163.03420802)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-sad.png",
+      "nativeCanvas": [
+        389,
+        462
+      ],
+      "bustRegion": [
+        335,
+        509,
+        389,
+        462
+      ],
+      "portraitFormat": "bust"
     },
     "gina-date-surprise": {
       "src": "assets/portrait-approved/gina-date.png",
@@ -3165,7 +3321,19 @@
           "clipPath": "M869.1032 657.6767 L897.0970 653.1108 L915.0668 674.4109 L909.4192 720.5636 L885.9851 729.9051 L864.7024 721.6647 Z M942.4372 660.9273 L986.2616 653.1063 L999.1339 674.0264 L991.2492 724.4478 L964.1478 735.7336 L934.9070 722.4642 Z M905.4707 766.8429 L941.9605 762.9105 L952.0579 792.4948 L926.1177 808.3029 L903.6738 795.5403 Z",
           "transform": "matrix(0.58319450 -0.03362300 0.07136482 0.45089762 -416.79116255 -139.32300117)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-surprise.png",
+      "nativeCanvas": [
+        391,
+        462
+      ],
+      "bustRegion": [
+        721,
+        509,
+        391,
+        462
+      ],
+      "portraitFormat": "bust"
     },
     "gina-date-tired": {
       "src": "assets/portrait-approved/gina-date.png",
@@ -3197,7 +3365,19 @@
           "clipPath": "M1249.5968 665.5076 L1278.7564 661.1043 L1299.4511 681.9554 L1297.2578 727.0420 L1273.2980 736.1213 L1250.1738 728.0248 Z M1327.2256 668.8368 L1372.8201 661.2857 L1388.1061 681.7548 L1383.9011 731.0080 L1356.2311 741.9796 L1324.3012 728.9523 Z M1296.8675 772.2560 L1335.0415 768.4895 L1348.1069 797.4191 L1322.0309 812.8120 L1297.3126 800.2942 Z",
           "transform": "matrix(0.55276493 -0.03278867 0.02688949 0.46417479 -571.62843176 -139.93921398)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-date-tired.png",
+      "nativeCanvas": [
+        410,
+        462
+      ],
+      "bustRegion": [
+        1108,
+        509,
+        410,
+        462
+      ],
+      "portraitFormat": "bust"
     },
     "gina-stage-neutral": {
       "src": "assets/portrait-approved/gina-stage.png",
@@ -3252,7 +3432,19 @@
           "clipPath": "M906.6689 195.8585 L929.8586 196.6152 L941.7422 207.2614 L937.3263 234.6770 L911.6399 237.3604 L899.0259 219.1881 Z M959.8081 179.5255 L990.4880 169.9621 L1009.7090 183.2973 L1005.2931 210.7130 L982.2449 221.1380 L954.8034 210.5966 Z M955.9585 251.6677 L986.7799 253.2859 L997.1916 273.0706 L973.5547 287.1509 L951.8369 277.2557 Z",
           "transform": "matrix(0.51476571 -0.06065686 0.08291492 0.53736215 -287.96165889 70.74871587)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-smile.png",
+      "nativeCanvas": [
+        335,
+        431
+      ],
+      "bustRegion": [
+        820,
+        14,
+        335,
+        431
+      ],
+      "portraitFormat": "bust"
     },
     "gina-stage-serious": {
       "src": "assets/portrait-approved/gina-stage.png",
@@ -3284,7 +3476,19 @@
           "clipPath": "M1257.7065 195.7217 L1281.1860 196.7530 L1293.2748 208.2429 L1288.9559 237.4951 L1262.9679 240.1157 L1250.0981 220.5767 Z M1311.4102 178.7797 L1342.4152 168.8554 L1361.9466 183.2893 L1357.6277 212.5415 L1334.3532 223.4596 L1306.5154 211.9322 Z M1307.9115 255.8292 L1339.1216 257.8543 L1349.7707 279.0950 L1325.9204 293.9133 L1303.8805 283.1313 Z",
           "transform": "matrix(0.50778984 -0.06469330 0.07497255 0.50323023 -458.32432442 103.87210408)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-serious.png",
+      "nativeCanvas": [
+        338,
+        431
+      ],
+      "bustRegion": [
+        1173,
+        14,
+        338,
+        431
+      ],
+      "portraitFormat": "bust"
     },
     "gina-stage-sad": {
       "src": "assets/portrait-approved/gina-stage.png",
@@ -3316,7 +3520,19 @@
           "clipPath": "M558.4739 683.0619 L582.1074 683.5909 L594.6748 694.6644 L591.4006 723.5852 L565.3794 726.7076 L551.7338 707.7171 Z M611.8261 665.2488 L642.6230 654.8237 L662.7772 668.6443 L659.5030 697.5652 L636.5112 708.8093 L608.1154 698.0257 Z M611.1183 741.2620 L642.5568 742.6100 L654.0328 763.3238 L630.6044 778.4240 L608.0624 768.2547 Z",
           "transform": "matrix(0.50647181 -0.05378582 0.05733871 0.51256830 -127.01718971 -199.07788051)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-sad.png",
+      "nativeCanvas": [
+        333,
+        436
+      ],
+      "bustRegion": [
+        471,
+        501,
+        333,
+        436
+      ],
+      "portraitFormat": "bust"
     },
     "gina-stage-surprise": {
       "src": "assets/portrait-approved/gina-stage.png",
@@ -3348,7 +3564,19 @@
           "clipPath": "M905.4767 677.7464 L928.2341 678.3137 L940.2061 689.9901 L936.7051 720.4703 L911.6040 723.7503 L898.6886 703.7293 Z M957.0794 658.9941 L986.8681 648.0192 L1006.1147 662.5941 L1002.6137 693.0743 L980.3330 704.9156 L953.1116 693.5384 Z M955.4849 739.1091 L985.7502 740.5429 L996.5552 762.3793 L973.8077 778.2847 L952.2173 767.5573 Z",
           "transform": "matrix(0.52579670 -0.05605000 0.06039300 0.48568489 -322.02781200 -157.41919529)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-surprise.png",
+      "nativeCanvas": [
+        336,
+        437
+      ],
+      "bustRegion": [
+        820,
+        500,
+        336,
+        437
+      ],
+      "portraitFormat": "bust"
     },
     "gina-stage-tired": {
       "src": "assets/portrait-approved/gina-stage.png",
@@ -3380,7 +3608,19 @@
           "clipPath": "M1259.4961 687.9211 L1283.7726 688.6637 L1296.6329 699.7985 L1293.1378 728.5489 L1266.3916 731.4180 L1252.4597 712.3948 Z M1314.3864 670.6827 L1346.0719 660.5900 L1366.7137 674.5279 L1363.2186 703.2783 L1339.5476 714.2574 L1310.4253 703.2665 Z M1313.3136 746.3201 L1345.6046 747.9492 L1357.2999 768.6675 L1333.1630 783.4799 L1310.0515 773.1538 Z",
           "transform": "matrix(0.49247346 -0.05694106 0.05986888 0.51481003 -466.45345444 -161.43161652)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-gina-bust/gina-stage-tired.png",
+      "nativeCanvas": [
+        343,
+        433
+      ],
+      "bustRegion": [
+        1172,
+        504,
+        343,
+        433
+      ],
+      "portraitFormat": "bust"
     },
     "porco-work-neutral": {
       "src": "assets/portrait-approved/porco-work.png",
@@ -3435,7 +3675,19 @@
           "clipPath": "M 1002 295 C 1002 290.029437 1009.611159 286 1019 286 C 1028.388841 286 1036 290.029437 1036 295 C 1036 299.970563 1028.388841 304 1019 304 C 1009.611159 304 1002 299.970563 1002 295 Z",
           "transform": "matrix(0.68 0 0 0.68 -420.9200 14.4000)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-smile.png",
+      "nativeCanvas": [
+        341,
+        392
+      ],
+      "bustRegion": [
+        809,
+        90,
+        341,
+        392
+      ],
+      "portraitFormat": "bust"
     },
     "porco-work-serious": {
       "src": "assets/portrait-approved/porco-work.png",
@@ -3485,7 +3737,19 @@
           "clipPath": "M 1360 312 C 1360 306.477152 1368.50659 302 1379 302 C 1389.49341 302 1398 306.477152 1398 312 C 1398 317.522848 1389.49341 322 1379 322 C 1368.50659 322 1360 317.522848 1360 312 Z",
           "transform": "matrix(0.68 0 0 0.68 -665.7200 2.8400)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-serious.png",
+      "nativeCanvas": [
+        376,
+        388
+      ],
+      "bustRegion": [
+        1150,
+        95,
+        376,
+        388
+      ],
+      "portraitFormat": "bust"
     },
     "porco-work-sad": {
       "src": "assets/portrait-approved/porco-work.png",
@@ -3517,7 +3781,19 @@
           "clipPath": "M 657 823 C 657 816.924868 665.954305 812 677 812 C 688.045695 812 697 816.924868 697 823 C 697 829.075132 688.045695 834 677 834 C 665.954305 834 657 829.075132 657 823 Z",
           "transform": "matrix(0.68 0 0 0.68 -188.3600 -344.6400)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-sad.png",
+      "nativeCanvas": [
+        341,
+        390
+      ],
+      "bustRegion": [
+        459,
+        575,
+        341,
+        390
+      ],
+      "portraitFormat": "bust"
     },
     "porco-work-surprise": {
       "src": "assets/portrait-approved/porco-work.png",
@@ -3567,7 +3843,19 @@
           "clipPath": "M 1006 745 C 1006 737.820298 1018.088312 732 1033 732 C 1047.911688 732 1060 737.820298 1060 745 C 1060 752.179702 1047.911688 758 1033 758 C 1018.088312 758 1006 752.179702 1006 745 Z",
           "transform": "matrix(0.68 0 0 0.68 -430.4400 -291.6000)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-surprise.png",
+      "nativeCanvas": [
+        348,
+        401
+      ],
+      "bustRegion": [
+        800,
+        564,
+        348,
+        401
+      ],
+      "portraitFormat": "bust"
     },
     "porco-work-tired": {
       "src": "assets/portrait-approved/porco-work.png",
@@ -3599,7 +3887,19 @@
           "clipPath": "M 1350 830 C 1350 823.372583 1360.745166 818 1374 818 C 1387.254834 818 1398 823.372583 1398 830 C 1398 836.627417 1387.254834 842 1374 842 C 1360.745166 842 1350 836.627417 1350 830 Z",
           "transform": "matrix(0.68 0 0 0.68 -662.3200 -349.4000)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-tired.png",
+      "nativeCanvas": [
+        379,
+        388
+      ],
+      "bustRegion": [
+        1147,
+        577,
+        379,
+        388
+      ],
+      "portraitFormat": "bust"
     },
     "porco-flight-neutral": {
       "src": "assets/portrait-approved/porco-flight.png",
@@ -3654,7 +3954,19 @@
           "clipPath": "M 962 267 C 962 259.820298 981.251756 254 1005 254 C 1028.748244 254 1048 259.820298 1048 267 C 1048 274.179702 1028.748244 280 1005 280 C 981.251756 280 962 274.179702 962 267 Z",
           "transform": "matrix(0.62 0 0 0.62 -352.1000 21.4600)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-smile.png",
+      "nativeCanvas": [
+        365,
+        401
+      ],
+      "bustRegion": [
+        776,
+        82,
+        365,
+        401
+      ],
+      "portraitFormat": "bust"
     },
     "porco-flight-serious": {
       "src": "assets/portrait-approved/porco-flight.png",
@@ -3686,7 +3998,19 @@
           "clipPath": "M 1360 294 C 1360 287.924868 1370.297451 283 1383 283 C 1395.702549 283 1406 287.924868 1406 294 C 1406 300.075132 1395.702549 305 1383 305 C 1370.297451 305 1360 300.075132 1360 294 Z",
           "transform": "matrix(0.62 0 0 0.62 -586.4600 4.7200)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-serious.png",
+      "nativeCanvas": [
+        385,
+        400
+      ],
+      "bustRegion": [
+        1142,
+        83,
+        385,
+        400
+      ],
+      "portraitFormat": "bust"
     },
     "porco-flight-sad": {
       "src": "assets/portrait-approved/porco-flight.png",
@@ -3718,7 +4042,19 @@
           "clipPath": "M 616 812 C 616 805.924868 626.297451 801 639 801 C 651.702549 801 662 805.924868 662 812 C 662 818.075132 651.702549 823 639 823 C 626.297451 823 616 818.075132 616 812 Z",
           "transform": "matrix(0.62 0 0 0.62 -125.1800 -316.4400)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-sad.png",
+      "nativeCanvas": [
+        383,
+        415
+      ],
+      "bustRegion": [
+        394,
+        570,
+        383,
+        415
+      ],
+      "portraitFormat": "bust"
     },
     "porco-flight-surprise": {
       "src": "assets/portrait-approved/porco-flight.png",
@@ -3750,7 +4086,19 @@
           "clipPath": "M 984 777 C 984 767.058875 994.745166 759 1008 759 C 1021.254834 759 1032 767.058875 1032 777 C 1032 786.941125 1021.254834 795 1008 795 C 994.745166 795 984 786.941125 984 777 Z",
           "transform": "matrix(0.62 0 0 0.62 -353.9600 -294.7400)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-surprise.png",
+      "nativeCanvas": [
+        367,
+        417
+      ],
+      "bustRegion": [
+        776,
+        569,
+        367,
+        417
+      ],
+      "portraitFormat": "bust"
     },
     "porco-flight-tired": {
       "src": "assets/portrait-approved/porco-flight.png",
@@ -3782,7 +4130,19 @@
           "clipPath": "M 1358 803 C 1358 795.820298 1370.536027 790 1386 790 C 1401.463973 790 1414 795.820298 1414 803 C 1414 810.179702 1401.463973 816 1386 816 C 1370.536027 816 1358 810.179702 1358 803 Z",
           "transform": "matrix(0.62 0 0 0.62 -588.3200 -310.8600)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-tired.png",
+      "nativeCanvas": [
+        387,
+        415
+      ],
+      "bustRegion": [
+        1141,
+        571,
+        387,
+        415
+      ],
+      "portraitFormat": "bust"
     },
     "porco-coat-neutral": {
       "src": "assets/portrait-approved/porco-coat.png",
@@ -3837,7 +4197,19 @@
           "clipPath": "M 956 313 C 956 307.477152 965.849735 303 978 303 C 990.150265 303 1000 307.477152 1000 313 C 1000 318.522848 990.150265 323 978 323 C 965.849735 323 956 318.522848 956 313 Z",
           "transform": "matrix(0.64 0 0 0.64 -398.9200 38.6800)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-smile.png",
+      "nativeCanvas": [
+        355,
+        408
+      ],
+      "bustRegion": [
+        775,
+        88,
+        355,
+        408
+      ],
+      "portraitFormat": "bust"
     },
     "porco-coat-serious": {
       "src": "assets/portrait-approved/porco-coat.png",
@@ -3869,7 +4241,19 @@
           "clipPath": "M 1332 346 C 1332 340.477152 1340.954305 336 1352 336 C 1363.045695 336 1372 340.477152 1372 346 C 1372 351.522848 1363.045695 356 1352 356 C 1340.954305 356 1332 351.522848 1332 346 Z",
           "transform": "matrix(0.64 0 0 0.64 -638.2800 17.5600)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-serious.png",
+      "nativeCanvas": [
+        382,
+        405
+      ],
+      "bustRegion": [
+        1142,
+        91,
+        382,
+        405
+      ],
+      "portraitFormat": "bust"
     },
     "porco-coat-sad": {
       "src": "assets/portrait-approved/porco-coat.png",
@@ -3901,7 +4285,19 @@
           "clipPath": "M 605 798 C 605 791.924868 614.849735 787 627 787 C 639.150265 787 649 791.924868 649 798 C 649 804.075132 639.150265 809 627 809 C 614.849735 809 605 804.075132 605 798 Z",
           "transform": "matrix(0.64 0 0 0.64 -174.2800 -271.7200)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-sad.png",
+      "nativeCanvas": [
+        363,
+        416
+      ],
+      "bustRegion": [
+        411,
+        540,
+        363,
+        416
+      ],
+      "portraitFormat": "bust"
     },
     "porco-coat-surprise": {
       "src": "assets/portrait-approved/porco-coat.png",
@@ -3933,7 +4329,19 @@
           "clipPath": "M 968 758 C 968 749.715729 977.849735 743 990 743 C 1002.150265 743 1012 749.715729 1012 758 C 1012 766.284271 1002.150265 773 990 773 C 977.849735 773 968 766.284271 968 758 Z",
           "transform": "matrix(0.64 0 0 0.64 -406.6000 -246.1200)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-surprise.png",
+      "nativeCanvas": [
+        360,
+        419
+      ],
+      "bustRegion": [
+        777,
+        536,
+        360,
+        419
+      ],
+      "portraitFormat": "bust"
     },
     "porco-coat-tired": {
       "src": "assets/portrait-approved/porco-coat.png",
@@ -3965,7 +4373,19 @@
           "clipPath": "M 1347 810 C 1347 803.372583 1357.745166 798 1371 798 C 1384.254834 798 1395 803.372583 1395 810 C 1395 816.627417 1384.254834 822 1371 822 C 1357.745166 822 1347 816.627417 1347 810 Z",
           "transform": "matrix(0.64 0 0 0.64 -650.4400 -279.4000)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-tired.png",
+      "nativeCanvas": [
+        384,
+        411
+      ],
+      "bustRegion": [
+        1141,
+        548,
+        384,
+        411
+      ],
+      "portraitFormat": "bust"
     },
     "porco-goggles-up-neutral": {
       "src": "assets/portrait-approved/porco-goggles-up.png",
@@ -4020,7 +4440,19 @@
           "clipPath": "M 962 267 C 962 259.820298 981.251756 254 1005 254 C 1028.748244 254 1048 259.820298 1048 267 C 1048 274.179702 1028.748244 280 1005 280 C 981.251756 280 962 274.179702 962 267 Z",
           "transform": "matrix(0.62 0 0 0.62 -352.1000 21.4600)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-smile.png",
+      "nativeCanvas": [
+        368,
+        413
+      ],
+      "bustRegion": [
+        775,
+        72,
+        368,
+        413
+      ],
+      "portraitFormat": "bust"
     },
     "porco-goggles-up-serious": {
       "src": "assets/portrait-approved/porco-goggles-up.png",
@@ -4061,7 +4493,19 @@
           "clipPath": "M 1360 294 C 1360 287.924868 1370.297451 283 1383 283 C 1395.702549 283 1406 287.924868 1406 294 C 1406 300.075132 1395.702549 305 1383 305 C 1370.297451 305 1360 300.075132 1360 294 Z",
           "transform": "matrix(0.62 0 0 0.62 -586.4600 4.7200)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-serious.png",
+      "nativeCanvas": [
+        388,
+        413
+      ],
+      "bustRegion": [
+        1140,
+        72,
+        388,
+        413
+      ],
+      "portraitFormat": "bust"
     },
     "porco-goggles-up-sad": {
       "src": "assets/portrait-approved/porco-goggles-up.png",
@@ -4102,7 +4546,19 @@
           "clipPath": "M 616 812 C 616 805.924868 626.297451 801 639 801 C 651.702549 801 662 805.924868 662 812 C 662 818.075132 651.702549 823 639 823 C 626.297451 823 616 818.075132 616 812 Z",
           "transform": "matrix(0.62 0 0 0.62 -125.1800 -316.4400)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-sad.png",
+      "nativeCanvas": [
+        384,
+        428
+      ],
+      "bustRegion": [
+        393,
+        558,
+        384,
+        428
+      ],
+      "portraitFormat": "bust"
     },
     "porco-goggles-up-surprise": {
       "src": "assets/portrait-approved/porco-goggles-up.png",
@@ -4143,7 +4599,19 @@
           "clipPath": "M 984 777 C 984 767.058875 994.745166 759 1008 759 C 1021.254834 759 1032 767.058875 1032 777 C 1032 786.941125 1021.254834 795 1008 795 C 994.745166 795 984 786.941125 984 777 Z",
           "transform": "matrix(0.62 0 0 0.62 -353.9600 -294.7400)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-surprise.png",
+      "nativeCanvas": [
+        367,
+        428
+      ],
+      "bustRegion": [
+        776,
+        558,
+        367,
+        428
+      ],
+      "portraitFormat": "bust"
     },
     "porco-goggles-up-tired": {
       "src": "assets/portrait-approved/porco-goggles-up.png",
@@ -4184,7 +4652,19 @@
           "clipPath": "M 1358 803 C 1358 795.820298 1370.536027 790 1386 790 C 1401.463973 790 1414 795.820298 1414 803 C 1414 810.179702 1401.463973 816 1386 816 C 1370.536027 816 1358 810.179702 1358 803 Z",
           "transform": "matrix(0.62 0 0 0.62 -588.3200 -310.8600)"
         }
-      ]
+      ],
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-tired.png",
+      "nativeCanvas": [
+        388,
+        425
+      ],
+      "bustRegion": [
+        1140,
+        561,
+        388,
+        425
+      ],
+      "portraitFormat": "bust"
     },
     "fio-swim-neutral": {
       "src": "assets/portrait-approved/fio-swim.png",
@@ -4660,5 +5140,6 @@
   "referencePolicy": "人物使用认可稿的完整身体，原表情眉眼/嘴通过局部图层组合；草帽菲尔保留此前认可原版，泳装区分入水前干燥与游后湿发。运行时SVG隐藏纸底与编号。背景、CG与剧情正文保持原版。参考PDF不公开。",
   "portraitStyleVersion": "fullbody-parts-v12",
   "portraitEdgesVersion": "paper-edge-v13",
-  "fioPortraitVersion": "native-bust-expressions-v20"
+  "fioPortraitVersion": "native-bust-expressions-v20",
+  "characterPortraitVersion": "original-bust-expressions-v21"
 }

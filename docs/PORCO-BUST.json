@@ -1,0 +1,549 @@
+{
+  "version": "original-bust-expressions-v21",
+  "imageGenerationUsed": false,
+  "neutralChanged": false,
+  "method": "Complete original approved head-and-shoulder expression cells. No face patches, resampling, pose edits, recoloring or added outlines; only exterior transparency and original matte decontamination.",
+  "bustSprites": 20,
+  "records": [
+    {
+      "slot": "porco-work-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-smile.png",
+      "nativeCanvas": [
+        341,
+        392
+      ],
+      "nativeSha256": "1f9d5ebaf46545b00195c5daa1621d36d4adff7da1fed1460c266330add37b0a",
+      "alphaSha256": "2b1fb4410db87bbad12dbded782f118cedf7489a1b2066a03be503d9d57a7ef8",
+      "originalSource": "assets/portrait-approved/porco-work.png",
+      "originalSha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9",
+      "sourceRegion": [
+        809,
+        90,
+        341,
+        392
+      ],
+      "paperRGB": [
+        253.0,
+        241.0,
+        222.0
+      ],
+      "boundaryRGBPixelsChanged": 1628,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-work-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-serious.png",
+      "nativeCanvas": [
+        376,
+        388
+      ],
+      "nativeSha256": "c6c899d91e45fe650565c7a011962a4fe077ce3a31fc5c65f5e60033a86e7a03",
+      "alphaSha256": "1b916db2f5ffae0519c04d27aef76aa746642d76cb868365ad4bde4ff6d09cad",
+      "originalSource": "assets/portrait-approved/porco-work.png",
+      "originalSha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9",
+      "sourceRegion": [
+        1150,
+        95,
+        376,
+        388
+      ],
+      "paperRGB": [
+        253.0,
+        241.0,
+        222.0
+      ],
+      "boundaryRGBPixelsChanged": 1696,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-work-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-sad.png",
+      "nativeCanvas": [
+        341,
+        390
+      ],
+      "nativeSha256": "e724b50c522177817f49ae8241b34718a4bb5257f2608a578b88640712a032e5",
+      "alphaSha256": "f78f30d8e8c4b5e301c148f12b1cb8155c9babf6ed99ec132d1a0c505b198132",
+      "originalSource": "assets/portrait-approved/porco-work.png",
+      "originalSha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9",
+      "sourceRegion": [
+        459,
+        575,
+        341,
+        390
+      ],
+      "paperRGB": [
+        252.0,
+        242.0,
+        224.0
+      ],
+      "boundaryRGBPixelsChanged": 1650,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-work-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-surprise.png",
+      "nativeCanvas": [
+        348,
+        401
+      ],
+      "nativeSha256": "844051bbad9dc22bda6af81aa12e7256f91247be2df847de2bad8e2e80ac5fed",
+      "alphaSha256": "71cf3924f9d296225c0fffa47eea20b965ece57c0a5396ba0ad849a9bf012411",
+      "originalSource": "assets/portrait-approved/porco-work.png",
+      "originalSha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9",
+      "sourceRegion": [
+        800,
+        564,
+        348,
+        401
+      ],
+      "paperRGB": [
+        252.0,
+        242.0,
+        224.0
+      ],
+      "boundaryRGBPixelsChanged": 1632,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-work-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-work-tired.png",
+      "nativeCanvas": [
+        379,
+        388
+      ],
+      "nativeSha256": "bbe9f29a2e7374c1adc931c0bc5d6e972db34f13fb570a5d7b4deef4a6d726a3",
+      "alphaSha256": "070ec6945e1c600c402d6c6b699cf7fc515c89d06f605a2f5f71dc869c6a237d",
+      "originalSource": "assets/portrait-approved/porco-work.png",
+      "originalSha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9",
+      "sourceRegion": [
+        1147,
+        577,
+        379,
+        388
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        224.0
+      ],
+      "boundaryRGBPixelsChanged": 1747,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-flight-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-smile.png",
+      "nativeCanvas": [
+        365,
+        401
+      ],
+      "nativeSha256": "67d2e4016281dd49492a0dc8669e903d1f9924dc2210c0d23e45517fd94ef077",
+      "alphaSha256": "41603ff65b4e19423538b42a9cbf97f67532a9a0222c3d96c6587fa8f5d879a7",
+      "originalSource": "assets/portrait-approved/porco-flight.png",
+      "originalSha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b",
+      "sourceRegion": [
+        776,
+        82,
+        365,
+        401
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1506,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-flight-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-serious.png",
+      "nativeCanvas": [
+        385,
+        400
+      ],
+      "nativeSha256": "c4845806c577dc7dbf4cb93eff96ebaf5b8fd839d6edee975388746b850e83ee",
+      "alphaSha256": "35593b31bd4fc457d3b2977ca525b3161917eef4be6faf0ae2bf7247688e4b67",
+      "originalSource": "assets/portrait-approved/porco-flight.png",
+      "originalSha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b",
+      "sourceRegion": [
+        1142,
+        83,
+        385,
+        400
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1474,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-flight-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-sad.png",
+      "nativeCanvas": [
+        383,
+        415
+      ],
+      "nativeSha256": "e4d7d8db77e5f30a598d8d2aa7848d778c92f72165f1476d11b0e5c281ae7b1f",
+      "alphaSha256": "9ed3dcddbbd09094f3f5e821f1e46a6efbc289bdbb3cbf9cf458f0b257bed2e9",
+      "originalSource": "assets/portrait-approved/porco-flight.png",
+      "originalSha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b",
+      "sourceRegion": [
+        394,
+        570,
+        383,
+        415
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1580,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-flight-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-surprise.png",
+      "nativeCanvas": [
+        367,
+        417
+      ],
+      "nativeSha256": "148daf19f31b4ace8af26e038c45485f8f012f4cf59caf622a8df985127bfefc",
+      "alphaSha256": "0b5c71cfddaebbcde04928804e1c8cf4c7ec663d5fd620243155d73e329935e5",
+      "originalSource": "assets/portrait-approved/porco-flight.png",
+      "originalSha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b",
+      "sourceRegion": [
+        776,
+        569,
+        367,
+        417
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1554,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-flight-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-flight-tired.png",
+      "nativeCanvas": [
+        387,
+        415
+      ],
+      "nativeSha256": "a5cc92468d88f6c8a2c01228639dd37736d8eefaa8b536b90eb821559270a77a",
+      "alphaSha256": "9a8739fc6f681ea16a3974b8314178b7974b536996ba871adae96e153f0ad081",
+      "originalSource": "assets/portrait-approved/porco-flight.png",
+      "originalSha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b",
+      "sourceRegion": [
+        1141,
+        571,
+        387,
+        415
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1590,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-coat-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-smile.png",
+      "nativeCanvas": [
+        355,
+        408
+      ],
+      "nativeSha256": "97546c4db2d2d28967ee797c1ae46455ff750bf618652982c5b45480d55b88b4",
+      "alphaSha256": "f14d4a16b41c860bc6af938a41c930a6e6c85d1a6c69bd37edb72d35c70d5890",
+      "originalSource": "assets/portrait-approved/porco-coat.png",
+      "originalSha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e",
+      "sourceRegion": [
+        775,
+        88,
+        355,
+        408
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        227.0
+      ],
+      "boundaryRGBPixelsChanged": 1684,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-coat-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-serious.png",
+      "nativeCanvas": [
+        382,
+        405
+      ],
+      "nativeSha256": "bb695a5fcd99da5d3fa362c0626834b3f6fe56f3f6cb61192091642da721ab4b",
+      "alphaSha256": "ddc5cb0d8faa677a9e261c067b831d50dccde9a207760f269f2913e6291ef3ff",
+      "originalSource": "assets/portrait-approved/porco-coat.png",
+      "originalSha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e",
+      "sourceRegion": [
+        1142,
+        91,
+        382,
+        405
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        226.0
+      ],
+      "boundaryRGBPixelsChanged": 1715,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-coat-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-sad.png",
+      "nativeCanvas": [
+        363,
+        416
+      ],
+      "nativeSha256": "ce080e6666ef21fd0a7ebe0a7eeea3345ea1230e1258e85e753d71259ad2d32b",
+      "alphaSha256": "2ecae966b1c523122d50d2d167b39cc72bc162198de1a80637e130950532238c",
+      "originalSource": "assets/portrait-approved/porco-coat.png",
+      "originalSha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e",
+      "sourceRegion": [
+        411,
+        540,
+        363,
+        416
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        227.0
+      ],
+      "boundaryRGBPixelsChanged": 1740,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-coat-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-surprise.png",
+      "nativeCanvas": [
+        360,
+        419
+      ],
+      "nativeSha256": "8b2f34e67cbd1feecc6e519a8f6019e4d0fc83807c2ad8782eb0d9c477842bd1",
+      "alphaSha256": "f903f5df95b50e799a895a719c6dae55563c8807a8cd9d4d84960235d5efda0b",
+      "originalSource": "assets/portrait-approved/porco-coat.png",
+      "originalSha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e",
+      "sourceRegion": [
+        777,
+        536,
+        360,
+        419
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        227.0
+      ],
+      "boundaryRGBPixelsChanged": 1686,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-coat-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-coat-tired.png",
+      "nativeCanvas": [
+        384,
+        411
+      ],
+      "nativeSha256": "7d9cb927abed7f3a8b3e46591409226f3280727e8a9a586b30e36184a2d11373",
+      "alphaSha256": "3c5822333a449d035cbe4002ba8c05f6fa2ccbe2047e9e525d5b9ba0e45f40da",
+      "originalSource": "assets/portrait-approved/porco-coat.png",
+      "originalSha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e",
+      "sourceRegion": [
+        1141,
+        548,
+        384,
+        411
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        227.0
+      ],
+      "boundaryRGBPixelsChanged": 1721,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-goggles-up-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-smile.png",
+      "nativeCanvas": [
+        368,
+        413
+      ],
+      "nativeSha256": "8414ab5aeffc43bd49822b8e11b51237fe41dc8bd26b27e154071bc6da47bd5f",
+      "alphaSha256": "19cc692db71b133b235123e01aa3c7799df30e2e8e1e47895c51ac8e25feb11a",
+      "originalSource": "assets/portrait-approved/porco-goggles-up.png",
+      "originalSha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d",
+      "sourceRegion": [
+        775,
+        72,
+        368,
+        413
+      ],
+      "paperRGB": [
+        252.0,
+        241.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1567,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-goggles-up-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-serious.png",
+      "nativeCanvas": [
+        388,
+        413
+      ],
+      "nativeSha256": "ee249fdf1bef8def1a8a16ca8a75003c530726206ced30957dc8be34daa40043",
+      "alphaSha256": "0622baaba806d3e341c389172172d6802259e93a59e89de4bae46c4785704527",
+      "originalSource": "assets/portrait-approved/porco-goggles-up.png",
+      "originalSha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d",
+      "sourceRegion": [
+        1140,
+        72,
+        388,
+        413
+      ],
+      "paperRGB": [
+        252.0,
+        241.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1503,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-goggles-up-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-sad.png",
+      "nativeCanvas": [
+        384,
+        428
+      ],
+      "nativeSha256": "5190108b96bec01a1f36d1a8ed327bde0755c379930aa4e7dc09381c31cbc36d",
+      "alphaSha256": "862801cfb909b6c66155f10adcd3e0c5076f977dbe20b93bd0019710ca07a274",
+      "originalSource": "assets/portrait-approved/porco-goggles-up.png",
+      "originalSha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d",
+      "sourceRegion": [
+        393,
+        558,
+        384,
+        428
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1619,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-goggles-up-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-surprise.png",
+      "nativeCanvas": [
+        367,
+        428
+      ],
+      "nativeSha256": "786f6e5e9e8bf29cbd324f2a333627e7bcdde715b3054c457636bbc9072745a2",
+      "alphaSha256": "e53ea1f39176fba89d4aabe4360939f9db73a6daf9281ef442d2153a65484b7b",
+      "originalSource": "assets/portrait-approved/porco-goggles-up.png",
+      "originalSha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d",
+      "sourceRegion": [
+        776,
+        558,
+        367,
+        428
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1559,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    },
+    {
+      "slot": "porco-goggles-up-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-porco-bust/porco-goggles-up-tired.png",
+      "nativeCanvas": [
+        388,
+        425
+      ],
+      "nativeSha256": "8516e34caaae01987d944c55357f5b600c5c792266610b5dee45286c56646019",
+      "alphaSha256": "87c45d7331bb3e08b22c00e5b77b339fd88c44312d9b77175cfb326ad840a85b",
+      "originalSource": "assets/portrait-approved/porco-goggles-up.png",
+      "originalSha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d",
+      "sourceRegion": [
+        1140,
+        561,
+        388,
+        425
+      ],
+      "paperRGB": [
+        253.0,
+        242.0,
+        225.0
+      ],
+      "boundaryRGBPixelsChanged": 1643,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0
+    }
+  ]
+}

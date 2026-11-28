@@ -1,0 +1,182 @@
+{
+  "version": "original-bust-expressions-v21",
+  "character": "gina",
+  "status": "passed",
+  "sprites": 15,
+  "visualQA": {
+    "navyIvoryReviewed": true,
+    "sourceLabelsAbsent": true,
+    "morningCreamStripesRetained": true,
+    "datePaleHatCoatRetained": true,
+    "earringsNecklaceRetained": true,
+    "sourceFacePoseUnchanged": true,
+    "dateTopContourFollowsOriginalInk": true
+  },
+  "records": [
+    {
+      "slot": "gina-morning-smile",
+      "sha256": "9fe422517f25016043468d77d8f4bb382241dc752c9991116813e58c89a17438",
+      "faceSamplePixels": 25757,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 8915,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 16,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-morning-serious",
+      "sha256": "a83b1eb688cf3f705f9dee6abb14e77f2dbb1be37707fb7b3648fb7414653326",
+      "faceSamplePixels": 25916,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 9005,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 19,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-morning-sad",
+      "sha256": "de2c7d06f3c8c45619ea98b1b8bb1dba40b5429472d2a1c9da4c10e6ce5554a6",
+      "faceSamplePixels": 26040,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 8804,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 23,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-morning-surprise",
+      "sha256": "a24382ec74033fcf0d9da2b22ec7e675a804b7588027203f79fc677443c3982b",
+      "faceSamplePixels": 26830,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 8939,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 16,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-morning-tired",
+      "sha256": "133fbf23b97d60777917ba9bc83dbb89eb8d372ddb56df0a4bfdd9d727ffacfd",
+      "faceSamplePixels": 25885,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 9121,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 19,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-date-smile",
+      "sha256": "e3f2863a500b613b94cf38dd452e1a1b2406edc0d02827e7a23e1ca90c65fc41",
+      "faceSamplePixels": 31089,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 39655,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 824,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-date-serious",
+      "sha256": "f5bc74352cb36223d7bd6beebf815e5bc13f3239c02b7d7b231f6f8c39ef7993",
+      "faceSamplePixels": 31025,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 42567,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 786,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-date-sad",
+      "sha256": "e1476e5c9daa0624c4fb366c42cac11d3f927c1d0face4459ef8efcd7481345a",
+      "faceSamplePixels": 28297,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 42226,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 788,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-date-surprise",
+      "sha256": "08f1641622c42cf786414887a0f48dda4f0151d3590222d6e28ebffb283df97f",
+      "faceSamplePixels": 31901,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 40416,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 807,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-date-tired",
+      "sha256": "10032302294a8ab72d920eb12db19326e7fb3686873ded6cc082d47a38522534",
+      "faceSamplePixels": 30063,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 44976,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 800,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-stage-smile",
+      "sha256": "0f17ba9f27e42db922900155c4e740242588ba39a640a4b136e8cdee69823398",
+      "faceSamplePixels": 28463,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 261,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 1089,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-stage-serious",
+      "sha256": "f615ac239ca0c621d580f2e93b3b690f499fcd6a1710ef77b44cd59a543c8cac",
+      "faceSamplePixels": 28654,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 214,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 1083,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-stage-sad",
+      "sha256": "24de25021c2d0ed036e003c4b1a544e91f1ce989a43b2dbad3654c62a2ec9b0a",
+      "faceSamplePixels": 28934,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 187,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 1211,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-stage-surprise",
+      "sha256": "8c97bd47bc149b747cbaaf72434c42eebe69c246f22ae8a4deb6037dd69f2bb6",
+      "faceSamplePixels": 31308,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 273,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 1238,
+      "goldAlphaLostPixels": 0
+    },
+    {
+      "slot": "gina-stage-tired",
+      "sha256": "7a6b14d3d9e71f0721eb19b3c616c525ecc717d67a444a05b9f851d16612d56c",
+      "faceSamplePixels": 28292,
+      "faceRgbChanged": 0,
+      "faceAlphaLostPixels": 0,
+      "paleInteriorSamplePixels": 152,
+      "paleInteriorAlphaLostPixels": 0,
+      "goldCorePixels": 1058,
+      "goldAlphaLostPixels": 0
+    }
+  ]
+}

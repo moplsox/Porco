@@ -52,7 +52,7 @@ for outfit in OUTFITS:
     for px,py in [(182,186),(247,164),(275,122),(319,119)]:assert alpha[py-y,px-x]>=250
  assert len(hashes)==6
 assert len(paths)==36 and formats=={'fullbody':6,'bust':30}
-bindings={k:v for k,v in art['portraits'].items() if v.get('nativeSrc')}
+bindings={k:v for k,v in art['portraits'].items() if k.startswith('fio-') and v.get('nativeSrc')}
 assert len(bindings)==42 and all(k.startswith('fio-') for k in bindings)
 assert sum(v['portraitFormat']=='bust' for v in bindings.values())==35
 assert sum(v['portraitFormat']=='fullbody' for v in bindings.values())==7

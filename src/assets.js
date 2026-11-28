@@ -18,7 +18,7 @@ export function artMarkup(entry,className='',alt='',fit='slice'){
  if(!entry)return '';
  const value=typeof entry==='string'?{src:entry}:entry;
  const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- // Fio's reviewed expressions are finished transparent sprites. Draw each once;
+ // Reviewed expression busts and Fio's neutral figures are finished transparent sprites. Draw each once;
  // the retained sheet/layer metadata records provenance, not runtime face parts.
  if(value.nativeSrc){
   const [nw,nh]=value.nativeCanvas,format=value.portraitFormat==='bust'?'bust':'fullbody',alignment=format==='bust'?'xMidYMax':'xMidYMid';
