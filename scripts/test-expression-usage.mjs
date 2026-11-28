@@ -67,7 +67,7 @@ for(const who of Object.values(people))for(const expression of expressions){
   const {markup,calls,state}=render(sc,cached,sc.day||1);
   assert.equal(calls.length,2,'Expected background and speaking character');
   assert.equal(calls[1],expected,'Actual renderScene chose a different expression');
-  assert.match(markup,/portrait-fullbody/,'Dialogue is no longer full body');
+  assert.ok(markup.includes(expected.portraitFormat==='bust'?'portrait-bust':'portrait-fullbody'),'Dialogue uses the wrong portrait framing');
   if(expected.nativeSrc){assert.ok(markup.includes('portrait-native-alpha'),'Repaired Fio sprite was not rendered');assert.ok(markup.includes(expected.nativeSrc),'Wrong repaired expression image');}
   else for(const layer of expected.layers)assert.ok(markup.includes(layer.clipPath),'Donor expression layer was not rendered');
   assert.equal(JSON.stringify({sc,cached}),before,'Presentation refresh changed saved text/metadata or authored scene');
@@ -79,7 +79,7 @@ console.log(`PASS 实际renderScene通过${cacheCases}个缺省/旧平静表情�
 const {sc,line}=examples.fio.smile;
 const cg=render({...sc,cg:'fio-swimming'},line,42);
 assert.equal(cg.calls.length,1,'CG should hide character sprites');
-assert.ok(!cg.markup.includes('portrait-fullbody'),'CG has unexpected sprite over fixed illustration');
+assert.ok(!/portrait-(?:fullbody|bust)/.test(cg.markup),'CG has unexpected sprite over fixed illustration');
 delete globalThis.window;
 console.log('PASS CG按原规则显示固定插画，不叠加对话人物');
 console.log(JSON.stringify({kind:'authored-expression-runtime-vm',browserVerification:false,counts,nonCgVisibleAuthoredLines:visibleCounts,oldCachedSaveCases:cacheCases},null,2));

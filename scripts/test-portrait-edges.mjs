@@ -23,10 +23,10 @@ function contains(path,x,y){
 assert.equal(art.portraitEdgesVersion,'paper-edge-v13');assert.equal(proof.items.length,13);
 const currentCopy=clone(art),beforeCopy=clone(before);delete currentCopy.portraitEdgesVersion;delete currentCopy.fioPortraitVersion;
 for(const [slot,entry] of Object.entries(currentCopy.portraits)){
- delete entry.layers[0].clipPath;delete entry.nativeSrc;delete entry.nativeCanvas;const previous=beforeCopy.portraits[slot];delete previous.layers[0].clipPath;
+ delete entry.layers[0].clipPath;delete entry.nativeSrc;delete entry.nativeCanvas;delete entry.portraitFormat;delete entry.bustRegion;const previous=beforeCopy.portraits[slot];delete previous.layers[0].clipPath;
 }
 assert.deepEqual(currentCopy,beforeCopy,'Edge cleanup changed expression pixels, matrices, poses, outfits, framing, BG or CG');
-console.log('PASS 90个立绘槽仅调整身体遮罩，其他表情层、姿势、站位和资源不变');
+console.log('PASS 90个立绘槽保留原图身体与表情来源，菲尔新展示格式独立记录');
 let holes=0,protectedPoints=0;
 for(const record of proof.items){
  const bytes=fs.readFileSync(record.src),oldBytes=execFileSync('git',['show',proof.baseline+':'+record.src],{maxBuffer:8*1024*1024});

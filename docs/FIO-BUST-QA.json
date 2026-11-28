@@ -1,0 +1,427 @@
+{
+  "status": "passed",
+  "version": "native-bust-expressions-v20",
+  "sprites": 30,
+  "faceRgbChangedTotal": 0,
+  "faceAlphaRemovedTotal": 0,
+  "garmentInteriorAlphaRemovedTotal": 0,
+  "visualQA": {
+    "navyAndIvoryReviewed": true,
+    "outerShoulderPaperWedgesGone": true,
+    "whiteStrapsIntact": true,
+    "wetDropsRetained": true,
+    "sourceLabelsAbsent": true
+  },
+  "records": [
+    {
+      "slot": "fio-work-smile",
+      "sha256": "2b2b9673b3aa373955c1bca53d592d1d639d506593e77b6029dcd562b0106bb1",
+      "faceSamplePixels": 15433,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        776,
+        58,
+        357,
+        394
+      ]
+    },
+    {
+      "slot": "fio-work-serious",
+      "sha256": "4105c9eda50892a802b216837e07c126876bcb2bc878c6f111b8ca73129503ae",
+      "faceSamplePixels": 14895,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1146,
+        57,
+        357,
+        394
+      ]
+    },
+    {
+      "slot": "fio-work-sad",
+      "sha256": "5e7c5ac23cce5d7bc9d8df10cda973c0a38298afa22bfbad76f2d2757c53c6de",
+      "faceSamplePixels": 12750,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        416,
+        515,
+        347,
+        414
+      ]
+    },
+    {
+      "slot": "fio-work-surprise",
+      "sha256": "5e70d51fbc8ab29ef381fee2ab2cd09e0941e73a2d65943689a0dccb69f14bc5",
+      "faceSamplePixels": 16529,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        773,
+        519,
+        360,
+        413
+      ]
+    },
+    {
+      "slot": "fio-work-tired",
+      "sha256": "a5844ae5ab6597f25ba76cbcb8c02cf69e9c912aa8bbd6cb33508b40db0b250d",
+      "faceSamplePixels": 15676,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1147,
+        524,
+        351,
+        410
+      ]
+    },
+    {
+      "slot": "fio-date-smile",
+      "sha256": "9c45bfdd90892202b7400bde863e235fbbb52e5e2d33c2a59e15fbed363da003",
+      "faceSamplePixels": 12686,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        791,
+        89,
+        334,
+        363
+      ]
+    },
+    {
+      "slot": "fio-date-serious",
+      "sha256": "add29074d06544f2351c557a3e4aae6ed6fa72fdc4d6dfa41fcbca75963141a8",
+      "faceSamplePixels": 12093,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1144,
+        90,
+        339,
+        362
+      ]
+    },
+    {
+      "slot": "fio-date-sad",
+      "sha256": "c9c1cb0450ad25754047b2559e745edaff5caafef9965b88d1e8e019c81a0a85",
+      "faceSamplePixels": 11328,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        436,
+        564,
+        336,
+        368
+      ]
+    },
+    {
+      "slot": "fio-date-surprise",
+      "sha256": "e4f6b49a82591f32ff00fa09c0a1ae59380a4f880d98eddc497625e0cf571bf8",
+      "faceSamplePixels": 13445,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        789,
+        567,
+        344,
+        364
+      ]
+    },
+    {
+      "slot": "fio-date-tired",
+      "sha256": "41d3496b0de48dfaedef34374ed7e91df1e0b864a6c73a02ca392e9f1e1ad634",
+      "faceSamplePixels": 11183,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1146,
+        564,
+        341,
+        370
+      ]
+    },
+    {
+      "slot": "fio-flight-smile",
+      "sha256": "82dd90f83024b3895d7ef0bc25f7aba19958ba9af643ebff79be63485940e166",
+      "faceSamplePixels": 22562,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        792,
+        70,
+        325,
+        412
+      ]
+    },
+    {
+      "slot": "fio-flight-serious",
+      "sha256": "00c115ef2443a04788614efbabf6c318e4c09e5cbc0917935ba0eddad972c19f",
+      "faceSamplePixels": 22312,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1162,
+        70,
+        325,
+        413
+      ]
+    },
+    {
+      "slot": "fio-flight-sad",
+      "sha256": "b9c16b13c74c2db14daf3ceb5238635d0da0a5154703b23e9504beaa0eeace4c",
+      "faceSamplePixels": 20769,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        422,
+        562,
+        328,
+        406
+      ]
+    },
+    {
+      "slot": "fio-flight-surprise",
+      "sha256": "4b86cb50aceb2ff5992d49053860f314fe22c8aedbeb1b7dd8fa2a9ae58eaba0",
+      "faceSamplePixels": 23484,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        790,
+        564,
+        329,
+        408
+      ]
+    },
+    {
+      "slot": "fio-flight-tired",
+      "sha256": "5a6c4295e604d2e68062e42a2d6b641289f9b66fda88c707576b7d9fdd90394b",
+      "faceSamplePixels": 21151,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1159,
+        566,
+        332,
+        409
+      ]
+    },
+    {
+      "slot": "fio-strawhat-smile",
+      "sha256": "6c964979fdf4ae511022f377b6d105d460784d04198d4cbc2f9e51f07cdac815",
+      "faceSamplePixels": 23211,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        795,
+        65,
+        361,
+        400
+      ]
+    },
+    {
+      "slot": "fio-strawhat-serious",
+      "sha256": "59f48572ed7343f062e2a15f64c452be08516e89d721ce490f6d1cf7d0abed55",
+      "faceSamplePixels": 22302,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1162,
+        64,
+        364,
+        400
+      ]
+    },
+    {
+      "slot": "fio-strawhat-sad",
+      "sha256": "c8f810ef25146480fedf68572a45c5109f6045cc1950a055d5551664899fc0ad",
+      "faceSamplePixels": 23203,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        423,
+        527,
+        363,
+        398
+      ]
+    },
+    {
+      "slot": "fio-strawhat-surprise",
+      "sha256": "ea3725ec40e29feb432cbf9c7b0eb17958d066ea4ad7cbf607d4f07ab8f33a4c",
+      "faceSamplePixels": 24198,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        792,
+        526,
+        366,
+        400
+      ]
+    },
+    {
+      "slot": "fio-strawhat-tired",
+      "sha256": "7880d97f1f3d7e7212411191e0376c915dbac6d2cafd9eed6f557fbfa0bb3903",
+      "faceSamplePixels": 22574,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1163,
+        527,
+        364,
+        399
+      ]
+    },
+    {
+      "slot": "fio-swim-dry-smile",
+      "sha256": "9314375ae9112206dc82e618cc02e4a4d062305be1c27dae43dca248f6872ad3",
+      "faceSamplePixels": 15845,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        819,
+        67,
+        328,
+        409
+      ],
+      "garmentInteriorSamples": 634,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-dry-serious",
+      "sha256": "ba7fbaf0bbbcff93dc23e5906d579a40a4f77bd8f3a4aa7ee1c8f82aadb3ab30",
+      "faceSamplePixels": 14977,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1171,
+        66,
+        328,
+        410
+      ],
+      "garmentInteriorSamples": 433,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-dry-sad",
+      "sha256": "d380ed5604e266dd2fce5b1f37bafa913736b323e702266a6415c1213cd23250",
+      "faceSamplePixels": 13385,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        462,
+        562,
+        326,
+        420
+      ],
+      "garmentInteriorSamples": 545,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-dry-surprise",
+      "sha256": "68f5cbfdec9f6ebebbbf68c4b95451a4780d5f3a56f26623e7fa7b58937601c5",
+      "faceSamplePixels": 17036,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        814,
+        565,
+        336,
+        417
+      ],
+      "garmentInteriorSamples": 319,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-dry-tired",
+      "sha256": "ff2081c87430f79fcef69014f393c4fbf015bfc4f4b9fbf083ac485588e2a3c9",
+      "faceSamplePixels": 14385,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1171,
+        565,
+        336,
+        415
+      ],
+      "garmentInteriorSamples": 166,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-wet-smile",
+      "sha256": "b175e12079d99c45a6a6fd4bd15efcb6f1f728db39d666361d3905be478a2b98",
+      "faceSamplePixels": 16805,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        853,
+        71,
+        293,
+        405
+      ],
+      "garmentInteriorSamples": 651,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-wet-serious",
+      "sha256": "20ab16af4f02f844e86f1d5b6bded011e606eb9750eca2a2777aed870693e88a",
+      "faceSamplePixels": 16062,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1203,
+        70,
+        295,
+        406
+      ],
+      "garmentInteriorSamples": 661,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-wet-sad",
+      "sha256": "08d9eae74724cce506534b1eeb22df7b196ab61e456bdeddb9779f26217b9678",
+      "faceSamplePixels": 14902,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        483,
+        574,
+        298,
+        407
+      ],
+      "garmentInteriorSamples": 588,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-wet-surprise",
+      "sha256": "2ca36e081ab261461edfd509f0282387f49052f00d3191371a3377e234ca5bbd",
+      "faceSamplePixels": 17666,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        846,
+        573,
+        305,
+        409
+      ],
+      "garmentInteriorSamples": 508,
+      "garmentInteriorAlphaRemoved": 0
+    },
+    {
+      "slot": "fio-swim-wet-tired",
+      "sha256": "7d84fe1167e9a9d719b3f1bcb8f8b8e16483b68b3529774376f47f08ba46c745",
+      "faceSamplePixels": 15494,
+      "faceRgbChanged": 0,
+      "faceAlphaBelow255": 0,
+      "sourceRegion": [
+        1195,
+        576,
+        314,
+        405
+      ],
+      "garmentInteriorSamples": 268,
+      "garmentInteriorAlphaRemoved": 0
+    }
+  ]
+}

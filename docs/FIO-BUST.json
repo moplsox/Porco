@@ -1,0 +1,879 @@
+{
+  "version": "native-bust-expressions-v20",
+  "imageGenerationUsed": false,
+  "method": "Original complete head-and-shoulders from each approved expression cell. No face patches, resampling, pose edits, recoloring or added outlines. Only exterior transparency and edge matte cleanup.",
+  "neutralChanged": false,
+  "bustSprites": 30,
+  "records": [
+    {
+      "slot": "fio-work-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-smile.png",
+      "nativeCanvas": [
+        357,
+        394
+      ],
+      "nativeSha256": "2b2b9673b3aa373955c1bca53d592d1d639d506593e77b6029dcd562b0106bb1",
+      "alphaSha256": "d1b5770f2acce9dbda72818a19cb180135fe290f88271828eb9bb64bbc0515b4",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        776,
+        58,
+        357,
+        394
+      ],
+      "paperRGB": [
+        253.0,
+        244.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 227,
+      "boundaryRGBPixelsChanged": 1616,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-work-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-serious.png",
+      "nativeCanvas": [
+        357,
+        394
+      ],
+      "nativeSha256": "4105c9eda50892a802b216837e07c126876bcb2bc878c6f111b8ca73129503ae",
+      "alphaSha256": "ee8ff819ac3318092d8e8f57895b91b83696a9bae1b462dec34af0e6ed0a4cd4",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        1146,
+        57,
+        357,
+        394
+      ],
+      "paperRGB": [
+        253.0,
+        244.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 176,
+      "boundaryRGBPixelsChanged": 1572,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-work-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-sad.png",
+      "nativeCanvas": [
+        347,
+        414
+      ],
+      "nativeSha256": "5e7c5ac23cce5d7bc9d8df10cda973c0a38298afa22bfbad76f2d2757c53c6de",
+      "alphaSha256": "370c02b9a14f0b46ed48ad2072fa04926e122decef63db51572fd0b484295f16",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        416,
+        515,
+        347,
+        414
+      ],
+      "paperRGB": [
+        253.0,
+        244.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 244,
+      "boundaryRGBPixelsChanged": 1626,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-work-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-surprise.png",
+      "nativeCanvas": [
+        360,
+        413
+      ],
+      "nativeSha256": "5e70d51fbc8ab29ef381fee2ab2cd09e0941e73a2d65943689a0dccb69f14bc5",
+      "alphaSha256": "2d3c070175b22439a5fb90e336cb7fdccadf0042931b3f7b0928a8cd07759249",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        773,
+        519,
+        360,
+        413
+      ],
+      "paperRGB": [
+        253.0,
+        244.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 192,
+      "boundaryRGBPixelsChanged": 1649,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-work-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-tired.png",
+      "nativeCanvas": [
+        351,
+        410
+      ],
+      "nativeSha256": "a5844ae5ab6597f25ba76cbcb8c02cf69e9c912aa8bbd6cb33508b40db0b250d",
+      "alphaSha256": "9a4d07f96c7e0f90dccd2a8b5943080382942c0336cfe085fc22620f32d4ea9d",
+      "originalSource": "assets/portrait-approved/fio-work.png",
+      "originalSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "sourceRegion": [
+        1147,
+        524,
+        351,
+        410
+      ],
+      "paperRGB": [
+        253.0,
+        244.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 207,
+      "boundaryRGBPixelsChanged": 1640,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-date-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-smile.png",
+      "nativeCanvas": [
+        334,
+        363
+      ],
+      "nativeSha256": "9c45bfdd90892202b7400bde863e235fbbb52e5e2d33c2a59e15fbed363da003",
+      "alphaSha256": "06d9554d8aaf68cc84349cc067bfb1456e0360c4c3ed2d93fb673726f04d9be7",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        791,
+        89,
+        334,
+        363
+      ],
+      "paperRGB": [
+        253.0,
+        245.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 171,
+      "boundaryRGBPixelsChanged": 1623,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-date-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-serious.png",
+      "nativeCanvas": [
+        339,
+        362
+      ],
+      "nativeSha256": "add29074d06544f2351c557a3e4aae6ed6fa72fdc4d6dfa41fcbca75963141a8",
+      "alphaSha256": "493a3f58454bcf358f0fd3f8d593916e806e77d870132f3f1d8c714f10843684",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        1144,
+        90,
+        339,
+        362
+      ],
+      "paperRGB": [
+        253.0,
+        245.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 231,
+      "boundaryRGBPixelsChanged": 1588,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-date-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-sad.png",
+      "nativeCanvas": [
+        336,
+        368
+      ],
+      "nativeSha256": "c9c1cb0450ad25754047b2559e745edaff5caafef9965b88d1e8e019c81a0a85",
+      "alphaSha256": "b1975f646fd82d95fa4f7d5f5c59d7f160106d28763a6b878661458b13cfcd31",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        436,
+        564,
+        336,
+        368
+      ],
+      "paperRGB": [
+        253.0,
+        245.0,
+        232.0
+      ],
+      "hairPaperPixelsCleared": 162,
+      "boundaryRGBPixelsChanged": 1610,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-date-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-surprise.png",
+      "nativeCanvas": [
+        344,
+        364
+      ],
+      "nativeSha256": "e4f6b49a82591f32ff00fa09c0a1ae59380a4f880d98eddc497625e0cf571bf8",
+      "alphaSha256": "e7469635ad90117f875aba2cd01e6cd461152ae5ad76ce2cbf9e9ec9637c5196",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        789,
+        567,
+        344,
+        364
+      ],
+      "paperRGB": [
+        253.0,
+        245.0,
+        232.0
+      ],
+      "hairPaperPixelsCleared": 173,
+      "boundaryRGBPixelsChanged": 1577,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-date-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-tired.png",
+      "nativeCanvas": [
+        341,
+        370
+      ],
+      "nativeSha256": "41d3496b0de48dfaedef34374ed7e91df1e0b864a6c73a02ca392e9f1e1ad634",
+      "alphaSha256": "0224f4c66dc41ecffa0bbc8fe345165263a390cb5496a5857fc643d61a37d9be",
+      "originalSource": "assets/portrait-approved/fio-date.png",
+      "originalSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "sourceRegion": [
+        1146,
+        564,
+        341,
+        370
+      ],
+      "paperRGB": [
+        253.0,
+        245.0,
+        232.0
+      ],
+      "hairPaperPixelsCleared": 147,
+      "boundaryRGBPixelsChanged": 1571,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-flight-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-smile.png",
+      "nativeCanvas": [
+        325,
+        412
+      ],
+      "nativeSha256": "82dd90f83024b3895d7ef0bc25f7aba19958ba9af643ebff79be63485940e166",
+      "alphaSha256": "d4199cafb7e24fe6fa6f7abb8187974f20d3d4bf745640f2e1abc23cf99ef4d4",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        792,
+        70,
+        325,
+        412
+      ],
+      "paperRGB": [
+        254.0,
+        244.0,
+        229.0
+      ],
+      "hairPaperPixelsCleared": 65,
+      "boundaryRGBPixelsChanged": 1689,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-flight-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-serious.png",
+      "nativeCanvas": [
+        325,
+        413
+      ],
+      "nativeSha256": "00c115ef2443a04788614efbabf6c318e4c09e5cbc0917935ba0eddad972c19f",
+      "alphaSha256": "254a0e38ba63ed285761cc5d7b9389a7506ec7f64a2e125d6ffafd6e13c6885d",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        1162,
+        70,
+        325,
+        413
+      ],
+      "paperRGB": [
+        254.0,
+        244.0,
+        229.0
+      ],
+      "hairPaperPixelsCleared": 63,
+      "boundaryRGBPixelsChanged": 1662,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-flight-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-sad.png",
+      "nativeCanvas": [
+        328,
+        406
+      ],
+      "nativeSha256": "b9c16b13c74c2db14daf3ceb5238635d0da0a5154703b23e9504beaa0eeace4c",
+      "alphaSha256": "bff840d1381e9cfaea3ea39784437c8523ea736323f37b6432c66e6db775e1f1",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        422,
+        562,
+        328,
+        406
+      ],
+      "paperRGB": [
+        254.0,
+        245.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 101,
+      "boundaryRGBPixelsChanged": 1546,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-flight-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-surprise.png",
+      "nativeCanvas": [
+        329,
+        408
+      ],
+      "nativeSha256": "4b86cb50aceb2ff5992d49053860f314fe22c8aedbeb1b7dd8fa2a9ae58eaba0",
+      "alphaSha256": "1acf4b2b0c0fabed5460e87b464068a6d7e3dffa7653b12850b9ce47a597f709",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        790,
+        564,
+        329,
+        408
+      ],
+      "paperRGB": [
+        254.0,
+        245.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 103,
+      "boundaryRGBPixelsChanged": 1741,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-flight-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-tired.png",
+      "nativeCanvas": [
+        332,
+        409
+      ],
+      "nativeSha256": "5a6c4295e604d2e68062e42a2d6b641289f9b66fda88c707576b7d9fdd90394b",
+      "alphaSha256": "a103392b341fd27a486976b9fa9ab3f1744b4cc7ca54bfcced1da1cd31e28052",
+      "originalSource": "assets/portrait-approved/fio-flight.png",
+      "originalSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "sourceRegion": [
+        1159,
+        566,
+        332,
+        409
+      ],
+      "paperRGB": [
+        254.0,
+        245.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 84,
+      "boundaryRGBPixelsChanged": 1643,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-strawhat-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-smile.png",
+      "nativeCanvas": [
+        361,
+        400
+      ],
+      "nativeSha256": "6c964979fdf4ae511022f377b6d105d460784d04198d4cbc2f9e51f07cdac815",
+      "alphaSha256": "b739459fc7ead2dc994cd47f65d4c41b2e6153693385e0f5bac424ec3da42e15",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        795,
+        65,
+        361,
+        400
+      ],
+      "paperRGB": [
+        254.0,
+        245.0,
+        225.0
+      ],
+      "hairPaperPixelsCleared": 32,
+      "boundaryRGBPixelsChanged": 1699,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-strawhat-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-serious.png",
+      "nativeCanvas": [
+        364,
+        400
+      ],
+      "nativeSha256": "59f48572ed7343f062e2a15f64c452be08516e89d721ce490f6d1cf7d0abed55",
+      "alphaSha256": "20fbc029a547dc9887149a7e50b2e825c6f6ab1b3ad0f869f92f588b246f8c91",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        1162,
+        64,
+        364,
+        400
+      ],
+      "paperRGB": [
+        254.0,
+        245.0,
+        225.0
+      ],
+      "hairPaperPixelsCleared": 30,
+      "boundaryRGBPixelsChanged": 1685,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-strawhat-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-sad.png",
+      "nativeCanvas": [
+        363,
+        398
+      ],
+      "nativeSha256": "c8f810ef25146480fedf68572a45c5109f6045cc1950a055d5551664899fc0ad",
+      "alphaSha256": "46ef1d15d502292aefe0b734cbd8b364ceb894feff842a62c6c17897d1103089",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        423,
+        527,
+        363,
+        398
+      ],
+      "paperRGB": [
+        254.0,
+        245.0,
+        225.0
+      ],
+      "hairPaperPixelsCleared": 16,
+      "boundaryRGBPixelsChanged": 1644,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-strawhat-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-surprise.png",
+      "nativeCanvas": [
+        366,
+        400
+      ],
+      "nativeSha256": "ea3725ec40e29feb432cbf9c7b0eb17958d066ea4ad7cbf607d4f07ab8f33a4c",
+      "alphaSha256": "5c3f76d9ecbbb02b9c93674b20bb6c031a53a456b8129823986b029ced93f052",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        792,
+        526,
+        366,
+        400
+      ],
+      "paperRGB": [
+        254.0,
+        245.0,
+        225.0
+      ],
+      "hairPaperPixelsCleared": 38,
+      "boundaryRGBPixelsChanged": 1665,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-strawhat-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-tired.png",
+      "nativeCanvas": [
+        364,
+        399
+      ],
+      "nativeSha256": "7880d97f1f3d7e7212411191e0376c915dbac6d2cafd9eed6f557fbfa0bb3903",
+      "alphaSha256": "84f876ae84d89bd8fc6f681f780b97055e9bff6a982486945de9d11b7806aa6c",
+      "originalSource": "assets/portrait-approved/fio-strawhat.png",
+      "originalSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "sourceRegion": [
+        1163,
+        527,
+        364,
+        399
+      ],
+      "paperRGB": [
+        254.0,
+        245.0,
+        225.0
+      ],
+      "hairPaperPixelsCleared": 27,
+      "boundaryRGBPixelsChanged": 1685,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-swim-dry-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-smile.png",
+      "nativeCanvas": [
+        328,
+        409
+      ],
+      "nativeSha256": "9314375ae9112206dc82e618cc02e4a4d062305be1c27dae43dca248f6872ad3",
+      "alphaSha256": "1372b12f7e65925d43c2f74f37dd7c898f07b63f5e143a90280798577b6f71e2",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        819,
+        67,
+        328,
+        409
+      ],
+      "paperRGB": [
+        252.0,
+        243.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 270,
+      "boundaryRGBPixelsChanged": 1574,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-swim-dry-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-serious.png",
+      "nativeCanvas": [
+        328,
+        410
+      ],
+      "nativeSha256": "ba7fbaf0bbbcff93dc23e5906d579a40a4f77bd8f3a4aa7ee1c8f82aadb3ab30",
+      "alphaSha256": "d72d0995a0032849b67cb1eb758983b2d0ec1049092a3e498e2d044803e25bfa",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        1171,
+        66,
+        328,
+        410
+      ],
+      "paperRGB": [
+        252.0,
+        243.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 183,
+      "boundaryRGBPixelsChanged": 1466,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-swim-dry-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-sad.png",
+      "nativeCanvas": [
+        326,
+        420
+      ],
+      "nativeSha256": "d380ed5604e266dd2fce5b1f37bafa913736b323e702266a6415c1213cd23250",
+      "alphaSha256": "d4222330618de76a91a57242047f55166ff3a2e8f9ab94cd27ba5bc7fff13880",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        462,
+        562,
+        326,
+        420
+      ],
+      "paperRGB": [
+        252.0,
+        243.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 245,
+      "boundaryRGBPixelsChanged": 1562,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-swim-dry-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-surprise.png",
+      "nativeCanvas": [
+        336,
+        417
+      ],
+      "nativeSha256": "68f5cbfdec9f6ebebbbf68c4b95451a4780d5f3a56f26623e7fa7b58937601c5",
+      "alphaSha256": "5d3c2a7ed85c5e53bf1c9f44af8dd6ba243c2a4769e08dcca6e7ea4b36d1af32",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        814,
+        565,
+        336,
+        417
+      ],
+      "paperRGB": [
+        252.0,
+        243.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 178,
+      "boundaryRGBPixelsChanged": 1650,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-swim-dry-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-tired.png",
+      "nativeCanvas": [
+        336,
+        415
+      ],
+      "nativeSha256": "ff2081c87430f79fcef69014f393c4fbf015bfc4f4b9fbf083ac485588e2a3c9",
+      "alphaSha256": "43fa4fd1b1ad971e72da1ea2496a545125d308b824286f363b9a997b1dd4e78c",
+      "originalSource": "assets/portrait-approved/fio-swim-dry.png",
+      "originalSha256": "38f31074f629127e952996044d8b7f7e743d230e91583ac82ab2cb3fa4a4af5c",
+      "sourceRegion": [
+        1171,
+        565,
+        336,
+        415
+      ],
+      "paperRGB": [
+        252.0,
+        243.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 195,
+      "boundaryRGBPixelsChanged": 1630,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 0
+    },
+    {
+      "slot": "fio-swim-wet-smile",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-smile.png",
+      "nativeCanvas": [
+        293,
+        405
+      ],
+      "nativeSha256": "b175e12079d99c45a6a6fd4bd15efcb6f1f728db39d666361d3905be478a2b98",
+      "alphaSha256": "d44bf89547653f37b3691a9162879bebf8a889a00a2285ec036f474730a94678",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        853,
+        71,
+        293,
+        405
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 15,
+      "boundaryRGBPixelsChanged": 1370,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 1293
+    },
+    {
+      "slot": "fio-swim-wet-serious",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-serious.png",
+      "nativeCanvas": [
+        295,
+        406
+      ],
+      "nativeSha256": "20ab16af4f02f844e86f1d5b6bded011e606eb9750eca2a2777aed870693e88a",
+      "alphaSha256": "c9cac3b1a33cf18d50dd5e41701c220ed487f1122009e50416151f80e246858b",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        1203,
+        70,
+        295,
+        406
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        230.0
+      ],
+      "hairPaperPixelsCleared": 45,
+      "boundaryRGBPixelsChanged": 1301,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 1615
+    },
+    {
+      "slot": "fio-swim-wet-sad",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-sad.png",
+      "nativeCanvas": [
+        298,
+        407
+      ],
+      "nativeSha256": "08d9eae74724cce506534b1eeb22df7b196ab61e456bdeddb9779f26217b9678",
+      "alphaSha256": "e43a591f00049e1c07e5a45ee3ce3919033d834464b125e2375b5fca27f4ffcf",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        483,
+        574,
+        298,
+        407
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 41,
+      "boundaryRGBPixelsChanged": 1403,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 1518
+    },
+    {
+      "slot": "fio-swim-wet-surprise",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-surprise.png",
+      "nativeCanvas": [
+        305,
+        409
+      ],
+      "nativeSha256": "2ca36e081ab261461edfd509f0282387f49052f00d3191371a3377e234ca5bbd",
+      "alphaSha256": "0417be488482381bca13c28307057c75ac6dd6b769815e7b9dc9ab80432676e5",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        846,
+        573,
+        305,
+        409
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 27,
+      "boundaryRGBPixelsChanged": 1299,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 1413
+    },
+    {
+      "slot": "fio-swim-wet-tired",
+      "portraitFormat": "bust",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-tired.png",
+      "nativeCanvas": [
+        314,
+        405
+      ],
+      "nativeSha256": "7d84fe1167e9a9d719b3f1bcb8f8b8e16483b68b3529774376f47f08ba46c745",
+      "alphaSha256": "bcc6c66d69f926bc63028c99c7af2f51dbe56cbcc88f835061e578298109f018",
+      "originalSource": "assets/portrait-approved/fio-swim.png",
+      "originalSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "sourceRegion": [
+        1195,
+        576,
+        314,
+        405
+      ],
+      "paperRGB": [
+        253.0,
+        243.0,
+        231.0
+      ],
+      "hairPaperPixelsCleared": 25,
+      "boundaryRGBPixelsChanged": 1456,
+      "interiorRGBChangedPixels": 0,
+      "originalDarkInkAlphaChangedPixels": 0,
+      "protectedDropPixels": 1696
+    }
+  ]
+}

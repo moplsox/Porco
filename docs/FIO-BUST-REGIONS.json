@@ -1,0 +1,590 @@
+{
+  "work": [
+    {
+      "expression": "neutral",
+      "region": [
+        411,
+        56,
+        358,
+        395
+      ],
+      "inkBounds": [
+        416,
+        61,
+        764,
+        446
+      ],
+      "source": "assets/portrait-approved/fio-work.png"
+    },
+    {
+      "expression": "smile",
+      "region": [
+        776,
+        58,
+        357,
+        394
+      ],
+      "inkBounds": [
+        781,
+        63,
+        1128,
+        447
+      ],
+      "source": "assets/portrait-approved/fio-work.png"
+    },
+    {
+      "expression": "serious",
+      "region": [
+        1146,
+        57,
+        357,
+        394
+      ],
+      "inkBounds": [
+        1151,
+        62,
+        1498,
+        446
+      ],
+      "source": "assets/portrait-approved/fio-work.png"
+    },
+    {
+      "expression": "sad",
+      "region": [
+        416,
+        515,
+        347,
+        414
+      ],
+      "inkBounds": [
+        421,
+        520,
+        758,
+        924
+      ],
+      "source": "assets/portrait-approved/fio-work.png"
+    },
+    {
+      "expression": "surprise",
+      "region": [
+        773,
+        519,
+        360,
+        413
+      ],
+      "inkBounds": [
+        778,
+        524,
+        1128,
+        927
+      ],
+      "source": "assets/portrait-approved/fio-work.png"
+    },
+    {
+      "expression": "tired",
+      "region": [
+        1147,
+        524,
+        351,
+        410
+      ],
+      "inkBounds": [
+        1152,
+        529,
+        1493,
+        929
+      ],
+      "source": "assets/portrait-approved/fio-work.png"
+    }
+  ],
+  "date": [
+    {
+      "expression": "neutral",
+      "region": [
+        438,
+        89,
+        333,
+        363
+      ],
+      "inkBounds": [
+        443,
+        94,
+        766,
+        447
+      ],
+      "source": "assets/portrait-approved/fio-date.png"
+    },
+    {
+      "expression": "smile",
+      "region": [
+        791,
+        89,
+        334,
+        363
+      ],
+      "inkBounds": [
+        796,
+        94,
+        1120,
+        447
+      ],
+      "source": "assets/portrait-approved/fio-date.png"
+    },
+    {
+      "expression": "serious",
+      "region": [
+        1144,
+        90,
+        339,
+        362
+      ],
+      "inkBounds": [
+        1149,
+        95,
+        1478,
+        447
+      ],
+      "source": "assets/portrait-approved/fio-date.png"
+    },
+    {
+      "expression": "sad",
+      "region": [
+        436,
+        564,
+        336,
+        368
+      ],
+      "inkBounds": [
+        441,
+        569,
+        767,
+        927
+      ],
+      "source": "assets/portrait-approved/fio-date.png"
+    },
+    {
+      "expression": "surprise",
+      "region": [
+        789,
+        567,
+        344,
+        364
+      ],
+      "inkBounds": [
+        794,
+        572,
+        1128,
+        926
+      ],
+      "source": "assets/portrait-approved/fio-date.png"
+    },
+    {
+      "expression": "tired",
+      "region": [
+        1146,
+        564,
+        341,
+        370
+      ],
+      "inkBounds": [
+        1151,
+        569,
+        1482,
+        929
+      ],
+      "source": "assets/portrait-approved/fio-date.png"
+    }
+  ],
+  "flight": [
+    {
+      "expression": "neutral",
+      "region": [
+        426,
+        70,
+        319,
+        414
+      ],
+      "inkBounds": [
+        431,
+        75,
+        740,
+        479
+      ],
+      "source": "assets/portrait-approved/fio-flight.png"
+    },
+    {
+      "expression": "smile",
+      "region": [
+        792,
+        70,
+        325,
+        412
+      ],
+      "inkBounds": [
+        797,
+        75,
+        1112,
+        477
+      ],
+      "source": "assets/portrait-approved/fio-flight.png"
+    },
+    {
+      "expression": "serious",
+      "region": [
+        1162,
+        70,
+        325,
+        413
+      ],
+      "inkBounds": [
+        1167,
+        75,
+        1482,
+        478
+      ],
+      "source": "assets/portrait-approved/fio-flight.png"
+    },
+    {
+      "expression": "sad",
+      "region": [
+        422,
+        562,
+        328,
+        406
+      ],
+      "inkBounds": [
+        427,
+        567,
+        745,
+        963
+      ],
+      "source": "assets/portrait-approved/fio-flight.png"
+    },
+    {
+      "expression": "surprise",
+      "region": [
+        790,
+        564,
+        329,
+        408
+      ],
+      "inkBounds": [
+        795,
+        569,
+        1114,
+        967
+      ],
+      "source": "assets/portrait-approved/fio-flight.png"
+    },
+    {
+      "expression": "tired",
+      "region": [
+        1159,
+        566,
+        332,
+        409
+      ],
+      "inkBounds": [
+        1164,
+        571,
+        1486,
+        970
+      ],
+      "source": "assets/portrait-approved/fio-flight.png"
+    }
+  ],
+  "strawhat": [
+    {
+      "expression": "neutral",
+      "region": [
+        425,
+        65,
+        364,
+        398
+      ],
+      "inkBounds": [
+        430,
+        70,
+        784,
+        458
+      ],
+      "source": "assets/portrait-approved/fio-strawhat.png"
+    },
+    {
+      "expression": "smile",
+      "region": [
+        795,
+        65,
+        361,
+        400
+      ],
+      "inkBounds": [
+        800,
+        70,
+        1151,
+        460
+      ],
+      "source": "assets/portrait-approved/fio-strawhat.png"
+    },
+    {
+      "expression": "serious",
+      "region": [
+        1162,
+        64,
+        364,
+        400
+      ],
+      "inkBounds": [
+        1167,
+        69,
+        1521,
+        459
+      ],
+      "source": "assets/portrait-approved/fio-strawhat.png"
+    },
+    {
+      "expression": "sad",
+      "region": [
+        423,
+        527,
+        363,
+        398
+      ],
+      "inkBounds": [
+        428,
+        532,
+        781,
+        920
+      ],
+      "source": "assets/portrait-approved/fio-strawhat.png"
+    },
+    {
+      "expression": "surprise",
+      "region": [
+        792,
+        526,
+        366,
+        400
+      ],
+      "inkBounds": [
+        797,
+        531,
+        1153,
+        921
+      ],
+      "source": "assets/portrait-approved/fio-strawhat.png"
+    },
+    {
+      "expression": "tired",
+      "region": [
+        1163,
+        527,
+        364,
+        399
+      ],
+      "inkBounds": [
+        1168,
+        532,
+        1522,
+        921
+      ],
+      "source": "assets/portrait-approved/fio-strawhat.png"
+    }
+  ],
+  "swim-dry": [
+    {
+      "expression": "neutral",
+      "region": [
+        463,
+        65,
+        332,
+        412
+      ],
+      "inkBounds": [
+        468,
+        70,
+        790,
+        472
+      ],
+      "source": "assets/portrait-approved/fio-swim-dry.png"
+    },
+    {
+      "expression": "smile",
+      "region": [
+        819,
+        67,
+        328,
+        409
+      ],
+      "inkBounds": [
+        824,
+        72,
+        1142,
+        471
+      ],
+      "source": "assets/portrait-approved/fio-swim-dry.png"
+    },
+    {
+      "expression": "serious",
+      "region": [
+        1171,
+        66,
+        328,
+        410
+      ],
+      "inkBounds": [
+        1176,
+        71,
+        1494,
+        471
+      ],
+      "source": "assets/portrait-approved/fio-swim-dry.png"
+    },
+    {
+      "expression": "sad",
+      "region": [
+        462,
+        562,
+        326,
+        420
+      ],
+      "inkBounds": [
+        467,
+        567,
+        783,
+        977
+      ],
+      "source": "assets/portrait-approved/fio-swim-dry.png"
+    },
+    {
+      "expression": "surprise",
+      "region": [
+        814,
+        565,
+        336,
+        417
+      ],
+      "inkBounds": [
+        819,
+        570,
+        1145,
+        977
+      ],
+      "source": "assets/portrait-approved/fio-swim-dry.png"
+    },
+    {
+      "expression": "tired",
+      "region": [
+        1171,
+        565,
+        336,
+        415
+      ],
+      "inkBounds": [
+        1176,
+        570,
+        1502,
+        975
+      ],
+      "source": "assets/portrait-approved/fio-swim-dry.png"
+    }
+  ],
+  "swim-wet": [
+    {
+      "expression": "neutral",
+      "region": [
+        497,
+        70,
+        298,
+        407
+      ],
+      "inkBounds": [
+        502,
+        75,
+        790,
+        472
+      ],
+      "source": "assets/portrait-approved/fio-swim.png"
+    },
+    {
+      "expression": "smile",
+      "region": [
+        853,
+        71,
+        293,
+        405
+      ],
+      "inkBounds": [
+        858,
+        76,
+        1141,
+        471
+      ],
+      "source": "assets/portrait-approved/fio-swim.png"
+    },
+    {
+      "expression": "serious",
+      "region": [
+        1203,
+        70,
+        295,
+        406
+      ],
+      "inkBounds": [
+        1208,
+        75,
+        1493,
+        471
+      ],
+      "source": "assets/portrait-approved/fio-swim.png"
+    },
+    {
+      "expression": "sad",
+      "region": [
+        483,
+        574,
+        298,
+        407
+      ],
+      "inkBounds": [
+        488,
+        579,
+        776,
+        976
+      ],
+      "source": "assets/portrait-approved/fio-swim.png"
+    },
+    {
+      "expression": "surprise",
+      "region": [
+        846,
+        573,
+        305,
+        409
+      ],
+      "inkBounds": [
+        851,
+        578,
+        1146,
+        977
+      ],
+      "source": "assets/portrait-approved/fio-swim.png"
+    },
+    {
+      "expression": "tired",
+      "region": [
+        1195,
+        576,
+        314,
+        405
+      ],
+      "inkBounds": [
+        1200,
+        581,
+        1504,
+        976
+      ],
+      "source": "assets/portrait-approved/fio-swim.png"
+    }
+  ]
+}

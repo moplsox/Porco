@@ -4,6 +4,7 @@ import path from 'node:path';
 import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 import {portraitPlacement,resolvePortrait} from '../src/portraits.js';
+import {artMarkup} from '../src/assets.js';
 
 // Settings/metadata checks use actual source functions and event handlers.
 // This is not browser, layout or touch verification.
@@ -88,6 +89,32 @@ await test('旧存档缓存对白缺少新展示元数据时仍按原文匹配�
   assert.equal(resolvePortrait(scene,oldCached,42).outfit,expected,'Old cached dialogue uses the wrong swimming outfit at index '+index);
   assert.equal(JSON.stringify({scene,line:oldCached,lineIndex:index}),before,'Presentation migration altered scene, cached dialogue or index');
  }
+});
+await test('菲尔neutral保留全身，其他表情完整头肩像使用独立构图且仍可左右站位',()=>{
+ const art=JSON.parse(fs.readFileSync(path.join(root,'assets/manifest.json'),'utf8'));
+ const prior=globalThis.window;globalThis.window={};
+ let bustSlots=0,neutralSlots=0,legacySlots=0;
+ try{
+  for(const [slot,entry] of Object.entries(art.portraits)){
+   for(const side of ['left','right']){
+    const markup=artMarkup(entry,`portrait portrait-side-${side}`,'framing-check','meet');
+    assert.ok(markup.includes(`portrait-side-${side}`),'Format change dropped dialogue blocking: '+slot);
+    if(slot.startsWith('fio-')){
+     const neutral=slot.endsWith('-neutral'),expected=neutral?'portrait-fullbody':'portrait-bust';
+     assert.equal(entry.portraitFormat,neutral?'fullbody':'bust','Wrong authored Fio framing: '+slot);
+     assert.ok(markup.includes(expected),'Wrong actual renderer framing: '+slot);
+     assert.ok(!markup.includes(neutral?'portrait-bust':'portrait-fullbody'),'Both framing rules apply: '+slot);
+     assert.ok(markup.includes(`preserveAspectRatio="${neutral?'xMidYMid':'xMidYMax'} meet"`),'Narrow viewport lifts bust shoulder cut above the dialogue: '+slot);
+     assert.equal([...markup.matchAll(/<image\b/g)].length,1,'Portrait recomposites facial parts: '+slot);
+    }else assert.ok(markup.includes('portrait-fullbody')&&!markup.includes('portrait-bust'),'Other character framing changed: '+slot);
+   }
+   if(!slot.startsWith('fio-'))legacySlots++;else if(slot.endsWith('-neutral'))neutralSlots++;else bustSlots++;
+  }
+ }finally{if(prior===undefined)delete globalThis.window;else globalThis.window=prior}
+ assert.equal(bustSlots,35);assert.equal(neutralSlots,7);assert.equal(legacySlots,48);
+ const bustRule=css.match(/\.portrait\.portrait-bust\{([^}]+)\}/)?.[1]||'';
+ assert.ok(bustRule.includes('top:auto')&&bustRule.includes('bottom:'),'Bust crop does not anchor behind dialogue');
+ assert.ok(!bustRule.includes('140svh'),'Bust inherits enlarged full-body height');
 });
 console.log(JSON.stringify({status:results.some(r=>r.status==='failed')?'failed':'passed',passed:results.filter(r=>r.status==='passed').length,total:results.length,browserVerification:false,checks:results},null,2));
 if(results.some(r=>r.status==='failed'))process.exitCode=1;

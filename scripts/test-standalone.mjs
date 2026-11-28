@@ -66,15 +66,15 @@ await test('90人物槽与33背景视区的源图、几何和标题均完整内�
  assert.equal(portraits.length,90);assert.equal(new Set(portraits.map(([,v])=>v.src)).size,13);assert.equal(new Set(portraits.map(([,v])=>JSON.stringify(v))).size,78);
  assert.equal(backgrounds.length,44);assert.equal(new Set(backgrounds.map(([,v])=>v.src)).size,11);assert.equal(new Set(backgrounds.map(([,v])=>JSON.stringify(v))).size,33);
  for(const [slot,entry] of portraits){
-  if(entry.nativeSrc){assert.ok(assets.has(entry.nativeSrc),slot+' native PNG not embedded');assert.deepEqual(assets.get(entry.nativeSrc).dimensions,entry.nativeCanvas);assert.deepEqual(entry.nativeCanvas,entry.region.slice(2));}
-  validateAtlasRegion(entry,slot);assert.ok(entry.region[3]>entry.region[2],slot+' is still cropped to the head');assert.ok(entry.layers?.length,slot+' missing body layers');
+  if(entry.nativeSrc){assert.ok(assets.has(entry.nativeSrc),slot+' native PNG not embedded');assert.deepEqual(assets.get(entry.nativeSrc).dimensions,entry.nativeCanvas);if(entry.portraitFormat==='bust'){assert.ok(entry.nativeCanvas[0]/entry.nativeCanvas[1]>.6,slot+' bust is not a head-and-shoulder canvas');assert.ok(!slot.endsWith('-neutral'),slot+' neutral lost its original full body');}else assert.deepEqual(entry.nativeCanvas,entry.region.slice(2));}
+  validateAtlasRegion(entry,slot);assert.ok(entry.region[3]>entry.region[2],slot+' provenance body region is not full body');assert.ok(entry.layers?.length,slot+' missing body layers');
   assert.equal(entry.layers[0].src,entry.src);assert.deepEqual(entry.layers[0].canvas,entry.canvas);assert.ok(!entry.layers[0].transform,slot+' original body transformed');
   assert.equal(entry.layers.length===1,slot.endsWith('-neutral'),slot+' neutral/donor layer count mismatch');
   for(const [i,layer] of entry.layers.entries()){assert.equal(typeof layer.clipPath,'string',slot+' missing SVG layer cutout');assert.match(layer.clipPath,/^M[\s\S]+Z$/);assert.ok(assets.has(layer.src),slot+' donor source not embedded');assert.deepEqual(assets.get(layer.src).dimensions,layer.canvas,slot+' donor canvas mismatch');if(i&&layer.transform)assert.match(layer.transform,/^matrix\([\d+eE.,\s-]+\)$/);}
  }
  for(const [slot,entry] of backgrounds){validateAtlasRegion(entry,slot);assert.equal(entry.region[2]*9,entry.region[3]*16,slot+' background must be 16:9')}
  assert.deepEqual(payload.art.title,payload.art.backgrounds['cove-day']);
- return {portraitSlots:portraits.length,nativeSpriteSlots:42,uniqueNativeSprites:36,legacyLayeredSlots:48,provenanceBodySourceSheets:13,independentBodyExpressionCombinations:78,backgroundViews:33,backgroundBoards:11};
+ return {portraitSlots:portraits.length,nativeSpriteSlots:42,bustSpriteSlots:35,neutralFullbodySlots:7,uniqueNativeSprites:36,legacyLayeredSlots:48,provenanceBodySourceSheets:13,independentBodyExpressionCombinations:78,backgroundViews:33,backgroundBoards:11};
 });
 
 await test('原认可sheet的SHA凭据、内嵌编码与clipPath字符串完整保留',()=>{
@@ -143,7 +143,7 @@ await test('实际runtime绘制42个菲尔透明PNG槽及48个原分层人物槽
  const h=await createHarness().boot(),ids=new Set();let renderedLayers=0;
  for(const [slot,entry] of Object.entries(payload.art.portraits)){
   const markup=vm.runInContext(`__assets.artMarkup(${JSON.stringify(entry)},'portrait','${slot}','meet')`,h.context);
-  assert.match(markup,/<svg\b[^>]*class="portrait art-viewport portrait-fullbody(?: [^"]*)?"/,'Full-body portrait layout class lost: '+slot);
+  assert.ok(markup.includes(entry.portraitFormat==='bust'?'portrait-bust':'portrait-fullbody'),'Requested portrait framing lost: '+slot);
   if(entry.nativeSrc){
    assert.ok(markup.includes(`viewBox="0 0 ${entry.nativeCanvas.join(' ')}"`),'Native canvas not rendered: '+slot);
    assert.ok(markup.includes('portrait-native-alpha'),'Native layout class lost: '+slot);
@@ -176,7 +176,7 @@ await test('实际runtime绘制42个菲尔透明PNG槽及48个原分层人物槽
   }
   assert.ok(!/<filter\b|feColorMatrix|feComponentTransfer|mix-blend-mode/i.test(markup),'Runtime modifies face colors');
  }
- return {renderedSlots:90,nativeSpriteSlots:42,uniqueNativeSprites:36,legacyLayeredSlots:48,renderedImages:renderedLayers,uniqueLegacyClipIds:ids.size,browserVerification:false};
+ return {renderedSlots:90,nativeSpriteSlots:42,bustSpriteSlots:35,neutralFullbodySlots:7,uniqueNativeSprites:36,legacyLayeredSlots:48,renderedImages:renderedLayers,uniqueLegacyClipIds:ids.size,browserVerification:false};
 });
 let normalStore;
 await test('实际classic脚本在禁止所有fetch时启动并展示波鲁克首句',async()=>{

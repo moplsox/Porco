@@ -600,7 +600,8 @@
       "nativeCanvas": [
         376,
         923
-      ]
+      ],
+      "portraitFormat": "fullbody"
     },
     "fio-work-smile": {
       "src": "assets/portrait-approved/fio-work.png",
@@ -651,10 +652,17 @@
           "transform": "matrix(0.633348 0.024465 -0.024465 0.633348 -374.137415 -5.234765)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-work-smile.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-smile.png",
       "nativeCanvas": [
-        376,
-        923
+        357,
+        394
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        776,
+        58,
+        357,
+        394
       ]
     },
     "fio-work-serious": {
@@ -706,10 +714,17 @@
           "transform": "matrix(0.637169 -0.000642 0.000642 0.637169 -620.076805 14.894554)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-work-serious.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-serious.png",
       "nativeCanvas": [
-        376,
-        923
+        357,
+        394
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1146,
+        57,
+        357,
+        394
       ]
     },
     "fio-work-sad": {
@@ -761,10 +776,17 @@
           "transform": "matrix(0.642284 -0.000065 0.000065 0.642284 -151.140228 -298.267993)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-work-sad.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-sad.png",
       "nativeCanvas": [
-        376,
-        923
+        347,
+        414
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        416,
+        515,
+        347,
+        414
       ]
     },
     "fio-work-surprise": {
@@ -816,10 +838,17 @@
           "transform": "matrix(0.640161 0.015307 -0.015307 0.640161 -381.547218 -299.364250)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-work-surprise.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-surprise.png",
       "nativeCanvas": [
-        376,
-        923
+        360,
+        413
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        773,
+        519,
+        360,
+        413
       ]
     },
     "fio-work-tired": {
@@ -871,10 +900,17 @@
           "transform": "matrix(0.620417 0.012182 -0.012182 0.620417 -594.439396 -294.011573)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-work-tired.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-work-tired.png",
       "nativeCanvas": [
-        376,
-        923
+        351,
+        410
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1147,
+        524,
+        351,
+        410
       ]
     },
     "fio-date-neutral": {
@@ -903,7 +939,8 @@
       "nativeCanvas": [
         341,
         985
-      ]
+      ],
+      "portraitFormat": "fullbody"
     },
     "fio-date-smile": {
       "src": "assets/portrait-approved/fio-date.png",
@@ -954,10 +991,17 @@
           "transform": "matrix(0.721359 -0.007085 0.007085 0.721359 -458.409307 -30.856694)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-date-smile.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-smile.png",
       "nativeCanvas": [
-        341,
-        985
+        334,
+        363
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        791,
+        89,
+        334,
+        363
       ]
     },
     "fio-date-serious": {
@@ -1009,10 +1053,17 @@
           "transform": "matrix(0.662099 -0.011397 0.011397 0.662099 -632.773218 -9.444068)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-date-serious.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-serious.png",
       "nativeCanvas": [
-        341,
-        985
+        339,
+        362
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1144,
+        90,
+        339,
+        362
       ]
     },
     "fio-date-sad": {
@@ -1064,10 +1115,17 @@
           "transform": "matrix(0.668235 0.028235 -0.028235 0.668235 -148.254118 -373.338824)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-date-sad.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-sad.png",
       "nativeCanvas": [
-        341,
-        985
+        336,
+        368
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        436,
+        564,
+        336,
+        368
       ]
     },
     "fio-date-surprise": {
@@ -1119,10 +1177,17 @@
           "transform": "matrix(0.720096 0.005776 -0.005776 0.720096 -456.093863 -385.965102)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-date-surprise.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-surprise.png",
       "nativeCanvas": [
-        341,
-        985
+        344,
+        364
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        789,
+        567,
+        344,
+        364
       ]
     },
     "fio-date-tired": {
@@ -1174,10 +1239,17 @@
           "transform": "matrix(0.668848 0.051236 -0.051236 0.668848 -605.780299 -426.520223)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-date-tired.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-date-tired.png",
       "nativeCanvas": [
         341,
-        985
+        370
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1146,
+        564,
+        341,
+        370
       ]
     },
     "fio-flight-neutral": {
@@ -1206,7 +1278,8 @@
       "nativeCanvas": [
         370,
         1010
-      ]
+      ],
+      "portraitFormat": "fullbody"
     },
     "fio-flight-smile": {
       "src": "assets/portrait-approved/fio-flight.png",
@@ -1257,10 +1330,17 @@
           "transform": "matrix(0.645073 -0.016624 0.016624 0.645073 -388.103856 -1.976778)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-flight-smile.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-smile.png",
       "nativeCanvas": [
-        370,
-        1010
+        325,
+        412
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        792,
+        70,
+        325,
+        412
       ]
     },
     "fio-flight-serious": {
@@ -1312,10 +1392,17 @@
           "transform": "matrix(0.621798 -0.026623 0.026623 0.621798 -599.596742 24.250531)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-flight-serious.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-serious.png",
       "nativeCanvas": [
-        370,
-        1010
+        325,
+        413
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1162,
+        70,
+        325,
+        413
       ]
     },
     "fio-flight-sad": {
@@ -1367,10 +1454,17 @@
           "transform": "matrix(0.613769 0.017638 -0.017638 0.613769 -116.354110 -333.478405)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-flight-sad.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-sad.png",
       "nativeCanvas": [
-        370,
-        1010
+        328,
+        406
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        422,
+        562,
+        328,
+        406
       ]
     },
     "fio-flight-surprise": {
@@ -1422,10 +1516,17 @@
           "transform": "matrix(0.655152 -0.021221 0.021221 0.655152 -414.560304 -326.457557)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-flight-surprise.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-surprise.png",
       "nativeCanvas": [
-        370,
-        1010
+        329,
+        408
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        790,
+        564,
+        329,
+        408
       ]
     },
     "fio-flight-tired": {
@@ -1477,10 +1578,17 @@
           "transform": "matrix(0.616645 -0.008818 0.008818 0.616645 -590.731307 -316.098148)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-flight-tired.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-flight-tired.png",
       "nativeCanvas": [
-        370,
-        1010
+        332,
+        409
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1159,
+        566,
+        332,
+        409
       ]
     },
     "fio-strawhat-neutral": {
@@ -1509,7 +1617,8 @@
       "nativeCanvas": [
         374,
         998
-      ]
+      ],
+      "portraitFormat": "fullbody"
     },
     "fio-strawhat-smile": {
       "src": "assets/portrait-approved/fio-strawhat.png",
@@ -1560,10 +1669,17 @@
           "transform": "matrix(0.7 0 0 0.7 -442.4000 -37.3000)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-smile.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-smile.png",
       "nativeCanvas": [
-        374,
-        998
+        361,
+        400
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        795,
+        65,
+        361,
+        400
       ]
     },
     "fio-strawhat-serious": {
@@ -1615,10 +1731,17 @@
           "transform": "matrix(0.7 0 0 0.7 -698.6000 -38.0000)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-serious.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-serious.png",
       "nativeCanvas": [
-        374,
-        998
+        364,
+        400
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1162,
+        64,
+        364,
+        400
       ]
     },
     "fio-strawhat-sad": {
@@ -1670,10 +1793,17 @@
           "transform": "matrix(0.7 0 0 0.7 -178.5000 -360.7000)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-sad.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-sad.png",
       "nativeCanvas": [
-        374,
-        998
+        363,
+        398
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        423,
+        527,
+        363,
+        398
       ]
     },
     "fio-strawhat-surprise": {
@@ -1725,10 +1855,17 @@
           "transform": "matrix(0.7 0 0 0.7 -438.2000 -362.1000)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-surprise.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-surprise.png",
       "nativeCanvas": [
-        374,
-        998
+        366,
+        400
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        792,
+        526,
+        366,
+        400
       ]
     },
     "fio-strawhat-tired": {
@@ -1780,10 +1917,17 @@
           "transform": "matrix(0.7 0 0 0.7 -698.6000 -364.2000)"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-strawhat-tired.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-strawhat-tired.png",
       "nativeCanvas": [
-        374,
-        998
+        364,
+        399
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1163,
+        527,
+        364,
+        399
       ]
     },
     "fio-swim-wet-neutral": {
@@ -1813,7 +1957,8 @@
       "nativeCanvas": [
         358,
         995
-      ]
+      ],
+      "portraitFormat": "fullbody"
     },
     "fio-swim-wet-smile": {
       "src": "assets/portrait-approved/fio-swim.png",
@@ -1868,10 +2013,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-smile.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-smile.png",
       "nativeCanvas": [
-        358,
-        995
+        293,
+        405
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        853,
+        71,
+        293,
+        405
       ]
     },
     "fio-swim-wet-serious": {
@@ -1927,10 +2079,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-serious.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-serious.png",
       "nativeCanvas": [
-        358,
-        995
+        295,
+        406
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1203,
+        70,
+        295,
+        406
       ]
     },
     "fio-swim-wet-sad": {
@@ -1986,10 +2145,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-sad.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-sad.png",
       "nativeCanvas": [
-        358,
-        995
+        298,
+        407
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        483,
+        574,
+        298,
+        407
       ]
     },
     "fio-swim-wet-surprise": {
@@ -2045,10 +2211,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-surprise.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-surprise.png",
       "nativeCanvas": [
-        358,
-        995
+        305,
+        409
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        846,
+        573,
+        305,
+        409
       ]
     },
     "fio-swim-wet-tired": {
@@ -2104,10 +2277,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-tired.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-tired.png",
       "nativeCanvas": [
-        358,
-        995
+        314,
+        405
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1195,
+        576,
+        314,
+        405
       ]
     },
     "fio-swim-dry-neutral": {
@@ -2137,7 +2317,8 @@
       "nativeCanvas": [
         358,
         995
-      ]
+      ],
+      "portraitFormat": "fullbody"
     },
     "fio-swim-dry-smile": {
       "src": "assets/portrait-approved/fio-swim-dry.png",
@@ -2192,10 +2373,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-smile.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-smile.png",
       "nativeCanvas": [
-        358,
-        995
+        328,
+        409
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        819,
+        67,
+        328,
+        409
       ]
     },
     "fio-swim-dry-serious": {
@@ -2251,10 +2439,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-serious.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-serious.png",
       "nativeCanvas": [
-        358,
-        995
+        328,
+        410
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1171,
+        66,
+        328,
+        410
       ]
     },
     "fio-swim-dry-sad": {
@@ -2310,10 +2505,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-sad.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-sad.png",
       "nativeCanvas": [
-        358,
-        995
+        326,
+        420
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        462,
+        562,
+        326,
+        420
       ]
     },
     "fio-swim-dry-surprise": {
@@ -2369,10 +2571,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-surprise.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-surprise.png",
       "nativeCanvas": [
-        358,
-        995
+        336,
+        417
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        814,
+        565,
+        336,
+        417
       ]
     },
     "fio-swim-dry-tired": {
@@ -2428,10 +2637,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-dry-tired.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-dry-tired.png",
       "nativeCanvas": [
-        358,
-        995
+        336,
+        415
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1171,
+        565,
+        336,
+        415
       ]
     },
     "gina-morning-neutral": {
@@ -3997,7 +4213,8 @@
       "nativeCanvas": [
         358,
         995
-      ]
+      ],
+      "portraitFormat": "fullbody"
     },
     "fio-swim-smile": {
       "src": "assets/portrait-approved/fio-swim.png",
@@ -4052,10 +4269,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-smile.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-smile.png",
       "nativeCanvas": [
-        358,
-        995
+        293,
+        405
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        853,
+        71,
+        293,
+        405
       ]
     },
     "fio-swim-serious": {
@@ -4111,10 +4335,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-serious.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-serious.png",
       "nativeCanvas": [
-        358,
-        995
+        295,
+        406
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1203,
+        70,
+        295,
+        406
       ]
     },
     "fio-swim-sad": {
@@ -4170,10 +4401,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-sad.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-sad.png",
       "nativeCanvas": [
-        358,
-        995
+        298,
+        407
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        483,
+        574,
+        298,
+        407
       ]
     },
     "fio-swim-surprise": {
@@ -4229,10 +4467,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-surprise.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-surprise.png",
       "nativeCanvas": [
-        358,
-        995
+        305,
+        409
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        846,
+        573,
+        305,
+        409
       ]
     },
     "fio-swim-tired": {
@@ -4288,10 +4533,17 @@
           "part": "mouth"
         }
       ],
-      "nativeSrc": "assets/portrait-fio-native/fio-swim-wet-tired.png",
+      "nativeSrc": "assets/portrait-fio-bust/fio-swim-wet-tired.png",
       "nativeCanvas": [
-        358,
-        995
+        314,
+        405
+      ],
+      "portraitFormat": "bust",
+      "bustRegion": [
+        1195,
+        576,
+        314,
+        405
       ]
     }
   },
@@ -4408,5 +4660,5 @@
   "referencePolicy": "人物使用认可稿的完整身体，原表情眉眼/嘴通过局部图层组合；草帽菲尔保留此前认可原版，泳装区分入水前干燥与游后湿发。运行时SVG隐藏纸底与编号。背景、CG与剧情正文保持原版。参考PDF不公开。",
   "portraitStyleVersion": "fullbody-parts-v12",
   "portraitEdgesVersion": "paper-edge-v13",
-  "fioPortraitVersion": "native-seam-edge-v19"
+  "fioPortraitVersion": "native-bust-expressions-v20"
 }

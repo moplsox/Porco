@@ -33,3 +33,10 @@
 @media(max-width:760px) and (orientation:portrait){.portrait.portrait-fullbody{height:132svh;top:74px}.portrait.portrait-fullbody.portrait-side-left{left:5%;right:auto}.portrait.portrait-fullbody.portrait-side-right{right:5%;left:auto}.scene-caption.caption-right{right:5%;top:132px;max-width:44vw}}
 @media(max-height:540px) and (orientation:landscape){.portrait.portrait-fullbody{height:145svh;top:52px}.scene-caption.caption-right{top:92px}}
 @media(max-width:760px) and (orientation:portrait){.scene-caption,.scene-caption.caption-right{top:78px;left:16px;right:16px;max-width:none;text-align:left}.scene-caption>span,.scene-caption>small{display:none}.scene-caption strong{font-size:14px;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}}
+
+/* Whole original expression busts keep their own framing; neutral figures stay full body. */
+.portrait.portrait-bust{height:48svh;max-height:calc(100svh - 310px);max-width:46vw;width:auto;top:auto;bottom:190px;right:6%;left:auto}
+.portrait.portrait-bust.portrait-side-left{left:6%;right:auto}
+.portrait.portrait-bust.portrait-side-right{right:6%;left:auto}
+@media(max-width:760px) and (orientation:portrait){.portrait.portrait-bust{height:48svh;max-height:calc(100svh - 345px);max-width:74vw;bottom:220px}.portrait.portrait-bust.portrait-side-left{left:5%;right:auto}.portrait.portrait-bust.portrait-side-right{right:5%;left:auto}}
+@media(max-height:540px) and (orientation:landscape){.portrait.portrait-bust{height:45svh;max-height:calc(100svh - 210px);max-width:44vw;bottom:132px}}

@@ -31,10 +31,10 @@ assert.equal(art.portraitStyleVersion,'fullbody-parts-v12');
 assert.deepEqual(art,rewritten(sourceArt),'Hosted rewrite changed content or atlas regions');
 assert.equal(Object.keys(art.portraits).length,90);assert.equal(new Set(Object.values(art.portraits).map(source)).size,13);assert.equal(new Set(Object.values(art.portraits).map(signature)).size,78);
 assert.equal(Object.keys(art.backgrounds).length,44);assert.equal(new Set(Object.values(art.backgrounds).map(source)).size,11);assert.equal(new Set(Object.values(art.backgrounds).map(signature)).size,33);
-assert.equal(Object.keys(art.cgs).length,13);assert.equal(art.fioPortraitVersion,'native-seam-edge-v19');assert.equal(new Set(Object.values(art.portraits).filter(e=>e.nativeSrc).map(e=>e.nativeSrc)).size,36);
+assert.equal(Object.keys(art.cgs).length,13);assert.equal(art.fioPortraitVersion,'native-bust-expressions-v20');assert.equal(new Set(Object.values(art.portraits).filter(e=>e.nativeSrc).map(e=>e.nativeSrc)).size,36);
 for(const [slot,entry] of Object.entries(art.portraits)){
- if(entry.nativeSrc){assert.deepEqual(dimensions(fs.readFileSync('dist/'+entry.nativeSrc),entry.nativeSrc),entry.nativeCanvas,slot+' repaired native canvas mismatch');assert.deepEqual(entry.nativeCanvas,entry.region.slice(2));}
- validateRegion(entry,slot);assert.ok(entry.region[3]>entry.region[2],slot+' still uses a head/shoulder crop');assert.ok(entry.layers?.length,slot+' missing full-body layers');
+ if(entry.nativeSrc){assert.deepEqual(dimensions(fs.readFileSync('dist/'+entry.nativeSrc),entry.nativeSrc),entry.nativeCanvas,slot+' repaired native canvas mismatch');if(entry.portraitFormat==='bust'){assert.ok(entry.nativeCanvas[0]/entry.nativeCanvas[1]>.6,slot+' bust is not a head-and-shoulder canvas');assert.ok(!slot.endsWith('-neutral'),slot+' neutral lost its original full body');}else assert.deepEqual(entry.nativeCanvas,entry.region.slice(2));}
+ validateRegion(entry,slot);assert.ok(entry.region[3]>entry.region[2],slot+' provenance body region is not full body');assert.ok(entry.layers?.length,slot+' missing full-body layers');
  assert.equal(entry.layers[0].src,entry.src);assert.deepEqual(entry.layers[0].canvas,entry.canvas);assert.ok(!entry.layers[0].transform,slot+' body base was transformed');
  assert.equal(entry.layers.length===1,slot.endsWith('-neutral'),slot+' expression donor missing or neutral is repainted');
  for(const [i,layer] of entry.layers.entries()){
@@ -69,4 +69,4 @@ for(const src of sourcePaths){
 }
 for(const f of ['index.html','src/app.js','src/engine.js','src/portraits.js','src/assets.js','src/storage.js','src/audio.js','src/style.css','data/common.json','data/fio.json','data/gina.json','data/jobs.json'])assert.ok(fs.statSync('dist/'+f).size>0,'Missing hosted file: '+f);
 const total=[...paths].reduce((n,p)=>n+fs.statSync('dist/'+p).size,0);
-console.log(`PASS Hosted package: ${paths.size} complete lossless image resources, 90 portrait slots: 42 native Fio bindings / 36 transparent sprites and 48 legacy layered bindings; 13 verified provenance sheets, 33 background views, 13 CGs, ${(total/1048576).toFixed(2)} MiB of image data; native PNGs included; original source regions and legacy SVG cutout paths preserved.`);
+console.log(`PASS Hosted package: ${paths.size} complete lossless image resources, 90 portrait slots: 42 native Fio bindings (35 expression busts / 7 neutral full-body slots) / 36 transparent sprites and 48 legacy layered bindings; 13 verified provenance sheets, 33 background views, 13 CGs, ${(total/1048576).toFixed(2)} MiB of image data; native PNGs included; original source regions and legacy SVG cutout paths preserved.`);
