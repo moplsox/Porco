@@ -22,11 +22,13 @@ export function artMarkup(entry,className='',alt='',fit='slice'){
  if(!value.region)return `<img class="${escape(className)} art-image" src="${url}" alt="${escape(alt)}" style="object-fit:${fit==='meet'?'contain':'cover'}" draggable="false">`;
  const [x,y,w,h]=value.region,[cw,ch]=value.canvas;
  if(value.layers){
+  const bodyId=`portrait-body-${++viewportSerial}`;
+  const bodyClip=`<defs><clipPath id="${bodyId}" clipPathUnits="userSpaceOnUse"><path d="${escape(value.layers[0].clipPath)}" clip-rule="evenodd" fill-rule="evenodd"/></clipPath></defs>`;
   const content=value.layers.map(layer=>{
    const id=`portrait-layer-${++viewportSerial}`,[lw,lh]=layer.canvas||value.canvas;
-   return `<g${layer.transform?` transform="${escape(layer.transform)}"`:''}><defs><clipPath id="${id}" clipPathUnits="userSpaceOnUse"><path d="${escape(layer.clipPath)}"/></clipPath></defs><image href="${escape(assetUrl(layer.src||value.src))}" width="${lw}" height="${lh}" clip-path="url(#${id})"/></g>`;
+   return `<g${layer.transform?` transform="${escape(layer.transform)}"`:''}><defs><clipPath id="${id}" clipPathUnits="userSpaceOnUse"><path d="${escape(layer.clipPath)}" clip-rule="evenodd" fill-rule="evenodd"/></clipPath></defs><image href="${escape(assetUrl(layer.src||value.src))}" width="${lw}" height="${lh}" clip-path="url(#${id})"/></g>`;
   }).join('');
-  return `<svg class="${escape(className)} art-viewport portrait-fullbody" viewBox="${x} ${y} ${w} ${h}" preserveAspectRatio="xMidYMid ${fit}" role="img" aria-label="${escape(alt)}" style="aspect-ratio:${w}/${h}" xmlns="http://www.w3.org/2000/svg">${content}</svg>`;
+  return `<svg class="${escape(className)} art-viewport portrait-fullbody" viewBox="${x} ${y} ${w} ${h}" preserveAspectRatio="xMidYMid ${fit}" role="img" aria-label="${escape(alt)}" style="aspect-ratio:${w}/${h}" xmlns="http://www.w3.org/2000/svg">${bodyClip}<g clip-path="url(#${bodyId})">${content}</g></svg>`;
  }
  const clipId=value.clipPath?`approved-portrait-${++viewportSerial}`:null;
  const clipping=clipId?`<defs><clipPath id="${clipId}" clipPathUnits="userSpaceOnUse"><path d="${escape(value.clipPath)}"/></clipPath></defs>`:'';

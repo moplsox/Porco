@@ -144,7 +144,16 @@ await test('实际runtime绘制90全身人物槽的全部原图基底和局部�
   const markup=vm.runInContext(`__assets.artMarkup(${JSON.stringify(entry)},'portrait','${slot}','meet')`,h.context);
   assert.match(markup,/<svg\b[^>]*class="portrait art-viewport portrait-fullbody"/,'Full-body portrait layout class lost: '+slot);
   assert.ok(markup.includes(`viewBox="${entry.region.join(' ')}"`),'Original body region not rendered: '+slot);
-  const groups=[...markup.matchAll(/<g\b([^>]*)>([\s\S]*?)<\/g>/gi)];assert.equal(groups.length,entry.layers.length,'Runtime omitted original body or expression layers: '+slot);
+  const bodyDefinition=[...markup.matchAll(/<clipPath\b([^>]*)>([\s\S]*?)<\/clipPath>/gi)].find(d=>(extractAttr(d[1],'id')||'').startsWith('portrait-body-'));
+  assert.ok(bodyDefinition,'Missing shared clean silhouette: '+slot);
+  const bodyId=extractAttr(bodyDefinition[1],'id');assert.ok(!ids.has(bodyId),'Duplicate silhouette id: '+slot);ids.add(bodyId);
+  const bodyPath=bodyDefinition[2].match(/<path\b([^>]*)/i)?.[1]||'';
+  assert.equal(extractAttr(bodyPath,'d'),entry.layers[0].clipPath,'Shared silhouette geometry changed');
+  assert.equal(extractAttr(bodyPath,'clip-rule'),'evenodd','Background holes filled in again');
+  const wrapper='<g clip-path="url(#'+bodyId+')">',start=markup.indexOf(wrapper),end=markup.lastIndexOf('</g></svg>');
+  assert.ok(start>=0&&end>start,'Expression layers can protrude outside the silhouette');
+  const bodyContent=markup.slice(start+wrapper.length,end);
+  const groups=[...bodyContent.matchAll(/<g\b([^>]*)>([\s\S]*?)<\/g>/gi)];assert.equal(groups.length,entry.layers.length,'Runtime omitted original body or expression layers: '+slot);
   for(const [i,group] of groups.entries()){
    const layer=entry.layers[i],definition=group[2].match(/<clipPath\b([^>]*)>([\s\S]*?)<\/clipPath>/i);assert.ok(definition,'No layer cutout definition: '+slot);
    assert.equal(extractAttr(group[1],'transform'),layer.transform,'Layer affine transform not preserved: '+slot);

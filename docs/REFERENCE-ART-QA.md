@@ -1,6 +1,6 @@
 # 审阅美术与泳装剧情接入验收
 
-执行：`python3 scripts/test-reference-art.py --baseline 5722c7a7e1a4418f526ebb3b3db268bee288acd7`。时间：2026-11-27T14:33:19.524540+00:00。结果：**11/11 项通过，passed**。
+执行：`python3 scripts/test-reference-art.py --baseline 5722c7a7e1a4418f526ebb3b3db268bee288acd7`。时间：2026-11-28T00:38:57.394010+00:00。结果：**11/11 项通过，passed**。
 
 检查读取正式清单、六份剧情、PNG及声明视区，不修改图片。Gina work仅别名morning；12张原审阅sheet含恢复的旧草帽以固定SHA256和凭据核对，仅干泳装局部修改有独立凭据；全身基底与局部表情仅在运行时SVG组合。区域像素SHA证明画面不同，不保证表情演技、脸型或电影风格。
 

@@ -4,7 +4,7 @@
 
 ## 直接打开游玩
 
-仓库根目录的 **index.html 是完整单文件离线版**（约76 MiB）。下载保存后，直接用桌面 Safari、Chrome、Edge 或 Firefox 打开即可；不需要Node.js、Python、本地服务器、网络或旁边的资源文件。GitHub文件页面请使用 **Download raw file** 保存文件，再双击，不要在GitHub代码预览页里运行。
+仓库根目录的 **index.html 是完整单文件离线版**（约77 MiB）。下载保存后，直接用桌面 Safari、Chrome、Edge 或 Firefox 打开即可；不需要Node.js、Python、本地服务器、网络或旁边的资源文件。GitHub文件页面请使用 **Download raw file** 保存文件，再双击，不要在GitHub代码预览页里运行。
 
 剧本、界面、立绘、背景、CG及原创合成音频均已内嵌。内嵌图片采用无损WebP编码，原始PNG仍在assets目录保留。
 
@@ -38,6 +38,10 @@ npm run build
 第40天上午菲尔会主动邀请波鲁克去海湾休假：可接受两天后的下午、改到四天后或婉拒。约会免费，不耗油；晴天可戏水、安静漂浮或留在岸边，雨天去棚下分桃子。菲尔线可明确提出恋爱邀约，其他路线保持友情；五天后按实际赴约日回收记忆。新增11场、约5300字正文，已有存档可继续游玩。细节见 docs/SWIMMING-STORY.md。
 
 生成PNG原件保留；离线及托管封装采用像素无损WebP，保留alpha和所有可见像素。美术数量与制作方式见 docs/ART.md，验证见 docs/REFERENCE-ART-QA.md。
+
+## 立绘残边修复
+
+本版修正13套全身立绘的纸色外边、手臂与帽檐之间的背景空隙，并将表情局部图层限制在同一外轮廓内。原PNG、表情、姿势、左右站位、透明度及干湿泳装切换均保留。`npm run test:edges` 检查原图哈希、纸底间隙、白衣与肤色保留点及运行遮罩；来源记录见 docs/PORTRAIT-EDGES.json。
 
 ## 操作
 

@@ -1,0 +1,407 @@
+{
+  "version": "paper-edge-v13",
+  "baseline": "ccac68e7ea6ba458141eb275face73351c56fd4f",
+  "items": [
+    {
+      "src": "assets/portrait-approved/fio-work.png",
+      "sourceSha256": "394c065a5a9b784cc187d13585c59d921841b26f7706b5072661a152991afbd1",
+      "oldClipPathSha256": "9ed558e90901c680e636ff0324fcce55c8a7b6516d9ee45440cb00a0d6951828",
+      "newClipPathSha256": "9a24e0ddb1bc948cb1e5f4bbbb38dcf5d449a1f0ac0a13f123f3f9cbae7624bf",
+      "holes": [
+        {
+          "x": 137,
+          "y": 327
+        },
+        {
+          "x": 284,
+          "y": 406
+        }
+      ],
+      "preservePoints": [
+        {
+          "x": 260,
+          "y": 180
+        },
+        {
+          "x": 235,
+          "y": 300
+        },
+        {
+          "x": 235,
+          "y": 650
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/fio-date.png",
+      "sourceSha256": "cef1cb90e4781824173cc3e50ea8f7d4372ab599cc925b0b14083098ece49a58",
+      "oldClipPathSha256": "4c7cb27e00cafa9f3fde6bf57303c78a4033d7d857ccadd2d4fb1ad0aa892d81",
+      "newClipPathSha256": "ce00144e4c73e3f2c0d1493cad5af9f797451555785abfc3e8ad6f1245c27685",
+      "holes": [
+        {
+          "x": 144,
+          "y": 511
+        },
+        {
+          "x": 291,
+          "y": 399
+        }
+      ],
+      "preservePoints": [
+        {
+          "x": 270,
+          "y": 150
+        },
+        {
+          "x": 250,
+          "y": 300
+        },
+        {
+          "x": 225,
+          "y": 600
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/fio-flight.png",
+      "sourceSha256": "07f02515fddaac40868858c97c4cb98073b803b8b8417d9ce60dfb8cbd1b443c",
+      "oldClipPathSha256": "8a676aeda7157703dda0d68e64918e3679a958ad99a83519639b54c71b54bd13",
+      "newClipPathSha256": "370a891f6981b3ff492cbbb12d29562bdcff00f276f6d61ffc9506d4c380f919",
+      "holes": [],
+      "preservePoints": [
+        {
+          "x": 250,
+          "y": 150
+        },
+        {
+          "x": 245,
+          "y": 250
+        },
+        {
+          "x": 210,
+          "y": 400
+        },
+        {
+          "x": 200,
+          "y": 700
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/fio-strawhat.png",
+      "sourceSha256": "a4b7ac16bbb564dc269c08d8176594373852c98cee32c02eaa901f6c091578ad",
+      "oldClipPathSha256": "8c80ab66bfc33db55ba5d0fda437f4ab4b1c6ec91a0edfead6c8a453f8de2e9f",
+      "newClipPathSha256": "d75c1355c668376d539332d680b56c7366755584116b964c39b6cdc5f700cc8a",
+      "holes": [
+        {
+          "x": 139,
+          "y": 178
+        },
+        {
+          "x": 316,
+          "y": 470
+        },
+        {
+          "x": 125,
+          "y": 107
+        },
+        {
+          "x": 267,
+          "y": 196
+        }
+      ],
+      "preservePoints": [
+        {
+          "x": 246,
+          "y": 50
+        },
+        {
+          "x": 235,
+          "y": 310
+        },
+        {
+          "x": 220,
+          "y": 650
+        },
+        {
+          "x": 240,
+          "y": 145
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/gina-morning.png",
+      "sourceSha256": "b74c6f99a5c4ac7769ec0ab3ed0f415b66a99a035296914b625e68df029a5d26",
+      "oldClipPathSha256": "b0def35900cf5651ca84c7326a07a2a2e93f6e067801a2fdfb7c606e7a67d1c0",
+      "newClipPathSha256": "46b1c259dc88e325dff2614b3d6952ef1ae12252cc0b4b989441eaea23451ea3",
+      "holes": [
+        {
+          "x": 277,
+          "y": 101
+        },
+        {
+          "x": 267,
+          "y": 133
+        },
+        {
+          "x": 107,
+          "y": 551
+        },
+        {
+          "x": 120,
+          "y": 556
+        }
+      ],
+      "preservePoints": [
+        {
+          "x": 198,
+          "y": 225
+        },
+        {
+          "x": 232,
+          "y": 248
+        },
+        {
+          "x": 306,
+          "y": 187
+        },
+        {
+          "x": 227,
+          "y": 310
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/gina-date.png",
+      "sourceSha256": "5b8adcc07fc4f95991313eea553845051d28c02fadd7c0facf80b0a9b07a1fc0",
+      "oldClipPathSha256": "5de7d1e8a09c08ba33f2e411cec33d2688012e5fe4fd894cf566e6c5576bb4f7",
+      "newClipPathSha256": "9e8acc97e96de2bdc2fac08e47a396f79919794ac0439dc2b1df8e9980cd0f35",
+      "holes": [],
+      "preservePoints": [
+        {
+          "x": 185,
+          "y": 38
+        },
+        {
+          "x": 223,
+          "y": 92
+        },
+        {
+          "x": 145,
+          "y": 225
+        },
+        {
+          "x": 86,
+          "y": 352
+        },
+        {
+          "x": 148,
+          "y": 634
+        },
+        {
+          "x": 270,
+          "y": 183
+        },
+        {
+          "x": 65,
+          "y": 569
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/gina-stage.png",
+      "sourceSha256": "a62514bb8f3ab82bf7319b384bd7487c9b95be1a77e3fab19bfbaf5ac7ff952d",
+      "oldClipPathSha256": "a1e6090f1e3fb932f31cb78e68a327224e231a96eb6d2f55cb42e873c93f1a65",
+      "newClipPathSha256": "b9d896440635cda57401b9c5d65a961dc243b934f156b7ea97068816d899393b",
+      "holes": [
+        {
+          "x": 282,
+          "y": 132
+        },
+        {
+          "x": 281,
+          "y": 166
+        },
+        {
+          "x": 192,
+          "y": 357
+        },
+        {
+          "x": 150,
+          "y": 538
+        },
+        {
+          "x": 135,
+          "y": 555
+        }
+      ],
+      "preservePoints": [
+        {
+          "x": 216,
+          "y": 245
+        },
+        {
+          "x": 200,
+          "y": 620
+        },
+        {
+          "x": 265,
+          "y": 109
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/porco-work.png",
+      "sourceSha256": "eb00fd3b5f4d727fad2157da1a45934b180df17314cb59ed8b9bbf7fa9c4b5a9",
+      "oldClipPathSha256": "f00dc426718e8a64d24c0cd40b2fee495f44876bc1fa7a647d2b40bd9dc116ca",
+      "newClipPathSha256": "68e54b0544641213cf727eff5b8abfd32e4010c1fd0c04718028d27620fc3bff",
+      "holes": [],
+      "preservePoints": [
+        {
+          "x": 260,
+          "y": 180
+        },
+        {
+          "x": 250,
+          "y": 320
+        },
+        {
+          "x": 230,
+          "y": 500
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/porco-flight.png",
+      "sourceSha256": "ec50adae88dff3ff11a2f397221dbe4c1fd7e1691f388f456a93193540dcf51b",
+      "oldClipPathSha256": "6f44651127b7d656274b318159a3ffd37011d6e381e2d5d8f52eb50d165e7a03",
+      "newClipPathSha256": "ed86ea13a615d17deeedec23641e02bb1cd08531aa3334e9cab02c3d5cec1356",
+      "holes": [],
+      "preservePoints": [
+        {
+          "x": 220,
+          "y": 170
+        },
+        {
+          "x": 230,
+          "y": 300
+        },
+        {
+          "x": 240,
+          "y": 500
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/porco-coat.png",
+      "sourceSha256": "27985cb754a5b010235d6b8a83c34675d175a3941b1d29855913d6f43e905c9e",
+      "oldClipPathSha256": "b43815f8419c0f9c993bd601c6815f49e957da281c041a0d9036351a90aed26a",
+      "newClipPathSha256": "b3880d232ca52270606cefde0bfb93181446ea92dae8388a3622658068ea9bcc",
+      "holes": [],
+      "preservePoints": [
+        {
+          "x": 220,
+          "y": 200
+        },
+        {
+          "x": 230,
+          "y": 320
+        },
+        {
+          "x": 220,
+          "y": 550
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/porco-goggles-up.png",
+      "sourceSha256": "5f060c595c1db124d84497c9eb960c9bba8c4ff2439c68df622ce0a8e523d88d",
+      "oldClipPathSha256": "5e61cfe6e4f645cfa6c9de6e168ab73f3de4c77cb4a93c9f7c7053bc3e95ca50",
+      "newClipPathSha256": "af5c0bc820eb7ad8e0efe8b724502e26425885d88741f78c9f9800b3c7aaa7a9",
+      "holes": [],
+      "preservePoints": [
+        {
+          "x": 220,
+          "y": 170
+        },
+        {
+          "x": 230,
+          "y": 300
+        },
+        {
+          "x": 240,
+          "y": 500
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/fio-swim.png",
+      "sourceSha256": "2297e84e2a973f4db1f6a2b540c6fa75a74efba25eb2ba3fca4fdc612bcac85c",
+      "oldClipPathSha256": "02711a4400da6d0d4db8c4c870c50550f8012822f4688a093b4bbbd6a614f536",
+      "newClipPathSha256": "1d68e1698be1ab6fed932cbeacd4cc76f213b061107a8e470468f0bdc2a33fc3",
+      "holes": [
+        {
+          "x": 335,
+          "y": 327
+        },
+        {
+          "x": 163,
+          "y": 502
+        }
+      ],
+      "preservePoints": [
+        {
+          "x": 245,
+          "y": 300
+        },
+        {
+          "x": 245,
+          "y": 480
+        },
+        {
+          "x": 200,
+          "y": 700
+        },
+        {
+          "x": 250,
+          "y": 50
+        }
+      ]
+    },
+    {
+      "src": "assets/portrait-approved/fio-swim-dry.png",
+      "sourceSha256": "df9359d8939c26c51610717d16329e489d5dbb49d417206f34618b44fe6b81ce",
+      "oldClipPathSha256": "486c1b72853fbc620b8b7643890e1628b3e92486d9d7ab10ccd5308a6e05a8fe",
+      "newClipPathSha256": "32571d5b5f85b413692d0ef4a9cf070a59b260f94bd8b16e4e74d5b7c5e740aa",
+      "holes": [
+        {
+          "x": 335,
+          "y": 327
+        },
+        {
+          "x": 167,
+          "y": 501
+        }
+      ],
+      "preservePoints": [
+        {
+          "x": 245,
+          "y": 300
+        },
+        {
+          "x": 245,
+          "y": 480
+        },
+        {
+          "x": 200,
+          "y": 700
+        },
+        {
+          "x": 250,
+          "y": 50
+        }
+      ]
+    }
+  ],
+  "method": "SVG silhouette geometry only: remove previous one-pixel dilation and verified background pockets; use even-odd holes and constrain expression layers inside the same cleaned silhouette. Original PNGs, face layers, transforms, poses and settings remain unchanged."
+}
